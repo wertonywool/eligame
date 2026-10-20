@@ -1,0 +1,38 @@
+// ============================================================================
+// MUNDO 4 - FASE 6: "LA VERTIENTE PROHIBIDA DEL KANGSHUNG Y EL SANTUARIO DEL YETI"
+// ============================================================================
+const parte1 = require('./parte1/index');
+const parte2 = require('./parte2/index');
+const parte3 = require('./parte3/index');
+const parte4 = require('./parte4/index');
+
+// Las 4 partes de la Fase 6 completas
+const partes = [parte1, parte2, parte3, parte4];
+
+function assembleFase6() {
+  const arrayKeys = [
+    'platforms',
+    'decorations',
+    'checkpoints',
+    'spikes',
+    'npcs',
+    'magmaCrawlers',
+    'fireBats',
+    'cheeses'
+  ];
+
+  const result = {};
+  arrayKeys.forEach(k => { result[k] = []; });
+
+  partes.forEach(parte => {
+    arrayKeys.forEach(k => {
+      if (parte[k] && Array.isArray(parte[k])) {
+        result[k] = result[k].concat(parte[k]);
+      }
+    });
+  });
+
+  return result;
+}
+
+module.exports = assembleFase6();

@@ -1,0 +1,18 @@
+{
+  "name": "el-gran-escape-de-elizabeth",
+  "version": "1.0.0",
+  "description": "Juego de plataformas retro de Elizabeth la ratona",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "node tools/build_levels.js && node tools/build_game.js"
+  },
+  "keywords": [
+    "game",
+    "platformer",
+    "canvas",
+    "javascript"
+  ],
+  "author": "",
+  "license": "MIT"
+}

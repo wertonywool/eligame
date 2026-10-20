@@ -1,0 +1,216 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #060207;
+  font-family: 'Silkscreen', 'Press Start 2P', 'Courier New', Courier, monospace;
+  touch-action: none;
+}
+
+#game-wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at center, #18061a 0%, #060208 100%);
+}
+
+#game-canvas {
+  width: 100%;
+  height: 100%;
+  max-width: 177.78vh;
+  max-height: 56.25vw;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-crisp-edges;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  box-shadow: 0 0 38px rgba(179, 27, 82, 0.28);
+  border: 2px solid #8f143c;
+  background-color: #080309;
+}
+
+/* Barra superior estilo Gema / Steven Universe */
+#top-bar {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  display: flex;
+  gap: 8px;
+  z-index: 20;
+}
+
+.top-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid rgba(217, 37, 104, 0.75);
+  background: radial-gradient(circle at 30% 30%, rgba(56, 12, 30, 0.95), rgba(16, 5, 12, 0.95));
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.75), 0 0 10px rgba(217, 37, 104, 0.3);
+  transition: transform 0.08s ease, border-color 0.1s ease;
+}
+
+.top-btn:hover {
+  border-color: #ff75a0;
+  color: #ffffff;
+  box-shadow: 0 0 14px rgba(255, 117, 160, 0.5);
+}
+
+.top-btn:active {
+  transform: translateY(2px) scale(0.92);
+  border-color: #ffffff;
+}
+
+.ui-icon {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+/* Controles táctiles con Iconos Gráficos Personalizados */
+#touch-controls {
+  position: absolute;
+  bottom: 14px;
+  left: 0;
+  right: 0;
+  padding: 0 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  pointer-events: none;
+  z-index: 15;
+  transition: opacity 0.4s ease;
+}
+
+#touch-controls.gamepad-active {
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+.dpad-group,
+.action-group {
+  display: flex;
+  gap: 14px;
+  pointer-events: auto;
+  align-items: flex-end;
+}
+
+.touch-btn {
+  border: 3px solid rgba(255, 117, 160, 0.65);
+  background: radial-gradient(circle at 35% 25%, rgba(68, 14, 36, 0.82), rgba(18, 5, 12, 0.88));
+  color: #ffffff;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  cursor: pointer;
+  touch-action: none;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  transition: transform 0.06s ease, background 0.08s ease, border-color 0.08s ease, opacity 0.15s ease;
+  box-shadow: 0 5px 0 rgba(0, 0, 0, 0.75), 0 0 14px rgba(217, 37, 104, 0.22);
+}
+
+.ctrl-svg {
+  width: 34px;
+  height: 34px;
+  display: block;
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.45));
+}
+
+.action-svg {
+  width: 36px;
+  height: 36px;
+}
+
+.btn-tag {
+  font-size: 10px;
+  letter-spacing: 0.8px;
+  color: #ffffff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.85);
+}
+
+.dir-btn {
+  width: 72px;
+  height: 72px;
+  border-radius: 22px;
+  border-color: rgba(217, 37, 104, 0.75);
+  background: radial-gradient(circle at 35% 25%, rgba(56, 12, 30, 0.82), rgba(16, 5, 12, 0.88));
+}
+
+.dash-btn {
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 25%, rgba(217, 37, 104, 0.85), rgba(110, 16, 48, 0.9));
+  border-color: rgba(255, 255, 255, 0.85);
+  color: #ffffff;
+  display: none;
+}
+
+.dash-btn.visible {
+  display: flex;
+}
+
+.dash-btn.cooldown {
+  opacity: 0.42;
+  background: rgba(30, 10, 20, 0.65);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.jump-btn {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 25%, rgba(179, 27, 82, 0.88), rgba(90, 11, 38, 0.92));
+  border-color: rgba(255, 255, 255, 0.9);
+}
+
+.touch-btn.pressed,
+.touch-btn:active {
+  transform: translateY(3px) scale(0.94);
+  background: radial-gradient(circle at 50% 50%, rgba(255, 42, 110, 0.9), rgba(179, 27, 82, 0.95));
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .dir-btn {
+    width: 64px;
+    height: 64px;
+  }
+  .dash-btn {
+    width: 70px;
+    height: 70px;
+  }
+  .jump-btn {
+    width: 80px;
+    height: 80px;
+  }
+  .ctrl-svg {
+    width: 28px;
+    height: 28px;
+  }
+  .action-svg {
+    width: 30px;
+    height: 30px;
+  }
+}

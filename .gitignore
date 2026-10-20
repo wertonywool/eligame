@@ -1,0 +1,13 @@
+# Temporary testing directories
+c_tmp_test*/
+scratch_tmp_*/
+
+# Screenshots and temp media
+shot_*.png
+*.tmp
+
+# Node and OS
+node_modules/
+.DS_Store
+Thumbs.db
+*.log

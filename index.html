@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="theme-color" content="#120d1d" />
+  <title>El Gran Escape de Elizabeth</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=16" />
+</head>
+<body>
+  <div id="game-wrapper">
+    <!-- Lienzo principal Pixel Art (Resolución interna 480x270 estilo 16-bit 16:9 escalado nítido) -->
+    <canvas id="game-canvas" width="480" height="270"></canvas>
+
+    <!-- Barra superior de herramientas con Iconos SVG estilo Steven Universe -->
+    <div id="top-bar">
+      <!-- Inicio / Menú Principal -->
+      <button id="btn-menu" class="top-btn" title="Menú Principal">
+        <svg viewBox="0 0 24 24" class="ui-icon" aria-hidden="true">
+          <path d="M12 2L14.8 8.5L22 9.3L16.5 14L18.2 21L12 17.3L5.8 21L7.5 14L2 9.3L9.2 8.5L12 2Z" fill="currentColor"/>
+        </svg>
+      </button>
+      <!-- Mapa de Mundos y Selector de Fases (Estilo Warp Pad de Steven Universe) -->
+      <button id="btn-map" class="top-btn" title="Mapa de Mundos y Fases">
+        <svg viewBox="0 0 24 24" class="ui-icon" aria-hidden="true">
+          <circle cx="12" cy="12" r="6" fill="currentColor"/>
+          <ellipse cx="12" cy="12" rx="11" ry="4.2" fill="none" stroke="currentColor" stroke-width="2" transform="rotate(-22 12 12)"/>
+          <circle cx="19" cy="6" r="1.6" fill="#ffd166"/>
+        </svg>
+      </button>
+      <!-- Sonido On/Off -->
+      <button id="btn-mute" class="top-btn" title="Sonido On/Off">
+        <svg id="icon-sound-on" viewBox="0 0 24 24" class="ui-icon" aria-hidden="true">
+          <path d="M3 9V15H7L12 20V4L7 9H3Z" fill="currentColor"/>
+          <path d="M16.5 12C16.5 10.2 15.5 8.7 14 7.9V16.1C15.5 15.3 16.5 13.8 16.5 12Z" fill="currentColor"/>
+          <path d="M14 3.2V5.3C16.9 6.2 19 8.8 19 12C19 15.2 16.9 17.8 14 18.7V20.8C18 19.9 21 16.3 21 12C21 7.7 18 4.1 14 3.2Z" fill="currentColor"/>
+        </svg>
+      </button>
+      <!-- Reiniciar en Checkpoint -->
+      <button id="btn-restart" class="top-btn" title="Reaparecer en Checkpoint">
+        <svg viewBox="0 0 24 24" class="ui-icon" aria-hidden="true">
+          <path d="M12 5V2L7 7L12 12V9C15.3 9 18 11.7 18 15C18 18.3 15.3 21 12 21C8.7 21 6 18.3 6 15H4C4 19.4 7.6 23 12 23C16.4 23 20 19.4 20 15C20 10.6 16.4 7 12 7V5Z" fill="currentColor"/>
+        </svg>
+      </button>
+      <!-- Pantalla Completa -->
+      <button id="btn-fullscreen" class="top-btn" title="Pantalla Completa">
+        <svg viewBox="0 0 24 24" class="ui-icon" aria-hidden="true">
+          <path d="M4 9H6V6H9V4H4V9ZM15 4V6H18V9H20V4H15ZM18 18H15V20H20V15H18V18ZM6 15H4V20H9V18H6V15Z" fill="currentColor"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Controles Táctiles con Iconos Gráficos Personalizados (Dirección + Dash Ígneo + Salto Estelar) -->
+    <div id="touch-controls" aria-label="Controles táctiles">
+      <div class="dpad-group">
+        <button id="btn-left" class="touch-btn dir-btn" aria-label="Izquierda">
+          <svg viewBox="0 0 32 32" class="ctrl-svg" aria-hidden="true">
+            <path d="M20 6L9 16L20 26V20H26V12H20V6Z" fill="currentColor"/>
+          </svg>
+        </button>
+        <button id="btn-right" class="touch-btn dir-btn" aria-label="Derecha">
+          <svg viewBox="0 0 32 32" class="ctrl-svg" aria-hidden="true">
+            <path d="M12 6L23 16L12 26V20H6V12H12V6Z" fill="currentColor"/>
+          </svg>
+        </button>
+      </div>
+      <div class="action-group">
+        <!-- Botón de Habilidad Especial (Lava Run / Dash) con Icono de Cometa de Fuego -->
+        <button id="btn-dash" class="touch-btn dash-btn" aria-label="Habilidad Especial (Lava Run)">
+          <svg viewBox="0 0 36 36" class="ctrl-svg action-svg" aria-hidden="true">
+            <path d="M21 3L8 19H17L14 33L29 16H19L21 3Z" fill="#ffd166"/>
+            <circle cx="27" cy="9" r="2.2" fill="#ffffff"/>
+          </svg>
+          <span class="btn-tag">DASH</span>
+        </button>
+        <!-- Botón de Saltar / Doble Salto con Icono de Impulso Estelar Alado -->
+        <button id="btn-jump" class="touch-btn jump-btn" aria-label="Saltar / Interactuar">
+          <svg viewBox="0 0 36 36" class="ctrl-svg action-svg" aria-hidden="true">
+            <!-- Doble Chevron de Salto + Estrella -->
+            <path d="M18 4L28 14H22V21H14V14H8L18 4Z" fill="#ffffff"/>
+            <path d="M10 25L18 19L26 25L24 28L18 23.5L12 28L10 25Z" fill="#ffd166"/>
+            <circle cx="18" cy="31" r="2" fill="#ffcad4"/>
+          </svg>
+          <span class="btn-tag">SALTAR</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modulos del motor y niveles -->
+  <script src="src/audio.js?v=79"></script>
+  <script src="src/sprites.js?v=79"></script>
+  <script src="src/level1.js?v=79"></script>
+  <script src="src/level2.js?v=79"></script>
+  <script src="src/level3.js?v=79"></script>
+  <script src="src/level4.js?v=79"></script>
+  <script src="src/game.js?v=79"></script>
+</body>
+</html>
