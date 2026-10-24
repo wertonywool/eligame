@@ -3,47 +3,47 @@
 // ============================================================================
 
 module.exports = [
-  // 1. Pemba el Guia de Cuerdas Fijas (Campamento 11 - Cascada del Khumbu)
+  // 1. Pemba el Guía de Cuerdas Fijas (Campamento 11 - Cascada del Khumbu)
   {
-    x: 19020,
+    x: 19010,
     y: 118,
-    name: 'Pemba el Guia de Cuerdas Fijas',
-    role: 'Sherpa Lider del Khumbu',
+    name: 'Pemba el Guía de Cuerdas Fijas',
+    role: 'Sherpa Líder del Khumbu',
     color: '#fed7aa',
     hatColor: '#0284c7',
     lines: [
-      'Tashi Delek, Elizabeth! Has superado los seracs de la temible Cascada de Hielo del Khumbu.',
+      '¡Tashi Delek, Elizabeth! Has superado los seracs de la temible Cascada de Hielo del Khumbu.',
       'Fijamos estas escaleras de aluminio sobre las grietas cada amanecer antes de que el sol derrita los bloques.',
       'Adelante se extiende el Valle del Silencio y la escarpada Pared del Lhotse.',
-      'Asegura bien tus crampones y tu pico de hielo: las rafagas a mas de 7000 metros son implacables.'
+      'Recuerda: si arrecia la ventisca, ¡clava tu Pico de Hielo con [ABAJO] para no salir volando!'
     ],
     dialogue: [
-      'Tashi Delek, Elizabeth! Has superado los seracs de la temible Cascada de Hielo del Khumbu.',
+      '¡Tashi Delek, Elizabeth! Has superado los seracs de la temible Cascada de Hielo del Khumbu.',
       'Fijamos estas escaleras de aluminio sobre las grietas cada amanecer antes de que el sol derrita los bloques.',
       'Adelante se extiende el Valle del Silencio y la escarpada Pared del Lhotse.',
-      'Asegura bien tus crampones y tu pico de hielo: las rafagas a mas de 7000 metros son implacables.'
+      'Recuerda: si arrecia la ventisca, ¡clava tu Pico de Hielo con [ABAJO] para no salir volando!'
     ]
   },
 
   // 2. Karma el Sherpa del Lhotse (Campamento 12 - Pared del Lhotse)
   {
-    x: 20280,
+    x: 20300,
     y: 56,
     name: 'Karma el Sherpa del Lhotse',
     role: 'Veterano de la Pared Azul',
     color: '#fed7aa',
     hatColor: '#ea580c',
     lines: [
-      'Increible! Una ratoncita escalando la Pared de Hielo puro del Lhotse con esa destreza.',
-      'A esta altitud el aire es fino y cada salto exige toda tu concentracion.',
-      'Mas adelante se abre el Collado Sur y el Paso de Hillary, el ultimo peldano antes de la cima.',
-      'No te rindas, valerosa Elizabeth: el techo del mundo te espera al final de la arista!'
+      '¡Increíble! Una ratoncita escalando la Pared de Hielo puro del Lhotse con esa destreza.',
+      'A esta altitud el aire es fino y los cristales celestes te catapultarán por la roca.',
+      'Más adelante se abre el temible Collado Sur a 8000 metros y el mítico Paso de Hillary.',
+      '¡No te rindas, valerosa Elizabeth: el techo del mundo entero aguarda tu huella en la cumbre!'
     ],
     dialogue: [
-      'Increible! Una ratoncita escalando la Pared de Hielo puro del Lhotse con esa destreza.',
-      'A esta altitud el aire es fino y cada salto exige toda tu concentracion.',
-      'Mas adelante se abre el Collado Sur y el Paso de Hillary, el ultimo peldano antes de la cima.',
-      'No te rindas, valerosa Elizabeth: el techo del mundo te espera al final de la arista!'
+      '¡Increíble! Una ratoncita escalando la Pared de Hielo puro del Lhotse con esa destreza.',
+      'A esta altitud el aire es fino y los cristales celestes te catapultarán por la roca.',
+      'Más adelante se abre el temible Collado Sur a 8000 metros y el mítico Paso de Hillary.',
+      '¡No te rindas, valerosa Elizabeth: el techo del mundo entero aguarda tu huella en la cumbre!'
     ]
   }
 ];

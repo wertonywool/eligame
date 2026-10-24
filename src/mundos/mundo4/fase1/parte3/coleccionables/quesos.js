@@ -3,12 +3,12 @@
 // ============================================================================
 
 module.exports = [
-  // 1. Queso en la cornisa de hielo superior tras el parkour de cornisas
-  { x: 3240, y: 90, active: true, id: 26 },
+  // 1. Queso en el pinaculo de seracs tras el parkour de cornisas
+  { x: 3275, y: 58, active: true, id: 26 },
 
-  // 2. Queso enterrado en el banco superior de nieve profunda (requiere excavar)
-  { x: 3520, y: 170, active: true, id: 27 },
+  // 2. Queso enterrado en el banco superior de nieve polar (requiere excavar)
+  { x: 3610, y: 184, active: true, id: 27 },
 
   // 3. Queso en la cumbre rocosa sobre la antesala del Gran Arco Glacial
-  { x: 3760, y: 72, active: true, id: 28 }
+  { x: 3820, y: 68, active: true, id: 28 }
 ];

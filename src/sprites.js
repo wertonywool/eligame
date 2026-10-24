@@ -4578,6 +4578,14 @@ SpriteManager.prototype.drawMagmaCrawler = function(ctx, x, y, facingRight, fram
       this.drawFrostCrawler(ctx, x, y, facingRight, frame);
       return;
     }
+    if (variant === 'kailash_scarab' && this.drawKailashScarab) {
+      this.drawKailashScarab(ctx, x, y, facingRight, frame);
+      return;
+    }
+    if (variant === 'agartha_sentinel' && this.drawAgarthaSentinel) {
+      this.drawAgarthaSentinel(ctx, x, y, facingRight, frame);
+      return;
+    }
 
     if (variant === 'ladybug') {
       // FASE 1 MUNDO 1: Mariquita / Catarina del Jardin Silvestre
@@ -4672,6 +4680,10 @@ SpriteManager.prototype.drawFireBat = function(ctx, x, y, frame, variant = 'fire
     }
     if (variant === 'frost_flier' && this.drawFrostFlier) {
       this.drawFrostFlier(ctx, x, y, frame);
+      return;
+    }
+    if (variant === 'astral_flier' && this.drawAstralFlier) {
+      this.drawAstralFlier(ctx, x, y, frame);
       return;
     }
 
@@ -5310,15 +5322,241 @@ function drawFrostFlier(ctx, x, y, frame = 0) {
   ctx.fillRect(px + 11, py + 13 + bob, 2, 4);
 }
 
+// 3. Escarabajo Sagrado de Lapislázuli del Monte Kailash (Pixel Art)
+function drawKailashScarab(ctx, x, y, facingRight, frame = 0) {
+  const px = Math.round(x);
+  const py = Math.round(y);
+  const step = Math.floor(frame * 0.22) % 2;
+
+  // Sombra
+  ctx.fillStyle = 'rgba(15, 23, 42, 0.35)';
+  ctx.beginPath();
+  ctx.ellipse(px + 10, py + 14, 9, 3, 0, 0, Math.PI * 2);
+  ctx.fill();
+
+  // Patitas doradas articuladas
+  ctx.fillStyle = '#b45309';
+  ctx.fillRect(px + 2 + step, py + 12, 3, 3);
+  ctx.fillRect(px + 7 - step, py + 12, 3, 3);
+  ctx.fillRect(px + 12 + step, py + 12, 3, 3);
+  ctx.fillRect(px + 16 - step, py + 12, 3, 3);
+  ctx.fillStyle = '#fbbf24';
+  ctx.fillRect(px + 3 + step, py + 13, 1, 2);
+  ctx.fillRect(px + 8 - step, py + 13, 1, 2);
+  ctx.fillRect(px + 13 + step, py + 13, 1, 2);
+  ctx.fillRect(px + 17 - step, py + 13, 1, 2);
+
+  // Caparazón acorazado de lapislázuli ultramarino
+  ctx.fillStyle = '#0f172a';
+  ctx.fillRect(px, py + 2, 20, 11);
+  ctx.fillStyle = '#1e3a8a';
+  ctx.fillRect(px + 1, py + 3, 18, 9);
+  ctx.fillStyle = '#2563eb';
+  ctx.fillRect(px + 2, py + 4, 16, 7);
+  ctx.fillStyle = '#38bdf8';
+  ctx.fillRect(px + 3, py + 5, 14, 4);
+
+  // Veta ceremonial dorada en el lomo
+  ctx.fillStyle = '#d97706';
+  ctx.fillRect(px + 6, py + 4, 8, 2);
+  ctx.fillStyle = '#fde047';
+  ctx.fillRect(px + 7, py + 4, 6, 1);
+  ctx.fillRect(px + 9, py + 2, 2, 8);
+
+  // Gema astral en el centro del lomo pulsante
+  const pulse = Math.sin(frame * 0.14) * 0.3 + 0.7;
+  ctx.fillStyle = 'rgba(254, 240, 138, ' + pulse.toFixed(2) + ')';
+  ctx.fillRect(px + 9, py + 5, 2, 2);
+
+  // Ojos sagrados de esmeralda celestial
+  const eyeX = facingRight ? px + 15 : px + 2;
+  ctx.fillStyle = '#ffffff';
+  ctx.fillRect(eyeX, py + 6, 3, 3);
+  ctx.fillStyle = '#10b981';
+  ctx.fillRect(facingRight ? eyeX + 1 : eyeX, py + 7, 2, 2);
+
+  // Pinzas rituales doradas
+  ctx.fillStyle = '#fbbf24';
+  ctx.fillRect(facingRight ? px + 18 : px - 1, py + 8, 3, 2);
+  ctx.fillRect(facingRight ? px + 19 : px - 2, py + 7, 1, 1);
+}
+
+// 4. Guardián Cristalino de Agartha (Autómata Sagrado de Cuarzo y Amatista)
+function drawAgarthaSentinel(ctx, x, y, facingRight, frame = 0) {
+  const px = Math.round(x);
+  const py = Math.round(y);
+  const step = Math.floor(frame * 0.2) % 2;
+
+  // Sombra mística
+  ctx.fillStyle = 'rgba(15, 23, 42, 0.4)';
+  ctx.beginPath();
+  ctx.ellipse(px + 10, py + 14, 9, 3, 0, 0, Math.PI * 2);
+  ctx.fill();
+
+  // Extremidades de cuarzo y mármol
+  ctx.fillStyle = '#1e293b';
+  ctx.fillRect(px + 2 + step, py + 12, 3, 3);
+  ctx.fillRect(px + 8 - step, py + 12, 3, 3);
+  ctx.fillRect(px + 14 + step, py + 12, 3, 3);
+  ctx.fillStyle = '#94a3b8';
+  ctx.fillRect(px + 3 + step, py + 13, 1, 2);
+  ctx.fillRect(px + 9 - step, py + 13, 1, 2);
+  ctx.fillRect(px + 15 + step, py + 13, 1, 2);
+
+  // Chasis angular de obsidiana estelar
+  ctx.fillStyle = '#0f172a';
+  ctx.fillRect(px + 1, py + 3, 18, 10);
+  ctx.fillStyle = '#334155';
+  ctx.fillRect(px + 2, py + 4, 16, 8);
+  ctx.fillStyle = '#475569';
+  ctx.fillRect(px + 3, py + 5, 14, 6);
+
+  // Núcleo central de amatista radiante
+  const aGlow = Math.sin(frame * 0.15) * 0.25 + 0.75;
+  ctx.fillStyle = '#6b21a8';
+  ctx.fillRect(px + 7, py + 6, 6, 5);
+  ctx.fillStyle = 'rgba(192, 132, 252, ' + aGlow.toFixed(2) + ')';
+  ctx.fillRect(px + 8, py + 7, 4, 3);
+  ctx.fillStyle = '#ffffff';
+  ctx.fillRect(px + 9, py + 8, 2, 1);
+
+  // Espinas dorsales de cuarzo azul levitantes
+  const floatY = Math.sin(frame * 0.1) * 1.5;
+  const crystals = [
+    { x: px + 3, h: 6, c: '#38bdf8' },
+    { x: px + 7, h: 8, c: '#c084fc' },
+    { x: px + 12, h: 9, c: '#38bdf8' },
+    { x: px + 16, h: 6, c: '#c084fc' }
+  ];
+
+  for (const c of crystals) {
+    ctx.fillStyle = c.c;
+    ctx.beginPath();
+    ctx.moveTo(c.x - 2, py + 4 + floatY);
+    ctx.lineTo(c.x, py + 4 - c.h + floatY);
+    ctx.lineTo(c.x + 2, py + 4 + floatY);
+    ctx.closePath();
+    ctx.fill();
+
+    ctx.fillStyle = '#ffffff';
+    ctx.fillRect(c.x - 1, py + 4 - c.h + 2 + floatY, 1, c.h - 3);
+  }
+
+  // Visor estelar del autómata
+  const visorX = facingRight ? px + 14 : px + 3;
+  ctx.fillStyle = '#fde047';
+  ctx.fillRect(visorX, py + 6, 3, 2);
+  ctx.fillStyle = '#ffffff';
+  ctx.fillRect(facingRight ? visorX + 1 : visorX, py + 6, 1, 1);
+}
+
+// 5. Fénix Astral / Murciélago Cósmico de Agartha (Pixel Art)
+function drawAstralFlier(ctx, x, y, frame = 0) {
+  const px = Math.round(x);
+  const py = Math.round(y);
+  const bob = Math.round(Math.sin(frame * 0.15 + x * 0.08) * 3);
+  const flap = Math.floor(frame * 0.28) % 2 === 0;
+
+  // Estela de polvo estelar cósmico
+  const tProg = (frame * 0.06) % 1;
+  ctx.fillStyle = 'rgba(192, 132, 252, ' + (1 - tProg).toFixed(2) + ')';
+  ctx.fillRect(px + 7 + Math.sin(frame * 0.2) * 3, py + 14 + bob + tProg * 8, 2, 2);
+  ctx.fillStyle = 'rgba(56, 189, 248, ' + (1 - tProg).toFixed(2) + ')';
+  ctx.fillRect(px + 11 - Math.sin(frame * 0.2) * 3, py + 14 + bob + tProg * 8, 2, 2);
+
+  // Cuerpo romboidal de amatista y oro
+  ctx.fillStyle = '#1e1b4b';
+  ctx.fillRect(px + 6, py + 2 + bob, 8, 10);
+  ctx.fillStyle = '#6b21a8';
+  ctx.fillRect(px + 7, py + 3 + bob, 6, 8);
+  ctx.fillStyle = '#a855f7';
+  ctx.fillRect(px + 8, py + 4 + bob, 4, 6);
+  ctx.fillStyle = '#fbbf24';
+  ctx.fillRect(px + 9, py + 5 + bob, 2, 4);
+
+  // Alas de aurora boreal (degradado cian, violeta y ámbar)
+  if (flap) {
+    // Alas alzadas
+    ctx.fillStyle = 'rgba(56, 189, 248, 0.85)';
+    ctx.beginPath();
+    ctx.moveTo(px + 6, py + 5 + bob);
+    ctx.lineTo(px - 6, py - 6 + bob);
+    ctx.lineTo(px - 1, py + 9 + bob);
+    ctx.closePath();
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.moveTo(px + 14, py + 5 + bob);
+    ctx.lineTo(px + 26, py - 6 + bob);
+    ctx.lineTo(px + 21, py + 9 + bob);
+    ctx.closePath();
+    ctx.fill();
+
+    // Borde de luz violeta
+    ctx.strokeStyle = '#c084fc';
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.moveTo(px - 6, py - 6 + bob);
+    ctx.lineTo(px + 6, py + 5 + bob);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(px + 26, py - 6 + bob);
+    ctx.lineTo(px + 14, py + 5 + bob);
+    ctx.stroke();
+  } else {
+    // Alas extendidas hacia abajo
+    ctx.fillStyle = 'rgba(192, 132, 252, 0.85)';
+    ctx.beginPath();
+    ctx.moveTo(px + 6, py + 5 + bob);
+    ctx.lineTo(px - 7, py + 14 + bob);
+    ctx.lineTo(px + 4, py + 11 + bob);
+    ctx.closePath();
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.moveTo(px + 14, py + 5 + bob);
+    ctx.lineTo(px + 27, py + 14 + bob);
+    ctx.lineTo(px + 16, py + 11 + bob);
+    ctx.closePath();
+    ctx.fill();
+
+    // Borde de luz cian
+    ctx.strokeStyle = '#38bdf8';
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.moveTo(px - 7, py + 14 + bob);
+    ctx.lineTo(px + 6, py + 5 + bob);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(px + 27, py + 14 + bob);
+    ctx.lineTo(px + 14, py + 5 + bob);
+    ctx.stroke();
+  }
+
+  // Ojos dorados de halcón estelar
+  ctx.fillStyle = '#ffffff';
+  ctx.fillRect(px + 7, py + 5 + bob, 2, 2);
+  ctx.fillRect(px + 11, py + 5 + bob, 2, 2);
+  ctx.fillStyle = '#fbbf24';
+  ctx.fillRect(px + 7, py + 6 + bob, 1, 1);
+  ctx.fillRect(px + 12, py + 6 + bob, 1, 1);
+}
+
 if (typeof SpriteManager !== 'undefined') {
   SpriteManager.prototype.drawFrostCrawler = drawFrostCrawler;
   SpriteManager.prototype.drawFrostFlier = drawFrostFlier;
+  SpriteManager.prototype.drawKailashScarab = drawKailashScarab;
+  SpriteManager.prototype.drawAgarthaSentinel = drawAgarthaSentinel;
+  SpriteManager.prototype.drawAstralFlier = drawAstralFlier;
 }
 
 if (typeof module !== 'undefined') {
   module.exports = {
     drawFrostCrawler,
-    drawFrostFlier
+    drawFrostFlier,
+    drawKailashScarab,
+    drawAgarthaSentinel,
+    drawAstralFlier
   };
 }
 
@@ -5473,6 +5711,53 @@ SpriteManager.prototype.drawPortal = function(ctx, x, y, frame, scale = 1) {
 SpriteManager.prototype.drawGeyser = function(ctx, g, frame, isGarden = false) {
     const px = Math.round(g.x);
     const py = Math.round(g.y);
+
+    if (g.isCosmic || (typeof level !== 'undefined' && level && level.id === 4 && g.x >= 33000)) {
+      // ✨ Vórtice de Polvo Estelar / Fuente Cósmica del Firmamento (Mundo 4 Fase 9)
+      // 1. Pedestal astral de obsidiana y oro celestial
+      ctx.fillStyle = '#0f172a';
+      ctx.fillRect(px - 3, py - 4, g.w + 6, 5);
+      ctx.fillStyle = '#1e293b';
+      ctx.fillRect(px - 1, py - 6, g.w + 2, 3);
+      ctx.fillStyle = '#ffd166';
+      ctx.fillRect(px - 3, py - 7, g.w + 6, 2);
+      ctx.fillStyle = '#00f5d4';
+      ctx.fillRect(px + 4, py - 8, g.w - 8, 2);
+
+      // 2. Columna de energía luminosa translúcida
+      const grad = ctx.createLinearGradient(0, py - g.boostHeight, 0, py);
+      grad.addColorStop(0, 'rgba(0, 245, 212, 0.05)');
+      grad.addColorStop(0.5, 'rgba(114, 9, 183, 0.22)');
+      grad.addColorStop(1, 'rgba(0, 245, 212, 0.45)');
+      ctx.fillStyle = grad;
+      ctx.fillRect(px, py - g.boostHeight, g.w, g.boostHeight);
+
+      // 3. Estrellas y polvo cósmico ascendiendo en espiral
+      for (let i = 0; i < 7; i++) {
+        const offset = ((frame * 2.4 + i * 20) % g.boostHeight);
+        const wy = py - 8 - offset;
+        const sway = Math.round(Math.sin(frame * 0.12 + i * 1.2) * 5);
+        const alpha = Math.max(0.2, 1 - offset / g.boostHeight);
+
+        // Estrellas titilantes
+        ctx.fillStyle = (i % 2 === 0) ? `rgba(255, 209, 102, ${alpha.toFixed(2)})` : `rgba(255, 255, 255, ${alpha.toFixed(2)})`;
+        ctx.fillRect(px + 4 + ((i * 6) % (g.w - 8)) + sway, Math.round(wy), 3, 3);
+
+        // Chispas turquesas cruzadas
+        if (i % 3 === 0) {
+          ctx.fillStyle = `rgba(0, 245, 212, ${(alpha * 0.9).toFixed(2)})`;
+          ctx.fillRect(px + 5 + ((i * 4) % (g.w - 10)) - sway, Math.round(wy) - 2, 2, 5);
+          ctx.fillRect(px + 3 + ((i * 4) % (g.w - 10)) - sway, Math.round(wy), 5, 2);
+        }
+      }
+
+      // 4. Anillo de energía boreal en la base
+      const pulse = Math.sin(frame * 0.2) * 2;
+      ctx.strokeStyle = '#00f5d4';
+      ctx.lineWidth = 1;
+      ctx.strokeRect(px + 2 - pulse, py - 9, g.w - 4 + pulse * 2, 3);
+      return;
+    }
 
     if (isGarden || g.isGarden) {
       // 🌸 Flor de Brisa Mágica del Jardín (Hojas esmeralda, corola rosada y pétalos flotando hacia arriba)
@@ -13033,10 +13318,30 @@ function drawCrystalLotusFlower(ctx, x, y, frame = 0) {
   ctx.fillRect(px - 3 + Math.sin(frame * 0.15) * 6, py - 16 - sparkle * 12, 2, 2);
 }
 
-function drawShambhalaPrayerBell(ctx, x, y, frame = 0) {
+function drawShambhalaPrayerBell(ctx, x, y, frame = 0, d = null) {
   const px = Math.round(x);
   const py = Math.round(y);
   const h = 48;
+
+  // Ondas de choque sónicas doradas si la campana está sonando
+  if (d && d.ringing > 0) {
+    d.ringing = Math.max(0, d.ringing - 0.02);
+    const waveProgress = 1 - d.ringing;
+    const waveRadius = 12 + waveProgress * 38;
+    ctx.save();
+    ctx.strokeStyle = 'rgba(253, 224, 71, ' + (d.ringing * 0.9).toFixed(2) + ')';
+    ctx.lineWidth = 2.5;
+    ctx.beginPath();
+    ctx.arc(px, py - 24, waveRadius, 0, Math.PI * 2);
+    ctx.stroke();
+
+    ctx.strokeStyle = 'rgba(245, 158, 11, ' + (d.ringing * 0.6).toFixed(2) + ')';
+    ctx.lineWidth = 1.5;
+    ctx.beginPath();
+    ctx.arc(px, py - 24, Math.max(4, waveRadius - 12), 0, Math.PI * 2);
+    ctx.stroke();
+    ctx.restore();
+  }
 
   // 1. Armazón de madera lacada roja tibetana
   ctx.fillStyle = '#0f172a';
@@ -14869,7 +15174,7 @@ function drawSnowDecoration(ctx, d, frame) {
   else if (d.subType === 'great_snow_yeti' && typeof drawGreatSnowYeti === 'function') drawGreatSnowYeti(ctx, px, py, frame);
   else if (d.subType === 'yeti_crystal_throne' && typeof drawYetiCrystalThrone === 'function') drawYetiCrystalThrone(ctx, px, py, frame);
   else if (d.subType === 'crystal_lotus' && typeof drawCrystalLotusFlower === 'function') drawCrystalLotusFlower(ctx, px, py, frame);
-  else if (d.subType === 'shambhala_prayer_bell' && typeof drawShambhalaPrayerBell === 'function') drawShambhalaPrayerBell(ctx, px, py, frame);
+  else if (d.subType === 'shambhala_prayer_bell' && typeof drawShambhalaPrayerBell === 'function') drawShambhalaPrayerBell(ctx, px, py, frame, d);
   else if (d.subType === 'hot_spring' && typeof drawHotSpringPool === 'function') drawHotSpringPool(ctx, px, py, frame);
   else if (d.subType === 'golden_pagoda_tower' && typeof drawGoldenPagodaTower === 'function') drawGoldenPagodaTower(ctx, px, py, frame);
   else if (d.subType === 'nirvana_lotus_altar' && typeof drawNirvanaLotusAltar === 'function') drawNirvanaLotusAltar(ctx, px, py, frame);

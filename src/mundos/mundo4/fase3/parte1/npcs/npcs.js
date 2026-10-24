@@ -35,18 +35,32 @@ module.exports = [
     hatColor: '#ea580c',
     lines: [
       '¡Pasa, pasa, Elizabeth! ¡Cierra esa puerta que entra un frío polar!',
-      'Toma un tazón de nuestra famosa Sopa Caliente del Himalaya... ¡Listo, todos tus corazones restaurados!',
+      'Toma un tazón de nuestra famosa Sopa Caliente del Himalaya... ¡Listo, todos tus corazones restaurados al máximo!',
       'Si buscas aventuras, en las casas del pueblo encontrarás de todo: una sastrería polar, una sala arcade...',
       '...¡y en la Casa 3 vive un tipo súper depre que no para de suspirar porque extraña su pala favorita y solo tiene un pico de hielo!',
       '¡Tómate tu tiempo y descansa junto a la chimenea!'
     ],
     dialogue: [
       '¡Pasa, pasa, Elizabeth! ¡Cierra esa puerta que entra un frío polar!',
-      'Toma un tazón de nuestra famosa Sopa Caliente del Himalaya... ¡Listo, todos tus corazones restaurados!',
+      'Toma un tazón de nuestra famosa Sopa Caliente del Himalaya... ¡Listo, todos tus corazones restaurados al máximo!',
       'Si buscas aventuras, en las casas del pueblo encontrarás de todo: una sastrería polar, una sala arcade...',
       '...¡y en la Casa 3 vive un tipo súper depre que no para de suspirar porque extraña su pala favorita y solo tiene un pico de hielo!',
       '¡Tómate tu tiempo y descansa junto a la chimenea!'
-    ]
+    ],
+    onDialogueEnd: function() {
+      if (typeof player !== 'undefined' && player) {
+        player.lives = player.maxLives;
+        if (window.sfx && window.sfx.playPowerup) window.sfx.playPowerup();
+        if (typeof spawnStarSparkles === 'function') {
+          spawnStarSparkles(player.x + 11, player.y + 12, 18, '#ff75a0');
+          spawnStarSparkles(player.x + 11, player.y + 12, 12, '#ffd166');
+        }
+        if (typeof triggerShake === 'function') triggerShake(0.08, 1.2);
+        if (typeof spawnFloatingText === 'function') {
+          spawnFloatingText(player.x, player.y - 20, '¡CORAZONES RESTAURADOS!', '#ff75a0');
+        }
+      }
+    }
   },
 
   // 3. Interior: Lobsang el Jugador en la mesa de dados
@@ -64,6 +78,19 @@ module.exports = [
     dialogue: [
       '¡He sacado un doble seis en los Dados de la Suerte del Yeti! ¡Hoy es mi día de gloria!',
       'Toma 10 flores alpinas de mi botín para festejar la buena suerte. ¡Disfruta la taberna!'
-    ]
+    ],
+    onDialogueEnd: function() {
+      if (!this.rewardGiven) {
+        this.rewardGiven = true;
+        saveState.dexterLilies = (saveState.dexterLilies || 0) + 10;
+        if (window.sfx && window.sfx.playCheese) window.sfx.playCheese();
+        if (typeof spawnStarSparkles === 'function') {
+          spawnStarSparkles(player.x + 11, player.y + 12, 14, '#fde047');
+        }
+        if (typeof spawnFloatingText === 'function') {
+          spawnFloatingText(player.x, player.y - 20, '¡+10 LIRIOS DE LA SUERTE!', '#fde047');
+        }
+      }
+    }
   }
 ];

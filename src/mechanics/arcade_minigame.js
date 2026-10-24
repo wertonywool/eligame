@@ -66,10 +66,10 @@ function updateArcadeCabinetInteraction() {
     return;
   }
 
-  // Zona de interacción frente al gabinete maestro en el interior del arcade (X: 16360 -> 16400)
+  // Zona de interacción frente al gabinete maestro en el interior del arcade (X: 51350 -> 51420)
   const px = player.x + player.w / 2;
   const py = player.y + player.h;
-  if (px >= 16360 && px <= 16400 && py >= 180 && py <= 204) {
+  if (px >= 51330 && px <= 51430 && py >= 160 && py <= 230) {
     activeArcadePrompt = true;
     if (keys.upJustPressed || keys.jumpJustPressed || keyboardState.ArrowUp || keyboardState.KeyW) {
       keys.upJustPressed = false;
@@ -173,6 +173,15 @@ function updateArcadeMinigame(dt) {
   if (remaining === 0 && !arcadeMinigame.won) {
     arcadeMinigame.won = true;
     score += 500;
+    saveState.dexterLilies = (saveState.dexterLilies || 0) + 25;
+    if (typeof spawnStarSparkles === 'function') {
+      spawnStarSparkles(W / 2, H / 2, 28, '#ec4899');
+      spawnStarSparkles(W / 2, H / 2, 28, '#06b6d4');
+      spawnStarSparkles(W / 2, H / 2, 28, '#ffd166');
+    }
+    if (typeof spawnFloatingText === 'function') {
+      spawnFloatingText(player.x, player.y - 24, '¡CAMPEÓN DE YETI-99! +25 LIRIOS', '#ffd166');
+    }
     if (window.sfx && window.sfx.playPowerup) window.sfx.playPowerup();
   }
 }

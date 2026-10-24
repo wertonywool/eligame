@@ -15,6 +15,19 @@ function clearRequireCache(folderPath) {
   });
 }
 
+function safeWriteFile(filePath, content) {
+  for (let attempt = 0; attempt < 6; attempt++) {
+    try {
+      fs.writeFileSync(filePath, content, 'utf8');
+      return;
+    } catch (e) {
+      if (attempt === 5) throw e;
+      const end = Date.now() + (attempt + 1) * 80;
+      while (Date.now() < end) {}
+    }
+  }
+}
+
 function buildLevels() {
   const rootDir = path.resolve(__dirname, '..');
   const mundosDir = path.join(rootDir, 'src', 'mundos');
@@ -37,7 +50,7 @@ window.LEVELS = [
 ${JSON.stringify(mundo1, null, 2)}
 ];
 `;
-  fs.writeFileSync(path.join(rootDir, 'src', 'level1.js'), level1Content, 'utf8');
+  safeWriteFile(path.join(rootDir, 'src', 'level1.js'), level1Content);
 
   // 2. Compilar Mundo 2
   const mundo2 = require(path.join(mundosDir, 'mundo2', 'mundo2.js'));
@@ -54,7 +67,7 @@ ${JSON.stringify(mundo1, null, 2)}
 if (!window.LEVELS) window.LEVELS = [];
 window.LEVELS[1] = ${JSON.stringify(mundo2, null, 2)};
 `;
-  fs.writeFileSync(path.join(rootDir, 'src', 'level2.js'), level2Content, 'utf8');
+  safeWriteFile(path.join(rootDir, 'src', 'level2.js'), level2Content);
 
   // 3. Compilar Mundo 3
   const mundo3Path = path.join(mundosDir, 'mundo3', 'mundo3.js');
@@ -68,7 +81,7 @@ window.LEVELS[1] = ${JSON.stringify(mundo2, null, 2)};
 if (!window.LEVELS) window.LEVELS = [];
 window.LEVELS[2] = ${JSON.stringify(mundo3, null, 2)};
 `;
-    fs.writeFileSync(path.join(rootDir, 'src', 'level3.js'), level3Content, 'utf8');
+    safeWriteFile(path.join(rootDir, 'src', 'level3.js'), level3Content);
   }
 
   // 4. Compilar Mundo 4
@@ -83,7 +96,7 @@ window.LEVELS[2] = ${JSON.stringify(mundo3, null, 2)};
 if (!window.LEVELS) window.LEVELS = [];
 window.LEVELS[3] = ${JSON.stringify(mundo4, null, 2)};
 `;
-    fs.writeFileSync(path.join(rootDir, 'src', 'level4.js'), level4Content, 'utf8');
+    safeWriteFile(path.join(rootDir, 'src', 'level4.js'), level4Content);
   }
 
   console.log('Niveles compilados con exito desde src/mundos/ hacia src/level1.js, level2.js, level3.js y level4.js');

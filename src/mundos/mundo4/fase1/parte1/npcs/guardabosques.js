@@ -15,14 +15,14 @@ module.exports = [
       'Elizabeth! Que sorpresa verte en las faldas del gelido Monte Everest.',
       'Tu cuarto hijo escalo hacia la cumbre mas alta del mundo... El viento alla arriba es implacable!',
       'Toma esta PALA para ponerte a laburar: con ella puedes cavar tuneles veloces bajo los bancos de nieve profunda para resguardarte de las ventiscas...',
-      '...y recoger hasta 5 bolas de nieve del suelo para lanzarselas a las criaturas heladas!',
+      '...y recoger bolas de nieve del suelo agachada para lanzarselas a las criaturas heladas con Dash!',
       'Mucho coraje en la ascension, valiente mama ratona!'
     ],
     dialogue: [
       'Elizabeth! Que sorpresa verte en las faldas del gelido Monte Everest.',
       'Tu cuarto hijo escalo hacia la cumbre mas alta del mundo... El viento alla arriba es implacable!',
       'Toma esta PALA para ponerte a laburar: con ella puedes cavar tuneles veloces bajo los bancos de nieve profunda para resguardarte de las ventiscas...',
-      '...y recoger hasta 5 bolas de nieve del suelo para lanzarselas a las criaturas heladas!',
+      '...y recoger bolas de nieve del suelo agachada para lanzarselas a las criaturas heladas con Dash!',
       'Mucho coraje en la ascension, valiente mama ratona!'
     ]
   }

@@ -3,12 +3,12 @@
 // ============================================================================
 
 module.exports = [
-  // 1. Queso en la Terraza de las Puertas Doradas de Shambhala
-  { x: 29910, y: 76, active: true, id: 83 },
+  // 1. Queso #83 en el tejado superior de la Primera Pagoda
+  { x: 30005, y: 44, active: true, id: 83 },
 
-  // 2. Queso semienterrado en la Fosa de Nieve Sagrada de los Jardines
-  { x: 30740, y: 136, active: true, id: 84 },
+  // 2. Queso #84 oculto en la cueva de permafrost excavable
+  { x: 30770, y: 138, active: true, id: 84 },
 
-  // 3. Queso flotando sobre el Puente de Loto Resbaladizo
-  { x: 31015, y: 72, active: true, id: 85 }
+  // 3. Queso #85 flotando sobre el Gran Puente Sagrado de Shambhala
+  { x: 31070, y: 70, active: true, id: 85 }
 ];

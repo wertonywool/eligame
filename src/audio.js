@@ -167,6 +167,19 @@ class RetroAudio {
     setTimeout(() => this.playTone(130, 85, 0.22, 'sawtooth', 0.15), 80);
   }
 
+  // Sonido de campana sagrada de Shambhala (armónico tibetano resonante)
+  playShambhalaBell() {
+    this.playTone(528, 528, 0.45, 'sine', 0.22);
+    setTimeout(() => this.playTone(792, 792, 0.38, 'triangle', 0.16), 30);
+    setTimeout(() => this.playTone(1056, 1056, 0.32, 'sine', 0.12), 70);
+  }
+
+  // Sonido de rebote celestial en Loto de Cristal
+  playLotusBounce() {
+    this.playTone(392, 784, 0.20, 'sine', 0.18);
+    setTimeout(() => this.playTone(784, 1174, 0.18, 'triangle', 0.14), 45);
+  }
+
   // Sonido de ruptura del escudo de Homelander y rescate
   playShieldBreak() {
     const notes = [330, 440, 554, 659, 880, 1108, 1318];

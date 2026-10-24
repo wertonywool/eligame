@@ -3,36 +3,41 @@
 // ============================================================================
 
 module.exports = [
-  // 1. Descenso al Valle Mistico y Terraza de las Puertas Doradas
-  { x: 29630, y: 126, type: 'snow_decoration', subType: 'lantern' },
-  { x: 29680, y: 126, type: 'snow_decoration', subType: 'crystal_lotus' },
-  { x: 29740, y: 126, type: 'snow_decoration', subType: 'shambhala_prayer_bell' },
-  { x: 29890, y: 104, type: 'snow_decoration', subType: 'crevasse_marker' },
-  { x: 29930, y: 104, type: 'snow_decoration', subType: 'crystal_lotus' },
+  // 1. Terraza de Entrada: Farol de loto, Campana de Oración y Poza Termal de Bienvenida
+  { x: 29620, y: 126, type: 'snow_decoration', subType: 'lantern' },
+  { x: 29660, y: 126, type: 'snow_decoration', subType: 'shambhala_prayer_bell' },
+  { x: 29720, y: 126, type: 'snow_decoration', subType: 'hot_spring' },
+  { x: 29800, y: 126, type: 'snow_decoration', subType: 'crystal_lotus' },
 
-  // 2. Puente de rocas y Estanque de Aguas Termales
-  { x: 30010, y: 118, type: 'snow_decoration', subType: 'blue_fire_brazier' },
-  { x: 30140, y: 136, type: 'snow_decoration', subType: 'hot_spring' },
-  { x: 30230, y: 136, type: 'snow_decoration', subType: 'crystal_lotus' },
-  { x: 30250, y: 136, type: 'snow_decoration', subType: 'runic_crystal_spire' },
+  // 2. Jardín de Aguas y Terraza Elevada
+  { x: 29950, y: 96, type: 'snow_decoration', subType: 'shambhala_prayer_bell' },
+  { x: 30020, y: 96, type: 'snow_decoration', subType: 'crystal_lotus' },
+  { x: 30040, y: 96, type: 'snow_decoration', subType: 'blue_fire_brazier' },
 
-  // 3. Gran Terraza de los Jardines de Loto y Checkpoint #42
-  { x: 30360, y: 126, type: 'snow_decoration', subType: 'shambhala_prayer_bell' },
-  { x: 30400, y: 126, type: 'snow_decoration', subType: 'blue_fire_brazier' },
-  { x: 30460, y: 126, type: 'snow_decoration', subType: 'crystal_lotus' },
-  { x: 30520, y: 126, type: 'snow_decoration', subType: 'prayer_flags' },
-  { x: 30570, y: 126, type: 'snow_decoration', subType: 'crystal_lotus' },
-  { x: 30620, y: 126, type: 'snow_decoration', subType: 'shambhala_prayer_bell' },
+  // 3. Poza Termal del Río Sagrado y Puente
+  { x: 30120, y: 126, type: 'snow_decoration', subType: 'hot_spring' },
+  { x: 30190, y: 126, type: 'snow_decoration', subType: 'crystal_lotus' },
+  { x: 30260, y: 116, type: 'snow_decoration', subType: 'runic_crystal_spire' },
 
-  // 4. Fosa de permafrost y Aguja Celestial
-  { x: 30700, y: 156, type: 'snow_decoration', subType: 'runic_crystal_spire' },
-  { x: 30780, y: 156, type: 'snow_decoration', subType: 'crystal_lotus' },
-  { x: 30870, y: 114, type: 'snow_decoration', subType: 'blue_fire_brazier' },
+  // 4. Gran Terraza de Jinpa y Checkpoint #42 (X: 30310 -> 30660)
+  // Farol y Loto a la entrada del pabellón
+  { x: 30330, y: 126, type: 'snow_decoration', subType: 'lantern' },
+  { x: 30360, y: 126, type: 'snow_decoration', subType: 'crystal_lotus' },
+  // Banderas de oración ondeando detrás de Jinpa
+  { x: 30450, y: 126, type: 'snow_decoration', subType: 'prayer_flags' },
+  // Campana Sagrada junto al Checkpoint #42
+  { x: 30540, y: 126, type: 'snow_decoration', subType: 'shambhala_prayer_bell' },
+  { x: 30600, y: 126, type: 'snow_decoration', subType: 'blue_fire_brazier' },
+  { x: 30640, y: 126, type: 'snow_decoration', subType: 'crystal_lotus' },
 
-  // 5. Puente de Loto y Rampa hacia la Gran Pagoda
-  { x: 30945, y: 104, type: 'snow_decoration', subType: 'frost_bridge', w: 140 },
-  { x: 31015, y: 180, type: 'snow_decoration', subType: 'polar_vortex' },
-  { x: 31180, y: 110, type: 'snow_decoration', subType: 'crystal_lotus' },
-  { x: 31230, y: 110, type: 'snow_decoration', subType: 'shambhala_prayer_bell' },
-  { x: 31280, y: 110, type: 'snow_decoration', subType: 'lantern' }
+  // 5. Fosa de Permafrost y Caverna Glacial
+  { x: 30710, y: 156, type: 'snow_decoration', subType: 'crystal_lotus' },
+  { x: 30810, y: 156, type: 'snow_decoration', subType: 'runic_crystal_spire' },
+
+  // 6. Gran Puente y Transición a la Gran Pagoda
+  { x: 31000, y: 104, type: 'snow_decoration', subType: 'frost_bridge', w: 140 },
+  { x: 31070, y: 175, type: 'snow_decoration', subType: 'polar_vortex' },
+  { x: 31180, y: 116, type: 'snow_decoration', subType: 'shambhala_prayer_bell' },
+  { x: 31230, y: 116, type: 'snow_decoration', subType: 'crystal_lotus' },
+  { x: 31275, y: 116, type: 'snow_decoration', subType: 'lantern' }
 ];

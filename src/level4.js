@@ -45,381 +45,241 @@ window.LEVELS[3] = {
     {
       "x": 0,
       "y": 196,
-      "w": 400,
+      "w": 420,
       "h": 28,
       "subType": "snow_ground"
     },
     {
-      "x": 120,
-      "y": 154,
-      "w": 75,
-      "h": 14,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 220,
-      "y": 124,
-      "w": 65,
-      "h": 12,
-      "subType": "slippery_ice"
-    },
-    {
-      "x": 430,
+      "x": 420,
       "y": 196,
-      "w": 240,
+      "w": 290,
       "h": 32,
       "subType": "snow_bank"
     },
     {
-      "x": 490,
-      "y": 150,
-      "w": 70,
-      "h": 14,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 570,
-      "y": 120,
-      "w": 60,
-      "h": 12,
-      "subType": "slippery_ice"
-    },
-    {
-      "x": 700,
+      "x": 710,
       "y": 196,
       "w": 160,
       "h": 28,
       "subType": "snow_ground"
     },
     {
-      "x": 740,
-      "y": 148,
-      "w": 90,
-      "h": 12,
-      "oneWay": true,
-      "subType": "ice_rock"
-    },
-    {
       "x": 800,
-      "y": 128,
-      "w": 65,
-      "h": 12,
-      "subType": "slippery_ice"
-    },
-    {
-      "x": 860,
-      "y": 114,
-      "w": 110,
-      "h": 12,
+      "y": 154,
+      "w": 85,
+      "h": 14,
       "oneWay": true,
       "subType": "ice_rock"
     },
     {
-      "x": 920,
-      "y": 84,
-      "w": 60,
+      "x": 890,
+      "y": 118,
+      "w": 75,
       "h": 12,
       "subType": "slippery_ice"
     },
     {
-      "x": 1000,
-      "y": 162,
-      "w": 80,
-      "h": 22,
+      "x": 975,
+      "y": 92,
+      "w": 90,
+      "h": 14,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 1070,
+      "y": 196,
+      "w": 60,
+      "h": 28,
       "subType": "snow_ground"
     },
     {
-      "x": 1040,
-      "y": 128,
-      "w": 65,
-      "h": 14,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 1100,
+      "x": 1130,
       "y": 196,
       "w": 220,
       "h": 32,
       "subType": "snow_bank"
     },
     {
-      "x": 1180,
-      "y": 154,
-      "w": 75,
-      "h": 14,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 1260,
-      "y": 122,
-      "w": 65,
-      "h": 12,
-      "subType": "slippery_ice"
-    },
-    {
-      "x": 1340,
+      "x": 1350,
       "y": 196,
-      "w": 150,
+      "w": 140,
       "h": 14,
       "subType": "alpine_bridge"
-    },
-    {
-      "x": 1410,
-      "y": 158,
-      "w": 65,
-      "h": 12,
-      "subType": "ice_rock"
     },
     {
       "x": 1490,
       "y": 196,
-      "w": 170,
+      "w": 230,
       "h": 28,
       "subType": "snow_ground"
     },
     {
-      "x": 1560,
-      "y": 156,
-      "w": 75,
-      "h": 14,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 1630,
-      "y": 124,
-      "w": 60,
-      "h": 12,
-      "subType": "slippery_ice"
-    },
-    {
-      "x": 1690,
+      "x": 1720,
       "y": 196,
-      "w": 240,
-      "h": 34,
+      "w": 220,
+      "h": 32,
       "subType": "snow_bank"
     },
     {
-      "x": 1740,
-      "y": 152,
-      "w": 70,
+      "x": 1940,
+      "y": 170,
+      "w": 24,
+      "h": 54,
+      "subType": "ice_pillar",
+      "breakable": true,
+      "hp": 2
+    },
+    {
+      "x": 1840,
+      "y": 150,
+      "w": 80,
       "h": 14,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 1800,
-      "y": 144,
-      "w": 110,
-      "h": 12,
       "oneWay": true,
       "subType": "ice_rock"
     },
     {
-      "x": 1870,
-      "y": 120,
-      "w": 65,
+      "x": 1940,
+      "y": 116,
+      "w": 70,
       "h": 12,
-      "subType": "slippery_ice"
+      "subType": "cracking_ice"
     },
     {
-      "x": 1930,
-      "y": 110,
-      "w": 120,
-      "h": 12,
+      "x": 2030,
+      "y": 84,
+      "w": 75,
+      "h": 14,
       "oneWay": true,
       "subType": "ice_rock"
     },
     {
-      "x": 2000,
-      "y": 80,
-      "w": 60,
-      "h": 12,
-      "subType": "slippery_ice"
-    },
-    {
-      "x": 2060,
-      "y": 164,
-      "w": 120,
-      "h": 24,
+      "x": 2070,
+      "y": 196,
+      "w": 70,
+      "h": 28,
       "subType": "snow_ground"
     },
     {
-      "x": 2110,
-      "y": 124,
-      "w": 65,
+      "x": 2150,
+      "y": 196,
+      "w": 75,
       "h": 14,
-      "subType": "ice_rock"
+      "moving": true,
+      "minX": 2150,
+      "maxX": 2310,
+      "speed": 50,
+      "subType": "slippery_ice"
     },
     {
-      "x": 2170,
-      "y": 144,
-      "w": 130,
+      "x": 2190,
+      "y": 140,
+      "w": 110,
       "h": 14,
       "subType": "alpine_bridge"
     },
     {
-      "x": 2240,
-      "y": 108,
-      "w": 65,
-      "h": 12,
-      "subType": "slippery_ice"
-    },
-    {
-      "x": 2300,
-      "y": 186,
-      "w": 230,
-      "h": 34,
-      "subType": "snow_bank"
-    },
-    {
-      "x": 2380,
-      "y": 146,
-      "w": 75,
-      "h": 14,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 2470,
-      "y": 114,
-      "w": 65,
-      "h": 12,
-      "subType": "slippery_ice"
-    },
-    {
-      "x": 2540,
+      "x": 2390,
       "y": 196,
-      "w": 180,
+      "w": 60,
       "h": 28,
       "subType": "snow_ground"
     },
     {
-      "x": 2620,
-      "y": 154,
-      "w": 70,
+      "x": 2450,
+      "y": 196,
+      "w": 200,
+      "h": 32,
+      "subType": "snow_bank"
+    },
+    {
+      "x": 2540,
+      "y": 128,
+      "w": 80,
       "h": 14,
+      "oneWay": true,
       "subType": "ice_rock"
+    },
+    {
+      "x": 2640,
+      "y": 196,
+      "w": 100,
+      "h": 28,
+      "subType": "snow_ground"
     },
     {
       "x": 2730,
       "y": 196,
-      "w": 170,
+      "w": 210,
       "h": 28,
       "subType": "snow_ground"
     },
     {
-      "x": 2810,
-      "y": 154,
-      "w": 75,
-      "h": 14,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 2880,
-      "y": 124,
-      "w": 60,
-      "h": 12,
-      "subType": "slippery_ice"
-    },
-    {
-      "x": 2920,
+      "x": 2940,
       "y": 196,
-      "w": 240,
-      "h": 36,
+      "w": 260,
+      "h": 32,
       "subType": "snow_bank"
     },
     {
-      "x": 2980,
+      "x": 3080,
       "y": 150,
-      "w": 70,
+      "w": 80,
       "h": 14,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 3040,
-      "y": 150,
-      "w": 120,
-      "h": 12,
       "oneWay": true,
       "subType": "ice_rock"
     },
     {
-      "x": 3110,
-      "y": 128,
-      "w": 65,
-      "h": 12,
-      "subType": "slippery_ice"
-    },
-    {
-      "x": 3180,
+      "x": 3170,
       "y": 114,
-      "w": 120,
-      "h": 12,
-      "oneWay": true,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 3250,
-      "y": 86,
-      "w": 60,
-      "h": 12,
-      "subType": "slippery_ice"
-    },
-    {
-      "x": 3320,
-      "y": 140,
-      "w": 120,
-      "h": 14,
-      "subType": "alpine_bridge"
-    },
-    {
-      "x": 3380,
-      "y": 104,
       "w": 65,
       "h": 12,
-      "subType": "ice_rock"
+      "subType": "cracking_ice"
     },
     {
-      "x": 3440,
-      "y": 184,
-      "w": 240,
-      "h": 36,
-      "subType": "snow_bank"
-    },
-    {
-      "x": 3500,
-      "y": 144,
+      "x": 3240,
+      "y": 82,
       "w": 75,
       "h": 14,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 3560,
-      "y": 124,
-      "w": 140,
-      "h": 12,
       "oneWay": true,
       "subType": "ice_rock"
     },
     {
-      "x": 3630,
-      "y": 100,
+      "x": 3220,
+      "y": 196,
+      "w": 100,
+      "h": 28,
+      "subType": "snow_ground"
+    },
+    {
+      "x": 3340,
+      "y": 175,
+      "w": 160,
+      "h": 14,
+      "subType": "aluminum_bridge"
+    },
+    {
+      "x": 3520,
+      "y": 196,
+      "w": 220,
+      "h": 32,
+      "subType": "snow_bank"
+    },
+    {
+      "x": 3710,
+      "y": 130,
+      "w": 75,
+      "h": 14,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 3790,
+      "y": 92,
       "w": 65,
-      "h": 12,
-      "subType": "slippery_ice"
-    },
-    {
-      "x": 3700,
-      "y": 96,
-      "w": 120,
-      "h": 12,
+      "h": 14,
       "oneWay": true,
       "subType": "ice_rock"
-    },
-    {
-      "x": 3760,
-      "y": 68,
-      "w": 60,
-      "h": 12,
-      "subType": "slippery_ice"
     },
     {
       "x": 3820,
@@ -429,228 +289,319 @@ window.LEVELS[3] = {
       "subType": "snow_ground"
     },
     {
-      "x": 3910,
-      "y": 154,
-      "w": 80,
-      "h": 14,
-      "subType": "ice_rock"
-    },
-    {
       "x": 4050,
       "y": 196,
-      "w": 150,
+      "w": 210,
       "h": 28,
       "subType": "snow_ground"
     },
     {
-      "x": 4230,
-      "y": 160,
-      "w": 50,
-      "h": 64,
-      "subType": "ice_pillar"
-    },
-    {
-      "x": 4310,
-      "y": 120,
-      "w": 70,
+      "x": 4260,
+      "y": 196,
+      "w": 160,
       "h": 14,
-      "oneWay": true,
-      "subType": "ice_crystal"
+      "subType": "aluminum_bridge"
     },
     {
-      "x": 4410,
-      "y": 86,
-      "w": 60,
-      "h": 14,
-      "oneWay": true,
-      "subType": "ice_crystal"
-    },
-    {
-      "x": 4500,
-      "y": 124,
-      "w": 180,
-      "h": 32,
-      "subType": "snow_bank"
-    },
-    {
-      "x": 4710,
-      "y": 150,
-      "w": 60,
-      "h": 74,
-      "subType": "ice_pillar"
-    },
-    {
-      "x": 4800,
-      "y": 144,
+      "x": 4420,
+      "y": 196,
       "w": 120,
-      "h": 14,
-      "subType": "alpine_bridge"
+      "h": 28,
+      "subType": "snow_ground"
     },
     {
-      "x": 4940,
-      "y": 108,
-      "w": 60,
+      "x": 4450,
+      "y": 154,
+      "w": 80,
       "h": 14,
       "oneWay": true,
-      "subType": "ice_crystal"
+      "subType": "ice_rock"
     },
     {
-      "x": 5030,
-      "y": 184,
-      "w": 180,
+      "x": 4560,
+      "y": 162,
+      "w": 75,
+      "h": 12,
+      "subType": "slippery_ice"
+    },
+    {
+      "x": 4655,
+      "y": 135,
+      "w": 70,
+      "h": 12,
+      "subType": "slippery_ice"
+    },
+    {
+      "x": 4740,
+      "y": 196,
+      "w": 260,
       "h": 36,
       "subType": "snow_bank"
     },
     {
-      "x": 5230,
-      "y": 196,
-      "w": 170,
-      "h": 28,
-      "subType": "snow_ground"
+      "x": 4780,
+      "y": 136,
+      "w": 60,
+      "h": 12,
+      "oneWay": true,
+      "subType": "cracking_ice"
     },
     {
-      "x": 5350,
-      "y": 196,
-      "w": 150,
-      "h": 28,
-      "subType": "snow_ground"
+      "x": 4865,
+      "y": 104,
+      "w": 65,
+      "h": 12,
+      "oneWay": true,
+      "subType": "ice_crystal"
     },
     {
-      "x": 5530,
+      "x": 4945,
+      "y": 136,
+      "w": 60,
+      "h": 12,
+      "oneWay": true,
+      "subType": "cracking_ice"
+    },
+    {
+      "x": 5020,
+      "y": 184,
+      "w": 70,
+      "h": 14,
+      "subType": "aluminum_bridge"
+    },
+    {
+      "x": 5090,
       "y": 154,
-      "w": 50,
+      "w": 35,
       "h": 70,
       "subType": "ice_pillar"
     },
     {
-      "x": 5610,
-      "y": 116,
-      "w": 70,
-      "h": 14,
-      "oneWay": true,
-      "subType": "ice_crystal"
-    },
-    {
-      "x": 5710,
-      "y": 82,
-      "w": 60,
-      "h": 14,
-      "oneWay": true,
-      "subType": "ice_crystal"
-    },
-    {
-      "x": 5800,
-      "y": 120,
-      "w": 180,
-      "h": 32,
-      "subType": "snow_bank"
-    },
-    {
-      "x": 6010,
-      "y": 146,
-      "w": 60,
-      "h": 78,
-      "subType": "ice_pillar"
-    },
-    {
-      "x": 6100,
-      "y": 136,
-      "w": 140,
-      "h": 14,
-      "subType": "alpine_bridge"
-    },
-    {
-      "x": 6270,
-      "y": 104,
-      "w": 70,
-      "h": 14,
-      "oneWay": true,
-      "subType": "ice_crystal"
-    },
-    {
-      "x": 6370,
+      "x": 5125,
       "y": 184,
-      "w": 170,
-      "h": 36,
-      "subType": "snow_bank"
+      "w": 65,
+      "h": 14,
+      "subType": "aluminum_bridge"
     },
     {
-      "x": 6560,
+      "x": 5190,
       "y": 196,
       "w": 160,
       "h": 28,
       "subType": "snow_ground"
+    },
+    {
+      "x": 5240,
+      "y": 154,
+      "w": 75,
+      "h": 14,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 5350,
+      "y": 196,
+      "w": 190,
+      "h": 28,
+      "subType": "snow_ground"
+    },
+    {
+      "x": 5560,
+      "y": 160,
+      "w": 45,
+      "h": 64,
+      "subType": "ice_pillar"
+    },
+    {
+      "x": 5630,
+      "y": 175,
+      "w": 26,
+      "h": 26,
+      "subType": "bounce_crystal"
+    },
+    {
+      "x": 5600,
+      "y": 95,
+      "w": 70,
+      "h": 12,
+      "subType": "slippery_ice"
+    },
+    {
+      "x": 5700,
+      "y": 65,
+      "w": 60,
+      "h": 12,
+      "oneWay": true,
+      "subType": "ice_crystal"
+    },
+    {
+      "x": 5790,
+      "y": 140,
+      "w": 55,
+      "h": 12,
+      "oneWay": true,
+      "subType": "cracking_ice"
+    },
+    {
+      "x": 5865,
+      "y": 130,
+      "w": 55,
+      "h": 12,
+      "oneWay": true,
+      "subType": "cracking_ice"
+    },
+    {
+      "x": 5940,
+      "y": 140,
+      "w": 55,
+      "h": 12,
+      "oneWay": true,
+      "subType": "cracking_ice"
+    },
+    {
+      "x": 6010,
+      "y": 170,
+      "w": 85,
+      "h": 54,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 6095,
+      "y": 170,
+      "w": 130,
+      "h": 32,
+      "subType": "snow_bank"
+    },
+    {
+      "x": 6230,
+      "y": 160,
+      "w": 210,
+      "h": 14,
+      "subType": "aluminum_bridge"
+    },
+    {
+      "x": 6450,
+      "y": 196,
+      "w": 200,
+      "h": 28,
+      "subType": "snow_ground"
+    },
+    {
+      "x": 6520,
+      "y": 154,
+      "w": 80,
+      "h": 14,
+      "oneWay": true,
+      "subType": "ice_rock"
     },
     {
       "x": 6650,
       "y": 196,
-      "w": 150,
+      "w": 220,
       "h": 28,
       "subType": "snow_ground"
     },
     {
-      "x": 6830,
-      "y": 150,
-      "w": 50,
-      "h": 74,
+      "x": 6770,
+      "y": 148,
+      "w": 85,
+      "h": 14,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 6890,
+      "y": 140,
+      "w": 45,
+      "h": 84,
       "subType": "ice_pillar"
     },
     {
-      "x": 6910,
-      "y": 112,
-      "w": 70,
-      "h": 14,
-      "oneWay": true,
-      "subType": "ice_crystal"
+      "x": 6960,
+      "y": 180,
+      "w": 26,
+      "h": 26,
+      "subType": "bounce_crystal"
     },
     {
-      "x": 7010,
-      "y": 78,
-      "w": 70,
-      "h": 14,
-      "oneWay": true,
-      "subType": "ice_crystal"
+      "x": 6940,
+      "y": 85,
+      "w": 65,
+      "h": 12,
+      "subType": "slippery_ice"
+    },
+    {
+      "x": 7040,
+      "y": 110,
+      "w": 26,
+      "h": 26,
+      "subType": "bounce_crystal"
     },
     {
       "x": 7110,
-      "y": 118,
-      "w": 190,
-      "h": 32,
-      "subType": "snow_bank"
-    },
-    {
-      "x": 7330,
-      "y": 144,
-      "w": 60,
-      "h": 80,
-      "subType": "ice_pillar"
-    },
-    {
-      "x": 7420,
-      "y": 136,
-      "w": 160,
-      "h": 14,
-      "subType": "alpine_bridge"
-    },
-    {
-      "x": 7610,
-      "y": 104,
-      "w": 70,
-      "h": 14,
+      "y": 55,
+      "w": 75,
+      "h": 12,
       "oneWay": true,
       "subType": "ice_crystal"
     },
     {
-      "x": 7710,
-      "y": 184,
-      "w": 170,
+      "x": 7210,
+      "y": 196,
+      "w": 270,
       "h": 36,
       "subType": "snow_bank"
     },
     {
-      "x": 7900,
+      "x": 7250,
+      "y": 135,
+      "w": 55,
+      "h": 12,
+      "oneWay": true,
+      "subType": "cracking_ice"
+    },
+    {
+      "x": 7340,
+      "y": 115,
+      "w": 60,
+      "h": 12,
+      "oneWay": true,
+      "subType": "ice_crystal"
+    },
+    {
+      "x": 7420,
+      "y": 135,
+      "w": 55,
+      "h": 12,
+      "oneWay": true,
+      "subType": "cracking_ice"
+    },
+    {
+      "x": 7490,
+      "y": 175,
+      "w": 90,
+      "h": 14,
+      "subType": "aluminum_bridge"
+    },
+    {
+      "x": 7595,
+      "y": 155,
+      "w": 55,
+      "h": 12,
+      "oneWay": true,
+      "subType": "cracking_ice"
+    },
+    {
+      "x": 7660,
+      "y": 140,
+      "w": 95,
+      "h": 14,
+      "subType": "aluminum_bridge"
+    },
+    {
+      "x": 7765,
       "y": 196,
-      "w": 150,
+      "w": 290,
       "h": 28,
       "subType": "snow_ground"
     },
@@ -662,11 +613,27 @@ window.LEVELS[3] = {
       "subType": "snow_ground"
     },
     {
+      "x": 8130,
+      "y": 168,
+      "w": 60,
+      "h": 10,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
       "x": 8240,
       "y": 196,
       "w": 160,
       "h": 32,
       "subType": "snow_bank"
+    },
+    {
+      "x": 8270,
+      "y": 152,
+      "w": 80,
+      "h": 12,
+      "oneWay": true,
+      "subType": "ice_rock"
     },
     {
       "x": 8400,
@@ -676,10 +643,50 @@ window.LEVELS[3] = {
       "subType": "snow_ground"
     },
     {
-      "x": 8430,
-      "y": 108,
-      "w": 80,
+      "x": 8415,
+      "y": 162,
+      "w": 65,
+      "h": 10,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 8425,
+      "y": 122,
+      "w": 85,
       "h": 12,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 8440,
+      "y": 82,
+      "w": 60,
+      "h": 12,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 8485,
+      "y": 62,
+      "w": 25,
+      "h": 10,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 8535,
+      "y": 84,
+      "w": 65,
+      "h": 8,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 8630,
+      "y": 148,
+      "w": 35,
+      "h": 10,
       "oneWay": true,
       "subType": "ice_rock"
     },
@@ -699,16 +706,16 @@ window.LEVELS[3] = {
     },
     {
       "x": 49980,
-      "y": 60,
+      "y": 50,
       "w": 20,
-      "h": 140,
+      "h": 150,
       "subType": "snow_ground"
     },
     {
       "x": 50300,
-      "y": 60,
+      "y": 50,
       "w": 20,
-      "h": 140,
+      "h": 150,
       "subType": "snow_ground"
     },
     {
@@ -719,10 +726,42 @@ window.LEVELS[3] = {
       "subType": "snow_ground"
     },
     {
-      "x": 50150,
-      "y": 130,
-      "w": 100,
+      "x": 50080,
+      "y": 172,
+      "w": 45,
+      "h": 8,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 50130,
+      "y": 148,
+      "w": 45,
+      "h": 10,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 50205,
+      "y": 166,
+      "w": 55,
+      "h": 10,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 50160,
+      "y": 118,
+      "w": 105,
       "h": 12,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 50060,
+      "y": 88,
+      "w": 60,
+      "h": 8,
       "oneWay": true,
       "subType": "ice_rock"
     },
@@ -734,11 +773,27 @@ window.LEVELS[3] = {
       "subType": "snow_ground"
     },
     {
+      "x": 8880,
+      "y": 165,
+      "w": 65,
+      "h": 10,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
       "x": 8980,
       "y": 196,
       "w": 160,
       "h": 32,
       "subType": "snow_bank"
+    },
+    {
+      "x": 9015,
+      "y": 154,
+      "w": 85,
+      "h": 12,
+      "oneWay": true,
+      "subType": "ice_rock"
     },
     {
       "x": 9140,
@@ -748,10 +803,42 @@ window.LEVELS[3] = {
       "subType": "snow_ground"
     },
     {
+      "x": 9150,
+      "y": 162,
+      "w": 60,
+      "h": 10,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
       "x": 9160,
-      "y": 108,
+      "y": 122,
       "w": 80,
       "h": 12,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 9185,
+      "y": 80,
+      "w": 45,
+      "h": 10,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 9240,
+      "y": 84,
+      "w": 75,
+      "h": 8,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 9370,
+      "y": 148,
+      "w": 35,
+      "h": 10,
       "oneWay": true,
       "subType": "ice_rock"
     },
@@ -771,16 +858,16 @@ window.LEVELS[3] = {
     },
     {
       "x": 50380,
-      "y": 60,
+      "y": 50,
       "w": 20,
-      "h": 140,
+      "h": 150,
       "subType": "snow_ground"
     },
     {
       "x": 50700,
-      "y": 60,
+      "y": 50,
       "w": 20,
-      "h": 140,
+      "h": 150,
       "subType": "snow_ground"
     },
     {
@@ -791,10 +878,34 @@ window.LEVELS[3] = {
       "subType": "snow_ground"
     },
     {
-      "x": 50530,
-      "y": 130,
-      "w": 100,
+      "x": 50475,
+      "y": 166,
+      "w": 50,
+      "h": 10,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 50535,
+      "y": 148,
+      "w": 45,
+      "h": 10,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 50570,
+      "y": 116,
+      "w": 90,
       "h": 12,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 50460,
+      "y": 84,
+      "w": 65,
+      "h": 8,
       "oneWay": true,
       "subType": "ice_rock"
     },
@@ -806,11 +917,27 @@ window.LEVELS[3] = {
       "subType": "snow_ground"
     },
     {
+      "x": 9650,
+      "y": 166,
+      "w": 60,
+      "h": 10,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
       "x": 9750,
       "y": 196,
       "w": 120,
       "h": 32,
       "subType": "snow_bank"
+    },
+    {
+      "x": 9780,
+      "y": 154,
+      "w": 75,
+      "h": 12,
+      "oneWay": true,
+      "subType": "ice_rock"
     },
     {
       "x": 9870,
@@ -820,10 +947,42 @@ window.LEVELS[3] = {
       "subType": "snow_ground"
     },
     {
+      "x": 9875,
+      "y": 158,
+      "w": 55,
+      "h": 10,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
       "x": 9890,
-      "y": 108,
+      "y": 118,
       "w": 80,
       "h": 12,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 9935,
+      "y": 76,
+      "w": 35,
+      "h": 10,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 9980,
+      "y": 84,
+      "w": 75,
+      "h": 8,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 10110,
+      "y": 148,
+      "w": 35,
+      "h": 10,
       "oneWay": true,
       "subType": "ice_rock"
     },
@@ -843,16 +1002,16 @@ window.LEVELS[3] = {
     },
     {
       "x": 50780,
-      "y": 60,
+      "y": 50,
       "w": 20,
-      "h": 140,
+      "h": 150,
       "subType": "snow_ground"
     },
     {
       "x": 51100,
-      "y": 60,
+      "y": 50,
       "w": 20,
-      "h": 140,
+      "h": 150,
       "subType": "snow_ground"
     },
     {
@@ -863,10 +1022,42 @@ window.LEVELS[3] = {
       "subType": "snow_ground"
     },
     {
-      "x": 50930,
-      "y": 130,
-      "w": 100,
+      "x": 50870,
+      "y": 172,
+      "w": 45,
+      "h": 8,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 50925,
+      "y": 150,
+      "w": 50,
+      "h": 10,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 51010,
+      "y": 168,
+      "w": 40,
+      "h": 10,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 50950,
+      "y": 116,
+      "w": 95,
       "h": 12,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 50860,
+      "y": 84,
+      "w": 60,
+      "h": 8,
       "oneWay": true,
       "subType": "ice_rock"
     },
@@ -878,11 +1069,27 @@ window.LEVELS[3] = {
       "subType": "snow_ground"
     },
     {
+      "x": 10380,
+      "y": 165,
+      "w": 65,
+      "h": 10,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
       "x": 10480,
       "y": 196,
       "w": 120,
       "h": 32,
       "subType": "snow_bank"
+    },
+    {
+      "x": 10515,
+      "y": 154,
+      "w": 75,
+      "h": 12,
+      "oneWay": true,
+      "subType": "ice_rock"
     },
     {
       "x": 10600,
@@ -892,10 +1099,42 @@ window.LEVELS[3] = {
       "subType": "snow_ground"
     },
     {
-      "x": 10660,
-      "y": 108,
-      "w": 80,
+      "x": 10615,
+      "y": 158,
+      "w": 60,
+      "h": 10,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 10640,
+      "y": 120,
+      "w": 85,
       "h": 12,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 10685,
+      "y": 74,
+      "w": 40,
+      "h": 10,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 10740,
+      "y": 84,
+      "w": 80,
+      "h": 8,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 10860,
+      "y": 148,
+      "w": 35,
+      "h": 10,
       "oneWay": true,
       "subType": "ice_rock"
     },
@@ -915,16 +1154,16 @@ window.LEVELS[3] = {
     },
     {
       "x": 51180,
-      "y": 60,
+      "y": 50,
       "w": 20,
-      "h": 140,
+      "h": 150,
       "subType": "snow_ground"
     },
     {
       "x": 51500,
-      "y": 60,
+      "y": 50,
       "w": 20,
-      "h": 140,
+      "h": 150,
       "subType": "snow_ground"
     },
     {
@@ -935,10 +1174,34 @@ window.LEVELS[3] = {
       "subType": "snow_ground"
     },
     {
+      "x": 51280,
+      "y": 168,
+      "w": 45,
+      "h": 10,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 51365,
+      "y": 168,
+      "w": 45,
+      "h": 10,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
       "x": 51330,
-      "y": 130,
-      "w": 100,
+      "y": 122,
+      "w": 105,
       "h": 12,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 51240,
+      "y": 84,
+      "w": 70,
+      "h": 8,
       "oneWay": true,
       "subType": "ice_rock"
     },
@@ -950,11 +1213,27 @@ window.LEVELS[3] = {
       "subType": "snow_ground"
     },
     {
+      "x": 11130,
+      "y": 165,
+      "w": 60,
+      "h": 10,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
       "x": 11230,
       "y": 196,
       "w": 120,
       "h": 32,
       "subType": "snow_bank"
+    },
+    {
+      "x": 11255,
+      "y": 154,
+      "w": 75,
+      "h": 12,
+      "oneWay": true,
+      "subType": "ice_rock"
     },
     {
       "x": 11350,
@@ -964,10 +1243,42 @@ window.LEVELS[3] = {
       "subType": "snow_ground"
     },
     {
-      "x": 11410,
-      "y": 108,
-      "w": 80,
+      "x": 11370,
+      "y": 162,
+      "w": 55,
+      "h": 10,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 11395,
+      "y": 122,
+      "w": 85,
       "h": 12,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 11435,
+      "y": 78,
+      "w": 45,
+      "h": 10,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 11495,
+      "y": 84,
+      "w": 75,
+      "h": 8,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 11610,
+      "y": 148,
+      "w": 35,
+      "h": 10,
       "oneWay": true,
       "subType": "ice_rock"
     },
@@ -987,16 +1298,16 @@ window.LEVELS[3] = {
     },
     {
       "x": 51580,
-      "y": 60,
+      "y": 50,
       "w": 20,
-      "h": 140,
+      "h": 150,
       "subType": "snow_ground"
     },
     {
       "x": 51900,
-      "y": 60,
+      "y": 50,
       "w": 20,
-      "h": 140,
+      "h": 150,
       "subType": "snow_ground"
     },
     {
@@ -1007,10 +1318,42 @@ window.LEVELS[3] = {
       "subType": "snow_ground"
     },
     {
-      "x": 51730,
-      "y": 130,
-      "w": 100,
+      "x": 51680,
+      "y": 166,
+      "w": 50,
+      "h": 10,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 51740,
+      "y": 148,
+      "w": 45,
+      "h": 10,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 51810,
+      "y": 166,
+      "w": 50,
+      "h": 10,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 51760,
+      "y": 118,
+      "w": 90,
       "h": 12,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 51660,
+      "y": 84,
+      "w": 65,
+      "h": 8,
       "oneWay": true,
       "subType": "ice_rock"
     },
@@ -1022,11 +1365,27 @@ window.LEVELS[3] = {
       "subType": "snow_ground"
     },
     {
+      "x": 11880,
+      "y": 165,
+      "w": 65,
+      "h": 10,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
       "x": 11980,
       "y": 196,
       "w": 120,
       "h": 32,
       "subType": "snow_bank"
+    },
+    {
+      "x": 12010,
+      "y": 154,
+      "w": 80,
+      "h": 12,
+      "oneWay": true,
+      "subType": "ice_rock"
     },
     {
       "x": 12100,
@@ -1036,10 +1395,42 @@ window.LEVELS[3] = {
       "subType": "snow_ground"
     },
     {
-      "x": 12160,
-      "y": 108,
-      "w": 80,
+      "x": 12115,
+      "y": 162,
+      "w": 60,
+      "h": 10,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 12140,
+      "y": 122,
+      "w": 85,
       "h": 12,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 12185,
+      "y": 76,
+      "w": 40,
+      "h": 10,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 12240,
+      "y": 84,
+      "w": 80,
+      "h": 8,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 12360,
+      "y": 148,
+      "w": 35,
+      "h": 10,
       "oneWay": true,
       "subType": "ice_rock"
     },
@@ -1059,16 +1450,16 @@ window.LEVELS[3] = {
     },
     {
       "x": 51980,
-      "y": 60,
+      "y": 50,
       "w": 20,
-      "h": 140,
+      "h": 150,
       "subType": "snow_ground"
     },
     {
       "x": 52300,
-      "y": 60,
+      "y": 50,
       "w": 20,
-      "h": 140,
+      "h": 150,
       "subType": "snow_ground"
     },
     {
@@ -1079,10 +1470,34 @@ window.LEVELS[3] = {
       "subType": "snow_ground"
     },
     {
-      "x": 52130,
-      "y": 130,
-      "w": 100,
+      "x": 52080,
+      "y": 168,
+      "w": 45,
+      "h": 10,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 52140,
+      "y": 150,
+      "w": 50,
+      "h": 10,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 52160,
+      "y": 118,
+      "w": 90,
       "h": 12,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 52060,
+      "y": 84,
+      "w": 65,
+      "h": 8,
       "oneWay": true,
       "subType": "ice_rock"
     },
@@ -1094,11 +1509,27 @@ window.LEVELS[3] = {
       "subType": "snow_ground"
     },
     {
+      "x": 12640,
+      "y": 165,
+      "w": 65,
+      "h": 10,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
       "x": 12750,
       "y": 196,
       "w": 100,
       "h": 32,
       "subType": "snow_bank"
+    },
+    {
+      "x": 12770,
+      "y": 154,
+      "w": 75,
+      "h": 12,
+      "oneWay": true,
+      "subType": "ice_rock"
     },
     {
       "x": 12850,
@@ -1108,17 +1539,41 @@ window.LEVELS[3] = {
       "subType": "snow_ground"
     },
     {
-      "x": 12870,
-      "y": 108,
-      "w": 100,
+      "x": 12865,
+      "y": 160,
+      "w": 65,
+      "h": 10,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 12880,
+      "y": 120,
+      "w": 85,
       "h": 12,
       "oneWay": true,
       "subType": "ice_rock"
     },
     {
-      "x": 12900,
-      "y": 72,
-      "w": 40,
+      "x": 12905,
+      "y": 66,
+      "w": 35,
+      "h": 10,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 12950,
+      "y": 84,
+      "w": 85,
+      "h": 8,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 13060,
+      "y": 148,
+      "w": 35,
       "h": 10,
       "oneWay": true,
       "subType": "ice_rock"
@@ -1131,6 +1586,14 @@ window.LEVELS[3] = {
       "subType": "snow_ground"
     },
     {
+      "x": 13220,
+      "y": 124,
+      "w": 60,
+      "h": 12,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
       "x": 52400,
       "y": 196,
       "w": 300,
@@ -1139,16 +1602,16 @@ window.LEVELS[3] = {
     },
     {
       "x": 52380,
-      "y": 60,
+      "y": 50,
       "w": 20,
-      "h": 140,
+      "h": 150,
       "subType": "snow_ground"
     },
     {
       "x": 52700,
-      "y": 60,
+      "y": 50,
       "w": 20,
-      "h": 140,
+      "h": 150,
       "subType": "snow_ground"
     },
     {
@@ -1159,129 +1622,187 @@ window.LEVELS[3] = {
       "subType": "snow_ground"
     },
     {
-      "x": 52520,
-      "y": 130,
-      "w": 100,
+      "x": 52480,
+      "y": 170,
+      "w": 45,
+      "h": 10,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 52540,
+      "y": 152,
+      "w": 55,
+      "h": 10,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 52570,
+      "y": 116,
+      "w": 90,
       "h": 12,
+      "oneWay": true,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 52460,
+      "y": 82,
+      "w": 65,
+      "h": 8,
       "oneWay": true,
       "subType": "ice_rock"
     },
     {
       "x": 13300,
       "y": 196,
-      "w": 240,
-      "h": 28,
-      "subType": "snow_ground"
-    },
-    {
-      "x": 13380,
-      "y": 156,
-      "w": 70,
-      "h": 14,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 13460,
-      "y": 124,
-      "w": 60,
-      "h": 12,
-      "subType": "slippery_ice"
-    },
-    {
-      "x": 13540,
-      "y": 196,
       "w": 200,
       "h": 28,
       "subType": "snow_ground"
     },
     {
-      "x": 13620,
+      "x": 13380,
       "y": 154,
       "w": 75,
       "h": 14,
       "subType": "ice_rock"
     },
     {
-      "x": 13780,
-      "y": 124,
+      "x": 13460,
+      "y": 120,
       "w": 80,
+      "h": 12,
+      "subType": "alpine_bridge"
+    },
+    {
+      "x": 13480,
+      "y": 196,
+      "w": 180,
+      "h": 28,
+      "subType": "slippery_ice"
+    },
+    {
+      "x": 13640,
+      "y": 196,
+      "w": 170,
+      "h": 28,
+      "subType": "snow_ground"
+    },
+    {
+      "x": 13730,
+      "y": 196,
+      "w": 90,
+      "h": 32,
+      "subType": "snow_bank"
+    },
+    {
+      "x": 13740,
+      "y": 152,
+      "w": 65,
       "h": 14,
-      "oneWay": true,
       "subType": "ice_rock"
     },
     {
-      "x": 13820,
-      "y": 88,
+      "x": 13790,
+      "y": 114,
       "w": 55,
       "h": 12,
       "subType": "slippery_ice"
     },
     {
-      "x": 13900,
-      "y": 180,
-      "w": 70,
-      "h": 14,
-      "subType": "ice_rock"
+      "x": 13825,
+      "y": 82,
+      "w": 45,
+      "h": 12,
+      "subType": "ice_crystal"
     },
     {
-      "x": 13950,
-      "y": 144,
+      "x": 13880,
+      "y": 182,
+      "w": 80,
+      "h": 16,
+      "subType": "ice_rock",
+      "moving": true,
+      "minX": 13860,
+      "maxX": 13970,
+      "speed": 42
+    },
+    {
+      "x": 13940,
+      "y": 140,
       "w": 65,
       "h": 14,
       "subType": "ice_rock"
     },
     {
-      "x": 14000,
-      "y": 168,
-      "w": 70,
-      "h": 14,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 14040,
-      "y": 128,
+      "x": 14010,
+      "y": 116,
       "w": 60,
       "h": 12,
       "subType": "slippery_ice"
     },
     {
-      "x": 14100,
+      "x": 13990,
+      "y": 182,
+      "w": 80,
+      "h": 14,
+      "subType": "cracking_ice"
+    },
+    {
+      "x": 14080,
       "y": 196,
-      "w": 350,
+      "w": 340,
       "h": 28,
       "subType": "snow_ground"
     },
     {
-      "x": 14220,
+      "x": 14200,
       "y": 154,
       "w": 75,
       "h": 14,
       "subType": "ice_rock"
     },
     {
-      "x": 14320,
-      "y": 120,
-      "w": 65,
-      "h": 12,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 14550,
-      "y": 148,
-      "w": 100,
-      "h": 14,
-      "oneWay": true,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 14610,
-      "y": 110,
-      "w": 60,
+      "x": 14300,
+      "y": 118,
+      "w": 70,
       "h": 12,
       "subType": "slippery_ice"
     },
     {
-      "x": 14700,
+      "x": 14440,
+      "y": 180,
+      "w": 80,
+      "h": 16,
+      "subType": "ice_rock",
+      "moving": true,
+      "minX": 14430,
+      "maxX": 14550,
+      "speed": 44
+    },
+    {
+      "x": 14540,
+      "y": 144,
+      "w": 65,
+      "h": 14,
+      "subType": "cracking_ice"
+    },
+    {
+      "x": 14610,
+      "y": 154,
+      "w": 24,
+      "h": 24,
+      "subType": "bounce_crystal"
+    },
+    {
+      "x": 14650,
+      "y": 116,
+      "w": 65,
+      "h": 12,
+      "subType": "ice_crystal"
+    },
+    {
+      "x": 14720,
       "y": 196,
       "w": 420,
       "h": 28,
@@ -1289,413 +1810,449 @@ window.LEVELS[3] = {
     },
     {
       "x": 14840,
-      "y": 156,
-      "w": 80,
-      "h": 14,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 14980,
-      "y": 126,
-      "w": 70,
-      "h": 12,
-      "subType": "slippery_ice"
-    },
-    {
-      "x": 15120,
-      "y": 196,
-      "w": 140,
-      "h": 32,
-      "subType": "snow_bank"
-    },
-    {
-      "x": 15190,
-      "y": 150,
-      "w": 65,
-      "h": 14,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 15260,
-      "y": 196,
-      "w": 240,
-      "h": 28,
-      "subType": "slippery_ice"
-    },
-    {
-      "x": 15360,
       "y": 154,
-      "w": 70,
-      "h": 14,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 15500,
-      "y": 196,
-      "w": 150,
-      "h": 28,
-      "subType": "snow_ground"
-    },
-    {
-      "x": 15560,
-      "y": 156,
-      "w": 60,
-      "h": 14,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 15650,
-      "y": 196,
-      "w": 400,
-      "h": 28,
-      "subType": "snow_ground"
-    },
-    {
-      "x": 15750,
-      "y": 156,
       "w": 75,
       "h": 14,
       "subType": "ice_rock"
     },
     {
-      "x": 15850,
-      "y": 124,
-      "w": 65,
-      "h": 12,
-      "subType": "slippery_ice"
-    },
-    {
-      "x": 16080,
-      "y": 176,
-      "w": 70,
-      "h": 14,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 16140,
-      "y": 140,
-      "w": 60,
-      "h": 12,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 16180,
-      "y": 168,
+      "x": 14940,
+      "y": 118,
       "w": 80,
-      "h": 14,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 16240,
-      "y": 130,
-      "w": 65,
       "h": 12,
       "subType": "slippery_ice"
     },
     {
-      "x": 16280,
-      "y": 140,
-      "w": 100,
-      "h": 14,
-      "oneWay": true,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 16340,
-      "y": 100,
-      "w": 60,
-      "h": 12,
-      "subType": "slippery_ice"
-    },
-    {
-      "x": 16400,
-      "y": 168,
-      "w": 70,
-      "h": 14,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 16480,
+      "x": 15040,
       "y": 152,
       "w": 70,
       "h": 14,
       "subType": "ice_rock"
     },
     {
-      "x": 16580,
+      "x": 15140,
       "y": 196,
-      "w": 270,
-      "h": 28,
-      "subType": "snow_ground"
-    },
-    {
-      "x": 16680,
-      "y": 154,
-      "w": 75,
-      "h": 14,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 16780,
-      "y": 120,
-      "w": 65,
-      "h": 12,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 16850,
-      "y": 196,
-      "w": 300,
-      "h": 28,
-      "subType": "snow_ground"
-    },
-    {
-      "x": 16930,
-      "y": 120,
-      "w": 100,
-      "h": 14,
-      "oneWay": true,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 17040,
-      "y": 88,
-      "w": 60,
-      "h": 12,
-      "subType": "slippery_ice"
-    },
-    {
-      "x": 17150,
-      "y": 196,
-      "w": 350,
-      "h": 28,
-      "subType": "slippery_ice"
-    },
-    {
-      "x": 17280,
-      "y": 156,
-      "w": 75,
-      "h": 14,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 17400,
-      "y": 124,
-      "w": 65,
-      "h": 12,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 17500,
-      "y": 196,
-      "w": 200,
+      "w": 180,
       "h": 32,
       "subType": "snow_bank"
     },
     {
-      "x": 17580,
+      "x": 15180,
+      "y": 142,
+      "w": 75,
+      "h": 14,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 15330,
+      "y": 172,
+      "w": 80,
+      "h": 14,
+      "subType": "cracking_ice"
+    },
+    {
+      "x": 15410,
+      "y": 196,
+      "w": 240,
+      "h": 28,
+      "subType": "slippery_ice"
+    },
+    {
+      "x": 15490,
       "y": 150,
       "w": 70,
       "h": 14,
       "subType": "ice_rock"
     },
     {
-      "x": 17700,
+      "x": 15560,
+      "y": 118,
+      "w": 60,
+      "h": 12,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 15650,
       "y": 196,
-      "w": 300,
+      "w": 220,
       "h": 28,
       "subType": "snow_ground"
     },
     {
-      "x": 17820,
-      "y": 154,
-      "w": 80,
+      "x": 15750,
+      "y": 152,
+      "w": 75,
       "h": 14,
       "subType": "ice_rock"
     },
     {
-      "x": 17920,
-      "y": 120,
+      "x": 15840,
+      "y": 118,
+      "w": 65,
+      "h": 12,
+      "subType": "slippery_ice"
+    },
+    {
+      "x": 15870,
+      "y": 196,
+      "w": 150,
+      "h": 28,
+      "subType": "snow_ground"
+    },
+    {
+      "x": 16030,
+      "y": 176,
       "w": 70,
       "h": 14,
+      "subType": "cracking_ice"
+    },
+    {
+      "x": 16090,
+      "y": 136,
+      "w": 65,
+      "h": 14,
       "subType": "ice_rock"
     },
     {
-      "x": 18000,
+      "x": 16180,
+      "y": 178,
+      "w": 95,
+      "h": 16,
+      "subType": "ice_rock",
+      "moving": true,
+      "minX": 16160,
+      "maxX": 16320,
+      "speed": 46
+    },
+    {
+      "x": 16270,
+      "y": 128,
+      "w": 24,
+      "h": 24,
+      "subType": "bounce_crystal"
+    },
+    {
+      "x": 16310,
+      "y": 96,
+      "w": 65,
+      "h": 12,
+      "subType": "ice_crystal"
+    },
+    {
+      "x": 16380,
+      "y": 168,
+      "w": 75,
+      "h": 14,
+      "subType": "cracking_ice"
+    },
+    {
+      "x": 16460,
       "y": 196,
       "w": 320,
       "h": 28,
       "subType": "snow_ground"
     },
     {
-      "x": 18120,
-      "y": 160,
+      "x": 16560,
+      "y": 154,
       "w": 75,
       "h": 14,
       "subType": "ice_rock"
     },
     {
-      "x": 18240,
-      "y": 130,
+      "x": 16660,
+      "y": 120,
       "w": 65,
       "h": 12,
       "subType": "slippery_ice"
     },
     {
-      "x": 18360,
-      "y": 168,
-      "w": 90,
-      "h": 20,
-      "subType": "ice_rock"
+      "x": 16780,
+      "y": 196,
+      "w": 460,
+      "h": 28,
+      "subType": "snow_ground"
     },
     {
-      "x": 18420,
-      "y": 140,
-      "w": 70,
+      "x": 16920,
+      "y": 144,
+      "w": 24,
+      "h": 24,
+      "subType": "bounce_crystal"
+    },
+    {
+      "x": 16940,
+      "y": 92,
+      "w": 85,
+      "h": 14,
+      "subType": "ice_crystal"
+    },
+    {
+      "x": 17240,
+      "y": 196,
+      "w": 250,
+      "h": 28,
+      "subType": "slippery_ice"
+    },
+    {
+      "x": 17350,
+      "y": 152,
+      "w": 75,
       "h": 14,
       "subType": "ice_rock"
     },
     {
-      "x": 18490,
-      "y": 136,
-      "w": 100,
-      "h": 20,
+      "x": 17450,
+      "y": 120,
+      "w": 70,
+      "h": 12,
       "subType": "ice_rock"
     },
     {
-      "x": 18560,
+      "x": 17520,
+      "y": 176,
+      "w": 80,
+      "h": 16,
+      "subType": "ice_rock",
+      "moving": true,
+      "minX": 17500,
+      "maxX": 17620,
+      "speed": 45
+    },
+    {
+      "x": 17610,
+      "y": 140,
+      "w": 70,
+      "h": 14,
+      "subType": "cracking_ice"
+    },
+    {
+      "x": 17670,
+      "y": 196,
+      "w": 180,
+      "h": 32,
+      "subType": "snow_bank"
+    },
+    {
+      "x": 17780,
+      "y": 164,
+      "w": 80,
+      "h": 16,
+      "subType": "snow_ground"
+    },
+    {
+      "x": 17850,
+      "y": 136,
+      "w": 80,
+      "h": 16,
+      "subType": "snow_ground"
+    },
+    {
+      "x": 17920,
+      "y": 108,
+      "w": 90,
+      "h": 16,
+      "subType": "snow_ground"
+    },
+    {
+      "x": 18000,
+      "y": 196,
+      "w": 300,
+      "h": 28,
+      "subType": "snow_ground"
+    },
+    {
+      "x": 18200,
+      "y": 160,
+      "w": 90,
+      "h": 14,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 18320,
+      "y": 154,
+      "w": 75,
+      "h": 16,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 18320,
+      "y": 94,
+      "w": 50,
+      "h": 14,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 18370,
+      "y": 90,
+      "w": 30,
+      "h": 56,
+      "subType": "ice_pillar",
+      "breakable": true
+    },
+    {
+      "x": 18420,
+      "y": 130,
+      "w": 70,
+      "h": 14,
+      "subType": "cracking_ice"
+    },
+    {
+      "x": 18510,
       "y": 112,
-      "w": 65,
-      "h": 12,
+      "w": 80,
+      "h": 16,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 18610,
+      "y": 136,
+      "w": 80,
+      "h": 16,
       "subType": "slippery_ice"
     },
     {
-      "x": 18630,
+      "x": 18680,
       "y": 108,
-      "w": 80,
-      "h": 20,
+      "w": 60,
+      "h": 16,
       "subType": "ice_rock"
     },
     {
       "x": 18740,
       "y": 108,
-      "w": 160,
+      "w": 180,
       "h": 10,
       "oneWay": true,
       "subType": "aluminum_bridge"
     },
     {
-      "x": 18840,
-      "y": 76,
-      "w": 65,
-      "h": 12,
-      "subType": "ice_rock"
+      "x": 18815,
+      "y": 160,
+      "w": 26,
+      "h": 22,
+      "subType": "bounce_crystal"
     },
     {
-      "x": 18930,
+      "x": 18920,
       "y": 136,
-      "w": 380,
+      "w": 400,
       "h": 28,
       "subType": "snow_ground"
     },
     {
-      "x": 19040,
-      "y": 98,
-      "w": 75,
-      "h": 14,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 19160,
-      "y": 70,
-      "w": 65,
-      "h": 12,
-      "subType": "slippery_ice"
-    },
-    {
       "x": 19340,
-      "y": 168,
-      "w": 380,
-      "h": 32,
-      "subType": "snow_bank"
+      "y": 156,
+      "w": 160,
+      "h": 24,
+      "subType": "snow_ground"
+    },
+    {
+      "x": 19420,
+      "y": 96,
+      "w": 120,
+      "h": 16,
+      "subType": "ice_rock"
     },
     {
       "x": 19480,
-      "y": 124,
-      "w": 70,
-      "h": 14,
-      "subType": "ice_rock"
+      "y": 64,
+      "w": 28,
+      "h": 32,
+      "subType": "ice_pillar",
+      "breakable": true
     },
     {
-      "x": 19620,
-      "y": 98,
+      "x": 19505,
+      "y": 136,
       "w": 65,
-      "h": 12,
+      "h": 14,
+      "subType": "cracking_ice"
+    },
+    {
+      "x": 19580,
+      "y": 120,
+      "w": 80,
+      "h": 16,
       "subType": "slippery_ice"
+    },
+    {
+      "x": 19670,
+      "y": 140,
+      "w": 80,
+      "h": 20,
+      "subType": "snow_ground"
     },
     {
       "x": 19760,
-      "y": 136,
-      "w": 90,
+      "y": 144,
+      "w": 75,
       "h": 18,
       "subType": "ice_rock"
     },
     {
-      "x": 19820,
-      "y": 116,
+      "x": 19840,
+      "y": 120,
       "w": 60,
-      "h": 12,
-      "subType": "slippery_ice"
-    },
-    {
-      "x": 19890,
-      "y": 104,
-      "w": 90,
-      "h": 18,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 19960,
-      "y": 86,
-      "w": 65,
-      "h": 12,
-      "subType": "slippery_ice"
-    },
-    {
-      "x": 20020,
-      "y": 74,
-      "w": 100,
-      "h": 18,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 20140,
-      "y": 46,
-      "w": 50,
       "h": 14,
+      "subType": "slippery_ice"
+    },
+    {
+      "x": 19910,
+      "y": 130,
+      "w": 26,
+      "h": 22,
+      "subType": "bounce_crystal"
+    },
+    {
+      "x": 19930,
+      "y": 88,
+      "w": 85,
+      "h": 16,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 20030,
+      "y": 72,
+      "w": 60,
+      "h": 14,
+      "subType": "cracking_ice"
+    },
+    {
+      "x": 20100,
+      "y": 58,
+      "w": 85,
+      "h": 16,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 20170,
+      "y": 32,
+      "w": 55,
+      "h": 12,
       "oneWay": true,
       "subType": "ice_rock"
     },
     {
-      "x": 20220,
+      "x": 20240,
       "y": 74,
-      "w": 360,
+      "w": 340,
       "h": 28,
       "subType": "snow_ground"
-    },
-    {
-      "x": 20340,
-      "y": 44,
-      "w": 70,
-      "h": 12,
-      "subType": "slippery_ice"
     },
     {
       "x": 20600,
       "y": 96,
-      "w": 160,
-      "h": 28,
+      "w": 80,
+      "h": 24,
       "subType": "snow_ground"
+    },
+    {
+      "x": 20680,
+      "y": 116,
+      "w": 80,
+      "h": 22,
+      "subType": "slippery_ice"
     },
     {
       "x": 20750,
@@ -1705,277 +2262,301 @@ window.LEVELS[3] = {
       "subType": "snow_ground"
     },
     {
-      "x": 20880,
-      "y": 98,
-      "w": 75,
-      "h": 14,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 21010,
-      "y": 72,
-      "w": 65,
-      "h": 12,
-      "subType": "slippery_ice"
-    },
-    {
       "x": 21200,
-      "y": 168,
-      "w": 200,
-      "h": 32,
-      "subType": "snow_bank"
-    },
-    {
-      "x": 21280,
-      "y": 126,
-      "w": 70,
-      "h": 14,
+      "y": 140,
+      "w": 75,
+      "h": 16,
       "subType": "ice_rock"
     },
     {
-      "x": 21420,
-      "y": 126,
-      "w": 90,
-      "h": 18,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 21540,
-      "y": 104,
-      "w": 90,
-      "h": 18,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 21620,
-      "y": 76,
-      "w": 60,
-      "h": 12,
-      "subType": "slippery_ice"
-    },
-    {
-      "x": 21680,
-      "y": 116,
-      "w": 180,
-      "h": 20,
-      "subType": "slippery_ice"
-    },
-    {
-      "x": 21880,
-      "y": 136,
-      "w": 140,
-      "h": 22,
-      "subType": "snow_ground"
-    },
-    {
-      "x": 21960,
-      "y": 100,
+      "x": 21285,
+      "y": 122,
       "w": 65,
       "h": 14,
+      "subType": "cracking_ice"
+    },
+    {
+      "x": 21360,
+      "y": 106,
+      "w": 85,
+      "h": 16,
       "subType": "ice_rock"
     },
     {
-      "x": 22040,
-      "y": 118,
-      "w": 80,
-      "h": 18,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 22130,
-      "y": 126,
-      "w": 80,
-      "h": 18,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 22200,
-      "y": 118,
-      "w": 60,
-      "h": 14,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 22260,
-      "y": 112,
-      "w": 80,
-      "h": 18,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 22330,
-      "y": 104,
-      "w": 60,
-      "h": 14,
-      "subType": "slippery_ice"
-    },
-    {
-      "x": 22400,
-      "y": 96,
+      "x": 21460,
+      "y": 156,
       "w": 90,
       "h": 16,
       "subType": "ice_rock"
     },
     {
-      "x": 22470,
-      "y": 80,
-      "w": 60,
-      "h": 12,
+      "x": 21480,
+      "y": 124,
+      "w": 30,
+      "h": 32,
+      "subType": "ice_pillar",
+      "breakable": true
+    },
+    {
+      "x": 21565,
+      "y": 148,
+      "w": 24,
+      "h": 20,
+      "subType": "bounce_crystal"
+    },
+    {
+      "x": 21460,
+      "y": 88,
+      "w": 80,
+      "h": 16,
       "subType": "slippery_ice"
     },
     {
-      "x": 22530,
-      "y": 96,
+      "x": 21550,
+      "y": 76,
+      "w": 85,
+      "h": 16,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 21645,
+      "y": 92,
+      "w": 75,
+      "h": 16,
+      "subType": "cracking_ice"
+    },
+    {
+      "x": 21730,
+      "y": 110,
       "w": 120,
+      "h": 20,
+      "subType": "snow_ground"
+    },
+    {
+      "x": 21860,
+      "y": 130,
+      "w": 75,
+      "h": 16,
+      "subType": "slippery_ice"
+    },
+    {
+      "x": 21945,
+      "y": 116,
+      "w": 70,
+      "h": 14,
+      "subType": "cracking_ice"
+    },
+    {
+      "x": 22025,
+      "y": 104,
+      "w": 80,
+      "h": 18,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 22110,
+      "y": 134,
+      "w": 75,
+      "h": 20,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 22190,
+      "y": 112,
+      "w": 60,
+      "h": 14,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 22255,
+      "y": 120,
+      "w": 26,
+      "h": 22,
+      "subType": "bounce_crystal"
+    },
+    {
+      "x": 22285,
+      "y": 78,
+      "w": 75,
+      "h": 16,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 22370,
+      "y": 64,
+      "w": 65,
+      "h": 14,
+      "subType": "cracking_ice"
+    },
+    {
+      "x": 22445,
+      "y": 52,
+      "w": 85,
+      "h": 16,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 22475,
+      "y": 22,
+      "w": 28,
+      "h": 30,
+      "subType": "ice_pillar",
+      "breakable": true
+    },
+    {
+      "x": 22540,
+      "y": 80,
+      "w": 85,
+      "h": 18,
+      "subType": "slippery_ice"
+    },
+    {
+      "x": 22650,
+      "y": 92,
+      "w": 100,
       "h": 22,
       "subType": "snow_ground"
     },
     {
-      "x": 22610,
-      "y": 74,
-      "w": 65,
-      "h": 12,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 22680,
+      "x": 22760,
       "y": 98,
-      "w": 820,
+      "w": 680,
       "h": 32,
       "subType": "snow_ground"
     },
     {
-      "x": 22800,
-      "y": 64,
-      "w": 75,
-      "h": 14,
-      "subType": "ice_rock"
+      "x": 23440,
+      "y": 104,
+      "w": 180,
+      "h": 26,
+      "subType": "snow_ground"
     },
     {
-      "x": 22920,
-      "y": 44,
-      "w": 65,
-      "h": 12,
-      "subType": "slippery_ice"
-    },
-    {
-      "x": 23140,
-      "y": 62,
-      "w": 70,
-      "h": 14,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 23320,
-      "y": 50,
-      "w": 65,
-      "h": 12,
-      "subType": "slippery_ice"
-    },
-    {
-      "x": 23500,
-      "y": 98,
-      "w": 300,
-      "h": 32,
+      "x": 23620,
+      "y": 108,
+      "w": 180,
+      "h": 28,
       "subType": "snow_ground"
     },
     {
       "x": 23800,
       "y": 110,
-      "w": 220,
+      "w": 230,
       "h": 28,
       "subType": "snow_ground"
     },
     {
       "x": 23880,
-      "y": 78,
-      "w": 70,
+      "y": 76,
+      "w": 80,
       "h": 14,
-      "subType": "ice_rock"
+      "subType": "ice_rock",
+      "oneWay": true
     },
     {
       "x": 23960,
-      "y": 52,
-      "w": 60,
+      "y": 50,
+      "w": 75,
       "h": 12,
-      "subType": "slippery_ice"
+      "subType": "slippery_ice",
+      "oneWay": true
     },
     {
       "x": 24020,
       "y": 126,
+      "w": 280,
+      "h": 28,
+      "subType": "snow_ground"
+    },
+    {
+      "x": 24150,
+      "y": 88,
+      "w": 80,
+      "h": 14,
+      "subType": "ice_rock",
+      "oneWay": true
+    },
+    {
+      "x": 24290,
+      "y": 114,
+      "w": 140,
+      "h": 20,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 24280,
+      "y": 38,
+      "w": 320,
+      "h": 16,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 24350,
+      "y": 72,
+      "w": 80,
+      "h": 12,
+      "subType": "slippery_ice",
+      "oneWay": true
+    },
+    {
+      "x": 24420,
+      "y": 94,
+      "w": 42,
+      "h": 60,
+      "subType": "ice_pillar",
+      "breakable": true
+    },
+    {
+      "x": 24340,
+      "y": 154,
       "w": 260,
       "h": 28,
       "subType": "snow_ground"
     },
     {
-      "x": 24140,
-      "y": 88,
-      "w": 75,
+      "x": 24520,
+      "y": 120,
+      "w": 70,
       "h": 14,
-      "subType": "ice_rock"
+      "subType": "ice_rock",
+      "oneWay": true
     },
     {
-      "x": 24280,
-      "y": 104,
-      "w": 140,
+      "x": 24600,
+      "y": 162,
+      "w": 360,
+      "h": 26,
+      "subType": "snow_ground"
+    },
+    {
+      "x": 24620,
+      "y": 134,
+      "w": 100,
       "h": 18,
       "subType": "ice_rock"
     },
     {
-      "x": 24350,
-      "y": 68,
-      "w": 60,
-      "h": 12,
-      "subType": "slippery_ice"
-    },
-    {
-      "x": 24420,
+      "x": 24690,
       "y": 104,
-      "w": 40,
-      "h": 48,
-      "subType": "ice_pillar"
-    },
-    {
-      "x": 24340,
-      "y": 168,
-      "w": 280,
-      "h": 32,
-      "subType": "snow_bank"
-    },
-    {
-      "x": 24490,
-      "y": 124,
-      "w": 65,
+      "w": 75,
       "h": 14,
-      "subType": "ice_rock"
+      "subType": "slippery_ice",
+      "oneWay": true
     },
     {
-      "x": 24620,
-      "y": 136,
-      "w": 90,
-      "h": 16,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 24680,
-      "y": 106,
-      "w": 60,
-      "h": 12,
-      "subType": "slippery_ice"
-    },
-    {
-      "x": 24740,
-      "y": 112,
+      "x": 24750,
+      "y": 110,
       "w": 110,
       "h": 16,
       "subType": "slippery_ice"
     },
     {
-      "x": 24810,
-      "y": 78,
-      "w": 65,
+      "x": 24820,
+      "y": 72,
+      "w": 70,
       "h": 12,
-      "subType": "ice_rock"
+      "subType": "ice_rock",
+      "oneWay": true
     },
     {
       "x": 24880,
@@ -1985,1068 +2566,1040 @@ window.LEVELS[3] = {
       "subType": "ice_rock"
     },
     {
-      "x": 24970,
+      "x": 24960,
       "y": 124,
-      "w": 280,
+      "w": 300,
       "h": 28,
       "subType": "snow_ground"
     },
     {
-      "x": 25090,
-      "y": 88,
-      "w": 75,
+      "x": 25080,
+      "y": 86,
+      "w": 80,
       "h": 14,
-      "subType": "ice_rock"
+      "subType": "ice_rock",
+      "oneWay": true
     },
     {
-      "x": 25190,
+      "x": 25180,
       "y": 60,
-      "w": 60,
+      "w": 70,
       "h": 12,
-      "subType": "slippery_ice"
+      "subType": "slippery_ice",
+      "oneWay": true
     },
     {
       "x": 25250,
       "y": 124,
-      "w": 120,
+      "w": 140,
       "h": 28,
       "subType": "snow_ground"
     },
     {
       "x": 25330,
-      "y": 92,
-      "w": 60,
+      "y": 90,
+      "w": 70,
       "h": 14,
-      "subType": "ice_rock"
+      "subType": "ice_rock",
+      "oneWay": true
     },
     {
       "x": 25410,
-      "y": 136,
-      "w": 44,
-      "h": 64,
-      "subType": "ice_pillar"
+      "y": 130,
+      "w": 130,
+      "h": 26,
+      "subType": "snow_ground"
     },
     {
-      "x": 25470,
-      "y": 96,
-      "w": 90,
-      "h": 18,
-      "subType": "ice_rock"
+      "x": 25480,
+      "y": 88,
+      "w": 80,
+      "h": 14,
+      "subType": "ice_rock",
+      "oneWay": true
     },
     {
       "x": 25520,
-      "y": 64,
-      "w": 60,
+      "y": 58,
+      "w": 65,
       "h": 12,
-      "subType": "slippery_ice"
+      "subType": "slippery_ice",
+      "oneWay": true
     },
     {
-      "x": 25580,
-      "y": 114,
-      "w": 120,
+      "x": 25570,
+      "y": 112,
+      "w": 160,
       "h": 14,
       "subType": "slippery_ice"
     },
     {
-      "x": 25640,
-      "y": 78,
-      "w": 65,
-      "h": 12,
-      "subType": "ice_rock"
+      "x": 25680,
+      "y": 80,
+      "w": 70,
+      "h": 14,
+      "subType": "ice_rock",
+      "oneWay": true
     },
     {
-      "x": 25715,
-      "y": 128,
-      "w": 50,
-      "h": 72,
-      "subType": "ice_pillar"
-    },
-    {
-      "x": 25755,
-      "y": 104,
-      "w": 75,
-      "h": 18,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 25790,
-      "y": 68,
-      "w": 60,
-      "h": 12,
-      "subType": "slippery_ice"
-    },
-    {
-      "x": 25840,
+      "x": 25770,
       "y": 126,
-      "w": 200,
+      "w": 280,
       "h": 28,
       "subType": "snow_ground"
     },
     {
-      "x": 25930,
+      "x": 25870,
       "y": 88,
-      "w": 70,
+      "w": 75,
       "h": 14,
-      "subType": "ice_rock"
+      "subType": "ice_rock",
+      "oneWay": true
     },
     {
       "x": 26050,
-      "y": 156,
+      "y": 104,
+      "w": 42,
+      "h": 56,
+      "subType": "ice_pillar",
+      "breakable": true
+    },
+    {
+      "x": 26040,
+      "y": 154,
       "w": 160,
       "h": 24,
-      "subType": "snow_bank"
+      "subType": "snow_ground"
     },
     {
-      "x": 26140,
-      "y": 112,
-      "w": 65,
-      "h": 14,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 26225,
-      "y": 120,
-      "w": 75,
+      "x": 26210,
+      "y": 118,
+      "w": 85,
       "h": 20,
       "subType": "ice_rock"
     },
     {
-      "x": 26270,
-      "y": 78,
-      "w": 60,
-      "h": 12,
-      "subType": "slippery_ice"
-    },
-    {
-      "x": 26315,
-      "y": 104,
-      "w": 140,
+      "x": 26280,
+      "y": 102,
+      "w": 160,
       "h": 14,
       "subType": "slippery_ice"
     },
     {
-      "x": 26400,
-      "y": 66,
-      "w": 65,
-      "h": 12,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 26475,
-      "y": 110,
-      "w": 46,
-      "h": 54,
-      "subType": "ice_pillar"
-    },
-    {
-      "x": 26520,
+      "x": 26460,
       "y": 92,
-      "w": 80,
-      "h": 18,
-      "subType": "ice_rock"
+      "w": 42,
+      "h": 54,
+      "subType": "ice_pillar",
+      "breakable": true
+    },
+    {
+      "x": 26510,
+      "y": 114,
+      "w": 190,
+      "h": 28,
+      "subType": "snow_ground"
     },
     {
       "x": 26600,
-      "y": 110,
-      "w": 100,
-      "h": 28,
-      "subType": "snow_ground"
+      "y": 80,
+      "w": 80,
+      "h": 14,
+      "subType": "ice_rock",
+      "oneWay": true
     },
     {
       "x": 26700,
       "y": 110,
-      "w": 160,
+      "w": 170,
       "h": 28,
       "subType": "snow_ground"
     },
     {
-      "x": 26780,
+      "x": 26790,
       "y": 78,
+      "w": 75,
+      "h": 14,
+      "subType": "ice_rock",
+      "oneWay": true
+    },
+    {
+      "x": 26880,
+      "y": 116,
+      "w": 150,
+      "h": 24,
+      "subType": "snow_ground"
+    },
+    {
+      "x": 26970,
+      "y": 76,
+      "w": 80,
+      "h": 16,
+      "subType": "ice_rock",
+      "oneWay": true
+    },
+    {
+      "x": 27030,
+      "y": 52,
       "w": 65,
-      "h": 14,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 26890,
-      "y": 126,
-      "w": 46,
-      "h": 64,
-      "subType": "ice_pillar"
-    },
-    {
-      "x": 26960,
-      "y": 96,
-      "w": 140,
-      "h": 18,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 27020,
-      "y": 64,
-      "w": 60,
       "h": 12,
-      "subType": "slippery_ice"
+      "subType": "slippery_ice",
+      "oneWay": true
     },
     {
-      "x": 27130,
-      "y": 114,
-      "w": 140,
+      "x": 27110,
+      "y": 112,
+      "w": 150,
       "h": 14,
       "subType": "slippery_ice"
     },
     {
-      "x": 27200,
-      "y": 80,
-      "w": 70,
+      "x": 27210,
+      "y": 78,
+      "w": 75,
       "h": 14,
-      "subType": "ice_rock"
+      "subType": "ice_rock",
+      "oneWay": true
     },
     {
-      "x": 27300,
+      "x": 27290,
       "y": 126,
-      "w": 300,
+      "w": 340,
       "h": 30,
       "subType": "snow_ground"
+    },
+    {
+      "x": 27320,
+      "y": 44,
+      "w": 280,
+      "h": 16,
+      "subType": "ice_rock"
     },
     {
       "x": 27390,
       "y": 84,
       "w": 75,
       "h": 14,
-      "subType": "ice_rock"
+      "subType": "ice_rock",
+      "oneWay": true
     },
     {
-      "x": 27480,
-      "y": 56,
-      "w": 60,
-      "h": 12,
-      "subType": "slippery_ice"
-    },
-    {
-      "x": 27620,
-      "y": 156,
-      "w": 170,
-      "h": 26,
-      "subType": "snow_bank"
-    },
-    {
-      "x": 27690,
-      "y": 112,
+      "x": 27490,
+      "y": 64,
       "w": 65,
-      "h": 14,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 27820,
-      "y": 110,
-      "w": 46,
-      "h": 56,
-      "subType": "ice_pillar"
-    },
-    {
-      "x": 27900,
-      "y": 88,
-      "w": 130,
-      "h": 18,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 27960,
-      "y": 54,
-      "w": 55,
       "h": 12,
-      "subType": "slippery_ice"
+      "subType": "slippery_ice",
+      "oneWay": true
     },
     {
-      "x": 28050,
-      "y": 104,
-      "w": 100,
+      "x": 27640,
+      "y": 148,
+      "w": 220,
+      "h": 26,
+      "subType": "snow_ground"
+    },
+    {
+      "x": 27680,
+      "y": 102,
+      "w": 46,
+      "h": 64,
+      "subType": "ice_pillar",
+      "breakable": true
+    },
+    {
+      "x": 27780,
+      "y": 112,
+      "w": 75,
       "h": 14,
+      "subType": "ice_rock",
+      "oneWay": true
+    },
+    {
+      "x": 27860,
+      "y": 110,
+      "w": 150,
+      "h": 24,
+      "subType": "snow_ground"
+    },
+    {
+      "x": 27940,
+      "y": 68,
+      "w": 75,
+      "h": 14,
+      "subType": "ice_rock",
+      "oneWay": true
+    },
+    {
+      "x": 28030,
+      "y": 110,
+      "w": 120,
+      "h": 16,
       "subType": "slippery_ice"
     },
     {
       "x": 28150,
-      "y": 110,
-      "w": 180,
-      "h": 28,
+      "y": 118,
+      "w": 220,
+      "h": 26,
       "subType": "snow_ground"
     },
     {
-      "x": 28220,
-      "y": 78,
-      "w": 65,
+      "x": 28240,
+      "y": 84,
+      "w": 75,
       "h": 14,
-      "subType": "ice_rock"
+      "subType": "ice_rock",
+      "oneWay": true
     },
     {
-      "x": 28350,
-      "y": 94,
+      "x": 28360,
+      "y": 92,
       "w": 42,
       "h": 54,
-      "subType": "ice_pillar"
+      "subType": "ice_pillar",
+      "breakable": true
     },
     {
       "x": 28410,
-      "y": 100,
-      "w": 90,
-      "h": 18,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 28460,
-      "y": 68,
-      "w": 60,
-      "h": 12,
-      "subType": "slippery_ice"
-    },
-    {
-      "x": 28520,
-      "y": 116,
-      "w": 110,
-      "h": 14,
-      "subType": "slippery_ice"
-    },
-    {
-      "x": 28580,
-      "y": 82,
-      "w": 65,
-      "h": 12,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 28650,
-      "y": 126,
-      "w": 200,
-      "h": 30,
-      "subType": "snow_ground"
-    },
-    {
-      "x": 28860,
-      "y": 156,
-      "w": 150,
-      "h": 26,
-      "subType": "snow_bank"
-    },
-    {
-      "x": 29030,
-      "y": 118,
-      "w": 75,
-      "h": 20,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 29125,
-      "y": 104,
-      "w": 130,
-      "h": 14,
-      "subType": "slippery_ice"
-    },
-    {
-      "x": 29270,
-      "y": 126,
-      "w": 280,
-      "h": 32,
-      "subType": "snow_ground"
-    },
-    {
-      "x": 29380,
       "y": 88,
-      "w": 75,
-      "h": 14,
-      "subType": "ice_rock"
+      "w": 90,
+      "h": 16,
+      "subType": "ice_rock",
+      "oneWay": true
     },
     {
-      "x": 29480,
-      "y": 60,
-      "w": 60,
-      "h": 12,
-      "subType": "slippery_ice"
-    },
-    {
-      "x": 29550,
+      "x": 28510,
       "y": 126,
-      "w": 50,
+      "w": 130,
+      "h": 26,
+      "subType": "snow_ground"
+    },
+    {
+      "x": 28640,
+      "y": 126,
+      "w": 720,
       "h": 32,
       "subType": "snow_ground"
+    },
+    {
+      "x": 28680,
+      "y": 88,
+      "w": 85,
+      "h": 14,
+      "subType": "ice_rock",
+      "oneWay": true
+    },
+    {
+      "x": 28955,
+      "y": 64,
+      "w": 90,
+      "h": 12,
+      "subType": "slippery_ice",
+      "oneWay": true
+    },
+    {
+      "x": 29230,
+      "y": 88,
+      "w": 85,
+      "h": 14,
+      "subType": "ice_rock",
+      "oneWay": true
+    },
+    {
+      "x": 29360,
+      "y": 126,
+      "w": 240,
+      "h": 32,
+      "subType": "snow_ground"
+    },
+    {
+      "x": 29410,
+      "y": 104,
+      "w": 90,
+      "h": 22,
+      "subType": "ice_rock",
+      "oneWay": true
+    },
+    {
+      "x": 29470,
+      "y": 62,
+      "w": 60,
+      "h": 12,
+      "subType": "slippery_ice",
+      "oneWay": true
     },
     {
       "x": 29600,
       "y": 126,
-      "w": 180,
+      "w": 230,
       "h": 28,
-      "subType": "snow_ground"
+      "subType": "shambhala_marble_terrace"
     },
     {
-      "x": 29660,
-      "y": 92,
-      "w": 70,
-      "h": 14,
-      "subType": "ice_rock"
+      "x": 29670,
+      "y": 82,
+      "w": 85,
+      "h": 12,
+      "subType": "shambhala_pagoda_roof",
+      "oneWay": true
     },
     {
-      "x": 29750,
-      "y": 70,
+      "x": 29860,
+      "y": 128,
       "w": 60,
       "h": 12,
-      "subType": "slippery_ice"
+      "subType": "crystal_lotus_pad",
+      "oneWay": true
     },
     {
-      "x": 29810,
-      "y": 138,
-      "w": 46,
-      "h": 64,
-      "subType": "ice_pillar"
-    },
-    {
-      "x": 29870,
-      "y": 104,
-      "w": 90,
-      "h": 18,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 29930,
-      "y": 76,
-      "w": 60,
-      "h": 12,
-      "subType": "slippery_ice"
-    },
-    {
-      "x": 29980,
-      "y": 118,
+      "x": 29940,
+      "y": 96,
       "w": 120,
       "h": 16,
-      "subType": "ice_rock"
+      "subType": "shambhala_marble_terrace",
+      "oneWay": true
     },
     {
-      "x": 30060,
-      "y": 84,
+      "x": 29970,
+      "y": 60,
       "w": 75,
-      "h": 14,
-      "subType": "ice_rock"
+      "h": 12,
+      "subType": "shambhala_pagoda_roof",
+      "oneWay": true
     },
     {
-      "x": 30120,
-      "y": 136,
-      "w": 140,
-      "h": 22,
-      "subType": "snow_ground"
+      "x": 30100,
+      "y": 126,
+      "w": 110,
+      "h": 24,
+      "subType": "shambhala_marble_terrace"
     },
     {
-      "x": 30190,
-      "y": 68,
+      "x": 30150,
+      "y": 92,
       "w": 60,
       "h": 12,
-      "subType": "slippery_ice"
+      "subType": "crystal_lotus_pad",
+      "oneWay": true
+    },
+    {
+      "x": 30225,
+      "y": 116,
+      "w": 90,
+      "h": 14,
+      "subType": "shambhala_bridge",
+      "oneWay": true
     },
     {
       "x": 30280,
-      "y": 98,
-      "w": 44,
+      "y": 96,
+      "w": 42,
       "h": 56,
       "subType": "ice_pillar"
     },
     {
-      "x": 30340,
+      "x": 30310,
       "y": 126,
-      "w": 310,
+      "w": 350,
       "h": 30,
-      "subType": "snow_ground"
+      "subType": "shambhala_marble_terrace"
     },
     {
-      "x": 30440,
-      "y": 84,
-      "w": 75,
+      "x": 30370,
+      "y": 54,
+      "w": 115,
       "h": 14,
-      "subType": "ice_rock"
+      "subType": "shambhala_pagoda_roof",
+      "oneWay": true
     },
     {
-      "x": 30530,
-      "y": 60,
-      "w": 65,
+      "x": 30510,
+      "y": 72,
+      "w": 80,
       "h": 12,
-      "subType": "slippery_ice"
+      "subType": "shambhala_pagoda_roof",
+      "oneWay": true
     },
     {
-      "x": 30660,
+      "x": 30670,
       "y": 156,
-      "w": 170,
+      "w": 190,
       "h": 26,
       "subType": "snow_bank"
     },
     {
       "x": 30730,
-      "y": 112,
-      "w": 65,
-      "h": 14,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 30850,
-      "y": 114,
+      "y": 110,
       "w": 75,
-      "h": 20,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 30890,
-      "y": 82,
-      "w": 60,
       "h": 14,
-      "subType": "ice_rock"
+      "subType": "ice_rock",
+      "oneWay": true
     },
     {
-      "x": 30945,
-      "y": 104,
-      "w": 140,
-      "h": 14,
-      "subType": "slippery_ice"
-    },
-    {
-      "x": 31010,
-      "y": 64,
-      "w": 60,
-      "h": 12,
-      "subType": "slippery_ice"
-    },
-    {
-      "x": 31105,
-      "y": 88,
+      "x": 30870,
+      "y": 112,
       "w": 42,
       "h": 54,
       "subType": "ice_pillar"
     },
     {
-      "x": 31160,
-      "y": 110,
+      "x": 30930,
+      "y": 124,
+      "w": 55,
+      "h": 12,
+      "subType": "crystal_lotus_pad",
+      "oneWay": true
+    },
+    {
+      "x": 31000,
+      "y": 104,
       "w": 140,
+      "h": 14,
+      "subType": "shambhala_bridge",
+      "oneWay": true
+    },
+    {
+      "x": 31150,
+      "y": 116,
+      "w": 150,
       "h": 28,
-      "subType": "snow_ground"
+      "subType": "shambhala_marble_terrace"
+    },
+    {
+      "x": 31210,
+      "y": 78,
+      "w": 75,
+      "h": 12,
+      "subType": "shambhala_pagoda_roof",
+      "oneWay": true
     },
     {
       "x": 31300,
-      "y": 110,
+      "y": 116,
       "w": 160,
       "h": 28,
-      "subType": "snow_ground"
+      "subType": "shambhala_marble_terrace"
     },
     {
-      "x": 31380,
-      "y": 80,
-      "w": 60,
-      "h": 14,
-      "subType": "ice_rock"
+      "x": 31350,
+      "y": 82,
+      "w": 90,
+      "h": 12,
+      "subType": "shambhala_pagoda_roof",
+      "oneWay": true
     },
     {
-      "x": 31490,
-      "y": 126,
-      "w": 46,
-      "h": 64,
+      "x": 31390,
+      "y": 50,
+      "w": 50,
+      "h": 12,
+      "subType": "shambhala_pagoda_roof",
+      "oneWay": true
+    },
+    {
+      "x": 31480,
+      "y": 116,
+      "w": 40,
+      "h": 54,
       "subType": "ice_pillar"
     },
     {
-      "x": 31560,
-      "y": 96,
-      "w": 140,
-      "h": 18,
-      "subType": "ice_rock"
+      "x": 31540,
+      "y": 126,
+      "w": 55,
+      "h": 12,
+      "subType": "crystal_lotus_pad",
+      "oneWay": true
     },
     {
       "x": 31610,
+      "y": 98,
+      "w": 110,
+      "h": 14,
+      "subType": "shambhala_bridge",
+      "oneWay": true
+    },
+    {
+      "x": 31740,
+      "y": 84,
+      "w": 60,
+      "h": 12,
+      "subType": "crystal_lotus_pad",
+      "oneWay": true
+    },
+    {
+      "x": 31815,
       "y": 64,
       "w": 65,
       "h": 12,
-      "subType": "slippery_ice"
+      "subType": "shambhala_pagoda_roof",
+      "oneWay": true
     },
     {
-      "x": 31730,
-      "y": 114,
-      "w": 140,
-      "h": 14,
-      "subType": "slippery_ice"
-    },
-    {
-      "x": 31760,
-      "y": 84,
-      "w": 60,
-      "h": 14,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 31840,
-      "y": 64,
-      "w": 55,
-      "h": 12,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 31900,
+      "x": 31880,
       "y": 126,
-      "w": 300,
+      "w": 340,
       "h": 30,
-      "subType": "snow_ground"
+      "subType": "shambhala_marble_terrace"
     },
     {
-      "x": 32000,
-      "y": 84,
-      "w": 75,
+      "x": 31940,
+      "y": 54,
+      "w": 120,
       "h": 14,
-      "subType": "ice_rock"
+      "subType": "shambhala_pagoda_roof",
+      "oneWay": true
     },
     {
-      "x": 32090,
-      "y": 60,
-      "w": 60,
+      "x": 32080,
+      "y": 72,
+      "w": 80,
       "h": 12,
-      "subType": "slippery_ice"
+      "subType": "shambhala_pagoda_roof",
+      "oneWay": true
     },
     {
-      "x": 32220,
+      "x": 32240,
       "y": 156,
-      "w": 170,
+      "w": 180,
       "h": 26,
       "subType": "snow_bank"
     },
     {
-      "x": 32290,
+      "x": 32435,
       "y": 112,
-      "w": 60,
-      "h": 14,
-      "subType": "snow_bank"
-    },
-    {
-      "x": 32420,
-      "y": 110,
-      "w": 46,
-      "h": 56,
+      "w": 42,
+      "h": 54,
       "subType": "ice_pillar"
     },
     {
-      "x": 32500,
-      "y": 88,
-      "w": 130,
-      "h": 18,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 32550,
-      "y": 56,
+      "x": 32300,
+      "y": 96,
       "w": 55,
       "h": 12,
-      "subType": "slippery_ice"
+      "subType": "crystal_lotus_pad",
+      "oneWay": true
     },
     {
-      "x": 32650,
-      "y": 104,
-      "w": 100,
-      "h": 14,
-      "subType": "slippery_ice"
+      "x": 32380,
+      "y": 68,
+      "w": 75,
+      "h": 12,
+      "subType": "shambhala_pagoda_roof",
+      "oneWay": true
     },
     {
-      "x": 32690,
-      "y": 74,
-      "w": 60,
-      "h": 14,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 32770,
-      "y": 126,
-      "w": 230,
-      "h": 32,
-      "subType": "snow_ground"
-    },
-    {
-      "x": 32860,
+      "x": 32470,
       "y": 92,
-      "w": 70,
+      "w": 90,
       "h": 14,
-      "subType": "ice_rock"
+      "subType": "shambhala_bridge",
+      "oneWay": true
+    },
+    {
+      "x": 32570,
+      "y": 52,
+      "w": 55,
+      "h": 12,
+      "subType": "crystal_lotus_pad",
+      "oneWay": true
+    },
+    {
+      "x": 32660,
+      "y": 112,
+      "w": 90,
+      "h": 14,
+      "subType": "shambhala_bridge",
+      "oneWay": true
+    },
+    {
+      "x": 32760,
+      "y": 126,
+      "w": 240,
+      "h": 32,
+      "subType": "shambhala_marble_terrace"
+    },
+    {
+      "x": 32800,
+      "y": 52,
+      "w": 80,
+      "h": 12,
+      "subType": "shambhala_pagoda_roof",
+      "oneWay": true
     },
     {
       "x": 33000,
       "y": 126,
-      "w": 170,
-      "h": 28,
+      "w": 220,
+      "h": 30,
       "subType": "snow_ground"
     },
     {
-      "x": 33090,
-      "y": 84,
-      "w": 65,
+      "x": 33160,
+      "y": 92,
+      "w": 60,
       "h": 14,
-      "subType": "ice_rock"
+      "subType": "ice_rock",
+      "oneWay": true
     },
     {
-      "x": 33170,
-      "y": 52,
-      "w": 55,
-      "h": 12,
-      "subType": "slippery_ice"
-    },
-    {
-      "x": 33200,
-      "y": 110,
-      "w": 46,
-      "h": 64,
-      "subType": "ice_pillar"
+      "x": 33230,
+      "y": 126,
+      "w": 180,
+      "h": 28,
+      "subType": "snow_bank"
     },
     {
       "x": 33270,
-      "y": 96,
-      "w": 120,
-      "h": 18,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 33330,
-      "y": 64,
-      "w": 70,
-      "h": 14,
-      "subType": "rainbow_ice"
-    },
-    {
-      "x": 33410,
-      "y": 44,
-      "w": 55,
-      "h": 12,
-      "subType": "slippery_ice"
-    },
-    {
-      "x": 33420,
-      "y": 114,
-      "w": 130,
-      "h": 14,
-      "subType": "slippery_ice"
-    },
-    {
-      "x": 33500,
-      "y": 80,
+      "y": 84,
       "w": 65,
       "h": 14,
-      "subType": "ice_rock"
+      "subType": "ice_crystal",
+      "oneWay": true
     },
     {
-      "x": 33580,
-      "y": 126,
-      "w": 44,
-      "h": 56,
-      "subType": "ice_pillar"
+      "x": 33350,
+      "y": 56,
+      "w": 60,
+      "h": 12,
+      "subType": "slippery_ice",
+      "oneWay": true
     },
     {
-      "x": 33650,
+      "x": 33430,
+      "y": 80,
+      "w": 75,
+      "h": 14,
+      "subType": "ice_rock",
+      "oneWay": true
+    },
+    {
+      "x": 33510,
+      "y": 80,
+      "w": 34,
+      "h": 64,
+      "subType": "ice_pillar",
+      "breakable": true,
+      "hp": 1,
+      "crystalType": "quartz"
+    },
+    {
+      "x": 33544,
+      "y": 92,
+      "w": 70,
+      "h": 14,
+      "subType": "ice_rock",
+      "launchRamp": true,
+      "oneWay": true
+    },
+    {
+      "x": 33620,
       "y": 126,
-      "w": 320,
+      "w": 120,
       "h": 30,
       "subType": "snow_ground"
     },
     {
       "x": 33720,
-      "y": 82,
-      "w": 75,
+      "y": 52,
+      "w": 90,
       "h": 14,
-      "subType": "ice_rock"
+      "subType": "rainbow_ice",
+      "oneWay": true
     },
     {
-      "x": 33810,
-      "y": 48,
-      "w": 60,
-      "h": 12,
-      "subType": "slippery_ice"
-    },
-    {
-      "x": 33900,
-      "y": 78,
-      "w": 65,
-      "h": 14,
-      "subType": "rainbow_ice"
-    },
-    {
-      "x": 33990,
-      "y": 156,
-      "w": 160,
-      "h": 26,
-      "subType": "snow_bank"
-    },
-    {
-      "x": 34060,
-      "y": 112,
-      "w": 60,
-      "h": 14,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 34180,
-      "y": 112,
-      "w": 46,
-      "h": 58,
-      "subType": "ice_pillar"
-    },
-    {
-      "x": 34260,
-      "y": 100,
-      "w": 180,
-      "h": 14,
-      "subType": "rainbow_ice"
-    },
-    {
-      "x": 34320,
-      "y": 60,
-      "w": 70,
-      "h": 14,
-      "subType": "rainbow_ice"
-    },
-    {
-      "x": 34400,
-      "y": 42,
-      "w": 55,
-      "h": 12,
-      "subType": "slippery_ice"
-    },
-    {
-      "x": 34470,
-      "y": 118,
-      "w": 230,
-      "h": 28,
-      "subType": "snow_ground"
-    },
-    {
-      "x": 34560,
-      "y": 84,
-      "w": 65,
-      "h": 14,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 34700,
-      "y": 118,
-      "w": 160,
-      "h": 28,
-      "subType": "snow_ground"
-    },
-    {
-      "x": 34780,
-      "y": 78,
-      "w": 65,
-      "h": 14,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 34860,
-      "y": 50,
-      "w": 55,
-      "h": 12,
-      "subType": "slippery_ice"
-    },
-    {
-      "x": 34890,
-      "y": 126,
-      "w": 46,
-      "h": 64,
-      "subType": "ice_pillar"
-    },
-    {
-      "x": 34960,
-      "y": 96,
-      "w": 140,
-      "h": 18,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 35020,
-      "y": 64,
-      "w": 70,
-      "h": 14,
-      "subType": "rainbow_ice"
-    },
-    {
-      "x": 35110,
+      "x": 33830,
       "y": 44,
-      "w": 55,
-      "h": 12,
-      "subType": "slippery_ice"
-    },
-    {
-      "x": 35130,
-      "y": 114,
-      "w": 140,
+      "w": 90,
       "h": 14,
-      "subType": "rainbow_ice"
+      "subType": "rainbow_ice",
+      "oneWay": true
     },
     {
-      "x": 35210,
-      "y": 74,
-      "w": 60,
+      "x": 33760,
+      "y": 110,
+      "w": 65,
       "h": 14,
-      "subType": "ice_rock"
+      "subType": "ice_rock",
+      "oneWay": true
     },
     {
-      "x": 35300,
+      "x": 33960,
       "y": 126,
-      "w": 300,
+      "w": 220,
       "h": 30,
       "subType": "snow_ground"
     },
     {
-      "x": 35390,
-      "y": 80,
-      "w": 75,
+      "x": 34040,
+      "y": 88,
+      "w": 65,
       "h": 14,
-      "subType": "ice_rock"
+      "subType": "ice_crystal",
+      "oneWay": true
     },
     {
-      "x": 35480,
-      "y": 50,
+      "x": 34120,
+      "y": 60,
       "w": 60,
       "h": 12,
-      "subType": "slippery_ice"
+      "subType": "slippery_ice",
+      "oneWay": true
     },
     {
-      "x": 35620,
-      "y": 156,
+      "x": 34180,
+      "y": 84,
+      "w": 34,
+      "h": 64,
+      "subType": "ice_pillar",
+      "breakable": true,
+      "hp": 1,
+      "crystalType": "jade"
+    },
+    {
+      "x": 34214,
+      "y": 126,
+      "w": 130,
+      "h": 28,
+      "subType": "snow_bank"
+    },
+    {
+      "x": 34280,
+      "y": 76,
+      "w": 60,
+      "h": 14,
+      "subType": "ice_crystal",
+      "oneWay": true
+    },
+    {
+      "x": 34380,
+      "y": 104,
+      "w": 220,
+      "h": 16,
+      "subType": "rainbow_ice"
+    },
+    {
+      "x": 34470,
+      "y": 48,
+      "w": 60,
+      "h": 12,
+      "subType": "ice_crystal",
+      "oneWay": true
+    },
+    {
+      "x": 34600,
+      "y": 118,
+      "w": 100,
+      "h": 28,
+      "subType": "snow_ground"
+    },
+    {
+      "x": 34700,
+      "y": 126,
+      "w": 260,
+      "h": 30,
+      "subType": "snow_ground"
+    },
+    {
+      "x": 34830,
+      "y": 88,
+      "w": 65,
+      "h": 14,
+      "subType": "ice_crystal",
+      "oneWay": true
+    },
+    {
+      "x": 34910,
+      "y": 56,
+      "w": 60,
+      "h": 12,
+      "subType": "slippery_ice",
+      "oneWay": true
+    },
+    {
+      "x": 35020,
+      "y": 80,
+      "w": 34,
+      "h": 64,
+      "subType": "ice_pillar",
+      "breakable": true,
+      "hp": 1,
+      "crystalType": "amethyst"
+    },
+    {
+      "x": 35056,
+      "y": 64,
+      "w": 70,
+      "h": 14,
+      "subType": "rainbow_ice",
+      "oneWay": true
+    },
+    {
+      "x": 35100,
+      "y": 130,
       "w": 170,
       "h": 26,
       "subType": "snow_bank"
     },
     {
-      "x": 35690,
-      "y": 110,
-      "w": 60,
-      "h": 14,
-      "subType": "snow_bank"
-    },
-    {
-      "x": 35820,
-      "y": 110,
-      "w": 46,
-      "h": 56,
-      "subType": "ice_pillar"
-    },
-    {
-      "x": 35900,
+      "x": 35170,
       "y": 88,
-      "w": 130,
-      "h": 18,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 35960,
-      "y": 54,
-      "w": 55,
-      "h": 12,
-      "subType": "slippery_ice"
-    },
-    {
-      "x": 36050,
-      "y": 104,
-      "w": 110,
+      "w": 90,
       "h": 14,
-      "subType": "rainbow_ice"
+      "subType": "rainbow_ice",
+      "oneWay": true
     },
     {
-      "x": 36100,
-      "y": 70,
+      "x": 35250,
+      "y": 52,
       "w": 60,
-      "h": 14,
-      "subType": "rainbow_ice"
+      "h": 12,
+      "subType": "ice_crystal",
+      "oneWay": true
     },
     {
-      "x": 36180,
+      "x": 35260,
       "y": 126,
-      "w": 220,
+      "w": 120,
+      "h": 30,
+      "subType": "snow_ground"
+    },
+    {
+      "x": 35380,
+      "y": 126,
+      "w": 380,
       "h": 32,
       "subType": "snow_ground"
     },
     {
-      "x": 36270,
-      "y": 90,
+      "x": 35430,
+      "y": 92,
+      "w": 65,
+      "h": 14,
+      "subType": "ice_crystal",
+      "oneWay": true
+    },
+    {
+      "x": 35500,
+      "y": 58,
+      "w": 80,
+      "h": 14,
+      "subType": "rainbow_ice",
+      "oneWay": true
+    },
+    {
+      "x": 35580,
+      "y": 92,
+      "w": 65,
+      "h": 14,
+      "subType": "ice_crystal",
+      "oneWay": true
+    },
+    {
+      "x": 35760,
+      "y": 126,
+      "w": 90,
+      "h": 30,
+      "subType": "snow_ground"
+    },
+    {
+      "x": 35830,
+      "y": 80,
+      "w": 34,
+      "h": 64,
+      "subType": "ice_pillar",
+      "breakable": true,
+      "hp": 1,
+      "crystalType": "jade"
+    },
+    {
+      "x": 35860,
+      "y": 140,
+      "w": 120,
+      "h": 26,
+      "subType": "snow_bank"
+    },
+    {
+      "x": 35950,
+      "y": 64,
+      "w": 75,
+      "h": 14,
+      "subType": "rainbow_ice",
+      "oneWay": true
+    },
+    {
+      "x": 36010,
+      "y": 44,
+      "w": 60,
+      "h": 12,
+      "subType": "ice_crystal",
+      "oneWay": true
+    },
+    {
+      "x": 36080,
+      "y": 76,
       "w": 70,
       "h": 14,
-      "subType": "ice_rock"
+      "subType": "rainbow_ice",
+      "oneWay": true
+    },
+    {
+      "x": 36140,
+      "y": 126,
+      "w": 260,
+      "h": 32,
+      "subType": "snow_ground"
+    },
+    {
+      "x": 36210,
+      "y": 54,
+      "w": 60,
+      "h": 14,
+      "subType": "ice_crystal",
+      "oneWay": true
     },
     {
       "x": 36400,
       "y": 126,
-      "w": 160,
+      "w": 180,
       "h": 28,
       "subType": "snow_ground"
     },
     {
-      "x": 36470,
-      "y": 80,
-      "w": 60,
+      "x": 36520,
+      "y": 88,
+      "w": 70,
       "h": 14,
       "subType": "ice_rock"
     },
     {
-      "x": 36540,
-      "y": 54,
-      "w": 50,
-      "h": 12,
-      "subType": "slippery_ice"
-    },
-    {
-      "x": 36590,
-      "y": 108,
-      "w": 120,
+      "x": 36620,
+      "y": 110,
+      "w": 110,
       "h": 16,
       "subType": "rainbow_ice"
     },
     {
-      "x": 36660,
-      "y": 72,
-      "w": 65,
-      "h": 14,
-      "subType": "rainbow_ice"
-    },
-    {
-      "x": 36730,
-      "y": 48,
-      "w": 55,
-      "h": 12,
-      "subType": "slippery_ice"
-    },
-    {
       "x": 36740,
-      "y": 92,
-      "w": 130,
-      "h": 18,
-      "subType": "ice_rock"
+      "y": 72,
+      "w": 100,
+      "h": 16,
+      "subType": "ice_rock",
+      "launchRamp": true
     },
     {
-      "x": 36840,
-      "y": 64,
-      "w": 70,
+      "x": 36880,
+      "y": 96,
+      "w": 90,
       "h": 14,
-      "subType": "ice_rock"
+      "subType": "ice_crystal"
     },
     {
-      "x": 36900,
-      "y": 114,
-      "w": 46,
-      "h": 64,
-      "subType": "ice_pillar"
-    },
-    {
-      "x": 36970,
-      "y": 126,
-      "w": 140,
-      "h": 20,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 37040,
-      "y": 80,
-      "w": 70,
-      "h": 14,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 37120,
-      "y": 52,
-      "w": 60,
-      "h": 12,
-      "subType": "slippery_ice"
+      "x": 37010,
+      "y": 112,
+      "w": 100,
+      "h": 16,
+      "subType": "rainbow_ice"
     },
     {
       "x": 37140,
@@ -3056,662 +3609,525 @@ window.LEVELS[3] = {
       "subType": "snow_ground"
     },
     {
-      "x": 37240,
-      "y": 84,
-      "w": 75,
-      "h": 14,
+      "x": 37420,
+      "y": 118,
+      "w": 90,
+      "h": 16,
       "subType": "ice_rock"
     },
     {
-      "x": 37330,
-      "y": 54,
-      "w": 60,
-      "h": 12,
-      "subType": "slippery_ice"
-    },
-    {
-      "x": 37410,
-      "y": 154,
-      "w": 160,
-      "h": 26,
-      "subType": "snow_bank"
-    },
-    {
-      "x": 37490,
-      "y": 110,
-      "w": 60,
+      "x": 37540,
+      "y": 68,
+      "w": 80,
       "h": 14,
-      "subType": "snow_bank"
+      "subType": "ice_crystal",
+      "launchRamp": true
     },
     {
-      "x": 37600,
-      "y": 112,
-      "w": 46,
-      "h": 60,
-      "subType": "ice_pillar"
-    },
-    {
-      "x": 37680,
+      "x": 37660,
       "y": 96,
-      "w": 130,
+      "w": 115,
       "h": 16,
-      "subType": "rainbow_ice"
-    },
-    {
-      "x": 37740,
-      "y": 62,
-      "w": 65,
-      "h": 14,
       "subType": "rainbow_ice"
     },
     {
       "x": 37810,
-      "y": 42,
+      "y": 74,
+      "w": 95,
+      "h": 16,
+      "subType": "ice_rock"
+    },
+    {
+      "x": 37880,
+      "y": 50,
       "w": 55,
       "h": 12,
-      "subType": "slippery_ice"
+      "subType": "ice_crystal"
     },
     {
-      "x": 37840,
-      "y": 82,
-      "w": 110,
-      "h": 18,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 37980,
-      "y": 118,
-      "w": 140,
-      "h": 28,
-      "subType": "snow_ground"
-    },
-    {
-      "x": 38040,
-      "y": 84,
-      "w": 65,
-      "h": 14,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 38100,
-      "y": 118,
+      "x": 37960,
+      "y": 120,
       "w": 160,
       "h": 28,
       "subType": "snow_ground"
     },
     {
-      "x": 38170,
-      "y": 80,
-      "w": 60,
-      "h": 14,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 38240,
-      "y": 52,
-      "w": 55,
-      "h": 12,
-      "subType": "slippery_ice"
+      "x": 38100,
+      "y": 120,
+      "w": 160,
+      "h": 28,
+      "subType": "snow_ground"
     },
     {
       "x": 38290,
       "y": 104,
-      "w": 130,
+      "w": 120,
       "h": 16,
       "subType": "rainbow_ice"
     },
     {
-      "x": 38360,
-      "y": 70,
-      "w": 65,
-      "h": 14,
-      "subType": "rainbow_ice"
-    },
-    {
-      "x": 38430,
-      "y": 46,
-      "w": 55,
-      "h": 12,
-      "subType": "slippery_ice"
-    },
-    {
-      "x": 38440,
-      "y": 92,
-      "w": 140,
-      "h": 18,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 38540,
+      "x": 38450,
       "y": 64,
-      "w": 70,
-      "h": 14,
-      "subType": "ice_rock"
+      "w": 100,
+      "h": 16,
+      "subType": "ice_crystal",
+      "launchRamp": true
     },
     {
-      "x": 38610,
-      "y": 116,
-      "w": 46,
-      "h": 64,
-      "subType": "ice_pillar"
-    },
-    {
-      "x": 38680,
+      "x": 38480,
       "y": 126,
-      "w": 130,
+      "w": 140,
       "h": 20,
       "subType": "ice_rock"
     },
     {
-      "x": 38740,
-      "y": 84,
-      "w": 70,
-      "h": 14,
-      "subType": "ice_rock"
+      "x": 38650,
+      "y": 100,
+      "w": 120,
+      "h": 16,
+      "subType": "rainbow_ice"
     },
     {
       "x": 38820,
-      "y": 54,
-      "w": 60,
-      "h": 12,
-      "subType": "slippery_ice"
-    },
-    {
-      "x": 38840,
       "y": 126,
-      "w": 250,
+      "w": 260,
       "h": 30,
       "subType": "snow_ground"
     },
     {
-      "x": 38940,
-      "y": 82,
-      "w": 75,
-      "h": 14,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 39020,
-      "y": 50,
-      "w": 60,
-      "h": 12,
-      "subType": "slippery_ice"
-    },
-    {
-      "x": 39110,
-      "y": 156,
-      "w": 160,
-      "h": 26,
+      "x": 39120,
+      "y": 148,
+      "w": 180,
+      "h": 32,
       "subType": "snow_bank"
     },
     {
-      "x": 39180,
-      "y": 110,
-      "w": 60,
-      "h": 14,
-      "subType": "snow_bank"
-    },
-    {
-      "x": 39300,
-      "y": 114,
-      "w": 46,
-      "h": 62,
-      "subType": "ice_pillar"
-    },
-    {
-      "x": 39370,
-      "y": 98,
-      "w": 130,
-      "h": 16,
-      "subType": "rainbow_ice"
-    },
-    {
-      "x": 39430,
-      "y": 66,
-      "w": 65,
-      "h": 14,
-      "subType": "rainbow_ice"
-    },
-    {
-      "x": 39500,
-      "y": 42,
-      "w": 55,
-      "h": 12,
-      "subType": "slippery_ice"
-    },
-    {
-      "x": 39530,
-      "y": 82,
-      "w": 120,
-      "h": 18,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 39580,
-      "y": 50,
-      "w": 60,
-      "h": 12,
-      "subType": "slippery_ice"
-    },
-    {
-      "x": 39680,
-      "y": 118,
-      "w": 140,
-      "h": 28,
-      "subType": "snow_ground"
-    },
-    {
-      "x": 39740,
-      "y": 86,
-      "w": 65,
-      "h": 14,
-      "subType": "ice_rock"
-    },
-    {
-      "x": 39800,
-      "y": 118,
-      "w": 160,
-      "h": 28,
-      "type": "snow_ground"
-    },
-    {
-      "x": 39990,
-      "y": 104,
-      "w": 130,
-      "h": 16,
-      "type": "snow_platform",
-      "subType": "rainbow_ice"
-    },
-    {
-      "x": 40150,
-      "y": 92,
-      "w": 140,
-      "h": 18,
-      "type": "ice_rock"
-    },
-    {
-      "x": 40320,
-      "y": 116,
-      "w": 46,
-      "h": 64,
-      "type": "ice_pillar"
-    },
-    {
-      "x": 40390,
-      "y": 126,
-      "w": 130,
-      "h": 20,
-      "type": "ice_rock"
-    },
-    {
-      "x": 40540,
-      "y": 126,
-      "w": 250,
-      "h": 30,
-      "type": "snow_ground"
-    },
-    {
-      "x": 40820,
-      "y": 156,
-      "w": 160,
-      "h": 26,
-      "type": "snow_bank"
-    },
-    {
-      "x": 41010,
-      "y": 114,
-      "w": 46,
-      "h": 62,
-      "type": "ice_pillar"
-    },
-    {
-      "x": 41080,
-      "y": 98,
-      "w": 130,
-      "h": 16,
-      "type": "snow_platform",
-      "subType": "rainbow_ice"
-    },
-    {
-      "x": 41240,
-      "y": 82,
+      "x": 39340,
+      "y": 112,
       "w": 110,
       "h": 18,
-      "type": "ice_rock"
+      "subType": "ice_rock"
+    },
+    {
+      "x": 39490,
+      "y": 78,
+      "w": 100,
+      "h": 16,
+      "subType": "ice_crystal",
+      "launchRamp": true
+    },
+    {
+      "x": 39600,
+      "y": 56,
+      "w": 90,
+      "h": 14,
+      "subType": "rainbow_ice"
+    },
+    {
+      "x": 39700,
+      "y": 120,
+      "w": 160,
+      "h": 28,
+      "subType": "snow_ground"
+    },
+    {
+      "x": 39840,
+      "y": 120,
+      "w": 160,
+      "h": 28,
+      "subType": "snow_ground"
+    },
+    {
+      "x": 40040,
+      "y": 102,
+      "w": 120,
+      "h": 16,
+      "subType": "rainbow_ice"
+    },
+    {
+      "x": 40190,
+      "y": 72,
+      "w": 100,
+      "h": 16,
+      "subType": "ice_crystal",
+      "launchRamp": true
+    },
+    {
+      "x": 40340,
+      "y": 108,
+      "w": 120,
+      "h": 16,
+      "subType": "rainbow_ice"
+    },
+    {
+      "x": 40500,
+      "y": 126,
+      "w": 230,
+      "h": 30,
+      "subType": "snow_ground"
+    },
+    {
+      "x": 40730,
+      "y": 126,
+      "w": 650,
+      "h": 32,
+      "subType": "snow_ground"
+    },
+    {
+      "x": 40800,
+      "y": 92,
+      "w": 90,
+      "h": 14,
+      "subType": "rainbow_ice"
+    },
+    {
+      "x": 40990,
+      "y": 72,
+      "w": 100,
+      "h": 14,
+      "subType": "ice_crystal",
+      "launchRamp": true
+    },
+    {
+      "x": 41180,
+      "y": 92,
+      "w": 90,
+      "h": 14,
+      "subType": "rainbow_ice"
     },
     {
       "x": 41380,
       "y": 126,
       "w": 220,
       "h": 32,
-      "type": "snow_ground"
+      "subType": "snow_ground"
     }
   ],
   "decorations": [
     {
-      "x": 110,
+      "x": 100,
       "y": 196,
       "subType": "alpine_cabin"
     },
     {
-      "x": 40,
+      "x": 30,
       "y": 196,
       "subType": "alpine_pine",
       "scale": 1
     },
     {
-      "x": 290,
+      "x": 310,
       "y": 196,
       "subType": "alpine_pine",
       "scale": 0.9
     },
     {
-      "x": 690,
+      "x": 730,
       "y": 196,
       "subType": "alpine_pine",
-      "scale": 1.15
+      "scale": 1.1
     },
     {
-      "x": 1010,
-      "y": 162,
-      "subType": "alpine_pine",
-      "scale": 0.85
-    },
-    {
-      "x": 260,
-      "y": 196,
-      "subType": "alpine_sign"
-    },
-    {
-      "x": 200,
+      "x": 190,
       "y": 196,
       "subType": "firewood_pile"
     },
     {
-      "x": 370,
+      "x": 270,
+      "y": 196,
+      "subType": "alpine_sign"
+    },
+    {
+      "x": 380,
       "y": 196,
       "subType": "snow_lantern"
     },
     {
-      "x": 830,
+      "x": 1100,
       "y": 196,
       "subType": "snow_lantern"
     },
     {
-      "x": 1330,
+      "x": 1475,
       "y": 196,
       "subType": "snow_lantern"
     },
     {
       "x": 1500,
       "y": 196,
-      "subType": "alpine_sign"
-    },
-    {
-      "x": 1530,
-      "y": 196,
-      "subType": "sherpa_tent"
-    },
-    {
-      "x": 1580,
-      "y": 196,
-      "subType": "prayer_flags"
-    },
-    {
-      "x": 1720,
-      "y": 196,
-      "subType": "ice_spire"
-    },
-    {
-      "x": 2320,
-      "y": 186,
-      "subType": "ice_spire"
-    },
-    {
-      "x": 1650,
-      "y": 196,
       "subType": "alpine_pine",
       "scale": 0.95
     },
     {
-      "x": 2070,
-      "y": 164,
-      "subType": "alpine_pine",
-      "scale": 0.8
-    },
-    {
-      "x": 2690,
+      "x": 1560,
       "y": 196,
-      "subType": "alpine_pine",
-      "scale": 1.1
+      "subType": "sherpa_tent"
     },
     {
-      "x": 1640,
+      "x": 1620,
       "y": 196,
-      "subType": "snow_lantern"
+      "subType": "prayer_flags"
     },
     {
-      "x": 2160,
-      "y": 144,
-      "subType": "snow_lantern"
-    },
-    {
-      "x": 2680,
-      "y": 196,
-      "subType": "snow_lantern"
-    },
-    {
-      "x": 2580,
+      "x": 1670,
       "y": 196,
       "subType": "firewood_pile"
     },
     {
-      "x": 2750,
+      "x": 1705,
       "y": 196,
-      "subType": "climbing_gear_rack"
+      "subType": "snow_lantern"
     },
     {
-      "x": 2780,
+      "x": 2130,
+      "y": 196,
+      "subType": "ice_spire"
+    },
+    {
+      "x": 2650,
+      "y": 196,
+      "subType": "snow_lantern"
+    },
+    {
+      "x": 2710,
+      "y": 196,
+      "subType": "alpine_pine",
+      "scale": 1.05
+    },
+    {
+      "x": 2800,
       "y": 196,
       "subType": "expedition_stove"
     },
     {
       "x": 2840,
       "y": 196,
+      "subType": "climbing_gear_rack"
+    },
+    {
+      "x": 2890,
+      "y": 196,
       "subType": "prayer_flags"
     },
     {
-      "x": 2980,
+      "x": 2950,
       "y": 196,
       "subType": "ice_spire"
     },
     {
-      "x": 3380,
-      "y": 140,
+      "x": 3320,
+      "y": 196,
       "subType": "ice_spire"
     },
     {
       "x": 3740,
-      "y": 96,
+      "y": 130,
       "subType": "alpine_pine",
       "scale": 0.85
     },
     {
-      "x": 3860,
+      "x": 3840,
       "y": 196,
       "subType": "snow_lantern"
     },
     {
-      "x": 3950,
-      "y": 196,
-      "subType": "ice_arch"
-    },
-    {
-      "x": 4080,
+      "x": 3915,
       "y": 196,
       "subType": "alpine_sign"
     },
     {
-      "x": 4160,
+      "x": 3960,
+      "y": 196,
+      "subType": "ice_arch"
+    },
+    {
+      "x": 4020,
       "y": 196,
       "subType": "prayer_flags"
     },
     {
-      "x": 4245,
-      "y": 220,
-      "subType": "frozen_ladder",
-      "h": 56
-    },
-    {
-      "x": 4340,
+      "x": 4070,
       "y": 196,
-      "subType": "ice_crystal_cluster"
+      "subType": "sherpa_tent"
     },
     {
-      "x": 4440,
-      "y": 50,
-      "subType": "hanging_rope",
-      "h": 32
-    },
-    {
-      "x": 4735,
-      "y": 220,
-      "subType": "frozen_ladder",
-      "h": 64
-    },
-    {
-      "x": 4860,
-      "y": 220,
-      "subType": "ice_spire"
-    },
-    {
-      "x": 4960,
-      "y": 196,
-      "subType": "ice_crystal_cluster"
-    },
-    {
-      "x": 5250,
-      "y": 196,
-      "subType": "snow_lantern"
-    },
-    {
-      "x": 5310,
-      "y": 196,
-      "subType": "climbing_gear_rack"
-    },
-    {
-      "x": 5380,
+      "x": 4140,
       "y": 196,
       "subType": "expedition_stove"
     },
     {
-      "x": 5440,
+      "x": 4190,
       "y": 196,
       "subType": "prayer_flags"
     },
     {
-      "x": 5545,
+      "x": 4230,
+      "y": 196,
+      "subType": "alpine_sign"
+    },
+    {
+      "x": 4260,
+      "y": 60,
+      "subType": "hanging_rope",
+      "h": 36
+    },
+    {
+      "x": 4500,
+      "y": 196,
+      "subType": "ice_spire"
+    },
+    {
+      "x": 4530,
+      "y": 154,
+      "subType": "ice_crystal_cluster"
+    },
+    {
+      "x": 4800,
+      "y": 196,
+      "subType": "ice_crystal_cluster"
+    },
+    {
+      "x": 4970,
+      "y": 196,
+      "subType": "hanging_rope",
+      "h": 32
+    },
+    {
+      "x": 5210,
+      "y": 196,
+      "subType": "snow_lantern"
+    },
+    {
+      "x": 5260,
+      "y": 196,
+      "subType": "climbing_gear_rack"
+    },
+    {
+      "x": 5310,
+      "y": 196,
+      "subType": "prayer_flags"
+    },
+    {
+      "x": 5370,
+      "y": 196,
+      "subType": "sherpa_tent"
+    },
+    {
+      "x": 5440,
+      "y": 196,
+      "subType": "expedition_stove"
+    },
+    {
+      "x": 5480,
+      "y": 196,
+      "subType": "prayer_flags"
+    },
+    {
+      "x": 5575,
       "y": 220,
       "subType": "frozen_ladder",
       "h": 60
     },
     {
-      "x": 5640,
-      "y": 196,
-      "subType": "ice_crystal_cluster"
-    },
-    {
       "x": 5740,
-      "y": 46,
+      "y": 55,
       "subType": "hanging_rope",
-      "h": 34
+      "h": 36
     },
     {
-      "x": 6035,
-      "y": 220,
-      "subType": "frozen_ladder",
-      "h": 68
-    },
-    {
-      "x": 6170,
-      "y": 220,
+      "x": 6030,
+      "y": 170,
       "subType": "ice_spire"
     },
     {
-      "x": 6290,
-      "y": 196,
+      "x": 6180,
+      "y": 170,
       "subType": "ice_crystal_cluster"
     },
     {
-      "x": 6580,
+      "x": 6470,
       "y": 196,
       "subType": "snow_lantern"
     },
     {
-      "x": 6640,
+      "x": 6510,
       "y": 196,
       "subType": "climbing_gear_rack"
     },
     {
-      "x": 6680,
-      "y": 196,
-      "subType": "expedition_stove"
-    },
-    {
-      "x": 6740,
+      "x": 6610,
       "y": 196,
       "subType": "prayer_flags"
     },
     {
-      "x": 6845,
-      "y": 220,
-      "subType": "frozen_ladder",
-      "h": 64
+      "x": 6680,
+      "y": 196,
+      "subType": "prayer_flags"
     },
     {
-      "x": 6940,
+      "x": 6730,
       "y": 196,
+      "subType": "hanging_rope",
+      "h": 36
+    },
+    {
+      "x": 6830,
+      "y": 148,
       "subType": "ice_crystal_cluster"
     },
     {
-      "x": 7040,
-      "y": 44,
-      "subType": "hanging_rope",
-      "h": 32
-    },
-    {
-      "x": 7355,
-      "y": 220,
-      "subType": "frozen_ladder",
-      "h": 70
-    },
-    {
-      "x": 7490,
-      "y": 220,
+      "x": 7180,
+      "y": 196,
       "subType": "ice_spire"
     },
     {
-      "x": 7640,
-      "y": 196,
-      "subType": "ice_crystal_cluster"
-    },
-    {
-      "x": 7860,
-      "y": 196,
-      "subType": "snow_lantern"
-    },
-    {
-      "x": 7890,
+      "x": 7450,
       "y": 196,
       "subType": "climbing_gear_rack"
     },
     {
-      "x": 7960,
+      "x": 7475,
+      "y": 196,
+      "subType": "snow_lantern"
+    },
+    {
+      "x": 7790,
+      "y": 196,
+      "subType": "sherpa_tent"
+    },
+    {
+      "x": 7820,
+      "y": 196,
+      "subType": "expedition_stove"
+    },
+    {
+      "x": 7860,
+      "y": 196,
+      "subType": "prayer_flags"
+    },
+    {
+      "x": 7900,
+      "y": 196,
+      "subType": "alpine_sign"
+    },
+    {
+      "x": 7940,
       "y": 196,
       "subType": "ice_arch"
     },
     {
-      "x": 8090,
+      "x": 8010,
+      "y": 196,
+      "subType": "alpine_pine",
+      "scale": 1
+    },
+    {
+      "x": 8060,
+      "y": 196,
+      "subType": "ice_arch"
+    },
+    {
+      "x": 8100,
       "y": 196,
       "subType": "village_street_sign"
     },
@@ -3727,19 +4143,34 @@ window.LEVELS[3] = {
       "scale": 0.9
     },
     {
+      "x": 8270,
+      "y": 196,
+      "subType": "prayer_cairn"
+    },
+    {
+      "x": 8360,
+      "y": 196,
+      "subType": "firewood_pile"
+    },
+    {
       "x": 8400,
       "y": 196,
       "subType": "alpine_tavern"
     },
     {
-      "x": 8640,
-      "y": 196,
+      "x": 8535,
+      "y": 84,
       "subType": "prayer_flags"
     },
     {
-      "x": 8730,
+      "x": 8630,
       "y": 196,
       "subType": "snow_lantern"
+    },
+    {
+      "x": 8710,
+      "y": 196,
+      "subType": "prayer_flags"
     },
     {
       "x": 50090,
@@ -3757,9 +4188,20 @@ window.LEVELS[3] = {
       "subType": "tavern_counter"
     },
     {
-      "x": 8860,
+      "x": 50260,
       "y": 196,
-      "subType": "snow_lantern"
+      "subType": "firewood_pile"
+    },
+    {
+      "x": 8840,
+      "y": 196,
+      "subType": "alpine_pine",
+      "scale": 0.8
+    },
+    {
+      "x": 8880,
+      "y": 165,
+      "subType": "prayer_flags"
     },
     {
       "x": 8920,
@@ -3772,6 +4214,11 @@ window.LEVELS[3] = {
       "subType": "hat_shop_facade"
     },
     {
+      "x": 9240,
+      "y": 84,
+      "subType": "prayer_flags"
+    },
+    {
       "x": 9320,
       "y": 196,
       "subType": "firewood_pile"
@@ -3779,7 +4226,7 @@ window.LEVELS[3] = {
     {
       "x": 9380,
       "y": 196,
-      "subType": "prayer_flags"
+      "subType": "prayer_cairn"
     },
     {
       "x": 9460,
@@ -3802,9 +4249,15 @@ window.LEVELS[3] = {
       "subType": "tavern_counter"
     },
     {
-      "x": 9610,
+      "x": 9590,
       "y": 196,
-      "subType": "snow_lantern"
+      "subType": "alpine_pine",
+      "scale": 0.85
+    },
+    {
+      "x": 9650,
+      "y": 166,
+      "subType": "prayer_flags"
     },
     {
       "x": 9670,
@@ -3817,6 +4270,11 @@ window.LEVELS[3] = {
       "subType": "depressed_cabin_facade"
     },
     {
+      "x": 9980,
+      "y": 84,
+      "subType": "prayer_flags"
+    },
+    {
       "x": 10090,
       "y": 196,
       "subType": "firewood_pile"
@@ -3824,7 +4282,7 @@ window.LEVELS[3] = {
     {
       "x": 10150,
       "y": 196,
-      "subType": "prayer_flags"
+      "subType": "prayer_cairn"
     },
     {
       "x": 10210,
@@ -3842,9 +4300,15 @@ window.LEVELS[3] = {
       "subType": "ice_pick_stand"
     },
     {
-      "x": 10360,
+      "x": 10340,
       "y": 196,
-      "subType": "snow_lantern"
+      "subType": "alpine_pine",
+      "scale": 0.8
+    },
+    {
+      "x": 10380,
+      "y": 165,
+      "subType": "neon_sign_cluster"
     },
     {
       "x": 10420,
@@ -3857,6 +4321,11 @@ window.LEVELS[3] = {
       "subType": "arcade_facade"
     },
     {
+      "x": 10740,
+      "y": 84,
+      "subType": "prayer_flags"
+    },
+    {
       "x": 10840,
       "y": 196,
       "subType": "firewood_pile"
@@ -3864,7 +4333,7 @@ window.LEVELS[3] = {
     {
       "x": 10900,
       "y": 196,
-      "subType": "prayer_flags"
+      "subType": "prayer_cairn"
     },
     {
       "x": 10960,
@@ -3892,9 +4361,15 @@ window.LEVELS[3] = {
       "subType": "arcade_cabinet"
     },
     {
-      "x": 11110,
+      "x": 11090,
       "y": 196,
-      "subType": "snow_lantern"
+      "subType": "alpine_pine",
+      "scale": 0.8
+    },
+    {
+      "x": 11130,
+      "y": 165,
+      "subType": "prayer_flags"
     },
     {
       "x": 11170,
@@ -3907,6 +4382,11 @@ window.LEVELS[3] = {
       "subType": "bakery_facade"
     },
     {
+      "x": 11495,
+      "y": 84,
+      "subType": "prayer_flags"
+    },
+    {
       "x": 11590,
       "y": 196,
       "subType": "firewood_pile"
@@ -3914,7 +4394,7 @@ window.LEVELS[3] = {
     {
       "x": 11650,
       "y": 196,
-      "subType": "prayer_flags"
+      "subType": "prayer_cairn"
     },
     {
       "x": 11710,
@@ -3932,9 +4412,20 @@ window.LEVELS[3] = {
       "subType": "bakery_counter"
     },
     {
-      "x": 11860,
+      "x": 51860,
       "y": 196,
-      "subType": "snow_lantern"
+      "subType": "firewood_pile"
+    },
+    {
+      "x": 11840,
+      "y": 196,
+      "subType": "alpine_pine",
+      "scale": 0.8
+    },
+    {
+      "x": 11880,
+      "y": 165,
+      "subType": "prayer_flags"
     },
     {
       "x": 11920,
@@ -3947,6 +4438,11 @@ window.LEVELS[3] = {
       "subType": "forge_facade"
     },
     {
+      "x": 12240,
+      "y": 84,
+      "subType": "prayer_flags"
+    },
+    {
       "x": 12340,
       "y": 196,
       "subType": "firewood_pile"
@@ -3954,7 +4450,7 @@ window.LEVELS[3] = {
     {
       "x": 12400,
       "y": 196,
-      "subType": "prayer_flags"
+      "subType": "prayer_cairn"
     },
     {
       "x": 12460,
@@ -3972,9 +4468,15 @@ window.LEVELS[3] = {
       "subType": "forge_tool_rack"
     },
     {
-      "x": 12620,
+      "x": 12590,
       "y": 196,
-      "subType": "snow_lantern"
+      "subType": "alpine_pine",
+      "scale": 0.85
+    },
+    {
+      "x": 12640,
+      "y": 165,
+      "subType": "prayer_flags"
     },
     {
       "x": 12680,
@@ -3987,9 +4489,14 @@ window.LEVELS[3] = {
       "subType": "townhall_facade"
     },
     {
+      "x": 12950,
+      "y": 84,
+      "subType": "prayer_flags"
+    },
+    {
       "x": 13040,
       "y": 196,
-      "subType": "prayer_flags"
+      "subType": "prayer_cairn"
     },
     {
       "x": 13140,
@@ -4007,14 +4514,14 @@ window.LEVELS[3] = {
       "subType": "townhall_desk"
     },
     {
-      "x": 13380,
+      "x": 13320,
       "y": 196,
       "subType": "snow_lantern"
     },
     {
-      "x": 13460,
+      "x": 13440,
       "y": 196,
-      "subType": "sherpa_tent"
+      "subType": "prayer_flags"
     },
     {
       "x": 13580,
@@ -4022,17 +4529,22 @@ window.LEVELS[3] = {
       "subType": "ice_fishing_hut"
     },
     {
-      "x": 13780,
+      "x": 13750,
       "y": 196,
       "subType": "ice_spire"
     },
     {
-      "x": 14140,
+      "x": 13830,
       "y": 196,
       "subType": "frozen_buoy"
     },
     {
-      "x": 14220,
+      "x": 14140,
+      "y": 196,
+      "subType": "sherpa_tent"
+    },
+    {
+      "x": 14240,
       "y": 196,
       "subType": "ice_sculpture"
     },
@@ -4042,9 +4554,9 @@ window.LEVELS[3] = {
       "subType": "snow_lantern"
     },
     {
-      "x": 14480,
+      "x": 14430,
       "y": 196,
-      "subType": "prayer_flags"
+      "subType": "frozen_buoy"
     },
     {
       "x": 14740,
@@ -4052,49 +4564,54 @@ window.LEVELS[3] = {
       "subType": "village_street_sign"
     },
     {
-      "x": 14900,
+      "x": 14920,
       "y": 196,
       "subType": "frozen_buoy"
     },
     {
-      "x": 15280,
+      "x": 15060,
       "y": 196,
-      "subType": "ice_spire"
+      "subType": "prayer_flags"
     },
     {
-      "x": 15420,
+      "x": 15440,
       "y": 196,
       "subType": "ice_sculpture"
     },
     {
-      "x": 15560,
+      "x": 15580,
+      "y": 196,
+      "subType": "snow_lantern"
+    },
+    {
+      "x": 15680,
       "y": 196,
       "subType": "snow_lantern"
     },
     {
       "x": 15720,
       "y": 196,
-      "subType": "snow_lantern"
-    },
-    {
-      "x": 15820,
-      "y": 196,
       "subType": "sherpa_tent"
     },
     {
-      "x": 15920,
+      "x": 15880,
       "y": 196,
       "subType": "crevasse_marker"
     },
     {
-      "x": 16080,
+      "x": 15950,
+      "y": 196,
+      "subType": "frozen_buoy"
+    },
+    {
+      "x": 16480,
       "y": 196,
       "subType": "ice_spire"
     },
     {
-      "x": 16380,
+      "x": 16560,
       "y": 196,
-      "subType": "frozen_buoy"
+      "subType": "prayer_flags"
     },
     {
       "x": 16650,
@@ -4102,17 +4619,12 @@ window.LEVELS[3] = {
       "subType": "snow_lantern"
     },
     {
-      "x": 16750,
-      "y": 196,
-      "subType": "prayer_flags"
-    },
-    {
       "x": 16950,
       "y": 196,
       "subType": "glacial_altar"
     },
     {
-      "x": 17200,
+      "x": 17180,
       "y": 196,
       "subType": "ice_sculpture"
     },
@@ -4122,53 +4634,51 @@ window.LEVELS[3] = {
       "subType": "crevasse_marker"
     },
     {
-      "x": 17750,
+      "x": 17480,
+      "y": 196,
+      "subType": "frozen_buoy"
+    },
+    {
+      "x": 17720,
       "y": 196,
       "subType": "summit_signpost"
     },
     {
+      "x": 17820,
+      "y": 136,
+      "subType": "prayer_flags"
+    },
+    {
       "x": 17880,
-      "y": 196,
+      "y": 136,
       "subType": "snow_lantern"
     },
     {
       "x": 18030,
       "y": 196,
       "type": "snow_decoration",
-      "subType": "lantern"
+      "subType": "snow_lantern"
     },
     {
-      "x": 18120,
-      "y": 196,
-      "type": "snow_decoration",
-      "subType": "prayer_cairn"
-    },
-    {
-      "x": 18220,
+      "x": 18080,
       "y": 196,
       "type": "snow_decoration",
       "subType": "sherpa_tent"
     },
     {
-      "x": 18380,
-      "y": 168,
+      "x": 18220,
+      "y": 196,
+      "type": "snow_decoration",
+      "subType": "prayer_cairn"
+    },
+    {
+      "x": 18520,
+      "y": 112,
       "type": "snow_decoration",
       "subType": "ice_spire"
     },
     {
-      "x": 18490,
-      "y": 136,
-      "type": "snow_decoration",
-      "subType": "crevasse_marker"
-    },
-    {
-      "x": 18640,
-      "y": 108,
-      "type": "snow_decoration",
-      "subType": "ice_spire"
-    },
-    {
-      "x": 18720,
+      "x": 18685,
       "y": 108,
       "type": "snow_decoration",
       "subType": "crevasse_marker"
@@ -4176,93 +4686,74 @@ window.LEVELS[3] = {
     {
       "x": 18740,
       "y": 108,
-      "w": 160,
+      "w": 180,
       "type": "snow_decoration",
       "subType": "ladder_bridge"
-    },
-    {
-      "x": 18910,
-      "y": 136,
-      "type": "snow_decoration",
-      "subType": "crevasse_marker"
     },
     {
       "x": 18950,
       "y": 136,
       "type": "snow_decoration",
-      "subType": "lantern"
-    },
-    {
-      "x": 19100,
-      "y": 136,
-      "type": "snow_decoration",
-      "subType": "prayer_flags"
-    },
-    {
-      "x": 19180,
-      "y": 136,
-      "type": "snow_decoration",
       "subType": "oxygen_depot"
     },
     {
-      "x": 19240,
+      "x": 19160,
       "y": 136,
       "type": "snow_decoration",
       "subType": "sherpa_tent"
     },
     {
+      "x": 19250,
+      "y": 136,
+      "type": "snow_decoration",
+      "subType": "prayer_flags"
+    },
+    {
+      "x": 19300,
+      "y": 136,
+      "type": "snow_decoration",
+      "subType": "weather_station"
+    },
+    {
       "x": 19380,
-      "y": 168,
+      "y": 156,
       "type": "snow_decoration",
       "subType": "prayer_flags"
     },
     {
       "x": 19600,
-      "y": 168,
+      "y": 120,
       "type": "snow_decoration",
-      "subType": "weather_station"
+      "subType": "crevasse_marker"
     },
     {
-      "x": 19680,
-      "y": 168,
+      "x": 19700,
+      "y": 140,
       "type": "snow_decoration",
       "subType": "ice_spire"
     },
     {
       "x": 19790,
-      "y": 136,
-      "h": 50,
+      "y": 144,
+      "h": 54,
       "type": "snow_decoration",
       "subType": "fixed_ropes"
     },
     {
-      "x": 19920,
-      "y": 104,
-      "h": 50,
+      "x": 19960,
+      "y": 88,
+      "h": 48,
       "type": "snow_decoration",
       "subType": "fixed_ropes"
     },
     {
-      "x": 20050,
-      "y": 74,
-      "h": 50,
-      "type": "snow_decoration",
-      "subType": "fixed_ropes"
-    },
-    {
-      "x": 20120,
-      "y": 46,
+      "x": 20130,
+      "y": 58,
       "type": "snow_decoration",
       "subType": "ice_spire"
     },
     {
-      "x": 20240,
-      "y": 74,
-      "type": "snow_decoration",
-      "subType": "lantern"
-    },
-    {
-      "x": 20320,
+      "x": 20260,
       "y": 74,
       "type": "snow_decoration",
       "subType": "prayer_cairn"
@@ -4271,19 +4762,19 @@ window.LEVELS[3] = {
       "x": 20450,
       "y": 74,
       "type": "snow_decoration",
-      "subType": "oxygen_depot"
-    },
-    {
-      "x": 20490,
-      "y": 74,
-      "type": "snow_decoration",
       "subType": "sherpa_tent"
     },
     {
-      "x": 20560,
+      "x": 20510,
       "y": 74,
       "type": "snow_decoration",
-      "subType": "weather_station"
+      "subType": "oxygen_depot"
+    },
+    {
+      "x": 20550,
+      "y": 74,
+      "type": "snow_decoration",
+      "subType": "snow_lantern"
     },
     {
       "x": 20620,
@@ -4292,133 +4783,181 @@ window.LEVELS[3] = {
       "subType": "prayer_flags"
     },
     {
-      "x": 20770,
-      "y": 136,
+      "x": 20700,
+      "y": 116,
       "type": "snow_decoration",
-      "subType": "lantern"
+      "subType": "crevasse_marker"
     },
     {
-      "x": 20850,
+      "x": 20760,
+      "y": 136,
+      "type": "snow_decoration",
+      "subType": "snow_lantern"
+    },
+    {
+      "x": 20800,
       "y": 136,
       "type": "snow_decoration",
       "subType": "assault_tent"
     },
     {
-      "x": 21020,
+      "x": 20980,
       "y": 136,
       "type": "snow_decoration",
       "subType": "oxygen_depot"
     },
     {
-      "x": 21180,
+      "x": 21150,
       "y": 136,
       "type": "snow_decoration",
       "subType": "prayer_cairn"
     },
     {
-      "x": 21270,
-      "y": 124,
-      "type": "snow_decoration",
-      "subType": "ice_spire"
-    },
-    {
-      "x": 21410,
-      "y": 112,
+      "x": 21210,
+      "y": 140,
       "type": "snow_decoration",
       "subType": "crevasse_marker"
     },
     {
-      "x": 21560,
-      "y": 104,
+      "x": 21390,
+      "y": 106,
       "h": 46,
       "type": "snow_decoration",
       "subType": "fixed_ropes"
     },
     {
-      "x": 21740,
-      "y": 116,
+      "x": 21570,
+      "y": 76,
       "type": "snow_decoration",
       "subType": "ice_spire"
     },
     {
-      "x": 21930,
-      "y": 126,
+      "x": 21750,
+      "y": 110,
+      "type": "snow_decoration",
+      "subType": "prayer_cairn"
+    },
+    {
+      "x": 22040,
+      "y": 104,
       "type": "snow_decoration",
       "subType": "crevasse_marker"
     },
     {
-      "x": 22150,
-      "y": 126,
+      "x": 22135,
+      "y": 134,
+      "h": 60,
+      "type": "snow_decoration",
+      "subType": "hillary_step_ropes"
+    },
+    {
+      "x": 22310,
+      "y": 78,
       "h": 54,
       "type": "snow_decoration",
       "subType": "hillary_step_ropes"
     },
     {
-      "x": 22280,
-      "y": 112,
-      "h": 54,
-      "type": "snow_decoration",
-      "subType": "hillary_step_ropes"
-    },
-    {
-      "x": 22420,
-      "y": 96,
+      "x": 22455,
+      "y": 52,
       "type": "snow_decoration",
       "subType": "ice_spire"
     },
     {
-      "x": 22550,
-      "y": 96,
+      "x": 22560,
+      "y": 80,
       "type": "snow_decoration",
       "subType": "prayer_flags"
     },
     {
-      "x": 22710,
-      "y": 98,
-      "type": "snow_decoration",
-      "subType": "lantern"
-    },
-    {
-      "x": 22780,
-      "y": 98,
+      "x": 22670,
+      "y": 92,
       "type": "snow_decoration",
       "subType": "prayer_flags"
     },
     {
-      "x": 22920,
+      "x": 22770,
+      "y": 98,
+      "type": "snow_decoration",
+      "subType": "snow_lantern"
+    },
+    {
+      "x": 22790,
       "y": 98,
       "type": "snow_decoration",
       "subType": "assault_tent"
     },
     {
-      "x": 23150,
-      "y": 98,
-      "type": "snow_decoration",
-      "subType": "summit_monument"
-    },
-    {
-      "x": 23310,
+      "x": 22970,
       "y": 98,
       "type": "snow_decoration",
       "subType": "prayer_cairn"
     },
     {
-      "x": 23414,
+      "x": 23070,
       "y": 98,
       "type": "snow_decoration",
-      "subType": "summit_nest"
+      "subType": "summit_monument"
     },
     {
-      "x": 23550,
+      "x": 23030,
       "y": 98,
       "type": "snow_decoration",
       "subType": "prayer_flags"
     },
     {
+      "x": 23150,
+      "y": 98,
+      "type": "snow_decoration",
+      "subType": "prayer_flags"
+    },
+    {
+      "x": 23190,
+      "y": 98,
+      "type": "snow_decoration",
+      "subType": "summit_nest"
+    },
+    {
+      "x": 23260,
+      "y": 98,
+      "type": "snow_decoration",
+      "subType": "oxygen_depot"
+    },
+    {
+      "x": 23360,
+      "y": 98,
+      "type": "snow_decoration",
+      "subType": "snow_lantern"
+    },
+    {
+      "x": 23410,
+      "y": 98,
+      "type": "snow_decoration",
+      "subType": "ice_spire"
+    },
+    {
+      "x": 23430,
+      "y": 98,
+      "type": "snow_decoration",
+      "subType": "prayer_flags"
+    },
+    {
+      "x": 23660,
+      "y": 108,
+      "type": "snow_decoration",
+      "subType": "prayer_cairn"
+    },
+    {
+      "x": 23740,
+      "y": 108,
+      "type": "snow_decoration",
+      "subType": "crevasse_marker"
+    },
+    {
       "x": 23830,
       "y": 110,
       "type": "snow_decoration",
-      "subType": "lantern"
+      "subType": "snow_lantern"
     },
     {
       "x": 23900,
@@ -4436,82 +4975,106 @@ window.LEVELS[3] = {
       "x": 24040,
       "y": 126,
       "type": "snow_decoration",
-      "subType": "lantern"
+      "subType": "snow_lantern"
     },
     {
-      "x": 24100,
+      "x": 24090,
       "y": 126,
       "type": "snow_decoration",
       "subType": "assault_tent"
     },
     {
-      "x": 24170,
+      "x": 24160,
       "y": 126,
       "type": "snow_decoration",
-      "subType": "yeti_tracks"
+      "subType": "expedition_stove"
     },
     {
-      "x": 24240,
+      "x": 24200,
       "y": 126,
       "type": "snow_decoration",
       "subType": "prayer_flags"
     },
     {
-      "x": 24300,
-      "y": 104,
-      "type": "snow_decoration",
-      "subType": "ice_cavern_arch"
-    },
-    {
-      "x": 24370,
-      "y": 168,
-      "type": "snow_decoration",
-      "subType": "runic_crystal_spire"
-    },
-    {
-      "x": 24520,
-      "y": 168,
+      "x": 24240,
+      "y": 126,
       "type": "snow_decoration",
       "subType": "yeti_tracks"
     },
     {
-      "x": 24640,
-      "y": 136,
+      "x": 24300,
+      "y": 114,
+      "type": "snow_decoration",
+      "subType": "ice_cavern_arch"
+    },
+    {
+      "x": 24360,
+      "y": 154,
+      "type": "snow_decoration",
+      "subType": "runic_crystal_spire"
+    },
+    {
+      "x": 24450,
+      "y": 154,
+      "type": "snow_decoration",
+      "subType": "blue_fire_brazier"
+    },
+    {
+      "x": 24510,
+      "y": 154,
+      "type": "snow_decoration",
+      "subType": "yeti_tracks"
+    },
+    {
+      "x": 24630,
+      "y": 162,
       "type": "snow_decoration",
       "subType": "ice_spire"
     },
     {
-      "x": 24780,
-      "y": 112,
+      "x": 24710,
+      "y": 162,
+      "type": "snow_decoration",
+      "subType": "blue_fire_brazier"
+    },
+    {
+      "x": 24790,
+      "y": 110,
       "type": "snow_decoration",
       "subType": "runic_crystal_spire"
     },
     {
       "x": 24900,
-      "y": 94,
+      "y": 162,
       "type": "snow_decoration",
       "subType": "crevasse_marker"
     },
     {
-      "x": 25010,
+      "x": 24980,
       "y": 124,
       "type": "snow_decoration",
       "subType": "yeti_warning_totem"
     },
     {
-      "x": 25080,
+      "x": 25040,
+      "y": 124,
+      "type": "snow_decoration",
+      "subType": "blue_fire_brazier"
+    },
+    {
+      "x": 25110,
       "y": 124,
       "type": "snow_decoration",
       "subType": "yeti_tracks"
     },
     {
-      "x": 25160,
+      "x": 25170,
       "y": 124,
       "type": "snow_decoration",
-      "subType": "lantern"
+      "subType": "snow_lantern"
     },
     {
-      "x": 25210,
+      "x": 25220,
       "y": 124,
       "type": "snow_decoration",
       "subType": "prayer_flags"
@@ -4520,7 +5083,7 @@ window.LEVELS[3] = {
       "x": 25270,
       "y": 124,
       "type": "snow_decoration",
-      "subType": "lantern"
+      "subType": "snow_lantern"
     },
     {
       "x": 25310,
@@ -4529,65 +5092,59 @@ window.LEVELS[3] = {
       "subType": "yeti_tracks"
     },
     {
-      "x": 25350,
+      "x": 25360,
       "y": 124,
       "type": "snow_decoration",
       "subType": "yeti_warning_totem"
     },
     {
       "x": 25440,
+      "y": 130,
+      "type": "snow_decoration",
+      "subType": "runic_crystal_spire"
+    },
+    {
+      "x": 25500,
+      "y": 88,
+      "type": "snow_decoration",
+      "subType": "crevasse_marker"
+    },
+    {
+      "x": 25570,
+      "y": 112,
+      "type": "snow_decoration",
+      "subType": "frost_bridge",
+      "w": 160
+    },
+    {
+      "x": 25620,
       "y": 180,
       "type": "snow_decoration",
       "subType": "polar_vortex"
     },
     {
-      "x": 25500,
-      "y": 96,
-      "type": "snow_decoration",
-      "subType": "runic_crystal_spire"
-    },
-    {
-      "x": 25540,
-      "y": 96,
-      "type": "snow_decoration",
-      "subType": "crevasse_marker"
-    },
-    {
-      "x": 25580,
-      "y": 114,
-      "type": "snow_decoration",
-      "subType": "frost_bridge",
-      "w": 120
-    },
-    {
-      "x": 25730,
-      "y": 128,
-      "type": "snow_decoration",
-      "subType": "ice_spire"
-    },
-    {
-      "x": 25780,
-      "y": 104,
-      "type": "snow_decoration",
-      "subType": "runic_crystal_spire"
-    },
-    {
-      "x": 25855,
+      "x": 25790,
       "y": 126,
       "type": "snow_decoration",
-      "subType": "lantern"
+      "subType": "snow_lantern"
     },
     {
-      "x": 25885,
+      "x": 25830,
       "y": 126,
       "type": "snow_decoration",
       "subType": "assault_tent"
     },
     {
-      "x": 25950,
+      "x": 25890,
       "y": 126,
       "type": "snow_decoration",
       "subType": "expedition_stove"
+    },
+    {
+      "x": 25950,
+      "y": 126,
+      "type": "snow_decoration",
+      "subType": "blue_fire_brazier"
     },
     {
       "x": 26010,
@@ -4596,63 +5153,63 @@ window.LEVELS[3] = {
       "subType": "prayer_flags"
     },
     {
-      "x": 26030,
-      "y": 126,
-      "type": "snow_decoration",
-      "subType": "yeti_tracks"
-    },
-    {
-      "x": 26080,
-      "y": 156,
-      "type": "snow_decoration",
-      "subType": "yeti_tracks"
-    },
-    {
-      "x": 26170,
-      "y": 156,
+      "x": 26070,
+      "y": 154,
       "type": "snow_decoration",
       "subType": "runic_crystal_spire"
     },
     {
-      "x": 26250,
-      "y": 120,
+      "x": 26140,
+      "y": 154,
+      "type": "snow_decoration",
+      "subType": "yeti_tracks"
+    },
+    {
+      "x": 26230,
+      "y": 118,
       "type": "snow_decoration",
       "subType": "yeti_warning_totem"
     },
     {
-      "x": 26315,
-      "y": 104,
+      "x": 26280,
+      "y": 102,
       "type": "snow_decoration",
       "subType": "frost_bridge",
-      "w": 140
+      "w": 160
     },
     {
-      "x": 26385,
+      "x": 26340,
       "y": 180,
       "type": "snow_decoration",
       "subType": "polar_vortex"
     },
     {
-      "x": 26545,
-      "y": 110,
+      "x": 26420,
+      "y": 102,
       "type": "snow_decoration",
-      "subType": "lantern"
+      "subType": "blue_fire_brazier"
     },
     {
-      "x": 26600,
-      "y": 110,
+      "x": 26530,
+      "y": 114,
+      "type": "snow_decoration",
+      "subType": "snow_lantern"
+    },
+    {
+      "x": 26580,
+      "y": 114,
       "type": "snow_decoration",
       "subType": "yeti_warning_totem"
     },
     {
-      "x": 26635,
-      "y": 110,
+      "x": 26640,
+      "y": 114,
       "type": "snow_decoration",
       "subType": "yeti_tracks"
     },
     {
-      "x": 26670,
-      "y": 110,
+      "x": 26680,
+      "y": 114,
       "type": "snow_decoration",
       "subType": "prayer_flags"
     },
@@ -4660,7 +5217,7 @@ window.LEVELS[3] = {
       "x": 26720,
       "y": 110,
       "type": "snow_decoration",
-      "subType": "lantern"
+      "subType": "snow_lantern"
     },
     {
       "x": 26770,
@@ -4675,28 +5232,40 @@ window.LEVELS[3] = {
       "subType": "yeti_warning_totem"
     },
     {
-      "x": 26980,
-      "y": 96,
-      "type": "snow_decoration",
-      "subType": "crevasse_marker"
-    },
-    {
-      "x": 27030,
-      "y": 96,
-      "type": "snow_decoration",
-      "subType": "runic_crystal_spire"
-    },
-    {
-      "x": 27120,
+      "x": 26900,
       "y": 116,
       "type": "snow_decoration",
       "subType": "blue_fire_brazier"
     },
     {
-      "x": 27170,
+      "x": 26990,
+      "y": 76,
+      "type": "snow_decoration",
+      "subType": "runic_crystal_spire"
+    },
+    {
+      "x": 27050,
       "y": 116,
       "type": "snow_decoration",
-      "subType": "ice_spire"
+      "subType": "crevasse_marker"
+    },
+    {
+      "x": 27120,
+      "y": 112,
+      "type": "snow_decoration",
+      "subType": "blue_fire_brazier"
+    },
+    {
+      "x": 27170,
+      "y": 180,
+      "type": "snow_decoration",
+      "subType": "polar_vortex"
+    },
+    {
+      "x": 27240,
+      "y": 112,
+      "type": "snow_decoration",
+      "subType": "blue_fire_brazier"
     },
     {
       "x": 27310,
@@ -4717,7 +5286,7 @@ window.LEVELS[3] = {
       "subType": "blue_fire_brazier"
     },
     {
-      "x": 27495,
+      "x": 27485,
       "y": 126,
       "type": "snow_decoration",
       "subType": "prayer_flags"
@@ -4729,449 +5298,406 @@ window.LEVELS[3] = {
       "subType": "yeti_tracks"
     },
     {
-      "x": 27565,
+      "x": 27585,
       "y": 126,
       "type": "snow_decoration",
-      "subType": "lantern"
+      "subType": "snow_lantern"
     },
     {
-      "x": 27620,
-      "y": 156,
+      "x": 27660,
+      "y": 148,
       "type": "snow_decoration",
       "subType": "runic_crystal_spire"
     },
     {
-      "x": 27710,
-      "y": 156,
-      "type": "snow_decoration",
-      "subType": "yeti_tracks"
-    },
-    {
-      "x": 27710,
-      "y": 98,
+      "x": 27720,
+      "y": 148,
       "type": "snow_decoration",
       "subType": "blue_fire_brazier"
     },
     {
-      "x": 27800,
-      "y": 112,
+      "x": 27810,
+      "y": 148,
       "type": "snow_decoration",
-      "subType": "crevasse_marker"
+      "subType": "yeti_tracks"
     },
     {
-      "x": 27990,
+      "x": 27880,
       "y": 110,
       "type": "snow_decoration",
       "subType": "blue_fire_brazier"
     },
     {
-      "x": 28030,
+      "x": 27950,
       "y": 110,
       "type": "snow_decoration",
       "subType": "yeti_warning_totem"
     },
     {
-      "x": 28080,
+      "x": 28020,
       "y": 110,
       "type": "snow_decoration",
       "subType": "yeti_tracks"
     },
     {
-      "x": 28120,
+      "x": 28090,
       "y": 110,
       "type": "snow_decoration",
       "subType": "blue_fire_brazier"
     },
     {
       "x": 28170,
-      "y": 110,
-      "type": "snow_decoration",
-      "subType": "blue_fire_brazier"
-    },
-    {
-      "x": 28220,
-      "y": 110,
-      "type": "snow_decoration",
-      "subType": "yeti_tracks"
-    },
-    {
-      "x": 28280,
-      "y": 110,
-      "type": "snow_decoration",
-      "subType": "lantern"
-    },
-    {
-      "x": 28430,
-      "y": 100,
-      "type": "snow_decoration",
-      "subType": "crevasse_marker"
-    },
-    {
-      "x": 28470,
-      "y": 100,
-      "type": "snow_decoration",
-      "subType": "runic_crystal_spire"
-    },
-    {
-      "x": 28540,
-      "y": 116,
-      "type": "snow_decoration",
-      "subType": "blue_fire_brazier"
-    },
-    {
-      "x": 28660,
-      "y": 126,
-      "type": "snow_decoration",
-      "subType": "blue_fire_brazier"
-    },
-    {
-      "x": 28710,
-      "y": 126,
-      "type": "snow_decoration",
-      "subType": "prayer_flags"
-    },
-    {
-      "x": 28780,
-      "y": 126,
-      "type": "snow_decoration",
-      "subType": "yeti_warning_totem"
-    },
-    {
-      "x": 28820,
-      "y": 126,
-      "type": "snow_decoration",
-      "subType": "lantern"
-    },
-    {
-      "x": 28910,
-      "y": 156,
-      "type": "snow_decoration",
-      "subType": "runic_crystal_spire"
-    },
-    {
-      "x": 28980,
-      "y": 156,
-      "type": "snow_decoration",
-      "subType": "yeti_tracks"
-    },
-    {
-      "x": 29050,
       "y": 118,
       "type": "snow_decoration",
       "subType": "blue_fire_brazier"
     },
     {
-      "x": 29125,
-      "y": 104,
+      "x": 28230,
+      "y": 118,
       "type": "snow_decoration",
-      "subType": "frost_bridge",
-      "w": 130
+      "subType": "yeti_tracks"
     },
     {
-      "x": 29190,
-      "y": 180,
+      "x": 28290,
+      "y": 118,
       "type": "snow_decoration",
-      "subType": "polar_vortex"
+      "subType": "snow_lantern"
     },
     {
-      "x": 29285,
+      "x": 28420,
+      "y": 88,
+      "type": "snow_decoration",
+      "subType": "runic_crystal_spire"
+    },
+    {
+      "x": 28480,
+      "y": 88,
+      "type": "snow_decoration",
+      "subType": "crevasse_marker"
+    },
+    {
+      "x": 28540,
       "y": 126,
       "type": "snow_decoration",
       "subType": "blue_fire_brazier"
     },
     {
-      "x": 29330,
-      "y": 126,
-      "type": "snow_decoration",
-      "subType": "great_snow_yeti"
-    },
-    {
-      "x": 29385,
-      "y": 126,
-      "type": "snow_decoration",
-      "subType": "yeti_crystal_throne"
-    },
-    {
-      "x": 29470,
-      "y": 126,
-      "type": "snow_decoration",
-      "subType": "blue_fire_brazier"
-    },
-    {
-      "x": 29510,
+      "x": 28590,
       "y": 126,
       "type": "snow_decoration",
       "subType": "prayer_flags"
     },
     {
-      "x": 29560,
+      "x": 28650,
+      "y": 126,
+      "type": "snow_decoration",
+      "subType": "blue_fire_brazier"
+    },
+    {
+      "x": 28720,
+      "y": 126,
+      "type": "snow_decoration",
+      "subType": "runic_crystal_spire"
+    },
+    {
+      "x": 28910,
+      "y": 126,
+      "type": "snow_decoration",
+      "subType": "blue_fire_brazier"
+    },
+    {
+      "x": 29010,
+      "y": 126,
+      "type": "snow_decoration",
+      "subType": "blue_fire_brazier"
+    },
+    {
+      "x": 29200,
+      "y": 126,
+      "type": "snow_decoration",
+      "subType": "runic_crystal_spire"
+    },
+    {
+      "x": 29350,
+      "y": 126,
+      "type": "snow_decoration",
+      "subType": "blue_fire_brazier"
+    },
+    {
+      "x": 29390,
+      "y": 126,
+      "type": "snow_decoration",
+      "subType": "blue_fire_brazier"
+    },
+    {
+      "x": 29440,
+      "y": 104,
+      "type": "snow_decoration",
+      "subType": "yeti_crystal_throne"
+    },
+    {
+      "x": 29500,
+      "y": 126,
+      "type": "snow_decoration",
+      "subType": "prayer_flags"
+    },
+    {
+      "x": 29550,
+      "y": 126,
+      "type": "snow_decoration",
+      "subType": "blue_fire_brazier"
+    },
+    {
+      "x": 29570,
+      "y": 126,
+      "type": "snow_decoration",
+      "subType": "sanctuary_portal_gate"
+    },
+    {
+      "x": 29620,
       "y": 126,
       "type": "snow_decoration",
       "subType": "lantern"
     },
     {
-      "x": 29630,
-      "y": 126,
-      "type": "snow_decoration",
-      "subType": "lantern"
-    },
-    {
-      "x": 29680,
-      "y": 126,
-      "type": "snow_decoration",
-      "subType": "crystal_lotus"
-    },
-    {
-      "x": 29740,
+      "x": 29660,
       "y": 126,
       "type": "snow_decoration",
       "subType": "shambhala_prayer_bell"
     },
     {
-      "x": 29890,
-      "y": 104,
-      "type": "snow_decoration",
-      "subType": "crevasse_marker"
-    },
-    {
-      "x": 29930,
-      "y": 104,
-      "type": "snow_decoration",
-      "subType": "crystal_lotus"
-    },
-    {
-      "x": 30010,
-      "y": 118,
-      "type": "snow_decoration",
-      "subType": "blue_fire_brazier"
-    },
-    {
-      "x": 30140,
-      "y": 136,
+      "x": 29720,
+      "y": 126,
       "type": "snow_decoration",
       "subType": "hot_spring"
     },
     {
-      "x": 30230,
-      "y": 136,
+      "x": 29800,
+      "y": 126,
       "type": "snow_decoration",
       "subType": "crystal_lotus"
     },
     {
-      "x": 30250,
-      "y": 136,
+      "x": 29950,
+      "y": 96,
+      "type": "snow_decoration",
+      "subType": "shambhala_prayer_bell"
+    },
+    {
+      "x": 30020,
+      "y": 96,
+      "type": "snow_decoration",
+      "subType": "crystal_lotus"
+    },
+    {
+      "x": 30040,
+      "y": 96,
+      "type": "snow_decoration",
+      "subType": "blue_fire_brazier"
+    },
+    {
+      "x": 30120,
+      "y": 126,
+      "type": "snow_decoration",
+      "subType": "hot_spring"
+    },
+    {
+      "x": 30190,
+      "y": 126,
+      "type": "snow_decoration",
+      "subType": "crystal_lotus"
+    },
+    {
+      "x": 30260,
+      "y": 116,
       "type": "snow_decoration",
       "subType": "runic_crystal_spire"
+    },
+    {
+      "x": 30330,
+      "y": 126,
+      "type": "snow_decoration",
+      "subType": "lantern"
     },
     {
       "x": 30360,
       "y": 126,
       "type": "snow_decoration",
-      "subType": "shambhala_prayer_bell"
-    },
-    {
-      "x": 30400,
-      "y": 126,
-      "type": "snow_decoration",
-      "subType": "blue_fire_brazier"
-    },
-    {
-      "x": 30460,
-      "y": 126,
-      "type": "snow_decoration",
       "subType": "crystal_lotus"
     },
     {
-      "x": 30520,
+      "x": 30450,
       "y": 126,
       "type": "snow_decoration",
       "subType": "prayer_flags"
     },
     {
-      "x": 30570,
-      "y": 126,
-      "type": "snow_decoration",
-      "subType": "crystal_lotus"
-    },
-    {
-      "x": 30620,
+      "x": 30540,
       "y": 126,
       "type": "snow_decoration",
       "subType": "shambhala_prayer_bell"
     },
     {
-      "x": 30700,
-      "y": 156,
+      "x": 30600,
+      "y": 126,
       "type": "snow_decoration",
-      "subType": "runic_crystal_spire"
+      "subType": "blue_fire_brazier"
     },
     {
-      "x": 30780,
+      "x": 30640,
+      "y": 126,
+      "type": "snow_decoration",
+      "subType": "crystal_lotus"
+    },
+    {
+      "x": 30710,
       "y": 156,
       "type": "snow_decoration",
       "subType": "crystal_lotus"
     },
     {
-      "x": 30870,
-      "y": 114,
+      "x": 30810,
+      "y": 156,
       "type": "snow_decoration",
-      "subType": "blue_fire_brazier"
+      "subType": "runic_crystal_spire"
     },
     {
-      "x": 30945,
+      "x": 31000,
       "y": 104,
       "type": "snow_decoration",
       "subType": "frost_bridge",
       "w": 140
     },
     {
-      "x": 31015,
-      "y": 180,
+      "x": 31070,
+      "y": 175,
       "type": "snow_decoration",
       "subType": "polar_vortex"
     },
     {
       "x": 31180,
-      "y": 110,
-      "type": "snow_decoration",
-      "subType": "crystal_lotus"
-    },
-    {
-      "x": 31230,
-      "y": 110,
+      "y": 116,
       "type": "snow_decoration",
       "subType": "shambhala_prayer_bell"
     },
     {
-      "x": 31280,
-      "y": 110,
+      "x": 31230,
+      "y": 116,
+      "type": "snow_decoration",
+      "subType": "crystal_lotus"
+    },
+    {
+      "x": 31275,
+      "y": 116,
       "type": "snow_decoration",
       "subType": "lantern"
     },
     {
-      "x": 31360,
-      "y": 110,
+      "x": 31340,
+      "y": 116,
       "type": "snow_decoration",
       "subType": "shambhala_prayer_bell"
     },
     {
       "x": 31420,
-      "y": 110,
+      "y": 116,
       "type": "snow_decoration",
-      "subType": "crystal_lotus"
+      "subType": "lantern"
     },
     {
-      "x": 31460,
-      "y": 110,
-      "type": "snow_decoration",
-      "subType": "prayer_flags"
-    },
-    {
-      "x": 31590,
-      "y": 96,
-      "type": "snow_decoration",
-      "subType": "blue_fire_brazier"
-    },
-    {
-      "x": 31640,
-      "y": 96,
+      "x": 31630,
+      "y": 98,
       "type": "snow_decoration",
       "subType": "golden_pagoda_tower"
     },
     {
-      "x": 31680,
-      "y": 96,
+      "x": 31690,
+      "y": 98,
       "type": "snow_decoration",
       "subType": "crystal_lotus"
     },
     {
-      "x": 31730,
-      "y": 114,
+      "x": 31610,
+      "y": 98,
       "type": "snow_decoration",
       "subType": "frost_bridge",
-      "w": 140
+      "w": 110
+    },
+    {
+      "x": 31900,
+      "y": 126,
+      "type": "snow_decoration",
+      "subType": "lantern"
     },
     {
       "x": 31920,
       "y": 126,
       "type": "snow_decoration",
-      "subType": "shambhala_prayer_bell"
-    },
-    {
-      "x": 31950,
-      "y": 126,
-      "type": "snow_decoration",
       "subType": "hot_spring"
     },
     {
-      "x": 32030,
-      "y": 126,
-      "type": "snow_decoration",
-      "subType": "crystal_lotus"
-    },
-    {
-      "x": 32090,
+      "x": 31960,
       "y": 126,
       "type": "snow_decoration",
       "subType": "prayer_flags"
     },
     {
-      "x": 32140,
+      "x": 32040,
+      "y": 126,
+      "type": "snow_decoration",
+      "subType": "crystal_lotus"
+    },
+    {
+      "x": 32110,
       "y": 126,
       "type": "snow_decoration",
       "subType": "shambhala_prayer_bell"
     },
     {
-      "x": 32180,
+      "x": 32160,
       "y": 126,
       "type": "snow_decoration",
       "subType": "golden_pagoda_tower"
     },
     {
-      "x": 32250,
+      "x": 32280,
+      "y": 156,
+      "type": "snow_decoration",
+      "subType": "crystal_lotus"
+    },
+    {
+      "x": 32360,
       "y": 156,
       "type": "snow_decoration",
       "subType": "runic_crystal_spire"
     },
     {
-      "x": 32340,
-      "y": 156,
-      "type": "snow_decoration",
-      "subType": "crystal_lotus"
-    },
-    {
       "x": 32490,
-      "y": 180,
+      "y": 175,
       "type": "snow_decoration",
       "subType": "polar_vortex"
     },
     {
-      "x": 32530,
-      "y": 88,
+      "x": 32520,
+      "y": 92,
       "type": "snow_decoration",
       "subType": "blue_fire_brazier"
     },
     {
-      "x": 32590,
-      "y": 88,
-      "type": "snow_decoration",
-      "subType": "crystal_lotus"
-    },
-    {
-      "x": 32650,
-      "y": 104,
+      "x": 32660,
+      "y": 112,
       "type": "snow_decoration",
       "subType": "frost_bridge",
-      "w": 100
+      "w": 90
     },
     {
-      "x": 32710,
-      "y": 104,
+      "x": 32720,
+      "y": 112,
       "type": "snow_decoration",
       "subType": "prayer_flags"
     },
     {
-      "x": 32790,
+      "x": 32780,
       "y": 126,
       "type": "snow_decoration",
       "subType": "shambhala_prayer_bell"
@@ -5189,7 +5715,7 @@ window.LEVELS[3] = {
       "subType": "nirvana_lotus_altar"
     },
     {
-      "x": 32880,
+      "x": 32870,
       "y": 126,
       "type": "snow_decoration",
       "subType": "crystal_lotus"
@@ -5207,220 +5733,201 @@ window.LEVELS[3] = {
       "subType": "blue_fire_brazier"
     },
     {
-      "x": 33020,
+      "x": 33010,
       "y": 126,
       "type": "snow_decoration",
       "subType": "prayer_flags"
     },
     {
-      "x": 33060,
-      "y": 126,
-      "type": "snow_decoration",
-      "subType": "crystal_lotus"
-    },
-    {
-      "x": 33120,
-      "y": 126,
-      "type": "snow_decoration",
-      "subType": "kailash_chorten"
-    },
-    {
-      "x": 33140,
+      "x": 33040,
       "y": 126,
       "type": "snow_decoration",
       "subType": "shambhala_prayer_bell"
     },
     {
-      "x": 33280,
-      "y": 96,
+      "x": 33070,
+      "y": 126,
       "type": "snow_decoration",
-      "subType": "blue_fire_brazier"
+      "subType": "kailash_chorten"
     },
     {
-      "x": 33300,
-      "y": 96,
-      "type": "snow_decoration",
-      "subType": "astral_star_crystal"
-    },
-    {
-      "x": 33360,
-      "y": 96,
+      "x": 33110,
+      "y": 126,
       "type": "snow_decoration",
       "subType": "crystal_lotus"
     },
     {
-      "x": 33420,
-      "y": 114,
+      "x": 33190,
+      "y": 126,
       "type": "snow_decoration",
-      "subType": "frost_bridge",
-      "w": 130
+      "subType": "blue_fire_brazier"
     },
     {
-      "x": 33500,
+      "x": 33260,
+      "y": 126,
+      "type": "snow_decoration",
+      "subType": "astral_star_crystal"
+    },
+    {
+      "x": 33380,
+      "y": 126,
+      "type": "snow_decoration",
+      "subType": "crystal_lotus"
+    },
+    {
+      "x": 33480,
+      "y": 80,
+      "type": "snow_decoration",
+      "subType": "blue_fire_brazier"
+    },
+    {
+      "x": 33630,
+      "y": 126,
+      "type": "snow_decoration",
+      "subType": "prayer_flags"
+    },
+    {
+      "x": 33690,
+      "y": 126,
+      "type": "snow_decoration",
+      "subType": "shambhala_prayer_bell"
+    },
+    {
+      "x": 33750,
       "y": 180,
       "type": "snow_decoration",
       "subType": "polar_vortex"
     },
     {
-      "x": 33660,
-      "y": 126,
+      "x": 33810,
+      "y": 110,
       "type": "snow_decoration",
-      "subType": "prayer_flags"
+      "subType": "astral_star_crystal"
     },
     {
-      "x": 33680,
-      "y": 126,
-      "type": "snow_decoration",
-      "subType": "shambhala_prayer_bell"
-    },
-    {
-      "x": 33720,
+      "x": 33970,
       "y": 126,
       "type": "snow_decoration",
       "subType": "kailash_chorten"
     },
     {
-      "x": 33760,
-      "y": 126,
-      "type": "snow_decoration",
-      "subType": "crystal_lotus"
-    },
-    {
-      "x": 33800,
+      "x": 34010,
       "y": 126,
       "type": "snow_decoration",
       "subType": "hot_spring"
     },
     {
-      "x": 33880,
-      "y": 126,
-      "type": "snow_decoration",
-      "subType": "astral_star_crystal"
-    },
-    {
-      "x": 33920,
+      "x": 34090,
       "y": 126,
       "type": "snow_decoration",
       "subType": "crystal_lotus"
     },
     {
-      "x": 33960,
+      "x": 34130,
       "y": 126,
       "type": "snow_decoration",
       "subType": "blue_fire_brazier"
     },
     {
-      "x": 34040,
-      "y": 156,
+      "x": 34160,
+      "y": 126,
       "type": "snow_decoration",
-      "subType": "runic_crystal_spire"
+      "subType": "shambhala_prayer_bell"
     },
     {
-      "x": 34100,
-      "y": 156,
+      "x": 34260,
+      "y": 126,
       "type": "snow_decoration",
       "subType": "astral_star_crystal"
     },
     {
-      "x": 34240,
-      "y": 100,
+      "x": 34360,
+      "y": 104,
       "type": "snow_decoration",
       "subType": "prayer_flags"
     },
     {
-      "x": 34260,
-      "y": 100,
+      "x": 34380,
+      "y": 104,
       "type": "snow_decoration",
       "subType": "rainbow_bridge",
-      "w": 180
+      "w": 220
     },
     {
-      "x": 34350,
+      "x": 34480,
       "y": 180,
       "type": "snow_decoration",
       "subType": "polar_vortex"
     },
     {
-      "x": 34480,
+      "x": 34610,
+      "y": 118,
+      "type": "snow_decoration",
+      "subType": "kailash_chorten"
+    },
+    {
+      "x": 34640,
+      "y": 118,
+      "type": "snow_decoration",
+      "subType": "crystal_lotus"
+    },
+    {
+      "x": 34680,
       "y": 118,
       "type": "snow_decoration",
       "subType": "blue_fire_brazier"
     },
     {
-      "x": 34520,
-      "y": 118,
-      "type": "snow_decoration",
-      "subType": "kailash_chorten"
-    },
-    {
-      "x": 34580,
-      "y": 118,
-      "type": "snow_decoration",
-      "subType": "crystal_lotus"
-    },
-    {
-      "x": 34620,
-      "y": 118,
-      "type": "snow_decoration",
-      "subType": "astral_star_crystal"
-    },
-    {
-      "x": 34660,
-      "y": 118,
-      "type": "snow_decoration",
-      "subType": "shambhala_prayer_bell"
-    },
-    {
-      "x": 34740,
-      "y": 118,
-      "type": "snow_decoration",
-      "subType": "shambhala_prayer_bell"
-    },
-    {
-      "x": 34760,
-      "y": 118,
-      "type": "snow_decoration",
-      "subType": "kailash_chorten"
-    },
-    {
-      "x": 34780,
-      "y": 118,
-      "type": "snow_decoration",
-      "subType": "crystal_lotus"
-    },
-    {
-      "x": 34820,
-      "y": 118,
-      "type": "snow_decoration",
-      "subType": "astral_star_crystal"
-    },
-    {
-      "x": 34880,
-      "y": 118,
+      "x": 34720,
+      "y": 126,
       "type": "snow_decoration",
       "subType": "prayer_flags"
     },
     {
-      "x": 34990,
-      "y": 96,
+      "x": 34750,
+      "y": 126,
+      "type": "snow_decoration",
+      "subType": "shambhala_prayer_bell"
+    },
+    {
+      "x": 34780,
+      "y": 126,
+      "type": "snow_decoration",
+      "subType": "agartha_crystal_palace"
+    },
+    {
+      "x": 34880,
+      "y": 126,
+      "type": "snow_decoration",
+      "subType": "crystal_lotus"
+    },
+    {
+      "x": 34940,
+      "y": 126,
       "type": "snow_decoration",
       "subType": "blue_fire_brazier"
     },
     {
       "x": 35000,
-      "y": 96,
+      "y": 126,
+      "type": "snow_decoration",
+      "subType": "astral_star_crystal"
+    },
+    {
+      "x": 35080,
+      "y": 126,
+      "type": "snow_decoration",
+      "subType": "kailash_chorten"
+    },
+    {
+      "x": 35150,
+      "y": 130,
       "type": "snow_decoration",
       "subType": "crystal_lotus"
     },
     {
-      "x": 35040,
-      "y": 96,
-      "type": "snow_decoration",
-      "subType": "agartha_crystal_palace"
-    },
-    {
-      "x": 35080,
-      "y": 96,
+      "x": 35220,
+      "y": 130,
       "type": "snow_decoration",
       "subType": "astral_star_crystal"
     },
@@ -5428,83 +5935,89 @@ window.LEVELS[3] = {
       "x": 35280,
       "y": 126,
       "type": "snow_decoration",
+      "subType": "blue_fire_brazier"
+    },
+    {
+      "x": 35390,
+      "y": 126,
+      "type": "snow_decoration",
       "subType": "prayer_flags"
     },
     {
-      "x": 35320,
+      "x": 35420,
       "y": 126,
       "type": "snow_decoration",
       "subType": "shambhala_prayer_bell"
     },
     {
-      "x": 35340,
-      "y": 126,
-      "type": "snow_decoration",
-      "subType": "kailash_chorten"
-    },
-    {
-      "x": 35360,
+      "x": 35450,
       "y": 126,
       "type": "snow_decoration",
       "subType": "hot_spring"
     },
     {
-      "x": 35430,
+      "x": 35500,
       "y": 126,
       "type": "snow_decoration",
-      "subType": "astral_star_crystal"
+      "subType": "celestial_star_throne"
     },
     {
-      "x": 35500,
+      "x": 35550,
       "y": 126,
       "type": "snow_decoration",
       "subType": "crystal_lotus"
     },
     {
-      "x": 35540,
-      "y": 126,
-      "type": "snow_decoration",
-      "subType": "shambhala_prayer_bell"
-    },
-    {
-      "x": 35580,
+      "x": 35600,
       "y": 126,
       "type": "snow_decoration",
       "subType": "agartha_crystal_palace"
     },
     {
-      "x": 35670,
-      "y": 156,
+      "x": 35680,
+      "y": 126,
+      "type": "snow_decoration",
+      "subType": "blue_fire_brazier"
+    },
+    {
+      "x": 35730,
+      "y": 126,
       "type": "snow_decoration",
       "subType": "astral_star_crystal"
     },
     {
-      "x": 35740,
-      "y": 156,
+      "x": 35810,
+      "y": 126,
+      "type": "snow_decoration",
+      "subType": "shambhala_prayer_bell"
+    },
+    {
+      "x": 35880,
+      "y": 140,
       "type": "snow_decoration",
       "subType": "crystal_lotus"
     },
     {
-      "x": 35890,
+      "x": 35930,
       "y": 180,
       "type": "snow_decoration",
       "subType": "polar_vortex"
     },
     {
-      "x": 35930,
-      "y": 88,
-      "type": "snow_decoration",
-      "subType": "blue_fire_brazier"
-    },
-    {
-      "x": 35990,
-      "y": 88,
+      "x": 35980,
+      "y": 64,
       "type": "snow_decoration",
       "subType": "astral_star_crystal"
     },
     {
-      "x": 36140,
-      "y": 104,
+      "x": 36050,
+      "y": 76,
+      "type": "snow_decoration",
+      "subType": "crystal_lotus"
+    },
+    {
+      "x": 36160,
+      "y": 126,
       "type": "snow_decoration",
       "subType": "prayer_flags"
     },
@@ -5515,40 +6028,28 @@ window.LEVELS[3] = {
       "subType": "shambhala_prayer_bell"
     },
     {
-      "x": 36200,
+      "x": 36220,
       "y": 126,
       "type": "snow_decoration",
       "subType": "kailash_chorten"
     },
     {
-      "x": 36220,
+      "x": 36260,
       "y": 126,
       "type": "snow_decoration",
       "subType": "crystal_lotus"
     },
     {
-      "x": 36240,
-      "y": 126,
-      "type": "snow_decoration",
-      "subType": "celestial_star_throne"
-    },
-    {
-      "x": 36280,
-      "y": 126,
-      "type": "snow_decoration",
-      "subType": "astral_star_crystal"
-    },
-    {
-      "x": 36320,
+      "x": 36290,
       "y": 126,
       "type": "snow_decoration",
       "subType": "cosmic_burrow_portal"
     },
     {
-      "x": 36360,
+      "x": 36340,
       "y": 126,
       "type": "snow_decoration",
-      "subType": "crystal_lotus"
+      "subType": "astral_star_crystal"
     },
     {
       "x": 36370,
@@ -5563,70 +6064,64 @@ window.LEVELS[3] = {
       "subType": "prayer_flags"
     },
     {
-      "x": 36450,
+      "x": 36460,
       "y": 126,
       "type": "snow_decoration",
       "subType": "boreal_pillar"
     },
     {
-      "x": 36480,
+      "x": 36500,
       "y": 126,
       "type": "snow_decoration",
       "subType": "astral_star_crystal"
     },
     {
-      "x": 36520,
+      "x": 36550,
       "y": 126,
       "type": "snow_decoration",
       "subType": "crystal_lotus"
     },
     {
-      "x": 36620,
-      "y": 108,
+      "x": 36640,
+      "y": 110,
       "type": "snow_decoration",
       "subType": "astral_star_crystal"
     },
     {
       "x": 36760,
-      "y": 92,
+      "y": 72,
       "type": "snow_decoration",
       "subType": "comet_altar"
     },
     {
       "x": 36810,
-      "y": 92,
+      "y": 72,
       "type": "snow_decoration",
       "subType": "crystal_lotus"
     },
     {
-      "x": 36840,
-      "y": 92,
-      "type": "snow_decoration",
-      "subType": "boreal_pillar"
-    },
-    {
-      "x": 37000,
-      "y": 126,
-      "type": "snow_decoration",
-      "subType": "constellation_arch"
-    },
-    {
-      "x": 37070,
-      "y": 126,
+      "x": 36920,
+      "y": 96,
       "type": "snow_decoration",
       "subType": "astral_star_crystal"
     },
     {
-      "x": 37160,
+      "x": 37040,
+      "y": 112,
+      "type": "snow_decoration",
+      "subType": "shooting_star_arch"
+    },
+    {
+      "x": 37150,
       "y": 126,
       "type": "snow_decoration",
       "subType": "prayer_flags"
     },
     {
-      "x": 37170,
+      "x": 37160,
       "y": 126,
       "type": "snow_decoration",
-      "subType": "boreal_pillar"
+      "subType": "constellation_arch"
     },
     {
       "x": 37210,
@@ -5635,13 +6130,13 @@ window.LEVELS[3] = {
       "subType": "shambhala_prayer_bell"
     },
     {
-      "x": 37260,
+      "x": 37240,
       "y": 126,
       "type": "snow_decoration",
       "subType": "kailash_chorten"
     },
     {
-      "x": 37310,
+      "x": 37290,
       "y": 126,
       "type": "snow_decoration",
       "subType": "blue_fire_brazier"
@@ -5654,19 +6149,19 @@ window.LEVELS[3] = {
     },
     {
       "x": 37440,
-      "y": 154,
+      "y": 118,
       "type": "snow_decoration",
       "subType": "astral_star_crystal"
     },
     {
-      "x": 37490,
-      "y": 154,
+      "x": 37480,
+      "y": 118,
       "type": "snow_decoration",
       "subType": "polar_vortex"
     },
     {
-      "x": 37530,
-      "y": 154,
+      "x": 37570,
+      "y": 68,
       "type": "snow_decoration",
       "subType": "comet_altar"
     },
@@ -5677,62 +6172,62 @@ window.LEVELS[3] = {
       "subType": "astral_star_crystal"
     },
     {
-      "x": 37770,
+      "x": 37750,
       "y": 96,
       "type": "snow_decoration",
       "subType": "boreal_pillar"
     },
     {
-      "x": 37860,
-      "y": 82,
+      "x": 37830,
+      "y": 74,
       "type": "snow_decoration",
       "subType": "constellation_arch"
     },
     {
-      "x": 37920,
-      "y": 82,
+      "x": 37890,
+      "y": 50,
       "type": "snow_decoration",
       "subType": "crystal_lotus"
     },
     {
-      "x": 38010,
-      "y": 118,
+      "x": 37990,
+      "y": 120,
       "type": "snow_decoration",
       "subType": "kailash_chorten"
     },
     {
-      "x": 38050,
-      "y": 118,
+      "x": 38040,
+      "y": 120,
       "type": "snow_decoration",
       "subType": "shambhala_prayer_bell"
     },
     {
       "x": 38080,
-      "y": 118,
+      "y": 120,
       "type": "snow_decoration",
       "subType": "boreal_pillar"
     },
     {
       "x": 38120,
-      "y": 118,
+      "y": 120,
       "type": "snow_decoration",
       "subType": "shooting_star_arch"
     },
     {
       "x": 38160,
-      "y": 118,
+      "y": 120,
       "type": "snow_decoration",
       "subType": "nebula_garden_flora"
     },
     {
       "x": 38200,
-      "y": 118,
+      "y": 120,
       "type": "snow_decoration",
       "subType": "astral_star_crystal"
     },
     {
       "x": 38240,
-      "y": 118,
+      "y": 120,
       "type": "snow_decoration",
       "subType": "crystal_lotus"
     },
@@ -5743,37 +6238,37 @@ window.LEVELS[3] = {
       "subType": "astral_star_crystal"
     },
     {
-      "x": 38450,
-      "y": 92,
+      "x": 38480,
+      "y": 64,
       "type": "snow_decoration",
       "subType": "nebula_garden_flora"
     },
     {
-      "x": 38500,
-      "y": 92,
+      "x": 38540,
+      "y": 126,
       "type": "snow_decoration",
       "subType": "comet_altar"
     },
     {
-      "x": 38540,
-      "y": 92,
-      "type": "snow_decoration",
-      "subType": "boreal_pillar"
-    },
-    {
-      "x": 38710,
+      "x": 38600,
       "y": 126,
       "type": "snow_decoration",
       "subType": "crystal_lotus"
     },
     {
-      "x": 38740,
-      "y": 126,
+      "x": 38700,
+      "y": 100,
       "type": "snow_decoration",
-      "subType": "nebula_garden_flora"
+      "subType": "boreal_pillar"
     },
     {
-      "x": 38860,
+      "x": 38840,
+      "y": 126,
+      "type": "snow_decoration",
+      "subType": "prayer_flags"
+    },
+    {
+      "x": 38850,
       "y": 126,
       "type": "snow_decoration",
       "subType": "boreal_pillar"
@@ -5803,133 +6298,115 @@ window.LEVELS[3] = {
       "subType": "blue_fire_brazier"
     },
     {
-      "x": 39040,
+      "x": 39050,
       "y": 126,
       "type": "snow_decoration",
       "subType": "nebula_garden_flora"
     },
     {
-      "x": 39130,
-      "y": 156,
+      "x": 39140,
+      "y": 148,
       "type": "snow_decoration",
       "subType": "astral_star_crystal"
     },
     {
-      "x": 39180,
-      "y": 156,
+      "x": 39220,
+      "y": 148,
       "type": "snow_decoration",
       "subType": "polar_vortex"
     },
     {
-      "x": 39220,
-      "y": 156,
+      "x": 39280,
+      "y": 148,
       "type": "snow_decoration",
       "subType": "comet_altar"
     },
     {
-      "x": 39390,
-      "y": 98,
+      "x": 39370,
+      "y": 112,
       "type": "snow_decoration",
       "subType": "astral_star_crystal"
     },
     {
-      "x": 39460,
-      "y": 98,
-      "type": "snow_decoration",
-      "subType": "nebula_garden_flora"
-    },
-    {
-      "x": 39550,
-      "y": 82,
+      "x": 39530,
+      "y": 78,
       "type": "snow_decoration",
       "subType": "constellation_arch"
     },
     {
-      "x": 39610,
-      "y": 82,
+      "x": 39620,
+      "y": 56,
       "type": "snow_decoration",
       "subType": "crystal_lotus"
     },
     {
-      "x": 39710,
-      "y": 118,
+      "x": 39720,
+      "y": 120,
       "type": "snow_decoration",
       "subType": "kailash_chorten"
     },
     {
-      "x": 39750,
-      "y": 118,
+      "x": 39760,
+      "y": 120,
       "type": "snow_decoration",
       "subType": "shambhala_prayer_bell"
     },
     {
-      "x": 39780,
-      "y": 118,
+      "x": 39800,
+      "y": 120,
       "type": "snow_decoration",
       "subType": "boreal_pillar"
     },
     {
-      "x": 39820,
-      "y": 118,
+      "x": 39860,
+      "y": 120,
       "type": "snow_decoration",
       "subType": "shooting_star_arch"
     },
     {
-      "x": 39860,
-      "y": 118,
+      "x": 39910,
+      "y": 120,
       "type": "snow_decoration",
       "subType": "nebula_garden_flora"
     },
     {
-      "x": 39910,
-      "y": 118,
+      "x": 39950,
+      "y": 120,
       "type": "snow_decoration",
       "subType": "astral_star_crystal"
     },
     {
-      "x": 39950,
-      "y": 118,
+      "x": 40070,
+      "y": 102,
+      "type": "snow_decoration",
+      "subType": "astral_star_crystal"
+    },
+    {
+      "x": 40210,
+      "y": 72,
       "type": "snow_decoration",
       "subType": "crystal_lotus"
     },
     {
-      "x": 40020,
-      "y": 104,
-      "type": "snow_decoration",
-      "subType": "astral_star_crystal"
-    },
-    {
-      "x": 40170,
-      "y": 92,
-      "type": "snow_decoration",
-      "subType": "boreal_pillar"
-    },
-    {
-      "x": 40230,
-      "y": 92,
-      "type": "snow_decoration",
-      "subType": "nebula_garden_flora"
-    },
-    {
-      "x": 40270,
-      "y": 92,
+      "x": 40260,
+      "y": 72,
       "type": "snow_decoration",
       "subType": "comet_altar"
     },
     {
-      "x": 40410,
-      "y": 126,
+      "x": 40370,
+      "y": 108,
       "type": "snow_decoration",
       "subType": "constellation_arch"
     },
     {
-      "x": 40470,
+      "x": 40520,
       "y": 126,
       "type": "snow_decoration",
-      "subType": "crystal_lotus"
+      "subType": "prayer_flags"
     },
     {
-      "x": 40560,
+      "x": 40530,
       "y": 126,
       "type": "snow_decoration",
       "subType": "boreal_pillar"
@@ -5941,13 +6418,13 @@ window.LEVELS[3] = {
       "subType": "shambhala_prayer_bell"
     },
     {
-      "x": 40620,
+      "x": 40640,
       "y": 126,
       "type": "snow_decoration",
       "subType": "cosmic_nebula_sanctum"
     },
     {
-      "x": 40680,
+      "x": 40690,
       "y": 126,
       "type": "snow_decoration",
       "subType": "kailash_chorten"
@@ -5959,52 +6436,22 @@ window.LEVELS[3] = {
       "subType": "blue_fire_brazier"
     },
     {
-      "x": 40750,
-      "y": 126,
-      "type": "snow_decoration",
-      "subType": "nebula_garden_flora"
-    },
-    {
-      "x": 40850,
-      "y": 156,
+      "x": 40820,
+      "y": 92,
       "type": "snow_decoration",
       "subType": "astral_star_crystal"
     },
     {
-      "x": 40900,
-      "y": 156,
+      "x": 41030,
+      "y": 72,
       "type": "snow_decoration",
-      "subType": "polar_vortex"
+      "subType": "crystal_lotus"
     },
     {
-      "x": 40940,
-      "y": 156,
-      "type": "snow_decoration",
-      "subType": "comet_altar"
-    },
-    {
-      "x": 41100,
-      "y": 98,
+      "x": 41220,
+      "y": 92,
       "type": "snow_decoration",
       "subType": "astral_star_crystal"
-    },
-    {
-      "x": 41170,
-      "y": 98,
-      "type": "snow_decoration",
-      "subType": "nebula_garden_flora"
-    },
-    {
-      "x": 41260,
-      "y": 82,
-      "type": "snow_decoration",
-      "subType": "constellation_arch"
-    },
-    {
-      "x": 41320,
-      "y": 82,
-      "type": "snow_decoration",
-      "subType": "boreal_pillar"
     },
     {
       "x": 41390,
@@ -6050,48 +6497,214 @@ window.LEVELS[3] = {
     }
   ],
   "lanterns": [],
-  "geysers": [],
+  "geysers": [
+    {
+      "x": 30080,
+      "y": 136,
+      "w": 26,
+      "boostHeight": 100,
+      "force": -350,
+      "isAstral": true
+    },
+    {
+      "x": 31780,
+      "y": 136,
+      "w": 26,
+      "boostHeight": 110,
+      "force": -360,
+      "isAstral": true
+    },
+    {
+      "x": 33660,
+      "y": 140,
+      "w": 28,
+      "boostHeight": 120,
+      "force": -340,
+      "isAstral": true
+    },
+    {
+      "x": 34320,
+      "y": 136,
+      "w": 28,
+      "boostHeight": 110,
+      "force": -330,
+      "isAstral": true
+    },
+    {
+      "x": 35290,
+      "y": 136,
+      "w": 28,
+      "boostHeight": 110,
+      "force": -330,
+      "isAstral": true
+    },
+    {
+      "x": 35910,
+      "y": 130,
+      "w": 28,
+      "boostHeight": 120,
+      "force": -340,
+      "isAstral": true
+    },
+    {
+      "x": 36700,
+      "y": 110,
+      "w": 28,
+      "boostHeight": 110,
+      "force": -360,
+      "isCosmic": true
+    },
+    {
+      "x": 37500,
+      "y": 118,
+      "w": 28,
+      "boostHeight": 120,
+      "force": -370,
+      "isCosmic": true
+    },
+    {
+      "x": 38390,
+      "y": 104,
+      "w": 28,
+      "boostHeight": 110,
+      "force": -360,
+      "isCosmic": true
+    },
+    {
+      "x": 39440,
+      "y": 112,
+      "w": 28,
+      "boostHeight": 130,
+      "force": -380,
+      "isCosmic": true
+    },
+    {
+      "x": 40140,
+      "y": 102,
+      "w": 28,
+      "boostHeight": 100,
+      "force": -350,
+      "isCosmic": true
+    }
+  ],
   "lavaWalls": [],
   "spikes": [
     {
-      "x": 4200,
-      "y": 220,
-      "w": 80,
+      "x": 4270,
+      "y": 248,
+      "w": 140,
       "theme": "snow",
       "subType": "ice_spikes"
     },
     {
-      "x": 4680,
-      "y": 220,
-      "w": 110,
+      "x": 5030,
+      "y": 248,
+      "w": 150,
       "theme": "snow",
       "subType": "ice_spikes"
     },
     {
-      "x": 5500,
-      "y": 220,
+      "x": 5790,
+      "y": 248,
+      "w": 190,
+      "theme": "snow",
+      "subType": "ice_spikes"
+    },
+    {
+      "x": 6240,
+      "y": 248,
+      "w": 190,
+      "theme": "snow",
+      "subType": "ice_spikes"
+    },
+    {
+      "x": 7490,
+      "y": 248,
+      "w": 250,
+      "theme": "snow",
+      "subType": "ice_spikes"
+    },
+    {
+      "x": 13810,
+      "y": 226,
+      "w": 270,
+      "h": 40,
+      "theme": "snow"
+    },
+    {
+      "x": 14420,
+      "y": 226,
+      "w": 300,
+      "h": 40,
+      "theme": "snow"
+    },
+    {
+      "x": 15320,
+      "y": 226,
       "w": 90,
+      "h": 40,
+      "theme": "snow"
+    },
+    {
+      "x": 15980,
+      "y": 226,
+      "w": 460,
+      "h": 40,
+      "theme": "snow"
+    },
+    {
+      "x": 17490,
+      "y": 226,
+      "w": 180,
+      "h": 40,
+      "theme": "snow"
+    },
+    {
+      "x": 18300,
+      "y": 220,
+      "w": 260,
       "theme": "snow",
       "subType": "ice_spikes"
     },
     {
-      "x": 5980,
+      "x": 18730,
       "y": 220,
-      "w": 110,
+      "w": 210,
       "theme": "snow",
       "subType": "ice_spikes"
     },
     {
-      "x": 6800,
+      "x": 19500,
       "y": 220,
-      "w": 90,
+      "w": 140,
       "theme": "snow",
       "subType": "ice_spikes"
     },
     {
-      "x": 7300,
+      "x": 19750,
+      "y": 228,
+      "w": 460,
+      "theme": "snow",
+      "subType": "ice_spikes"
+    },
+    {
+      "x": 21200,
       "y": 220,
-      "w": 120,
+      "w": 480,
+      "theme": "snow",
+      "subType": "ice_spikes"
+    },
+    {
+      "x": 21850,
+      "y": 220,
+      "w": 250,
+      "theme": "snow",
+      "subType": "ice_spikes"
+    },
+    {
+      "x": 22100,
+      "y": 220,
+      "w": 420,
       "theme": "snow",
       "subType": "ice_spikes"
     }
@@ -6099,14 +6712,14 @@ window.LEVELS[3] = {
   "checkpoints": [
     {
       "id": 17,
-      "x": 1370,
+      "x": 1460,
       "y": 196,
       "name": "Paso del Glaciar - Campamento 1",
       "active": false
     },
     {
       "id": 18,
-      "x": 2640,
+      "x": 2680,
       "y": 196,
       "name": "Cascada de Hielo Khumbu - Campamento 2",
       "active": false
@@ -6141,7 +6754,7 @@ window.LEVELS[3] = {
     },
     {
       "id": 23,
-      "x": 8750,
+      "x": 8120,
       "y": 196,
       "name": "Plaza de la Taberna • Pueblo Nevado",
       "active": false
@@ -6212,7 +6825,7 @@ window.LEVELS[3] = {
     {
       "id": 33,
       "x": 17880,
-      "y": 196,
+      "y": 136,
       "name": "Umbral de la Gran Cumbre - Campamento 10",
       "active": false
     },
@@ -6239,7 +6852,7 @@ window.LEVELS[3] = {
     },
     {
       "id": 37,
-      "x": 22850,
+      "x": 22840,
       "y": 98,
       "name": "La Gran Cima del Everest (8848 m) - Campamento Final",
       "active": false
@@ -6267,9 +6880,9 @@ window.LEVELS[3] = {
     },
     {
       "id": 41,
-      "x": 28680,
+      "x": 28610,
       "y": 126,
-      "name": "Camara Sagrada del Gran Yeti - Terraza de Ofrendas",
+      "name": "Cámara Sagrada del Gran Yeti - Puerta de la Arena",
       "active": false
     },
     {
@@ -6288,37 +6901,37 @@ window.LEVELS[3] = {
     },
     {
       "id": 44,
-      "x": 33850,
+      "x": 33080,
       "y": 126,
-      "name": "Monte Sagrado Kailash - Terraza del Lapislazuli",
+      "name": "Monte Sagrado Kailash - Entrada de los Peregrinos",
       "active": false
     },
     {
       "id": 45,
-      "x": 35460,
+      "x": 34760,
       "y": 126,
-      "name": "Palacio de Cristal de Agartha - Patio de los Maestros",
+      "name": "Palacio de Cristal de Agartha - Puerta de los Maestros",
       "active": false
     },
     {
       "id": 46,
-      "x": 37250,
+      "x": 37200,
       "y": 126,
-      "name": "Las Columnas del Firmamento - Mirador de la Via Lactea",
+      "name": "Las Columnas del Firmamento - Mirador de la Vía Láctea",
       "active": false
     },
     {
       "id": 47,
-      "x": 38950,
+      "x": 38920,
       "y": 126,
       "name": "El Laberinto de Nebulosas - Oasis de la Aurora Boreal",
       "active": false
     },
     {
       "id": 48,
-      "x": 40650,
+      "x": 40600,
       "y": 126,
-      "name": "Sanctum Sanctorum de la Estrella Polar - Boveda del Firmamento",
+      "name": "Sanctum Sanctorum de la Estrella Polar - Atrio de los Sabios",
       "active": false
     }
   ],
@@ -6334,19 +6947,19 @@ window.LEVELS[3] = {
         "Elizabeth! Que sorpresa verte en las faldas del gelido Monte Everest.",
         "Tu cuarto hijo escalo hacia la cumbre mas alta del mundo... El viento alla arriba es implacable!",
         "Toma esta PALA para ponerte a laburar: con ella puedes cavar tuneles veloces bajo los bancos de nieve profunda para resguardarte de las ventiscas...",
-        "...y recoger hasta 5 bolas de nieve del suelo para lanzarselas a las criaturas heladas!",
+        "...y recoger bolas de nieve del suelo agachada para lanzarselas a las criaturas heladas con Dash!",
         "Mucho coraje en la ascension, valiente mama ratona!"
       ],
       "dialogue": [
         "Elizabeth! Que sorpresa verte en las faldas del gelido Monte Everest.",
         "Tu cuarto hijo escalo hacia la cumbre mas alta del mundo... El viento alla arriba es implacable!",
         "Toma esta PALA para ponerte a laburar: con ella puedes cavar tuneles veloces bajo los bancos de nieve profunda para resguardarte de las ventiscas...",
-        "...y recoger hasta 5 bolas de nieve del suelo para lanzarselas a las criaturas heladas!",
+        "...y recoger bolas de nieve del suelo agachada para lanzarselas a las criaturas heladas con Dash!",
         "Mucho coraje en la ascension, valiente mama ratona!"
       ]
     },
     {
-      "x": 1565,
+      "x": 1530,
       "y": 178,
       "name": "Sherpa Pemba",
       "role": "Guia de Alta Montana",
@@ -6368,7 +6981,7 @@ window.LEVELS[3] = {
       ]
     },
     {
-      "x": 2790,
+      "x": 2760,
       "y": 178,
       "name": "Pasang el Explorador",
       "role": "Explorador de Cumbres",
@@ -6390,69 +7003,69 @@ window.LEVELS[3] = {
       ]
     },
     {
-      "x": 4120,
+      "x": 4105,
       "y": 178,
-      "name": "Tenzing el Guía",
-      "role": "Maestro de Altura y Cuerdas",
-      "color": "#a2d2ff",
+      "name": "Tenzing Norgay",
+      "role": "Guía Maestro de la Cascada de Khumbu",
+      "color": "#90e0ef",
       "hatColor": "#0284c7",
       "lines": [
-        "¡Bienvenida a las Estructuras Glaciares, Elizabeth! A partir de aquí el hielo es tan vertical como el cristal.",
-        "Para ascender deberás encadenar saltos precisos entre los pilares de hielo y los bloques flotantes al más puro estilo de los escaladores de élite.",
-        "¡Mucho cuidado con las simas! Están plagadas de afiladas estalagmitas de hielo. Si caes en una, te harás daño.",
-        "Usa los bancos de nieve elevados para recuperar el aliento y abastecerte de bolas de nieve con tu pala.",
-        "¡Tu pequeño ratoncito dejó marcas de tiza en los pilares superiores! ¡Sigue trepando con valor!"
+        "¡Namaste, Elizabeth! Estás ante la legendaria Cascada de Hielo de Khumbu, el paso más peligroso del Everest.",
+        "Las grietas no tienen fondo. Para cruzarlas hemos tendido puentes de escaleras de aluminio atadas con cuerdas.",
+        "¡Ten mucho cuidado con los carámbanos gigantes que cuelgan de los seracs! Si pasas corriendo caerán sobre ti.",
+        "Si una ventisca o carámbano te amenaza, agáchate y cava bajo los bancos de nieve con tu pala para pasar a salvo.",
+        "¡Encontré marcas de tiza de tu ratoncito en las escaleras superiores! ¡Avanza con paso firme y corazón valiente!"
       ],
       "dialogue": [
-        "¡Bienvenida a las Estructuras Glaciares, Elizabeth! A partir de aquí el hielo es tan vertical como el cristal.",
-        "Para ascender deberás encadenar saltos precisos entre los pilares de hielo y los bloques flotantes al más puro estilo de los escaladores de élite.",
-        "¡Mucho cuidado con las simas! Están plagadas de afiladas estalagmitas de hielo. Si caes en una, te harás daño.",
-        "Usa los bancos de nieve elevados para recuperar el aliento y abastecerte de bolas de nieve con tu pala.",
-        "¡Tu pequeño ratoncito dejó marcas de tiza en los pilares superiores! ¡Sigue trepando con valor!"
+        "¡Namaste, Elizabeth! Estás ante la legendaria Cascada de Hielo de Khumbu, el paso más peligroso del Everest.",
+        "Las grietas no tienen fondo. Para cruzarlas hemos tendido puentes de escaleras de aluminio atadas con cuerdas.",
+        "¡Ten mucho cuidado con los carámbanos gigantes que cuelgan de los seracs! Si pasas corriendo caerán sobre ti.",
+        "Si una ventisca o carámbano te amenaza, agáchate y cava bajo los bancos de nieve con tu pala para pasar a salvo.",
+        "¡Encontré marcas de tiza de tu ratoncito en las escaleras superiores! ¡Avanza con paso firme y corazón valiente!"
       ]
     },
     {
-      "x": 5420,
+      "x": 5410,
       "y": 178,
-      "name": "Ang Rita el Escalador",
-      "role": "Leopardo de las Nieves",
-      "color": "#bbf7d0",
-      "hatColor": "#15803d",
+      "name": "Ang Rita Sherpa",
+      "role": "El Leopardo de las Nieves (10 Cumbres sin Oxígeno)",
+      "color": "#caf0f8",
+      "hatColor": "#0077b6",
       "lines": [
-        "¡Impresionante verte aquí arriba, Elizabeth! Has alcanzado la Gran Cascada Vertical.",
-        "A partir de aquí, las agujas de hielo son más delgadas y el viento sopla en ráfagas traicioneras.",
-        "Sincroniza tus saltos entre los bloques flotantes de diamante glacial: si caes en las simas, las púas de hielo te dañarán.",
-        "Si ves que una ventisca o una oruga de hielo te corta el paso, sumérgete en las repisas de nieve profunda con tu pala.",
-        "¡Tu hijo ratoncito escaló con una destreza asombrosa hacia las terrazas superiores! ¡No te rindas!"
+        "¡Saludos, Elizabeth! Me llaman el Leopardo de las Nieves porque ascendí la cumbre del Everest 10 veces sin oxígeno.",
+        "El hielo aquí es vertical y despiadado. Usa los cristales celestiales turquesas: ¡te lanzarán como una flecha hacia las cornisas altas!",
+        "¡Cuidado con el hielo quebradizo! Cruje al pisarlo y se desmorona en un suspiro. No te quedes quieta sobre él.",
+        "En el gran puente de escalera sobre el abismo, dos carámbanos inestables cuelgan del techo. ¡Corre o rómpelos con tus bolas de nieve!",
+        "¡Tu pequeño hijo cruzó este mismo abismo como un campeón! ¡El campamento de cumbre está cada vez más cerca!"
       ],
       "dialogue": [
-        "¡Impresionante verte aquí arriba, Elizabeth! Has alcanzado la Gran Cascada Vertical.",
-        "A partir de aquí, las agujas de hielo son más delgadas y el viento sopla en ráfagas traicioneras.",
-        "Sincroniza tus saltos entre los bloques flotantes de diamante glacial: si caes en las simas, las púas de hielo te dañarán.",
-        "Si ves que una ventisca o una oruga de hielo te corta el paso, sumérgete en las repisas de nieve profunda con tu pala.",
-        "¡Tu hijo ratoncito escaló con una destreza asombrosa hacia las terrazas superiores! ¡No te rindas!"
+        "¡Saludos, Elizabeth! Me llaman el Leopardo de las Nieves porque ascendí la cumbre del Everest 10 veces sin oxígeno.",
+        "El hielo aquí es vertical y despiadado. Usa los cristales celestiales turquesas: ¡te lanzarán como una flecha hacia las cornisas altas!",
+        "¡Cuidado con el hielo quebradizo! Cruje al pisarlo y se desmorona en un suspiro. No te quedes quieta sobre él.",
+        "En el gran puente de escalera sobre el abismo, dos carámbanos inestables cuelgan del techo. ¡Corre o rómpelos con tus bolas de nieve!",
+        "¡Tu pequeño hijo cruzó este mismo abismo como un campeón! ¡El campamento de cumbre está cada vez más cerca!"
       ]
     },
     {
-      "x": 6720,
+      "x": 7840,
       "y": 178,
-      "name": "Apa Sherpa el Veterano",
-      "role": "Veterano del Everest",
-      "color": "#fed7aa",
-      "hatColor": "#c2410c",
+      "name": "Apa Sherpa",
+      "role": "El Super Sherpa de Cumbre (21 Cumbres del Everest)",
+      "color": "#e0f2fe",
+      "hatColor": "#0369a1",
       "lines": [
-        "¡Qué proeza, Elizabeth! Has alcanzado la cumbre de las agujas de hielo más peligrosas del mundo.",
-        "Solo un último tramo de pilares cristalinos te separa del descenso hacia el valle.",
-        "Más adelante, tras ese gran arco congelado, descansan los tejados y chimeneas del Pueblo Nevado.",
-        "En el pueblo podrás entrar a tiendas, descansar y conversar con sus singulares habitantes...",
-        "¡Sigue adelante con tu pala y coraje, mamá ratona! ¡Tu hijo te espera más arriba!"
+        "¡Increíble, Elizabeth! ¡Has conquistado la temible Cascada de Hielo de Khumbu! Muy pocos escaladores logran cruzarla.",
+        "Cruzaste las escaleras de aluminio sobre el abismo, esquivaste los carámbanos y surfeaste el hielo con auténtica maestría.",
+        "Justo detrás de mí se alza el Monumental Arco Glacial que da la bienvenida a Namche Bazaar, el Pueblo Nevado.",
+        "Allí podrás descansar en la Taberna Alpina junto al fuego, visitar la tienda de gorros de lana y hablar con los aldeanos.",
+        "¡Tu pequeño hijo dejó un mensaje de amor en la taberna! ¡Cruza el arco hacia la Fase 3!"
       ],
       "dialogue": [
-        "¡Qué proeza, Elizabeth! Has alcanzado la cumbre de las agujas de hielo más peligrosas del mundo.",
-        "Solo un último tramo de pilares cristalinos te separa del descenso hacia el valle.",
-        "Más adelante, tras ese gran arco congelado, descansan los tejados y chimeneas del Pueblo Nevado.",
-        "En el pueblo podrás entrar a tiendas, descansar y conversar con sus singulares habitantes...",
-        "¡Sigue adelante con tu pala y coraje, mamá ratona! ¡Tu hijo te espera más arriba!"
+        "¡Increíble, Elizabeth! ¡Has conquistado la temible Cascada de Hielo de Khumbu! Muy pocos escaladores logran cruzarla.",
+        "Cruzaste las escaleras de aluminio sobre el abismo, esquivaste los carámbanos y surfeaste el hielo con auténtica maestría.",
+        "Justo detrás de mí se alza el Monumental Arco Glacial que da la bienvenida a Namche Bazaar, el Pueblo Nevado.",
+        "Allí podrás descansar en la Taberna Alpina junto al fuego, visitar la tienda de gorros de lana y hablar con los aldeanos.",
+        "¡Tu pequeño hijo dejó un mensaje de amor en la taberna! ¡Cruza el arco hacia la Fase 3!"
       ]
     },
     {
@@ -6484,14 +7097,14 @@ window.LEVELS[3] = {
       "hatColor": "#ea580c",
       "lines": [
         "¡Pasa, pasa, Elizabeth! ¡Cierra esa puerta que entra un frío polar!",
-        "Toma un tazón de nuestra famosa Sopa Caliente del Himalaya... ¡Listo, todos tus corazones restaurados!",
+        "Toma un tazón de nuestra famosa Sopa Caliente del Himalaya... ¡Listo, todos tus corazones restaurados al máximo!",
         "Si buscas aventuras, en las casas del pueblo encontrarás de todo: una sastrería polar, una sala arcade...",
         "...¡y en la Casa 3 vive un tipo súper depre que no para de suspirar porque extraña su pala favorita y solo tiene un pico de hielo!",
         "¡Tómate tu tiempo y descansa junto a la chimenea!"
       ],
       "dialogue": [
         "¡Pasa, pasa, Elizabeth! ¡Cierra esa puerta que entra un frío polar!",
-        "Toma un tazón de nuestra famosa Sopa Caliente del Himalaya... ¡Listo, todos tus corazones restaurados!",
+        "Toma un tazón de nuestra famosa Sopa Caliente del Himalaya... ¡Listo, todos tus corazones restaurados al máximo!",
         "Si buscas aventuras, en las casas del pueblo encontrarás de todo: una sastrería polar, una sala arcade...",
         "...¡y en la Casa 3 vive un tipo súper depre que no para de suspirar porque extraña su pala favorita y solo tiene un pico de hielo!",
         "¡Tómate tu tiempo y descansa junto a la chimenea!"
@@ -6545,14 +7158,14 @@ window.LEVELS[3] = {
         "Mirate, esa pala que llevas es muy util para excavar en los bancos de nieve fresca y encontrar tesoros enterrados.",
         "Pero cuidado mas adelante... en la Casa 3 vive un escalador que cayo en una profunda depresion. Se la pasa mirando la pared y suspirando por una pala como la tuya.",
         "Dicen que tiene un pico de hielo profesional que no quiere usar... ¡tal vez si hablas con el puedas hacer un buen intercambio!",
-        "¡Toma esta bendicion de lana calientita para protegerte del frio glacial!"
+        "¡Toma esta bendicion de lana calientita para protegerte del frio glacial y moverte con agilidad!"
       ],
       "dialogue": [
         "¡Oh, que encanto de ratoncita! ¡Bienvenida a El Gorro Nevado, tesoro!",
         "Mirate, esa pala que llevas es muy util para excavar en los bancos de nieve fresca y encontrar tesoros enterrados.",
         "Pero cuidado mas adelante... en la Casa 3 vive un escalador que cayo en una profunda depresion. Se la pasa mirando la pared y suspirando por una pala como la tuya.",
         "Dicen que tiene un pico de hielo profesional que no quiere usar... ¡tal vez si hablas con el puedas hacer un buen intercambio!",
-        "¡Toma esta bendicion de lana calientita para protegerte del frio glacial!"
+        "¡Toma esta bendicion de lana calientita para protegerte del frio glacial y moverte con agilidad!"
       ]
     },
     {
@@ -6705,16 +7318,18 @@ window.LEVELS[3] = {
       "hatColor": "#0f172a",
       "lines": [
         "¡Por las barbas del Yeti! ¡Ese Pico de Hielo que portas tiene un temple legendario!",
-        "Veo que Gastón te confió su reliquia más preciada... Cuídala bien, te abrirá todas las rutas.",
+        "Veo que Gastón te confió su reliquia más preciada... ¡Acércate a mi yunque!",
+        "Voy a templar la hoja con acero de meteorito y fuego azul... ¡CLANC! ¡Listo!",
+        "¡Tu Pico de Hielo ha sido mejorado con mayor alcance, filo de diamante y cortes más rápidos!",
         "La última casa del pueblo, la gran Casa 7 (La Alcaldía), custodia el portón de salida hacia la cumbre.",
-        "Allí el Alcalde te concederá el paso hacia la Fase 4: El Inmenso Lago Congelado.",
         "¡Afina tus reflejos sobre el hielo y que el viento glacial guíe tus saltos!"
       ],
       "dialogue": [
         "¡Por las barbas del Yeti! ¡Ese Pico de Hielo que portas tiene un temple legendario!",
-        "Veo que Gastón te confió su reliquia más preciada... Cuídala bien, te abrirá todas las rutas.",
+        "Veo que Gastón te confió su reliquia más preciada... ¡Acércate a mi yunque!",
+        "Voy a templar la hoja con acero de meteorito y fuego azul... ¡CLANC! ¡Listo!",
+        "¡Tu Pico de Hielo ha sido mejorado con mayor alcance, filo de diamante y cortes más rápidos!",
         "La última casa del pueblo, la gran Casa 7 (La Alcaldía), custodia el portón de salida hacia la cumbre.",
-        "Allí el Alcalde te concederá el paso hacia la Fase 4: El Inmenso Lago Congelado.",
         "¡Afina tus reflejos sobre el hielo y que el viento glacial guíe tus saltos!"
       ]
     },
@@ -6761,145 +7376,149 @@ window.LEVELS[3] = {
       ]
     },
     {
-      "x": 13580,
+      "x": 13620,
       "y": 178,
       "name": "Pabu el Pescador de Hielo",
-      "role": "Pescador del Lago Glacial",
+      "role": "Veterano de la Bahía Glacial",
       "color": "#bae6fd",
       "hatColor": "#0369a1",
       "lines": [
-        "Brrr! El viento artico que sopla sobre este lago congelado corta como un cuchillo.",
-        "Bajo esta capa de hielo azul habitan truchas de nieve y criaturas ancestrales.",
-        "Ten mucho cuidado con los tempanos flotantes... El agua esta a varios grados bajo cero!",
-        "Si necesitas impulso sobre el hielo resbaladizo, aprovecha la inercia de tus carreras."
+        "¡Brrr! ¡Bienvenida a la inmensidad del Gran Lago Congelado, pequeña Elizabeth!",
+        "Bajo nuestros pies hay siglos de hielo puro... pero más adelante la capa es traicionera.",
+        "Aprovecha la inercia de tus carreras: sobre el hielo liso puedes derrapar y patinar a gran velocidad.",
+        "¡Atenta a los témpanos móviles y al hielo quebradizo! Si te quedas quieta sobre hielo delgado, se romperá bajo tu peso.",
+        "Y cuando la ventisca polar azote con furia, ¡entra a mi cabaña para protegerte del vendaval!"
       ],
       "dialogue": [
-        "Brrr! El viento artico que sopla sobre este lago congelado corta como un cuchillo.",
-        "Bajo esta capa de hielo azul habitan truchas de nieve y criaturas ancestrales.",
-        "Ten mucho cuidado con los tempanos flotantes... El agua esta a varios grados bajo cero!",
-        "Si necesitas impulso sobre el hielo resbaladizo, aprovecha la inercia de tus carreras."
+        "¡Brrr! ¡Bienvenida a la inmensidad del Gran Lago Congelado, pequeña Elizabeth!",
+        "Bajo nuestros pies hay siglos de hielo puro... pero más adelante la capa es traicionera.",
+        "Aprovecha la inercia de tus carreras: sobre el hielo liso puedes derrapar y patinar a gran velocidad.",
+        "¡Atenta a los témpanos móviles y al hielo quebradizo! Si te quedas quieta sobre hielo delgado, se romperá bajo tu peso.",
+        "Y cuando la ventisca polar azote con furia, ¡entra a mi cabaña para protegerte del vendaval!"
       ]
     },
     {
-      "x": 15920,
+      "x": 15900,
       "y": 178,
       "name": "Nyima la Guia de Altura",
       "role": "Veterana de la Cordillera",
       "color": "#fed7aa",
       "hatColor": "#b45309",
       "lines": [
-        "Has alcanzado la seccion mas profunda del Lago Congelado, Elizabeth!",
-        "Bajo estos tempanos flotantes, el agua helada tiene corrientes submarinas traicioneras.",
-        "Mas adelante se encuentra el antiguo Santuario Glacial, donde el Monje Tenzin custodia el altar runico.",
-        "Pide su bendicion antes de afrontar el farallon de hielo que sube a la Cumbre del Everest!"
+        "¡Has alcanzado la sección más profunda del Lago Congelado, Elizabeth!",
+        "Bajo este abismo, el agua helada tiene corrientes submarinas que mueven témpanos colosales.",
+        "Súbete a los témpanos en movimiento para cruzar la fosa sin caer a las profundidades.",
+        "Más adelante se alza el milenario Santuario Glacial, donde el Monje Tenzin custodia el altar rúnico.",
+        "¡Pide su bendición antes de afrontar los farallones de hielo que suben a la Gran Cumbre del Everest!"
       ],
       "dialogue": [
-        "Has alcanzado la seccion mas profunda del Lago Congelado, Elizabeth!",
-        "Bajo estos tempanos flotantes, el agua helada tiene corrientes submarinas traicioneras.",
-        "Mas adelante se encuentra el antiguo Santuario Glacial, donde el Monje Tenzin custodia el altar runico.",
-        "Pide su bendicion antes de afrontar el farallon de hielo que sube a la Cumbre del Everest!"
+        "¡Has alcanzado la sección más profunda del Lago Congelado, Elizabeth!",
+        "Bajo este abismo, el agua helada tiene corrientes submarinas que mueven témpanos colosales.",
+        "Súbete a los témpanos en movimiento para cruzar la fosa sin caer a las profundidades.",
+        "Más adelante se alza el milenario Santuario Glacial, donde el Monje Tenzin custodia el altar rúnico.",
+        "¡Pide su bendición antes de afrontar los farallones de hielo que suben a la Gran Cumbre del Everest!"
       ]
     },
     {
-      "x": 16960,
+      "x": 16980,
       "y": 178,
       "name": "Monje Tenzin del Santuario",
       "role": "Guardian del Hielo Eterno",
       "color": "#fef08a",
       "hatColor": "#be123c",
       "lines": [
-        "Om Mani Padme Hum... Que la pureza de las nieves eternas proteja tu espiritu.",
-        "Has atravesado los abismos del lago con temple y determinacion inquebrantables.",
-        "Mas alla de este santuario se eleva la temible Cascada de Hielo del Khumbu y la Cumbre del Everest.",
-        "Alla las tormentas no dan tregua y el frio desafia toda vida mortal.",
-        "Toma el fuego sagrado de este altar y asciende sin titubear hacia la gloria!"
+        "Om Mani Padme Hum... Que la pureza de las nieves eternas proteja tu espíritu, pequeña madre.",
+        "Has atravesado los abismos del lago con temple y determinación inquebrantables.",
+        "Las llamas turquesas de este altar jamás se apagan: aquí estarás a salvo de cualquier ventisca polar.",
+        "Usa el cristal celestial sobre mi altar para ascender al frontón sagrado y tomar el queso bendito.",
+        "¡Más allá te espera la temible Cascada del Khumbu y la cima del mundo! ¡Asciende sin vacilar!"
       ],
       "dialogue": [
-        "Om Mani Padme Hum... Que la pureza de las nieves eternas proteja tu espiritu.",
-        "Has atravesado los abismos del lago con temple y determinacion inquebrantables.",
-        "Mas alla de este santuario se eleva la temible Cascada de Hielo del Khumbu y la Cumbre del Everest.",
-        "Alla las tormentas no dan tregua y el frio desafia toda vida mortal.",
-        "Toma el fuego sagrado de este altar y asciende sin titubear hacia la gloria!"
+        "Om Mani Padme Hum... Que la pureza de las nieves eternas proteja tu espíritu, pequeña madre.",
+        "Has atravesado los abismos del lago con temple y determinación inquebrantables.",
+        "Las llamas turquesas de este altar jamás se apagan: aquí estarás a salvo de cualquier ventisca polar.",
+        "Usa el cristal celestial sobre mi altar para ascender al frontón sagrado y tomar el queso bendito.",
+        "¡Más allá te espera la temible Cascada del Khumbu y la cima del mundo! ¡Asciende sin vacilar!"
       ]
     },
     {
-      "x": 19020,
+      "x": 19010,
       "y": 118,
-      "name": "Pemba el Guia de Cuerdas Fijas",
-      "role": "Sherpa Lider del Khumbu",
+      "name": "Pemba el Guía de Cuerdas Fijas",
+      "role": "Sherpa Líder del Khumbu",
       "color": "#fed7aa",
       "hatColor": "#0284c7",
       "lines": [
-        "Tashi Delek, Elizabeth! Has superado los seracs de la temible Cascada de Hielo del Khumbu.",
+        "¡Tashi Delek, Elizabeth! Has superado los seracs de la temible Cascada de Hielo del Khumbu.",
         "Fijamos estas escaleras de aluminio sobre las grietas cada amanecer antes de que el sol derrita los bloques.",
         "Adelante se extiende el Valle del Silencio y la escarpada Pared del Lhotse.",
-        "Asegura bien tus crampones y tu pico de hielo: las rafagas a mas de 7000 metros son implacables."
+        "Recuerda: si arrecia la ventisca, ¡clava tu Pico de Hielo con [ABAJO] para no salir volando!"
       ],
       "dialogue": [
-        "Tashi Delek, Elizabeth! Has superado los seracs de la temible Cascada de Hielo del Khumbu.",
+        "¡Tashi Delek, Elizabeth! Has superado los seracs de la temible Cascada de Hielo del Khumbu.",
         "Fijamos estas escaleras de aluminio sobre las grietas cada amanecer antes de que el sol derrita los bloques.",
         "Adelante se extiende el Valle del Silencio y la escarpada Pared del Lhotse.",
-        "Asegura bien tus crampones y tu pico de hielo: las rafagas a mas de 7000 metros son implacables."
+        "Recuerda: si arrecia la ventisca, ¡clava tu Pico de Hielo con [ABAJO] para no salir volando!"
       ]
     },
     {
-      "x": 20280,
+      "x": 20300,
       "y": 56,
       "name": "Karma el Sherpa del Lhotse",
       "role": "Veterano de la Pared Azul",
       "color": "#fed7aa",
       "hatColor": "#ea580c",
       "lines": [
-        "Increible! Una ratoncita escalando la Pared de Hielo puro del Lhotse con esa destreza.",
-        "A esta altitud el aire es fino y cada salto exige toda tu concentracion.",
-        "Mas adelante se abre el Collado Sur y el Paso de Hillary, el ultimo peldano antes de la cima.",
-        "No te rindas, valerosa Elizabeth: el techo del mundo te espera al final de la arista!"
+        "¡Increíble! Una ratoncita escalando la Pared de Hielo puro del Lhotse con esa destreza.",
+        "A esta altitud el aire es fino y los cristales celestes te catapultarán por la roca.",
+        "Más adelante se abre el temible Collado Sur a 8000 metros y el mítico Paso de Hillary.",
+        "¡No te rindas, valerosa Elizabeth: el techo del mundo entero aguarda tu huella en la cumbre!"
       ],
       "dialogue": [
-        "Increible! Una ratoncita escalando la Pared de Hielo puro del Lhotse con esa destreza.",
-        "A esta altitud el aire es fino y cada salto exige toda tu concentracion.",
-        "Mas adelante se abre el Collado Sur y el Paso de Hillary, el ultimo peldano antes de la cima.",
-        "No te rindas, valerosa Elizabeth: el techo del mundo te espera al final de la arista!"
+        "¡Increíble! Una ratoncita escalando la Pared de Hielo puro del Lhotse con esa destreza.",
+        "A esta altitud el aire es fino y los cristales celestes te catapultarán por la roca.",
+        "Más adelante se abre el temible Collado Sur a 8000 metros y el mítico Paso de Hillary.",
+        "¡No te rindas, valerosa Elizabeth: el techo del mundo entero aguarda tu huella en la cumbre!"
       ]
     },
     {
-      "x": 20920,
+      "x": 20880,
       "y": 118,
       "name": "Ang Dorje el Sherpa Legendario",
-      "role": "Heroe de la Zona de la Muerte",
+      "role": "Héroe de la Zona de la Muerte",
       "color": "#fed7aa",
       "hatColor": "#b91c1c",
       "lines": [
-        "Elizabeth, has alcanzado el temible Collado Sur a 8000 metros! Pocos mortales han llegado tan lejos.",
-        "A partir de aqui entras en la Zona de la Muerte. Cada respiracion cuesta el triple y el viento congela el alma.",
+        "¡Elizabeth, has alcanzado el temible Collado Sur a 8000 metros! Pocos mortales han llegado tan lejos.",
+        "A partir de aquí entras en la Zona de la Muerte. Cada salto cuesta el triple y el viento glacial ruge sin piedad.",
         "Justo adelante aguarda la afilada Cresta Sureste y el casi vertical Paso de Hillary.",
-        "Sigue subiendo sin desfallecer: el techo del mundo entero aguarda tu huella!"
+        "Aprovecha los cristales celestes para impulsarte y sigue subiendo: ¡el techo del mundo entero aguarda tu huella!"
       ],
       "dialogue": [
-        "Elizabeth, has alcanzado el temible Collado Sur a 8000 metros! Pocos mortales han llegado tan lejos.",
-        "A partir de aqui entras en la Zona de la Muerte. Cada respiracion cuesta el triple y el viento congela el alma.",
+        "¡Elizabeth, has alcanzado el temible Collado Sur a 8000 metros! Pocos mortales han llegado tan lejos.",
+        "A partir de aquí entras en la Zona de la Muerte. Cada salto cuesta el triple y el viento glacial ruge sin piedad.",
         "Justo adelante aguarda la afilada Cresta Sureste y el casi vertical Paso de Hillary.",
-        "Sigue subiendo sin desfallecer: el techo del mundo entero aguarda tu huella!"
+        "Aprovecha los cristales celestes para impulsarte y sigue subiendo: ¡el techo del mundo entero aguarda tu huella!"
       ]
     },
     {
-      "x": 22980,
+      "x": 22920,
       "y": 80,
       "name": "Tenzing el Sabio de la Cima",
       "role": "Conquistador de las Alturas",
       "color": "#fef08a",
       "hatColor": "#d97706",
       "lines": [
-        "LO HAS LOGRADO! Estas en la Gran Cima del Monte Everest a 8848 metros sobre el nivel del mar!",
-        "El mundo entero yace a tus pies bajo este manto de nubes infinitas.",
-        "Pero el eco de un rugido ancestral resuena hacia el este, en la Vertiente Prohibida del Kangshung.",
-        "El Gran Yeti de Cristal protege el camino hacia el Valle Sagrado de Shambhala. Desciende con valentia!"
+        "¡LO HAS LOGRADO! ¡Estás en la Gran Cima del Monte Everest a 8848 metros sobre el nivel del mar!",
+        "El mundo entero yace a tus pies bajo este infinito mar de nubes y estrellas.",
+        "El Gran Queso Dorado y el Monumento a tu valentía quedarán grabados en la historia del Himalaya.",
+        "Hacia el este desciende la Vertiente Prohibida del Kangshung hacia el Santuario del Yeti. ¡Avanza triunfante!"
       ],
       "dialogue": [
-        "LO HAS LOGRADO! Estas en la Gran Cima del Monte Everest a 8848 metros sobre el nivel del mar!",
-        "El mundo entero yace a tus pies bajo este manto de nubes infinitas.",
-        "Pero el eco de un rugido ancestral resuena hacia el este, en la Vertiente Prohibida del Kangshung.",
-        "El Gran Yeti de Cristal protege el camino hacia el Valle Sagrado de Shambhala. Desciende con valentia!"
+        "¡LO HAS LOGRADO! ¡Estás en la Gran Cima del Monte Everest a 8848 metros sobre el nivel del mar!",
+        "El mundo entero yace a tus pies bajo este infinito mar de nubes y estrellas.",
+        "El Gran Queso Dorado y el Monumento a tu valentía quedarán grabados en la historia del Himalaya.",
+        "Hacia el este desciende la Vertiente Prohibida del Kangshung hacia el Santuario del Yeti. ¡Avanza triunfante!"
       ]
     },
     {
@@ -6910,76 +7529,76 @@ window.LEVELS[3] = {
       "color": "#fed7aa",
       "hatColor": "#059669",
       "lines": [
-        "Detente, Elizabeth! Mas alla de la cumbre oficial no hay mapas. Estas en la Vertiente Prohibida del Kangshung.",
-        "Mira estas pisadas descomunales en la nieve! El Gran Yeti de Cristal custodia el santuario hacia Shambhala.",
-        "Sus rugidos resuenan por todo el abismo oriental, sacudiendo los glaciares y las cornisas de hielo.",
-        "Usa tu Pico de Hielo para abrirte paso a traves de los muros de hielo azul de las cavernas. Avanza con cautela!"
+        "¡Detente, Elizabeth! Más allá de la cumbre oficial no hay mapas. Estás en la Vertiente Prohibida del Kangshung.",
+        "¿Sientes cómo tiembla el hielo bajo tus patitas? Son los rugidos lejanos del Gran Yeti de Cristal.",
+        "¡Usa tu Pico de Hielo con el botón DASH! Con él puedes romper las gruesas columnas de hielo milenario y defenderte de las orugas heladas.",
+        "Dentro de la Caverna de Hielo Azul hay una gruta sellada con un pilar de cristal... ¡Ábrelo a picasos y encontrarás un gran tesoro!"
       ],
       "dialogue": [
-        "Detente, Elizabeth! Mas alla de la cumbre oficial no hay mapas. Estas en la Vertiente Prohibida del Kangshung.",
-        "Mira estas pisadas descomunales en la nieve! El Gran Yeti de Cristal custodia el santuario hacia Shambhala.",
-        "Sus rugidos resuenan por todo el abismo oriental, sacudiendo los glaciares y las cornisas de hielo.",
-        "Usa tu Pico de Hielo para abrirte paso a traves de los muros de hielo azul de las cavernas. Avanza con cautela!"
+        "¡Detente, Elizabeth! Más allá de la cumbre oficial no hay mapas. Estás en la Vertiente Prohibida del Kangshung.",
+        "¿Sientes cómo tiembla el hielo bajo tus patitas? Son los rugidos lejanos del Gran Yeti de Cristal.",
+        "¡Usa tu Pico de Hielo con el botón DASH! Con él puedes romper las gruesas columnas de hielo milenario y defenderte de las orugas heladas.",
+        "Dentro de la Caverna de Hielo Azul hay una gruta sellada con un pilar de cristal... ¡Ábrelo a picasos y encontrarás un gran tesoro!"
       ]
     },
     {
       "x": 25920,
       "y": 108,
       "name": "Mingma el Cazador de Tormentas",
-      "role": "Vigia de Vientos Polares",
+      "role": "Vigía de Vientos Polares",
       "color": "#fed7aa",
       "hatColor": "#0284c7",
       "lines": [
-        "Cuidado con las corrientes del abismo! Los vientos aqui son tan feroces que pueden arrancarte del risco.",
-        "He oido rugidos guturales resonando desde el Santuario que hay mas adelante... El Gran Yeti protege su morada.",
-        "Asegura tus botas y cruza los puentes de escarcha. Cada paso te acerca al santuario mistico.",
-        "Ten a mano tu Pico de Hielo, Elizabeth. La entrada al templo ancestral esta sellada con columnas de hielo diamantino!"
+        "¡Bienvenida al Campamento 2 de Kangshung, Elizabeth! Las Torres Celestiales desafían toda ley de la gravedad.",
+        "¿Ves esas columnas de viento brillante en el fondo del abismo? Son los Vórtices Polares de Kangshung.",
+        "Si caes o saltas dentro de ellas, ¡el viento helado te atrapará y te impulsará hacia arriba como pluma en el aire!",
+        "Más adelante, la entrada al templo del Yeti está sellada con columnas de hielo... ¡Rómpelas con tu Pico de Hielo!"
       ],
       "dialogue": [
-        "Cuidado con las corrientes del abismo! Los vientos aqui son tan feroces que pueden arrancarte del risco.",
-        "He oido rugidos guturales resonando desde el Santuario que hay mas adelante... El Gran Yeti protege su morada.",
-        "Asegura tus botas y cruza los puentes de escarcha. Cada paso te acerca al santuario mistico.",
-        "Ten a mano tu Pico de Hielo, Elizabeth. La entrada al templo ancestral esta sellada con columnas de hielo diamantino!"
+        "¡Bienvenida al Campamento 2 de Kangshung, Elizabeth! Las Torres Celestiales desafían toda ley de la gravedad.",
+        "¿Ves esas columnas de viento brillante en el fondo del abismo? Son los Vórtices Polares de Kangshung.",
+        "Si caes o saltas dentro de ellas, ¡el viento helado te atrapará y te impulsará hacia arriba como pluma en el aire!",
+        "Más adelante, la entrada al templo del Yeti está sellada con columnas de hielo... ¡Rómpelas con tu Pico de Hielo!"
       ]
     },
     {
       "x": 27380,
       "y": 108,
       "name": "Lama Kalsang del Templo de Cristal",
-      "role": "Guardian del Santuario Ancestral",
+      "role": "Guardián del Santuario Ancestral",
       "color": "#fed7aa",
       "hatColor": "#b91c1c",
       "lines": [
-        "La paz de las nieves eternas este contigo, noble Elizabeth. Has llegado al Umbral del Santuario Ancestral.",
-        "Durante siglos, el Gran Yeti protegio este templo sagrado en perfecta armonia con los vientos del Himalaya.",
-        "Justo en la camara contigua aguarda el Trono de Cristal y la arena de combate.",
-        "Cruza la antesala con tu Pico de Hielo y preparate: solo venciendo su furia se abrira el paso hacia Shambhala!"
+        "¡Om Mani Padme Hum! La paz de las nieves eternas esté contigo, valerosa Elizabeth.",
+        "Has alcanzado el Atrio del Santuario Ancestral. Tras la antesala aguarda la Gran Arena del Yeti.",
+        "El Yeti es una fuerza de la naturaleza pura: pisa el suelo con fuerza sísmica y lanza témpanos desde el techo.",
+        "Aprovecha los balcones elevados de la arena para saltar sobre sus ondas de choque, y cuando choque contra los pilares... ¡golpéalo con tu pico!"
       ],
       "dialogue": [
-        "La paz de las nieves eternas este contigo, noble Elizabeth. Has llegado al Umbral del Santuario Ancestral.",
-        "Durante siglos, el Gran Yeti protegio este templo sagrado en perfecta armonia con los vientos del Himalaya.",
-        "Justo en la camara contigua aguarda el Trono de Cristal y la arena de combate.",
-        "Cruza la antesala con tu Pico de Hielo y preparate: solo venciendo su furia se abrira el paso hacia Shambhala!"
+        "¡Om Mani Padme Hum! La paz de las nieves eternas esté contigo, valerosa Elizabeth.",
+        "Has alcanzado el Atrio del Santuario Ancestral. Tras la antesala aguarda la Gran Arena del Yeti.",
+        "El Yeti es una fuerza de la naturaleza pura: pisa el suelo con fuerza sísmica y lanza témpanos desde el techo.",
+        "Aprovecha los balcones elevados de la arena para saltar sobre sus ondas de choque, y cuando choque contra los pilares... ¡golpéalo con tu pico!"
       ]
     },
     {
       "x": 28600,
       "y": 108,
-      "name": "Kunga el Guardian del Trono Sagrado",
+      "name": "Kunga el Guardián del Trono Sagrado",
       "role": "Sumo Custodio del Santuario",
       "color": "#fed7aa",
       "hatColor": "#0284c7",
       "lines": [
-        "Detente, Elizabeth! Frente a ti se abre la arena del Gran Yeti de Cristal, la bestia mas imponente del Himalaya.",
-        "Si deseas continuar hacia los valles misticos de Shambhala, deberas apaciguar su furia en combate.",
-        "Cuidado con sus pisotones que desprenden estalactitas y sus bolas de nieve gigantes!",
-        "Cuando embista y choque contra las columnas quedara aturdido: ese es el momento de golpearlo con tu Pico de Hielo!"
+        "¡Detente, valiente Elizabeth! Frente a estas compuertas se alza la Gran Arena del Yeti.",
+        "El Gran Yeti de Cristal protege el acceso al Reino Místico de Shambhala. ¡Debes apaciguar su furia en combate!",
+        "Cuando ruja y pise el suelo, saltarán ondas y caerán estalactitas: súbete a los balcones laterales para ponerte a salvo.",
+        "¡Cuando embista contra los muros de cristal quedará aturdido! Salta sobre él o golpéalo con tu Pico de Hielo para vencerlo."
       ],
       "dialogue": [
-        "Detente, Elizabeth! Frente a ti se abre la arena del Gran Yeti de Cristal, la bestia mas imponente del Himalaya.",
-        "Si deseas continuar hacia los valles misticos de Shambhala, deberas apaciguar su furia en combate.",
-        "Cuidado con sus pisotones que desprenden estalactitas y sus bolas de nieve gigantes!",
-        "Cuando embista y choque contra las columnas quedara aturdido: ese es el momento de golpearlo con tu Pico de Hielo!"
+        "¡Detente, valiente Elizabeth! Frente a estas compuertas se alza la Gran Arena del Yeti.",
+        "El Gran Yeti de Cristal protege el acceso al Reino Místico de Shambhala. ¡Debes apaciguar su furia en combate!",
+        "Cuando ruja y pise el suelo, saltarán ondas y caerán estalactitas: súbete a los balcones laterales para ponerte a salvo.",
+        "¡Cuando embista contra los muros de cristal quedará aturdido! Salta sobre él o golpéalo con tu Pico de Hielo para vencerlo."
       ]
     },
     {
@@ -6990,16 +7609,16 @@ window.LEVELS[3] = {
       "color": "#fed7aa",
       "hatColor": "#f59e0b",
       "lines": [
-        "Tashi Delek, valerosa Elizabeth! Has cruzado las puertas invisibles hacia el mitico Valle Oculto de Shambhala.",
-        "Aqui, entre las aguas termales sagradas y la nieve eterna, florece el Loto de Cristal que purifica las montanas.",
-        "El Gran Yeti abrio este paso sagrado para ti, reconociendo que el amor de madre es la mayor fuerza del universo.",
-        "Sigue el aroma del loto hacia la Gran Pagoda Dorada mas adelante. Tu pequeno ratoncito te espera en el altar supremo!"
+        "¡Tashi Delek, valerosa Elizabeth! Has cruzado las puertas invisibles hacia el místico Valle Oculto de Shambhala.",
+        "Descansa en nuestras Pozas Termales para sanar tus heridas y que tu corazón recupere fuerzas.",
+        "Usa los Lotos de Cristal para impulsarte hacia las alturas y haz sonar las Campanas Sagradas para alejar a los monstruos.",
+        "La Gran Pagoda Dorada te espera más adelante. ¡Que la bendición del Loto guíe tus patitas hacia tu pequeño!"
       ],
       "dialogue": [
-        "Tashi Delek, valerosa Elizabeth! Has cruzado las puertas invisibles hacia el mitico Valle Oculto de Shambhala.",
-        "Aqui, entre las aguas termales sagradas y la nieve eterna, florece el Loto de Cristal que purifica las montanas.",
-        "El Gran Yeti abrio este paso sagrado para ti, reconociendo que el amor de madre es la mayor fuerza del universo.",
-        "Sigue el aroma del loto hacia la Gran Pagoda Dorada mas adelante. Tu pequeno ratoncito te espera en el altar supremo!"
+        "¡Tashi Delek, valerosa Elizabeth! Has cruzado las puertas invisibles hacia el místico Valle Oculto de Shambhala.",
+        "Descansa en nuestras Pozas Termales para sanar tus heridas y que tu corazón recupere fuerzas.",
+        "Usa los Lotos de Cristal para impulsarte hacia las alturas y haz sonar las Campanas Sagradas para alejar a los monstruos.",
+        "La Gran Pagoda Dorada te espera más adelante. ¡Que la bendición del Loto guíe tus patitas hacia tu pequeño!"
       ]
     },
     {
@@ -7010,307 +7629,223 @@ window.LEVELS[3] = {
       "color": "#ffffff",
       "hatColor": "#f59e0b",
       "lines": [
-        "Om Mani Padme Hum, Elizabeth! La luz dorada de la Gran Pagoda resplandece ante tu llegada.",
-        "Durante siglos, la profecia anuncio que una madre con amor infinito superaria el Abismo Polar y las bestias glaciares.",
-        "Mas alla de este portal se alza el Monte Sagrado Kailash y el Palacio Astral de Agartha, donde la gravedad terrenal desaparece.",
-        "Tus patitas flotaran como plumas en el vacio cosmico. Preparate para volar hacia las estrellas y rescatar a tu pequeno!"
+        "¡Om Mani Padme Hum, Elizabeth! La luz dorada de la Gran Pagoda resplandece ante tu llegada.",
+        "Has cruzado los valles y bendecido tu espíritu en nuestras aguas sagradas.",
+        "En el Altar Supremo te espera el Gran Portal hacia el Monte Kailash y el Palacio Astral de Agartha.",
+        "¡Cruza el portal estelar con fe! Más allá de estas puertas la gravedad terrenal desaparece y tus patitas volarán entre las estrellas."
       ],
       "dialogue": [
-        "Om Mani Padme Hum, Elizabeth! La luz dorada de la Gran Pagoda resplandece ante tu llegada.",
-        "Durante siglos, la profecia anuncio que una madre con amor infinito superaria el Abismo Polar y las bestias glaciares.",
-        "Mas alla de este portal se alza el Monte Sagrado Kailash y el Palacio Astral de Agartha, donde la gravedad terrenal desaparece.",
-        "Tus patitas flotaran como plumas en el vacio cosmico. Preparate para volar hacia las estrellas y rescatar a tu pequeno!"
+        "¡Om Mani Padme Hum, Elizabeth! La luz dorada de la Gran Pagoda resplandece ante tu llegada.",
+        "Has cruzado los valles y bendecido tu espíritu en nuestras aguas sagradas.",
+        "En el Altar Supremo te espera el Gran Portal hacia el Monte Kailash y el Palacio Astral de Agartha.",
+        "¡Cruza el portal estelar con fe! Más allá de estas puertas la gravedad terrenal desaparece y tus patitas volarán entre las estrellas."
       ]
     },
     {
-      "x": 33780,
+      "x": 33140,
       "y": 108,
       "name": "Lama Dorje del Monte Kailash",
-      "role": "Asceta Astral de Kailash",
+      "role": "Asceta Astral del Eje del Mundo",
       "color": "#fed7aa",
       "hatColor": "#c084fc",
       "lines": [
-        "Namaste, venerable Elizabeth! Te hallas en las faldas cosmicas del sagrado Monte Kailash, el eje sagrado del firmamento.",
-        "Aqui la gravedad terrenal se disuelve: siente como flotas en el aire y tus saltos alcanzan las alturas celestiales.",
-        "Usa este impulso ingravido para cruzar los puentes de arcoiris y alcanzar las plataformas que antes parecian inalcanzables.",
-        "Sigue el Puente del Arcoiris hacia las cumbres resplandecientes de Agartha. La luz de tu corazon guia a todo el cosmos!"
+        "¡Namaste, venerable Mamá Elizabeth! Has alcanzado las faldas del sagrado Monte Kailash, donde el cielo toca la tierra.",
+        "Siente la ingravidez cósmica: aquí la gravedad terrenal se disuelve y cada salto tuyo flotará con gracia estelar.",
+        "¡Atenta a los Géiseres de Luz Astral! Estas columnas de energía te impulsarán a los puentes de arcoíris más altos.",
+        "Si encuentras pilares de cuarzo o jade agrietados, ¡arroja una bola de nieve con tu pala o cae con fuerza sobre ellos para destrozarlos!",
+        "Cruza el Gran Puente del Arcoíris Supremo hacia las puertas de Agartha. ¡El cosmos entero bendice el amor por tu hijo!"
       ],
       "dialogue": [
-        "Namaste, venerable Elizabeth! Te hallas en las faldas cosmicas del sagrado Monte Kailash, el eje sagrado del firmamento.",
-        "Aqui la gravedad terrenal se disuelve: siente como flotas en el aire y tus saltos alcanzan las alturas celestiales.",
-        "Usa este impulso ingravido para cruzar los puentes de arcoiris y alcanzar las plataformas que antes parecian inalcanzables.",
-        "Sigue el Puente del Arcoiris hacia las cumbres resplandecientes de Agartha. La luz de tu corazon guia a todo el cosmos!"
+        "¡Namaste, venerable Mamá Elizabeth! Has alcanzado las faldas del sagrado Monte Kailash, donde el cielo toca la tierra.",
+        "Siente la ingravidez cósmica: aquí la gravedad terrenal se disuelve y cada salto tuyo flotará con gracia estelar.",
+        "¡Atenta a los Géiseres de Luz Astral! Estas columnas de energía te impulsarán a los puentes de arcoíris más altos.",
+        "Si encuentras pilares de cuarzo o jade agrietados, ¡arroja una bola de nieve con tu pala o cae con fuerza sobre ellos para destrozarlos!",
+        "Cruza el Gran Puente del Arcoíris Supremo hacia las puertas de Agartha. ¡El cosmos entero bendice el amor por tu hijo!"
       ]
     },
     {
-      "x": 35390,
+      "x": 35500,
       "y": 108,
       "name": "Soberana Arya de la Ciudad Celestial",
       "role": "Guardiana Suprema del Reino Astral de Agartha",
       "color": "#ffffff",
       "hatColor": "#38bdf8",
       "lines": [
-        "Alabada seas, Elizabeth! Has alcanzado el santuario eterno de Agartha, mas alla del tiempo y del frio mortal.",
-        "Tu viaje como madre a traves de los jardines, las costas, las ciudadelas y este inmenso Everest quedara grabado para siempre.",
-        "Mas adelante se abren las Puertas del Firmamento Cosmico y el Sanctum Sanctorum de Polaris.",
-        "Alli arriba te aguarda la batalla definitiva por tu pequeno ratoncito. Que el brillo de las estrellas corone tu victoria!"
+        "¡Alabada seas por siempre, Elizabeth! Has alcanzado el santuario eterno de Agartha, la ciudad de cristal bajo las estrellas.",
+        "He seguido cada paso de tu odisea: desde los lirios del jardín y los tifones costeros, hasta las alturas imposibles del Everest.",
+        "¡Tu corazón de madre posee un fuego más brillante que cualquier constelación cósmica!",
+        "Usa los Géiseres Astrales de este palacio para impulsarte con la ingravidez celestial hacia el Sanctum de la Vía Láctea.",
+        "Al final de este salón se alza el Gran Portal Cósmico: al cruzarlo entrarás a la Fase 9, el Firmamento Cósmico de Polaris.",
+        "Allí arriba te aguarda la batalla definitiva para liberar a tu pequeño ratoncito. ¡Recibe la bendición de Agartha y triunfa!"
       ],
       "dialogue": [
-        "Alabada seas, Elizabeth! Has alcanzado el santuario eterno de Agartha, mas alla del tiempo y del frio mortal.",
-        "Tu viaje como madre a traves de los jardines, las costas, las ciudadelas y este inmenso Everest quedara grabado para siempre.",
-        "Mas adelante se abren las Puertas del Firmamento Cosmico y el Sanctum Sanctorum de Polaris.",
-        "Alli arriba te aguarda la batalla definitiva por tu pequeno ratoncito. Que el brillo de las estrellas corone tu victoria!"
+        "¡Alabada seas por siempre, Elizabeth! Has alcanzado el santuario eterno de Agartha, la ciudad de cristal bajo las estrellas.",
+        "He seguido cada paso de tu odisea: desde los lirios del jardín y los tifones costeros, hasta las alturas imposibles del Everest.",
+        "¡Tu corazón de madre posee un fuego más brillante que cualquier constelación cósmica!",
+        "Usa los Géiseres Astrales de este palacio para impulsarte con la ingravidez celestial hacia el Sanctum de la Vía Láctea.",
+        "Al final de este salón se alza el Gran Portal Cósmico: al cruzarlo entrarás a la Fase 9, el Firmamento Cósmico de Polaris.",
+        "Allí arriba te aguarda la batalla definitiva para liberar a tu pequeño ratoncito. ¡Recibe la bendición de Agartha y triunfa!"
       ]
     },
     {
-      "x": 37180,
+      "x": 37170,
       "y": 110,
-      "name": "Vigia Cosmico Kelsang",
-      "role": "Astronomo Zen y Vigia de las Constelaciones del Firmamento",
+      "name": "Vigía Cósmico Kelsang",
+      "role": "Astrónomo Zen y Vigía de las Constelaciones del Firmamento",
       "color": "#3b82f6",
       "hatColor": "#ffd166",
       "lines": [
-        "Por las doce constelaciones del Himalaya! Una pequena ratoncita ha cruzado el umbral de Agartha hasta las Columnas del Firmamento!",
-        "Soy Kelsang, vigia del mapa celeste. Jamas en milenios habiamos presenciado a un ser terrenal ascender con tanta valentia y pureza de corazon.",
-        "Tu instinto maternal resuena con la vibracion de las auroras boreales y las nebulosas mas distantes.",
-        "Avanza con cautela sobre los puentes prismaticos y los altares de cometa. El corazon de la boveda cosmica aguarda tu llegada!"
+        "¡Por las doce constelaciones del Himalaya! ¡Una pequeña ratoncita ha cruzado el umbral de Agartha hasta las Columnas del Firmamento!",
+        "Soy Kelsang, vigía del mapa celeste. Jamás en milenios habíamos presenciado a un ser terrenal ascender con tanta valentía y pureza de corazón.",
+        "Siente los vórtices de polvo estelar: esas columnas de luz celestial te impulsarán hacia las alturas cósmicas renovando tu salto doble.",
+        "Avanza con cautela sobre los puentes prismáticos y rampas supernova. ¡El corazón de la bóveda cósmica aguarda tu llegada!"
       ],
       "dialogue": [
-        "Por las doce constelaciones del Himalaya! Una pequena ratoncita ha cruzado el umbral de Agartha hasta las Columnas del Firmamento!",
-        "Soy Kelsang, vigia del mapa celeste. Jamas en milenios habiamos presenciado a un ser terrenal ascender con tanta valentia y pureza de corazon.",
-        "Tu instinto maternal resuena con la vibracion de las auroras boreales y las nebulosas mas distantes.",
-        "Avanza con cautela sobre los puentes prismaticos y los altares de cometa. El corazon de la boveda cosmica aguarda tu llegada!"
+        "¡Por las doce constelaciones del Himalaya! ¡Una pequeña ratoncita ha cruzado el umbral de Agartha hasta las Columnas del Firmamento!",
+        "Soy Kelsang, vigía del mapa celeste. Jamás en milenios habíamos presenciado a un ser terrenal ascender con tanta valentía y pureza de corazón.",
+        "Siente los vórtices de polvo estelar: esas columnas de luz celestial te impulsarán hacia las alturas cósmicas renovando tu salto doble.",
+        "Avanza con cautela sobre los puentes prismáticos y rampas supernova. ¡El corazón de la bóveda cósmica aguarda tu llegada!"
       ]
     },
     {
-      "x": 38890,
+      "x": 38870,
       "y": 110,
       "name": "Sacerdotisa Astral Tara de la Aurora",
-      "role": "Custodia de los Jardines de Nebulosa y Tejedora de la Luz Cosmica",
+      "role": "Custodia de los Jardines de Nebulosa y Tejedora de la Luz Cósmica",
       "color": "#a855f7",
       "hatColor": "#00f5d4",
       "lines": [
-        "Bienvenida al Oasis de la Aurora, noble Elizabeth. El aroma del polen cosmico florece para honrar tu llegada.",
-        "A traves de las nebulosas estelares, las estrellas susurran el eco de tu amor maternal. Pocos seres han desafiado los abismos celestiales como tu.",
-        "Estas muy cerca de la Boveda Suprema. En la siguiente estancia, el Sanctum Sanctorum de la Estrella Polar resguarda la luz final.",
-        "Toma el nectar de estas auroras y que la fuerza de las constelaciones acompane el reencuentro con tu cuarto pequeno!"
+        "Bienvenida al Oasis de la Aurora, noble Elizabeth. El aroma del polen cósmico florece para honrar tu llegada.",
+        "A través de estas nebulosas, las estrellas susurran el eco de tu amor maternal. Pocos seres han desafiado los abismos celestiales como tú.",
+        "Usa tu pala para excavar en los bancos de nieve estelar más adelante si las ventiscas de meteorito soplan con fuerza.",
+        "¡Y contempla la Gran Aguja del Cometa Dorado hacia el este! En su cima brilla el mítico Queso #100. ¡Que la luz cósmica guíe tus patitas!"
       ],
       "dialogue": [
-        "Bienvenida al Oasis de la Aurora, noble Elizabeth. El aroma del polen cosmico florece para honrar tu llegada.",
-        "A traves de las nebulosas estelares, las estrellas susurran el eco de tu amor maternal. Pocos seres han desafiado los abismos celestiales como tu.",
-        "Estas muy cerca de la Boveda Suprema. En la siguiente estancia, el Sanctum Sanctorum de la Estrella Polar resguarda la luz final.",
-        "Toma el nectar de estas auroras y que la fuerza de las constelaciones acompane el reencuentro con tu cuarto pequeno!"
+        "Bienvenida al Oasis de la Aurora, noble Elizabeth. El aroma del polen cósmico florece para honrar tu llegada.",
+        "A través de estas nebulosas, las estrellas susurran el eco de tu amor maternal. Pocos seres han desafiado los abismos celestiales como tú.",
+        "Usa tu pala para excavar en los bancos de nieve estelar más adelante si las ventiscas de meteorito soplan con fuerza.",
+        "¡Y contempla la Gran Aguja del Cometa Dorado hacia el este! En su cima brilla el mítico Queso #100. ¡Que la luz cósmica guíe tus patitas!"
       ]
     },
     {
-      "x": 40590,
+      "x": 40560,
       "y": 110,
-      "name": "Patriarca Celestial Rigden de la Boveda Estelar",
+      "name": "Patriarca Celestial Rigden de la Bóveda Estelar",
       "role": "Gran Sabio del Firmamento y Custodio de la Estrella Polar",
       "color": "#ffffff",
       "hatColor": "#ffd166",
       "lines": [
-        "Bendito sea este momento cosmico, Mama Eli! Has alcanzado el umbral supremo de la Boveda Estelar.",
-        "Pero el acceso al Altar de la Estrella Polar esta protegido por el Dragon Astral de Polaris, custodio del firmamento.",
-        "Esquiva su lluvia de cometas y estrellas teledirigidas usando la baja gravedad cosmica!",
-        "Cuando descienda en picada, golpea su nucleo supernova: solo liberando la constelacion podras reunirte con tu pequeno!"
+        "¡Bendito sea este momento cósmico, Mamá Eli! Has alcanzado el umbral supremo de la Bóveda Estelar.",
+        "Más allá de este pórtico se extiende la Arena Celestial de Polaris, resguardada por el mítico Dragón Astral.",
+        "La arena cuenta con un firme suelo sagrado y plataformas elevadas de arcoíris y cristal de diamante.",
+        "Esquiva su lluvia de cometas usando la baja gravedad cósmica y salta desde las plataformas altas para golpear su núcleo supernova. ¡Tu pequeño te aguarda en el Trono!"
       ],
       "dialogue": [
-        "Bendito sea este momento cosmico, Mama Eli! Has alcanzado el umbral supremo de la Boveda Estelar.",
-        "Pero el acceso al Altar de la Estrella Polar esta protegido por el Dragon Astral de Polaris, custodio del firmamento.",
-        "Esquiva su lluvia de cometas y estrellas teledirigidas usando la baja gravedad cosmica!",
-        "Cuando descienda en picada, golpea su nucleo supernova: solo liberando la constelacion podras reunirte con tu pequeno!"
+        "¡Bendito sea este momento cósmico, Mamá Eli! Has alcanzado el umbral supremo de la Bóveda Estelar.",
+        "Más allá de este pórtico se extiende la Arena Celestial de Polaris, resguardada por el mítico Dragón Astral.",
+        "La arena cuenta con un firme suelo sagrado y plataformas elevadas de arcoíris y cristal de diamante.",
+        "Esquiva su lluvia de cometas usando la baja gravedad cósmica y salta desde las plataformas altas para golpear su núcleo supernova. ¡Tu pequeño te aguarda en el Trono!"
       ]
     }
   ],
   "magmaCrawlers": [
     {
-      "x": 180,
+      "x": 540,
       "y": 196,
-      "minX": 100,
-      "maxX": 260,
+      "minX": 460,
+      "maxX": 660,
       "speed": 45,
       "dir": 1,
       "variant": "frost_crawler"
     },
     {
-      "x": 520,
+      "x": 760,
       "y": 196,
-      "minX": 450,
-      "maxX": 620,
-      "speed": 48,
-      "dir": -1,
-      "variant": "frost_crawler"
-    },
-    {
-      "x": 740,
-      "y": 196,
-      "minX": 700,
+      "minX": 720,
       "maxX": 850,
-      "speed": 45,
-      "dir": 1,
-      "variant": "frost_crawler"
-    },
-    {
-      "x": 1140,
-      "y": 196,
-      "minX": 1100,
-      "maxX": 1300,
-      "speed": 48,
+      "speed": 42,
       "dir": -1,
       "variant": "frost_crawler"
     },
     {
-      "x": 1380,
+      "x": 1210,
       "y": 196,
-      "minX": 1340,
-      "maxX": 1460,
-      "speed": 45,
-      "dir": 1,
-      "variant": "frost_crawler"
-    },
-    {
-      "x": 1530,
-      "y": 196,
-      "minX": 1490,
-      "maxX": 1620,
-      "speed": 45,
-      "dir": 1,
-      "variant": "frost_crawler"
-    },
-    {
-      "x": 1740,
-      "y": 196,
-      "minX": 1700,
-      "maxX": 1900,
-      "speed": 48,
-      "dir": -1,
-      "variant": "frost_crawler"
-    },
-    {
-      "x": 2080,
-      "y": 164,
-      "minX": 2060,
-      "maxX": 2160,
-      "speed": 45,
-      "dir": 1,
-      "variant": "frost_crawler"
-    },
-    {
-      "x": 2360,
-      "y": 186,
-      "minX": 2310,
-      "maxX": 2480,
-      "speed": 50,
-      "dir": 1,
-      "variant": "frost_crawler"
-    },
-    {
-      "x": 2590,
-      "y": 196,
-      "minX": 2550,
-      "maxX": 2680,
-      "speed": 45,
-      "dir": -1,
-      "variant": "frost_crawler"
-    },
-    {
-      "x": 2760,
-      "y": 196,
-      "minX": 2730,
-      "maxX": 2850,
-      "speed": 45,
-      "dir": 1,
-      "variant": "frost_crawler"
-    },
-    {
-      "x": 2980,
-      "y": 196,
-      "minX": 2920,
-      "maxX": 3150,
+      "minX": 1140,
+      "maxX": 1320,
       "speed": 48,
       "dir": 1,
       "variant": "frost_crawler"
     },
     {
-      "x": 3060,
-      "y": 150,
-      "minX": 3040,
-      "maxX": 3140,
-      "speed": 45,
-      "dir": -1,
-      "variant": "frost_crawler"
-    },
-    {
-      "x": 3500,
-      "y": 184,
-      "minX": 3440,
-      "maxX": 3670,
-      "speed": 52,
-      "dir": -1,
-      "variant": "frost_crawler"
-    },
-    {
-      "x": 3860,
+      "x": 1790,
       "y": 196,
-      "minX": 3820,
-      "maxX": 3980,
-      "speed": 48,
+      "minX": 1730,
+      "maxX": 1920,
+      "speed": 45,
       "dir": 1,
       "variant": "frost_crawler"
     },
     {
-      "x": 4560,
-      "y": 124,
-      "minX": 4510,
-      "maxX": 4660,
+      "x": 2510,
+      "y": 196,
+      "minX": 2460,
+      "maxX": 2630,
       "speed": 46,
+      "dir": -1,
+      "variant": "frost_crawler"
+    },
+    {
+      "x": 3040,
+      "y": 196,
+      "minX": 2960,
+      "maxX": 3180,
+      "speed": 45,
       "dir": 1,
       "variant": "frost_crawler"
     },
     {
-      "x": 5080,
-      "y": 184,
-      "minX": 5040,
-      "maxX": 5190,
+      "x": 3580,
+      "y": 196,
+      "minX": 3530,
+      "maxX": 3720,
       "speed": 50,
       "dir": -1,
       "variant": "frost_crawler"
     },
     {
-      "x": 5860,
-      "y": 120,
-      "minX": 5810,
-      "maxX": 5960,
+      "x": 4470,
+      "y": 196,
+      "minX": 4430,
+      "maxX": 4530,
+      "speed": 42,
+      "dir": 1,
+      "variant": "frost_crawler"
+    },
+    {
+      "x": 4800,
+      "y": 196,
+      "minX": 4750,
+      "maxX": 4970,
+      "speed": 46,
+      "dir": -1,
+      "variant": "frost_crawler"
+    },
+    {
+      "x": 6140,
+      "y": 170,
+      "minX": 6100,
+      "maxX": 6220,
       "speed": 48,
       "dir": 1,
       "variant": "frost_crawler"
     },
     {
-      "x": 6420,
-      "y": 184,
-      "minX": 6380,
-      "maxX": 6520,
-      "speed": 52,
-      "dir": -1,
-      "variant": "frost_crawler"
-    },
-    {
-      "x": 7180,
-      "y": 118,
-      "minX": 7120,
-      "maxX": 7280,
+      "x": 7310,
+      "y": 196,
+      "minX": 7230,
+      "maxX": 7460,
       "speed": 48,
       "dir": 1,
-      "variant": "frost_crawler"
-    },
-    {
-      "x": 7760,
-      "y": 184,
-      "minX": 7720,
-      "maxX": 7860,
-      "speed": 52,
-      "dir": -1,
       "variant": "frost_crawler"
     },
     {
@@ -7323,12 +7858,30 @@ window.LEVELS[3] = {
       "variant": "frost_crawler"
     },
     {
+      "x": 8680,
+      "y": 196,
+      "minX": 8620,
+      "maxX": 8740,
+      "speed": 40,
+      "dir": -1,
+      "variant": "frost_crawler"
+    },
+    {
       "x": 9040,
       "y": 196,
       "minX": 8990,
       "maxX": 9120,
       "speed": 45,
       "dir": 1,
+      "variant": "frost_crawler"
+    },
+    {
+      "x": 9420,
+      "y": 196,
+      "minX": 9350,
+      "maxX": 9500,
+      "speed": 42,
+      "dir": -1,
       "variant": "frost_crawler"
     },
     {
@@ -7341,12 +7894,30 @@ window.LEVELS[3] = {
       "variant": "frost_crawler"
     },
     {
+      "x": 10160,
+      "y": 196,
+      "minX": 10090,
+      "maxX": 10240,
+      "speed": 42,
+      "dir": -1,
+      "variant": "frost_crawler"
+    },
+    {
       "x": 10540,
       "y": 196,
       "minX": 10500,
       "maxX": 10580,
       "speed": 45,
       "dir": 1,
+      "variant": "frost_crawler"
+    },
+    {
+      "x": 10920,
+      "y": 196,
+      "minX": 10850,
+      "maxX": 11000,
+      "speed": 42,
+      "dir": -1,
       "variant": "frost_crawler"
     },
     {
@@ -7359,12 +7930,30 @@ window.LEVELS[3] = {
       "variant": "frost_crawler"
     },
     {
+      "x": 11670,
+      "y": 196,
+      "minX": 11600,
+      "maxX": 11750,
+      "speed": 42,
+      "dir": -1,
+      "variant": "frost_crawler"
+    },
+    {
       "x": 12040,
       "y": 196,
       "minX": 12000,
       "maxX": 12080,
       "speed": 45,
       "dir": 1,
+      "variant": "frost_crawler"
+    },
+    {
+      "x": 12420,
+      "y": 196,
+      "minX": 12350,
+      "maxX": 12500,
+      "speed": 42,
+      "dir": -1,
       "variant": "frost_crawler"
     },
     {
@@ -7377,332 +7966,323 @@ window.LEVELS[3] = {
       "variant": "frost_crawler"
     },
     {
-      "x": 13400,
+      "x": 13180,
       "y": 196,
-      "minX": 13320,
-      "maxX": 13480,
+      "minX": 13100,
+      "maxX": 13240,
+      "speed": 42,
+      "dir": -1,
+      "variant": "frost_crawler"
+    },
+    {
+      "x": 13410,
+      "y": 196,
+      "minX": 13340,
+      "maxX": 13470,
       "speed": 45,
       "dir": 1,
       "variant": "frost_crawler"
     },
     {
-      "x": 13940,
-      "y": 180,
-      "minX": 13900,
-      "maxX": 13970,
-      "speed": 45,
+      "x": 13750,
+      "y": 152,
+      "minX": 13745,
+      "maxX": 13795,
+      "speed": 38,
       "dir": 1,
       "variant": "frost_crawler"
     },
     {
-      "x": 14240,
+      "x": 14190,
       "y": 196,
-      "minX": 14150,
-      "maxX": 14350,
+      "minX": 14120,
+      "maxX": 14310,
       "speed": 48,
       "dir": -1,
       "variant": "frost_crawler"
     },
     {
-      "x": 14920,
+      "x": 14880,
       "y": 196,
-      "minX": 14800,
-      "maxX": 15050,
+      "minX": 14760,
+      "maxX": 15060,
+      "speed": 54,
+      "dir": 1,
+      "variant": "frost_crawler"
+    },
+    {
+      "x": 15190,
+      "y": 142,
+      "minX": 15185,
+      "maxX": 15245,
+      "speed": 40,
+      "dir": 1,
+      "variant": "frost_crawler"
+    },
+    {
+      "x": 15460,
+      "y": 196,
+      "minX": 15430,
+      "maxX": 15550,
+      "speed": 46,
+      "dir": -1,
+      "variant": "frost_crawler"
+    },
+    {
+      "x": 15720,
+      "y": 196,
+      "minX": 15660,
+      "maxX": 15830,
+      "speed": 45,
+      "dir": 1,
+      "variant": "frost_crawler"
+    },
+    {
+      "x": 16100,
+      "y": 136,
+      "minX": 16092,
+      "maxX": 16150,
+      "speed": 40,
+      "dir": 1,
+      "variant": "frost_crawler"
+    },
+    {
+      "x": 16540,
+      "y": 196,
+      "minX": 16480,
+      "maxX": 16640,
+      "speed": 48,
+      "dir": -1,
+      "variant": "frost_crawler"
+    },
+    {
+      "x": 16570,
+      "y": 154,
+      "minX": 16562,
+      "maxX": 16630,
+      "speed": 42,
+      "dir": 1,
+      "variant": "frost_crawler"
+    },
+    {
+      "x": 17320,
+      "y": 196,
+      "minX": 17260,
+      "maxX": 17460,
       "speed": 52,
       "dir": 1,
       "variant": "frost_crawler"
     },
     {
-      "x": 15320,
-      "y": 196,
-      "minX": 15280,
-      "maxX": 15440,
-      "speed": 50,
-      "dir": 1,
-      "variant": "frost_crawler"
-    },
-    {
-      "x": 15760,
-      "y": 156,
-      "minX": 15750,
-      "maxX": 15820,
-      "speed": 45,
-      "dir": 1,
-      "variant": "frost_crawler"
-    },
-    {
-      "x": 16180,
-      "y": 168,
-      "minX": 16180,
-      "maxX": 16250,
-      "speed": 45,
-      "dir": 1,
-      "variant": "frost_crawler"
-    },
-    {
-      "x": 16690,
-      "y": 154,
-      "minX": 16680,
-      "maxX": 16750,
-      "speed": 48,
-      "dir": -1,
-      "variant": "frost_crawler"
-    },
-    {
-      "x": 17240,
-      "y": 196,
-      "minX": 17180,
-      "maxX": 17350,
-      "speed": 50,
-      "dir": 1,
-      "variant": "frost_crawler"
-    },
-    {
-      "x": 17830,
-      "y": 154,
-      "minX": 17820,
-      "maxX": 17890,
-      "speed": 48,
+      "x": 17860,
+      "y": 136,
+      "minX": 17852,
+      "maxX": 17925,
+      "speed": 46,
       "dir": 1,
       "variant": "frost_crawler"
     },
     {
       "x": 18130,
-      "y": 160,
-      "minX": 18120,
-      "maxX": 18190,
+      "y": 196,
+      "minX": 18100,
+      "maxX": 18230,
       "speed": 45,
       "dir": 1,
       "variant": "frost_crawler"
     },
     {
-      "x": 18510,
-      "y": 136,
-      "minX": 18490,
+      "x": 18520,
+      "y": 112,
+      "minX": 18510,
       "maxX": 18580,
-      "speed": 45,
+      "speed": 40,
       "dir": 1,
       "variant": "frost_crawler"
     },
     {
-      "x": 19490,
-      "y": 124,
-      "minX": 19480,
-      "maxX": 19550,
+      "x": 19370,
+      "y": 156,
+      "minX": 19350,
+      "maxX": 19480,
       "speed": 48,
       "dir": -1,
       "variant": "frost_crawler"
     },
     {
-      "x": 19910,
-      "y": 104,
-      "minX": 19890,
-      "maxX": 19970,
-      "speed": 50,
+      "x": 19940,
+      "y": 88,
+      "minX": 19930,
+      "maxX": 20000,
+      "speed": 44,
       "dir": 1,
       "variant": "frost_crawler"
     },
     {
-      "x": 20640,
+      "x": 20620,
       "y": 96,
       "minX": 20600,
-      "maxX": 20720,
-      "speed": 48,
+      "maxX": 20670,
+      "speed": 46,
       "dir": -1,
       "variant": "frost_crawler"
     },
     {
       "x": 20890,
-      "y": 98,
-      "minX": 20880,
-      "maxX": 20950,
+      "y": 136,
+      "minX": 20850,
+      "maxX": 20970,
       "speed": 45,
       "dir": 1,
       "variant": "frost_crawler"
     },
     {
       "x": 21560,
-      "y": 104,
-      "minX": 21540,
-      "maxX": 21620,
+      "y": 76,
+      "minX": 21550,
+      "maxX": 21625,
       "speed": 45,
       "dir": 1,
       "variant": "frost_crawler"
     },
     {
-      "x": 21740,
-      "y": 116,
-      "minX": 21700,
-      "maxX": 21820,
+      "x": 21750,
+      "y": 110,
+      "minX": 21730,
+      "maxX": 21830,
+      "speed": 48,
+      "dir": 1,
+      "variant": "frost_crawler"
+    },
+    {
+      "x": 22030,
+      "y": 104,
+      "minX": 22025,
+      "maxX": 22090,
+      "speed": 46,
+      "dir": -1,
+      "variant": "frost_crawler"
+    },
+    {
+      "x": 23280,
+      "y": 98,
+      "minX": 23200,
+      "maxX": 23360,
       "speed": 50,
       "dir": 1,
       "variant": "frost_crawler"
     },
     {
-      "x": 22270,
-      "y": 112,
-      "minX": 22260,
-      "maxX": 22330,
-      "speed": 48,
-      "dir": -1,
-      "variant": "frost_crawler"
-    },
-    {
-      "x": 23040,
-      "y": 98,
-      "minX": 22960,
-      "maxX": 23150,
-      "speed": 52,
-      "dir": 1,
-      "variant": "frost_crawler"
-    },
-    {
-      "x": 23890,
-      "y": 78,
+      "x": 23900,
+      "y": 76,
       "minX": 23880,
-      "maxX": 23945,
+      "maxX": 23950,
       "speed": 45,
       "dir": 1,
       "variant": "frost_crawler"
     },
     {
       "x": 24320,
-      "y": 104,
-      "minX": 24280,
-      "maxX": 24380,
+      "y": 114,
+      "minX": 24290,
+      "maxX": 24410,
       "speed": 45,
       "dir": 1,
       "variant": "frost_crawler"
     },
     {
-      "x": 24420,
-      "y": 168,
-      "minX": 24350,
-      "maxX": 24500,
-      "speed": 50,
-      "dir": -1,
-      "variant": "frost_crawler"
-    },
-    {
-      "x": 24760,
-      "y": 112,
-      "minX": 24740,
+      "x": 24700,
+      "y": 162,
+      "minX": 24620,
       "maxX": 24820,
       "speed": 50,
-      "dir": 1,
+      "dir": -1,
       "variant": "frost_crawler"
     },
     {
-      "x": 25050,
+      "x": 25060,
       "y": 124,
       "minX": 24980,
-      "maxX": 25150,
+      "maxX": 25160,
       "speed": 48,
       "dir": 1,
       "variant": "frost_crawler"
     },
     {
-      "x": 25480,
-      "y": 96,
-      "minX": 25470,
-      "maxX": 25540,
+      "x": 25440,
+      "y": 130,
+      "minX": 25410,
+      "maxX": 25520,
       "speed": 45,
       "dir": 1,
       "variant": "frost_crawler"
     },
     {
-      "x": 25770,
-      "y": 104,
-      "minX": 25755,
-      "maxX": 25820,
-      "speed": 48,
-      "dir": -1,
-      "variant": "frost_crawler"
-    },
-    {
-      "x": 25890,
+      "x": 25840,
       "y": 126,
-      "minX": 25850,
-      "maxX": 25990,
-      "speed": 50,
-      "dir": 1,
-      "variant": "frost_crawler"
-    },
-    {
-      "x": 26090,
-      "y": 156,
-      "minX": 26060,
-      "maxX": 26180,
-      "speed": 50,
-      "dir": -1,
-      "variant": "frost_crawler"
-    },
-    {
-      "x": 26530,
-      "y": 92,
-      "minX": 26520,
-      "maxX": 26580,
+      "minX": 25780,
+      "maxX": 25960,
       "speed": 48,
       "dir": 1,
       "variant": "frost_crawler"
     },
     {
-      "x": 26790,
-      "y": 78,
-      "minX": 26780,
+      "x": 26540,
+      "y": 114,
+      "minX": 26510,
+      "maxX": 26680,
+      "speed": 48,
+      "dir": 1,
+      "variant": "frost_crawler"
+    },
+    {
+      "x": 26740,
+      "y": 110,
+      "minX": 26700,
       "maxX": 26840,
       "speed": 45,
       "dir": 1,
       "variant": "frost_crawler"
     },
     {
-      "x": 26980,
-      "y": 96,
-      "minX": 26960,
-      "maxX": 27040,
-      "speed": 45,
+      "x": 26920,
+      "y": 116,
+      "minX": 26880,
+      "maxX": 27010,
+      "speed": 46,
       "dir": 1,
       "variant": "frost_crawler"
     },
     {
-      "x": 27400,
-      "y": 84,
-      "minX": 27390,
-      "maxX": 27460,
+      "x": 27420,
+      "y": 126,
+      "minX": 27360,
+      "maxX": 27550,
       "speed": 48,
       "dir": -1,
       "variant": "frost_crawler"
     },
     {
-      "x": 27630,
-      "y": 156,
-      "minX": 27600,
-      "maxX": 27740,
+      "x": 27910,
+      "y": 110,
+      "minX": 27860,
+      "maxX": 28000,
       "speed": 50,
       "dir": 1,
       "variant": "frost_crawler"
     },
     {
-      "x": 27920,
-      "y": 88,
-      "minX": 27900,
-      "maxX": 27980,
-      "speed": 48,
-      "dir": 1,
-      "variant": "frost_crawler"
-    },
-    {
-      "x": 28230,
-      "y": 78,
-      "minX": 28220,
-      "maxX": 28280,
+      "x": 28220,
+      "y": 118,
+      "minX": 28160,
+      "maxX": 28320,
       "speed": 45,
       "dir": 1,
       "variant": "frost_crawler"
     },
     {
       "x": 28430,
-      "y": 100,
+      "y": 88,
       "minX": 28410,
       "maxX": 28490,
       "speed": 45,
@@ -7710,344 +8290,218 @@ window.LEVELS[3] = {
       "variant": "frost_crawler"
     },
     {
-      "x": 29670,
-      "y": 92,
-      "minX": 29660,
-      "maxX": 29720,
-      "speed": 45,
+      "x": 29750,
+      "y": 126,
+      "minX": 29710,
+      "maxX": 29810,
+      "speed": 38,
       "dir": 1,
       "variant": "frost_crawler"
     },
     {
-      "x": 29890,
-      "y": 104,
-      "minX": 29870,
-      "maxX": 29950,
-      "speed": 45,
-      "dir": 1,
-      "variant": "frost_crawler"
-    },
-    {
-      "x": 30070,
-      "y": 84,
-      "minX": 30060,
-      "maxX": 30120,
-      "speed": 50,
+      "x": 29980,
+      "y": 96,
+      "minX": 29950,
+      "maxX": 30040,
+      "speed": 42,
       "dir": -1,
       "variant": "frost_crawler"
     },
     {
-      "x": 30450,
-      "y": 84,
-      "minX": 30440,
-      "maxX": 30500,
-      "speed": 48,
-      "dir": 1,
-      "variant": "frost_crawler"
-    },
-    {
-      "x": 30720,
+      "x": 30750,
       "y": 156,
-      "minX": 30670,
-      "maxX": 30810,
-      "speed": 50,
+      "minX": 30700,
+      "maxX": 30840,
+      "speed": 45,
       "dir": 1,
       "variant": "frost_crawler"
     },
     {
       "x": 31630,
-      "y": 64,
+      "y": 98,
       "minX": 31615,
-      "maxX": 31670,
-      "speed": 48,
-      "dir": 1,
-      "variant": "frost_crawler"
-    },
-    {
-      "x": 31620,
-      "y": 96,
-      "minX": 31570,
       "maxX": 31690,
+      "speed": 40,
+      "dir": 1,
+      "variant": "frost_crawler"
+    },
+    {
+      "x": 32320,
+      "y": 156,
+      "minX": 32260,
+      "maxX": 32400,
+      "speed": 45,
+      "dir": -1,
+      "variant": "frost_crawler"
+    },
+    {
+      "x": 33140,
+      "y": 126,
+      "minX": 33060,
+      "maxX": 33200,
+      "speed": 45,
+      "dir": 1,
+      "variant": "kailash_scarab"
+    },
+    {
+      "x": 33440,
+      "y": 80,
+      "minX": 33430,
+      "maxX": 33500,
+      "speed": 42,
+      "dir": 1,
+      "variant": "kailash_scarab"
+    },
+    {
+      "x": 34010,
+      "y": 126,
+      "minX": 33970,
+      "maxX": 34160,
+      "speed": 48,
+      "dir": 1,
+      "variant": "kailash_scarab"
+    },
+    {
+      "x": 34240,
+      "y": 126,
+      "minX": 34220,
+      "maxX": 34330,
+      "speed": 46,
+      "dir": -1,
+      "variant": "kailash_scarab"
+    },
+    {
+      "x": 34840,
+      "y": 126,
+      "minX": 34740,
+      "maxX": 34940,
+      "speed": 45,
+      "dir": 1,
+      "variant": "agartha_sentinel"
+    },
+    {
+      "x": 35140,
+      "y": 130,
+      "minX": 35110,
+      "maxX": 35240,
+      "speed": 48,
+      "dir": 1,
+      "variant": "agartha_sentinel"
+    },
+    {
+      "x": 35460,
+      "y": 126,
+      "minX": 35400,
+      "maxX": 35560,
+      "speed": 42,
+      "dir": 1,
+      "variant": "agartha_sentinel"
+    },
+    {
+      "x": 35780,
+      "y": 126,
+      "minX": 35760,
+      "maxX": 35840,
+      "speed": 50,
+      "dir": -1,
+      "variant": "agartha_sentinel"
+    },
+    {
+      "x": 36500,
+      "y": 126,
+      "minX": 36440,
+      "maxX": 36560,
       "speed": 45,
       "dir": 1,
       "variant": "frost_crawler"
     },
     {
-      "x": 32020,
-      "y": 84,
-      "minX": 32005,
-      "maxX": 32070,
-      "speed": 52,
+      "x": 36780,
+      "y": 72,
+      "minX": 36745,
+      "maxX": 36835,
+      "speed": 40,
+      "dir": 1,
+      "variant": "frost_crawler"
+    },
+    {
+      "x": 37300,
+      "y": 126,
+      "minX": 37240,
+      "maxX": 37370,
+      "speed": 48,
       "dir": -1,
       "variant": "frost_crawler"
     },
     {
-      "x": 32300,
+      "x": 37450,
+      "y": 118,
+      "minX": 37425,
+      "maxX": 37515,
+      "speed": 42,
+      "dir": 1,
+      "variant": "frost_crawler"
+    },
+    {
+      "x": 37850,
+      "y": 74,
+      "minX": 37825,
+      "maxX": 37915,
+      "speed": 46,
+      "dir": 1,
+      "variant": "frost_crawler"
+    },
+    {
+      "x": 38190,
+      "y": 120,
+      "minX": 38130,
+      "maxX": 38240,
+      "speed": 45,
+      "dir": 1,
+      "variant": "frost_crawler"
+    },
+    {
+      "x": 38530,
+      "y": 126,
+      "minX": 38490,
+      "maxX": 38600,
+      "speed": 42,
+      "dir": 1,
+      "variant": "frost_crawler"
+    },
+    {
+      "x": 39020,
+      "y": 126,
+      "minX": 38960,
+      "maxX": 39060,
+      "speed": 48,
+      "dir": -1,
+      "variant": "frost_crawler"
+    },
+    {
+      "x": 39390,
       "y": 112,
-      "minX": 32292,
-      "maxX": 32345,
-      "speed": 46,
+      "minX": 39350,
+      "maxX": 39440,
+      "speed": 44,
       "dir": 1,
       "variant": "frost_crawler"
     },
     {
-      "x": 32280,
-      "y": 156,
-      "minX": 32230,
-      "maxX": 32370,
-      "speed": 50,
-      "dir": 1,
-      "variant": "frost_crawler"
-    },
-    {
-      "x": 33100,
-      "y": 84,
-      "minX": 33092,
-      "maxX": 33150,
-      "speed": 48,
-      "dir": 1,
-      "variant": "frost_crawler"
-    },
-    {
-      "x": 33300,
-      "y": 96,
-      "minX": 33280,
-      "maxX": 33380,
+      "x": 39910,
+      "y": 120,
+      "minX": 39850,
+      "maxX": 39980,
       "speed": 45,
       "dir": 1,
       "variant": "frost_crawler"
     },
     {
-      "x": 33340,
-      "y": 64,
-      "minX": 33332,
-      "maxX": 33395,
-      "speed": 52,
-      "dir": -1,
-      "variant": "frost_crawler"
-    },
-    {
-      "x": 33730,
-      "y": 82,
-      "minX": 33722,
-      "maxX": 33790,
-      "speed": 50,
-      "dir": 1,
-      "variant": "frost_crawler"
-    },
-    {
-      "x": 34040,
-      "y": 156,
-      "minX": 34000,
-      "maxX": 34140,
-      "speed": 50,
-      "dir": 1,
-      "variant": "frost_crawler"
-    },
-    {
-      "x": 34570,
-      "y": 84,
-      "minX": 34562,
-      "maxX": 34620,
-      "speed": 52,
-      "dir": -1,
-      "variant": "frost_crawler"
-    },
-    {
-      "x": 34790,
-      "y": 78,
-      "minX": 34782,
-      "maxX": 34840,
-      "speed": 48,
-      "dir": 1,
-      "variant": "frost_crawler"
-    },
-    {
-      "x": 35020,
-      "y": 96,
-      "minX": 34970,
-      "maxX": 35090,
-      "speed": 45,
-      "dir": 1,
-      "variant": "frost_crawler"
-    },
-    {
-      "x": 35030,
-      "y": 64,
-      "minX": 35022,
-      "maxX": 35085,
-      "speed": 52,
-      "dir": -1,
-      "variant": "frost_crawler"
-    },
-    {
-      "x": 35400,
-      "y": 80,
-      "minX": 35392,
-      "maxX": 35460,
-      "speed": 50,
-      "dir": 1,
-      "variant": "frost_crawler"
-    },
-    {
-      "x": 35680,
-      "y": 156,
-      "minX": 35630,
-      "maxX": 35770,
-      "speed": 50,
-      "dir": 1,
-      "variant": "frost_crawler"
-    },
-    {
-      "x": 35910,
-      "y": 88,
-      "minX": 35902,
-      "maxX": 35970,
-      "speed": 48,
-      "dir": -1,
-      "variant": "frost_crawler"
-    },
-    {
-      "x": 36480,
-      "y": 80,
-      "minX": 36472,
-      "maxX": 36525,
-      "speed": 50,
-      "dir": 1,
-      "variant": "frost_crawler"
-    },
-    {
-      "x": 36790,
-      "y": 92,
-      "minX": 36750,
-      "maxX": 36850,
-      "speed": 45,
-      "dir": 1,
-      "variant": "frost_crawler"
-    },
-    {
-      "x": 36850,
-      "y": 64,
-      "minX": 36842,
-      "maxX": 36905,
-      "speed": 52,
-      "dir": -1,
-      "variant": "frost_crawler"
-    },
-    {
-      "x": 37050,
-      "y": 80,
-      "minX": 37042,
-      "maxX": 37105,
-      "speed": 54,
-      "dir": 1,
-      "variant": "frost_crawler"
-    },
-    {
-      "x": 37250,
-      "y": 84,
-      "minX": 37242,
-      "maxX": 37310,
-      "speed": 50,
-      "dir": -1,
-      "variant": "frost_crawler"
-    },
-    {
-      "x": 37470,
-      "y": 154,
-      "minX": 37420,
-      "maxX": 37550,
-      "speed": 50,
-      "dir": 1,
-      "variant": "frost_crawler"
-    },
-    {
-      "x": 37750,
-      "y": 62,
-      "minX": 37742,
-      "maxX": 37800,
-      "speed": 52,
-      "dir": 1,
-      "variant": "frost_crawler"
-    },
-    {
-      "x": 38180,
-      "y": 80,
-      "minX": 38172,
-      "maxX": 38225,
-      "speed": 48,
-      "dir": 1,
-      "variant": "frost_crawler"
-    },
-    {
-      "x": 38490,
-      "y": 92,
-      "minX": 38450,
-      "maxX": 38560,
-      "speed": 45,
-      "dir": 1,
-      "variant": "frost_crawler"
-    },
-    {
-      "x": 38550,
-      "y": 64,
-      "minX": 38542,
-      "maxX": 38605,
-      "speed": 52,
-      "dir": -1,
-      "variant": "frost_crawler"
-    },
-    {
-      "x": 38750,
-      "y": 84,
-      "minX": 38742,
-      "maxX": 38805,
-      "speed": 50,
-      "dir": 1,
-      "variant": "frost_crawler"
-    },
-    {
-      "x": 38950,
-      "y": 82,
-      "minX": 38942,
-      "maxX": 39010,
-      "speed": 52,
-      "dir": -1,
-      "variant": "frost_crawler"
-    },
-    {
-      "x": 39160,
-      "y": 156,
-      "minX": 39120,
-      "maxX": 39250,
-      "speed": 50,
-      "dir": 1,
-      "variant": "frost_crawler"
-    },
-    {
-      "x": 39540,
-      "y": 82,
-      "minX": 39532,
-      "maxX": 39620,
-      "speed": 46,
-      "dir": 1,
-      "variant": "frost_crawler"
-    },
-    {
-      "x": 40200,
-      "y": 92,
-      "minX": 40160,
-      "maxX": 40280,
-      "speed": 45,
-      "dir": 1,
-      "variant": "frost_crawler"
-    },
-    {
-      "x": 40870,
-      "y": 156,
-      "minX": 40830,
-      "maxX": 40960,
-      "speed": 50,
+      "x": 40380,
+      "y": 108,
+      "minX": 40350,
+      "maxX": 40450,
+      "speed": 42,
       "dir": 1,
       "variant": "frost_crawler"
     }
@@ -8055,146 +8509,137 @@ window.LEVELS[3] = {
   "lavaHoppers": [],
   "fireBats": [
     {
-      "x": 560,
+      "x": 620,
       "y": 65,
       "baseY": 65,
-      "minX": 490,
-      "maxX": 630,
+      "minX": 560,
+      "maxX": 680,
+      "speed": 36,
+      "variant": "frost_flier"
+    },
+    {
+      "x": 890,
+      "y": 65,
+      "baseY": 65,
+      "minX": 830,
+      "maxX": 960,
+      "speed": 36,
+      "variant": "frost_flier"
+    },
+    {
+      "x": 1410,
+      "y": 65,
+      "baseY": 65,
+      "minX": 1360,
+      "maxX": 1470,
       "speed": 38,
       "variant": "frost_flier"
     },
     {
-      "x": 910,
+      "x": 1820,
       "y": 65,
       "baseY": 65,
-      "minX": 840,
-      "maxX": 980,
-      "speed": 35,
-      "variant": "frost_flier"
-    },
-    {
-      "x": 1390,
-      "y": 60,
-      "baseY": 60,
-      "minX": 1340,
-      "maxX": 1450,
-      "speed": 40,
-      "variant": "frost_flier"
-    },
-    {
-      "x": 1780,
-      "y": 70,
-      "baseY": 70,
-      "minX": 1720,
-      "maxX": 1850,
-      "speed": 40,
-      "variant": "frost_flier"
-    },
-    {
-      "x": 2220,
-      "y": 85,
-      "baseY": 85,
-      "minX": 2160,
-      "maxX": 2280,
+      "minX": 1760,
+      "maxX": 1890,
       "speed": 38,
       "variant": "frost_flier"
     },
     {
-      "x": 2440,
-      "y": 65,
-      "baseY": 65,
-      "minX": 2380,
-      "maxX": 2500,
-      "speed": 42,
+      "x": 2240,
+      "y": 80,
+      "baseY": 80,
+      "minX": 2180,
+      "maxX": 2300,
+      "speed": 40,
       "variant": "frost_flier"
     },
     {
-      "x": 2840,
+      "x": 2580,
       "y": 65,
       "baseY": 65,
-      "minX": 2780,
-      "maxX": 2900,
-      "speed": 40,
+      "minX": 2520,
+      "maxX": 2640,
+      "speed": 38,
       "variant": "frost_flier"
     },
     {
       "x": 3120,
-      "y": 85,
-      "baseY": 85,
-      "minX": 3050,
-      "maxX": 3200,
+      "y": 65,
+      "baseY": 65,
+      "minX": 3060,
+      "maxX": 3180,
       "speed": 40,
       "variant": "frost_flier"
     },
     {
-      "x": 3380,
-      "y": 60,
-      "baseY": 60,
-      "minX": 3320,
-      "maxX": 3440,
-      "speed": 42,
+      "x": 3420,
+      "y": 65,
+      "baseY": 65,
+      "minX": 3360,
+      "maxX": 3480,
+      "speed": 40,
       "variant": "frost_flier"
     },
     {
-      "x": 3620,
-      "y": 70,
-      "baseY": 70,
-      "minX": 3550,
-      "maxX": 3700,
-      "speed": 42,
+      "x": 3660,
+      "y": 65,
+      "baseY": 65,
+      "minX": 3600,
+      "maxX": 3720,
+      "speed": 40,
       "variant": "frost_flier"
     },
     {
-      "x": 4360,
-      "y": 60,
-      "baseY": 60,
-      "minX": 4300,
-      "maxX": 4440,
+      "x": 4330,
+      "y": 75,
+      "baseY": 75,
+      "minX": 4270,
+      "maxX": 4410,
       "speed": 38,
       "variant": "frost_flier"
     },
     {
-      "x": 4880,
+      "x": 4860,
+      "y": 65,
+      "baseY": 65,
+      "minX": 4800,
+      "maxX": 4940,
+      "speed": 40,
+      "variant": "frost_flier"
+    },
+    {
+      "x": 5870,
+      "y": 70,
+      "baseY": 70,
+      "minX": 5800,
+      "maxX": 5960,
+      "speed": 42,
+      "variant": "frost_flier"
+    },
+    {
+      "x": 6330,
+      "y": 80,
+      "baseY": 80,
+      "minX": 6250,
+      "maxX": 6420,
+      "speed": 44,
+      "variant": "frost_flier"
+    },
+    {
+      "x": 7020,
+      "y": 65,
+      "baseY": 65,
+      "minX": 6940,
+      "maxX": 7100,
+      "speed": 40,
+      "variant": "frost_flier"
+    },
+    {
+      "x": 7610,
       "y": 75,
       "baseY": 75,
-      "minX": 4820,
-      "maxX": 4940,
-      "speed": 42,
-      "variant": "frost_flier"
-    },
-    {
-      "x": 5660,
-      "y": 55,
-      "baseY": 55,
-      "minX": 5600,
-      "maxX": 5740,
-      "speed": 40,
-      "variant": "frost_flier"
-    },
-    {
-      "x": 6180,
-      "y": 70,
-      "baseY": 70,
-      "minX": 6120,
-      "maxX": 6240,
-      "speed": 42,
-      "variant": "frost_flier"
-    },
-    {
-      "x": 6960,
-      "y": 55,
-      "baseY": 55,
-      "minX": 6900,
-      "maxX": 7040,
-      "speed": 40,
-      "variant": "frost_flier"
-    },
-    {
-      "x": 7500,
-      "y": 70,
-      "baseY": 70,
-      "minX": 7440,
-      "maxX": 7560,
+      "minX": 7520,
+      "maxX": 7720,
       "speed": 42,
       "variant": "frost_flier"
     },
@@ -8209,17 +8654,17 @@ window.LEVELS[3] = {
     },
     {
       "x": 9240,
-      "y": 65,
-      "baseY": 65,
+      "y": 72,
+      "baseY": 72,
       "minX": 9180,
-      "maxX": 9300,
+      "maxX": 9310,
       "speed": 38,
       "variant": "frost_flier"
     },
     {
       "x": 9980,
-      "y": 65,
-      "baseY": 65,
+      "y": 68,
+      "baseY": 68,
       "minX": 9920,
       "maxX": 10040,
       "speed": 38,
@@ -8227,17 +8672,17 @@ window.LEVELS[3] = {
     },
     {
       "x": 10760,
-      "y": 65,
-      "baseY": 65,
+      "y": 70,
+      "baseY": 70,
       "minX": 10700,
-      "maxX": 10820,
+      "maxX": 10830,
       "speed": 38,
       "variant": "frost_flier"
     },
     {
       "x": 11510,
-      "y": 65,
-      "baseY": 65,
+      "y": 70,
+      "baseY": 70,
       "minX": 11450,
       "maxX": 11570,
       "speed": 38,
@@ -8245,10 +8690,10 @@ window.LEVELS[3] = {
     },
     {
       "x": 12260,
-      "y": 65,
-      "baseY": 65,
+      "y": 70,
+      "baseY": 70,
       "minX": 12200,
-      "maxX": 12320,
+      "maxX": 12330,
       "speed": 38,
       "variant": "frost_flier"
     },
@@ -8265,107 +8710,125 @@ window.LEVELS[3] = {
       "x": 13500,
       "y": 70,
       "baseY": 70,
-      "minX": 13420,
+      "minX": 13440,
       "maxX": 13580,
       "speed": 42,
       "variant": "frost_flier"
     },
     {
-      "x": 14200,
-      "y": 60,
-      "baseY": 60,
-      "minX": 14120,
-      "maxX": 14280,
-      "speed": 38,
-      "variant": "frost_flier"
-    },
-    {
-      "x": 14620,
+      "x": 14000,
       "y": 55,
       "baseY": 55,
-      "minX": 14560,
-      "maxX": 14680,
-      "speed": 44,
-      "variant": "frost_flier"
-    },
-    {
-      "x": 15300,
-      "y": 55,
-      "baseY": 55,
-      "minX": 15240,
-      "maxX": 15380,
+      "minX": 13940,
+      "maxX": 14060,
       "speed": 40,
       "variant": "frost_flier"
     },
     {
-      "x": 16150,
-      "y": 60,
-      "baseY": 60,
-      "minX": 16080,
-      "maxX": 16220,
-      "speed": 42,
-      "variant": "frost_flier"
-    },
-    {
-      "x": 16350,
-      "y": 55,
-      "baseY": 55,
-      "minX": 16280,
-      "maxX": 16420,
-      "speed": 40,
-      "variant": "frost_flier"
-    },
-    {
-      "x": 16980,
-      "y": 48,
-      "baseY": 48,
-      "minX": 16920,
-      "maxX": 17040,
+      "x": 14580,
+      "y": 50,
+      "baseY": 50,
+      "minX": 14530,
+      "maxX": 14660,
       "speed": 44,
       "variant": "frost_flier"
     },
     {
-      "x": 17700,
-      "y": 55,
-      "baseY": 55,
-      "minX": 17620,
-      "maxX": 17780,
-      "speed": 42,
-      "variant": "frost_flier"
-    },
-    {
-      "x": 18480,
+      "x": 14960,
       "y": 65,
       "baseY": 65,
-      "minX": 18400,
-      "maxX": 18540,
+      "minX": 14900,
+      "maxX": 15040,
       "speed": 42,
       "variant": "frost_flier"
     },
     {
-      "x": 18800,
-      "y": 35,
-      "baseY": 35,
-      "minX": 18740,
-      "maxX": 18880,
+      "x": 15350,
+      "y": 60,
+      "baseY": 60,
+      "minX": 15300,
+      "maxX": 15410,
       "speed": 40,
       "variant": "frost_flier"
     },
     {
-      "x": 19550,
+      "x": 15800,
+      "y": 60,
+      "baseY": 60,
+      "minX": 15740,
+      "maxX": 15870,
+      "speed": 42,
+      "variant": "frost_flier"
+    },
+    {
+      "x": 16220,
       "y": 55,
       "baseY": 55,
-      "minX": 19480,
-      "maxX": 19620,
+      "minX": 16160,
+      "maxX": 16300,
+      "speed": 40,
+      "variant": "frost_flier"
+    },
+    {
+      "x": 16600,
+      "y": 50,
+      "baseY": 50,
+      "minX": 16540,
+      "maxX": 16680,
       "speed": 44,
       "variant": "frost_flier"
     },
     {
-      "x": 20080,
-      "y": 25,
-      "baseY": 25,
-      "minX": 20020,
-      "maxX": 20160,
+      "x": 17400,
+      "y": 55,
+      "baseY": 55,
+      "minX": 17330,
+      "maxX": 17480,
+      "speed": 42,
+      "variant": "frost_flier"
+    },
+    {
+      "x": 17840,
+      "y": 48,
+      "baseY": 48,
+      "minX": 17780,
+      "maxX": 17930,
+      "speed": 46,
+      "variant": "frost_flier"
+    },
+    {
+      "x": 18440,
+      "y": 65,
+      "baseY": 65,
+      "minX": 18360,
+      "maxX": 18520,
+      "speed": 45,
+      "variant": "frost_flier"
+    },
+    {
+      "x": 18820,
+      "y": 35,
+      "baseY": 35,
+      "minX": 18760,
+      "maxX": 18900,
+      "speed": 42,
+      "variant": "frost_flier"
+    },
+    {
+      "x": 19560,
+      "y": 55,
+      "baseY": 55,
+      "minX": 19490,
+      "maxX": 19640,
+      "speed": 44,
+      "variant": "frost_flier"
+    },
+    {
+      "x": 19980,
+      "y": 30,
+      "baseY": 30,
+      "minX": 19900,
+      "maxX": 20080,
       "speed": 45,
       "variant": "frost_flier"
     },
@@ -8380,407 +8843,281 @@ window.LEVELS[3] = {
     },
     {
       "x": 21450,
-      "y": 60,
-      "baseY": 60,
-      "minX": 21400,
+      "y": 50,
+      "baseY": 50,
+      "minX": 21380,
       "maxX": 21520,
       "speed": 42,
       "variant": "frost_flier"
     },
     {
-      "x": 22350,
-      "y": 50,
-      "baseY": 50,
-      "minX": 22280,
+      "x": 22320,
+      "y": 35,
+      "baseY": 35,
+      "minX": 22240,
       "maxX": 22420,
-      "speed": 45,
+      "speed": 46,
       "variant": "frost_flier"
     },
     {
-      "x": 23200,
-      "y": 35,
-      "baseY": 35,
-      "minX": 23120,
-      "maxX": 23280,
+      "x": 23550,
+      "y": 45,
+      "baseY": 45,
+      "minX": 23480,
+      "maxX": 23640,
       "speed": 48,
       "variant": "frost_flier"
     },
     {
-      "x": 23950,
-      "y": 45,
-      "baseY": 45,
-      "minX": 23880,
+      "x": 23960,
+      "y": 40,
+      "baseY": 40,
+      "minX": 23900,
       "maxX": 24020,
-      "speed": 40,
+      "speed": 42,
       "variant": "frost_flier"
     },
     {
-      "x": 24310,
-      "y": 40,
-      "baseY": 40,
-      "minX": 24250,
+      "x": 24320,
+      "y": 48,
+      "baseY": 48,
+      "minX": 24260,
       "maxX": 24380,
       "speed": 44,
       "variant": "frost_flier"
     },
     {
-      "x": 24680,
-      "y": 50,
-      "baseY": 50,
-      "minX": 24620,
-      "maxX": 24760,
-      "speed": 45,
-      "variant": "frost_flier"
-    },
-    {
       "x": 25120,
-      "y": 35,
-      "baseY": 35,
-      "minX": 25060,
+      "y": 45,
+      "baseY": 45,
+      "minX": 25050,
       "maxX": 25200,
       "speed": 46,
       "variant": "frost_flier"
     },
     {
-      "x": 25630,
+      "x": 25610,
       "y": 55,
       "baseY": 55,
-      "minX": 25580,
-      "maxX": 25690,
+      "minX": 25570,
+      "maxX": 25710,
+      "speed": 42,
+      "variant": "frost_flier"
+    },
+    {
+      "x": 26320,
+      "y": 45,
+      "baseY": 45,
+      "minX": 26270,
+      "maxX": 26420,
       "speed": 44,
       "variant": "frost_flier"
     },
     {
-      "x": 25800,
-      "y": 40,
-      "baseY": 40,
-      "minX": 25740,
-      "maxX": 25860,
-      "speed": 46,
+      "x": 27150,
+      "y": 55,
+      "baseY": 55,
+      "minX": 27110,
+      "maxX": 27240,
+      "speed": 42,
       "variant": "frost_flier"
     },
     {
-      "x": 26380,
-      "y": 45,
-      "baseY": 45,
-      "minX": 26320,
-      "maxX": 26440,
-      "speed": 48,
-      "variant": "frost_flier"
-    },
-    {
-      "x": 26580,
+      "x": 27500,
       "y": 50,
       "baseY": 50,
-      "minX": 26520,
-      "maxX": 26640,
-      "speed": 42,
-      "variant": "frost_flier"
-    },
-    {
-      "x": 26840,
-      "y": 50,
-      "baseY": 50,
-      "minX": 26780,
-      "maxX": 26900,
-      "speed": 42,
-      "variant": "frost_flier"
-    },
-    {
-      "x": 27140,
-      "y": 75,
-      "baseY": 75,
-      "minX": 27090,
-      "maxX": 27190,
-      "speed": 42,
-      "variant": "frost_flier"
-    },
-    {
-      "x": 27490,
-      "y": 35,
-      "baseY": 35,
-      "minX": 27420,
-      "maxX": 27550,
-      "speed": 46,
-      "variant": "frost_flier"
-    },
-    {
-      "x": 27830,
-      "y": 58,
-      "baseY": 58,
-      "minX": 27780,
-      "maxX": 27880,
-      "speed": 46,
+      "minX": 27440,
+      "maxX": 27580,
+      "speed": 44,
       "variant": "frost_flier"
     },
     {
       "x": 28280,
-      "y": 45,
-      "baseY": 45,
-      "minX": 28220,
-      "maxX": 28340,
-      "speed": 42,
-      "variant": "frost_flier"
-    },
-    {
-      "x": 28550,
-      "y": 55,
-      "baseY": 55,
-      "minX": 28520,
-      "maxX": 28620,
-      "speed": 42,
-      "variant": "frost_flier"
-    },
-    {
-      "x": 29760,
-      "y": 44,
-      "baseY": 44,
-      "minX": 29710,
-      "maxX": 29820,
-      "speed": 50,
-      "variant": "frost_flier"
-    },
-    {
-      "x": 30040,
-      "y": 75,
-      "baseY": 75,
-      "minX": 29990,
-      "maxX": 30090,
-      "speed": 42,
-      "variant": "frost_flier"
-    },
-    {
-      "x": 30540,
-      "y": 36,
-      "baseY": 36,
-      "minX": 30480,
-      "maxX": 30600,
-      "speed": 52,
-      "variant": "frost_flier"
-    },
-    {
-      "x": 31015,
-      "y": 42,
-      "baseY": 42,
-      "minX": 30960,
-      "maxX": 31070,
-      "speed": 46,
-      "variant": "frost_flier"
-    },
-    {
-      "x": 31800,
-      "y": 44,
-      "baseY": 44,
-      "minX": 31740,
-      "maxX": 31860,
-      "speed": 48,
-      "variant": "frost_flier"
-    },
-    {
-      "x": 32100,
-      "y": 36,
-      "baseY": 36,
-      "minX": 32040,
-      "maxX": 32160,
-      "speed": 52,
-      "variant": "frost_flier"
-    },
-    {
-      "x": 32560,
-      "y": 34,
-      "baseY": 34,
-      "minX": 32510,
-      "maxX": 32620,
-      "speed": 48,
-      "variant": "frost_flier"
-    },
-    {
-      "x": 32700,
       "y": 50,
       "baseY": 50,
-      "minX": 32650,
-      "maxX": 32750,
+      "minX": 28200,
+      "maxX": 28350,
+      "speed": 42,
+      "variant": "frost_flier"
+    },
+    {
+      "x": 30130,
+      "y": 48,
+      "baseY": 48,
+      "minX": 30080,
+      "maxX": 30180,
+      "speed": 42,
+      "variant": "frost_flier"
+    },
+    {
+      "x": 30860,
+      "y": 46,
+      "baseY": 46,
+      "minX": 30800,
+      "maxX": 30930,
       "speed": 44,
       "variant": "frost_flier"
     },
     {
-      "x": 33180,
-      "y": 26,
-      "baseY": 26,
-      "minX": 33120,
-      "maxX": 33240,
-      "speed": 54,
+      "x": 31070,
+      "y": 44,
+      "baseY": 44,
+      "minX": 31010,
+      "maxX": 31130,
+      "speed": 46,
       "variant": "frost_flier"
     },
     {
-      "x": 33480,
-      "y": 55,
-      "baseY": 55,
-      "minX": 33430,
-      "maxX": 33540,
+      "x": 31730,
+      "y": 42,
+      "baseY": 42,
+      "minX": 31680,
+      "maxX": 31790,
       "speed": 45,
       "variant": "frost_flier"
     },
     {
-      "x": 33830,
-      "y": 22,
-      "baseY": 22,
-      "minX": 33770,
-      "maxX": 33900,
-      "speed": 56,
-      "variant": "frost_flier"
-    },
-    {
-      "x": 34350,
-      "y": 35,
-      "baseY": 35,
-      "minX": 34270,
-      "maxX": 34420,
-      "speed": 48,
-      "variant": "frost_flier"
-    },
-    {
-      "x": 34870,
-      "y": 22,
-      "baseY": 22,
-      "minX": 34810,
-      "maxX": 34930,
-      "speed": 52,
-      "variant": "frost_flier"
-    },
-    {
-      "x": 35200,
-      "y": 48,
-      "baseY": 48,
-      "minX": 35140,
-      "maxX": 35260,
-      "speed": 44,
-      "variant": "frost_flier"
-    },
-    {
-      "x": 35490,
-      "y": 20,
-      "baseY": 20,
-      "minX": 35430,
-      "maxX": 35550,
-      "speed": 56,
-      "variant": "frost_flier"
-    },
-    {
-      "x": 36010,
-      "y": 35,
-      "baseY": 35,
-      "minX": 35940,
-      "maxX": 36080,
-      "speed": 48,
-      "variant": "frost_flier"
-    },
-    {
-      "x": 36650,
+      "x": 32520,
       "y": 40,
       "baseY": 40,
-      "minX": 36600,
-      "maxX": 36700,
-      "speed": 48,
+      "minX": 32460,
+      "maxX": 32590,
+      "speed": 46,
       "variant": "frost_flier"
     },
     {
-      "x": 37130,
-      "y": 24,
-      "baseY": 24,
-      "minX": 37070,
-      "maxX": 37190,
-      "speed": 56,
+      "x": 32690,
+      "y": 48,
+      "baseY": 48,
+      "minX": 32650,
+      "maxX": 32740,
+      "speed": 42,
       "variant": "frost_flier"
     },
     {
-      "x": 37340,
+      "x": 33360,
+      "y": 30,
+      "baseY": 30,
+      "minX": 33280,
+      "maxX": 33460,
+      "speed": 50,
+      "variant": "astral_flier"
+    },
+    {
+      "x": 33790,
       "y": 22,
       "baseY": 22,
-      "minX": 37280,
-      "maxX": 37400,
+      "minX": 33730,
+      "maxX": 33890,
+      "speed": 55,
+      "variant": "astral_flier"
+    },
+    {
+      "x": 34490,
+      "y": 25,
+      "baseY": 25,
+      "minX": 34400,
+      "maxX": 34580,
+      "speed": 48,
+      "variant": "astral_flier"
+    },
+    {
+      "x": 34950,
+      "y": 28,
+      "baseY": 28,
+      "minX": 34870,
+      "maxX": 35040,
       "speed": 52,
+      "variant": "astral_flier"
+    },
+    {
+      "x": 35320,
+      "y": 24,
+      "baseY": 24,
+      "minX": 35230,
+      "maxX": 35410,
+      "speed": 46,
+      "variant": "astral_flier"
+    },
+    {
+      "x": 36020,
+      "y": 20,
+      "baseY": 20,
+      "minX": 35940,
+      "maxX": 36100,
+      "speed": 54,
+      "variant": "astral_flier"
+    },
+    {
+      "x": 36660,
+      "y": 65,
+      "baseY": 65,
+      "minX": 36620,
+      "maxX": 36710,
+      "speed": 42,
       "variant": "frost_flier"
     },
     {
-      "x": 37730,
-      "y": 25,
-      "baseY": 25,
-      "minX": 37690,
-      "maxX": 37790,
+      "x": 37060,
+      "y": 60,
+      "baseY": 60,
+      "minX": 37010,
+      "maxX": 37110,
+      "speed": 46,
+      "variant": "frost_flier"
+    },
+    {
+      "x": 37600,
+      "y": 35,
+      "baseY": 35,
+      "minX": 37530,
+      "maxX": 37660,
       "speed": 50,
       "variant": "frost_flier"
     },
     {
-      "x": 37880,
-      "y": 28,
-      "baseY": 28,
-      "minX": 37820,
-      "maxX": 37940,
-      "speed": 58,
+      "x": 37740,
+      "y": 55,
+      "baseY": 55,
+      "minX": 37680,
+      "maxX": 37790,
+      "speed": 48,
       "variant": "frost_flier"
     },
     {
-      "x": 38350,
-      "y": 38,
-      "baseY": 38,
-      "minX": 38300,
+      "x": 38340,
+      "y": 65,
+      "baseY": 65,
+      "minX": 38290,
       "maxX": 38400,
+      "speed": 44,
+      "variant": "frost_flier"
+    },
+    {
+      "x": 38700,
+      "y": 55,
+      "baseY": 55,
+      "minX": 38640,
+      "maxX": 38770,
       "speed": 46,
       "variant": "frost_flier"
     },
     {
-      "x": 38440,
-      "y": 20,
-      "baseY": 20,
-      "minX": 38380,
-      "maxX": 38500,
-      "speed": 55,
+      "x": 39550,
+      "y": 40,
+      "baseY": 40,
+      "minX": 39490,
+      "maxX": 39620,
+      "speed": 52,
       "variant": "frost_flier"
     },
     {
-      "x": 39030,
-      "y": 22,
-      "baseY": 22,
-      "minX": 38970,
-      "maxX": 39090,
-      "speed": 54,
-      "variant": "frost_flier"
-    },
-    {
-      "x": 39420,
-      "y": 24,
-      "baseY": 24,
-      "minX": 39380,
-      "maxX": 39480,
-      "speed": 48,
-      "variant": "frost_flier"
-    },
-    {
-      "x": 39590,
-      "y": 26,
-      "baseY": 26,
-      "minX": 39530,
-      "maxX": 39650,
-      "speed": 56,
-      "variant": "frost_flier"
-    },
-    {
-      "x": 40050,
-      "y": 60,
-      "baseY": 60,
-      "minX": 40000,
-      "maxX": 40100,
+      "x": 40080,
+      "y": 65,
+      "baseY": 65,
+      "minX": 40040,
+      "maxX": 40150,
       "speed": 46,
-      "variant": "frost_flier"
-    },
-    {
-      "x": 41130,
-      "y": 56,
-      "baseY": 56,
-      "minX": 41090,
-      "maxX": 41190,
-      "speed": 48,
       "variant": "frost_flier"
     }
   ],
@@ -8790,122 +9127,116 @@ window.LEVELS[3] = {
   "omniMen": [],
   "cheeses": [
     {
-      "x": 550,
-      "y": 182,
+      "x": 560,
+      "y": 184,
       "active": true,
       "id": 20
     },
     {
-      "x": 910,
-      "y": 92,
+      "x": 1020,
+      "y": 68,
       "active": true,
       "id": 21
     },
     {
-      "x": 1390,
-      "y": 140,
+      "x": 1420,
+      "y": 160,
       "active": true,
       "id": 22
     },
     {
-      "x": 1980,
-      "y": 88,
+      "x": 2065,
+      "y": 60,
       "active": true,
       "id": 23
     },
     {
-      "x": 2390,
-      "y": 172,
+      "x": 2520,
+      "y": 184,
       "active": true,
       "id": 24
     },
     {
-      "x": 2480,
+      "x": 2580,
       "y": 104,
       "active": true,
       "id": 25
     },
     {
-      "x": 3240,
-      "y": 90,
+      "x": 3275,
+      "y": 58,
       "active": true,
       "id": 26
     },
     {
-      "x": 3520,
-      "y": 170,
+      "x": 3610,
+      "y": 184,
       "active": true,
       "id": 27
     },
     {
-      "x": 3760,
-      "y": 72,
+      "x": 3820,
+      "y": 68,
       "active": true,
       "id": 28
     },
     {
-      "x": 4440,
-      "y": 62,
+      "x": 4690,
+      "y": 105,
       "active": true,
       "id": 29
     },
     {
-      "x": 4970,
-      "y": 84,
+      "x": 4870,
+      "y": 212,
       "active": true,
       "id": 30
     },
     {
-      "x": 5120,
-      "y": 170,
+      "x": 5630,
+      "y": 35,
       "active": true,
       "id": 31
     },
     {
-      "x": 5740,
-      "y": 60,
+      "x": 6335,
+      "y": 132,
       "active": true,
       "id": 32
     },
     {
-      "x": 6180,
-      "y": 104,
+      "x": 7145,
+      "y": 25,
       "active": true,
       "id": 33
     },
     {
-      "x": 6450,
-      "y": 170,
+      "x": 7280,
+      "y": 212,
       "active": true,
       "id": 34
     },
     {
-      "x": 7040,
-      "y": 56,
+      "x": 7410,
+      "y": 212,
       "active": true,
       "id": 35
     },
     {
-      "x": 7500,
-      "y": 104,
+      "x": 7620,
+      "y": 125,
       "active": true,
       "id": 36
     },
     {
-      "x": 7780,
-      "y": 170,
-      "active": true,
-      "id": 37
-    },
-    {
-      "x": 50200,
-      "y": 110,
+      "x": 50210,
+      "y": 100,
       "active": true,
       "id": 38
     },
     {
-      "x": 8460,
-      "y": 84,
+      "x": 8495,
+      "y": 46,
       "active": true,
       "id": 39
     },
@@ -8916,14 +9247,14 @@ window.LEVELS[3] = {
       "id": 40
     },
     {
-      "x": 50580,
-      "y": 110,
+      "x": 50600,
+      "y": 98,
       "active": true,
       "id": 41
     },
     {
-      "x": 9190,
-      "y": 84,
+      "x": 9195,
+      "y": 62,
       "active": true,
       "id": 42
     },
@@ -8935,13 +9266,13 @@ window.LEVELS[3] = {
     },
     {
       "x": 50980,
-      "y": 110,
+      "y": 98,
       "active": true,
       "id": 44
     },
     {
-      "x": 9910,
-      "y": 84,
+      "x": 9945,
+      "y": 58,
       "active": true,
       "id": 45
     },
@@ -8952,14 +9283,14 @@ window.LEVELS[3] = {
       "id": 46
     },
     {
-      "x": 51360,
-      "y": 110,
+      "x": 51380,
+      "y": 104,
       "active": true,
       "id": 47
     },
     {
-      "x": 10690,
-      "y": 84,
+      "x": 10695,
+      "y": 56,
       "active": true,
       "id": 48
     },
@@ -8970,14 +9301,14 @@ window.LEVELS[3] = {
       "id": 49
     },
     {
-      "x": 51760,
-      "y": 110,
+      "x": 51790,
+      "y": 100,
       "active": true,
       "id": 50
     },
     {
-      "x": 11440,
-      "y": 84,
+      "x": 11450,
+      "y": 60,
       "active": true,
       "id": 51
     },
@@ -8988,14 +9319,14 @@ window.LEVELS[3] = {
       "id": 52
     },
     {
-      "x": 52160,
-      "y": 110,
+      "x": 52190,
+      "y": 100,
       "active": true,
       "id": 53
     },
     {
-      "x": 12190,
-      "y": 84,
+      "x": 12200,
+      "y": 58,
       "active": true,
       "id": 54
     },
@@ -9006,14 +9337,14 @@ window.LEVELS[3] = {
       "id": 55
     },
     {
-      "x": 52560,
-      "y": 110,
+      "x": 52610,
+      "y": 98,
       "active": true,
       "id": 56
     },
     {
-      "x": 12920,
-      "y": 56,
+      "x": 12918,
+      "y": 48,
       "active": true,
       "id": 57
     },
@@ -9024,274 +9355,344 @@ window.LEVELS[3] = {
       "id": 58
     },
     {
-      "x": 13820,
-      "y": 104,
+      "x": 13840,
+      "y": 64,
       "active": true,
       "id": 59
     },
     {
-      "x": 14600,
-      "y": 124,
+      "x": 14620,
+      "y": 80,
       "active": true,
       "id": 60
     },
     {
-      "x": 15200,
-      "y": 170,
+      "x": 15220,
+      "y": 172,
       "active": true,
       "id": 61
     },
     {
-      "x": 16310,
+      "x": 16240,
       "y": 110,
       "active": true,
       "id": 62
     },
     {
       "x": 16980,
-      "y": 94,
+      "y": 72,
       "active": true,
       "id": 63
     },
     {
-      "x": 17620,
-      "y": 170,
+      "x": 17740,
+      "y": 172,
       "active": true,
       "id": 64
     },
     {
-      "x": 18820,
-      "y": 48,
+      "x": 18830,
+      "y": 55,
       "active": true,
       "id": 65
     },
     {
-      "x": 19520,
-      "y": 142,
+      "x": 19515,
+      "y": 72,
       "active": true,
       "id": 66
     },
     {
-      "x": 20165,
-      "y": 22,
+      "x": 20190,
+      "y": 12,
       "active": true,
       "id": 67
     },
     {
-      "x": 21450,
-      "y": 86,
+      "x": 21515,
+      "y": 136,
       "active": true,
       "id": 68
     },
     {
-      "x": 22440,
-      "y": 72,
+      "x": 22505,
+      "y": 32,
       "active": true,
       "id": 69
     },
     {
-      "x": 23280,
-      "y": 72,
+      "x": 23097,
+      "y": 46,
       "active": true,
       "id": 70
     },
     {
-      "x": 24350,
-      "y": 76,
+      "x": 24370,
+      "y": 56,
       "active": true,
       "id": 71
     },
     {
       "x": 24480,
-      "y": 142,
+      "y": 130,
       "active": true,
       "id": 72
     },
     {
-      "x": 24820,
-      "y": 84,
+      "x": 24840,
+      "y": 54,
       "active": true,
       "id": 73
     },
     {
-      "x": 25515,
-      "y": 68,
+      "x": 25530,
+      "y": 42,
       "active": true,
       "id": 74
     },
     {
-      "x": 26120,
-      "y": 136,
+      "x": 26110,
+      "y": 132,
       "active": true,
       "id": 75
     },
     {
-      "x": 26385,
-      "y": 72,
+      "x": 26350,
+      "y": 52,
       "active": true,
       "id": 76
     },
     {
-      "x": 27000,
-      "y": 68,
+      "x": 27010,
+      "y": 58,
       "active": true,
       "id": 77
     },
     {
-      "x": 27670,
-      "y": 136,
+      "x": 27760,
+      "y": 126,
       "active": true,
       "id": 78
     },
     {
-      "x": 27830,
-      "y": 76,
+      "x": 27970,
+      "y": 50,
       "active": true,
       "id": 79
     },
     {
       "x": 28445,
-      "y": 72,
+      "y": 70,
       "active": true,
       "id": 80
     },
     {
-      "x": 28930,
-      "y": 136,
+      "x": 29440,
+      "y": 86,
       "active": true,
       "id": 81
     },
     {
-      "x": 29190,
-      "y": 72,
+      "x": 29490,
+      "y": 44,
       "active": true,
       "id": 82
     },
     {
-      "x": 29910,
-      "y": 76,
+      "x": 30005,
+      "y": 44,
       "active": true,
       "id": 83
     },
     {
-      "x": 30740,
-      "y": 136,
+      "x": 30770,
+      "y": 138,
       "active": true,
       "id": 84
     },
     {
-      "x": 31015,
-      "y": 72,
+      "x": 31070,
+      "y": 70,
       "active": true,
       "id": 85
     },
     {
-      "x": 31630,
-      "y": 68,
+      "x": 31415,
+      "y": 36,
       "active": true,
       "id": 86
     },
     {
-      "x": 32310,
-      "y": 136,
+      "x": 32330,
+      "y": 138,
       "active": true,
       "id": 87
     },
     {
       "x": 32570,
-      "y": 60,
+      "y": 36,
       "active": true,
       "id": 88
     },
     {
-      "x": 33350,
-      "y": 40,
+      "x": 33310,
+      "y": 136,
       "active": true,
       "id": 89
     },
     {
-      "x": 34060,
-      "y": 136,
+      "x": 33850,
+      "y": 22,
       "active": true,
       "id": 90
     },
     {
-      "x": 34350,
-      "y": 38,
+      "x": 34500,
+      "y": 32,
       "active": true,
       "id": 91
     },
     {
-      "x": 35040,
-      "y": 38,
+      "x": 35080,
+      "y": 48,
       "active": true,
       "id": 92
     },
     {
-      "x": 35700,
-      "y": 136,
+      "x": 35540,
+      "y": 40,
       "active": true,
       "id": 93
     },
     {
-      "x": 35965,
-      "y": 30,
+      "x": 36040,
+      "y": 26,
       "active": true,
       "id": 94
     },
     {
-      "x": 36800,
-      "y": 38,
+      "x": 36760,
+      "y": 48,
       "active": true,
       "id": 95
     },
     {
-      "x": 37480,
-      "y": 132,
+      "x": 37570,
+      "y": 44,
       "active": true,
       "id": 96
     },
     {
-      "x": 37840,
-      "y": 32,
+      "x": 37860,
+      "y": 38,
       "active": true,
       "id": 97
     },
     {
-      "x": 38480,
+      "x": 38500,
       "y": 40,
       "active": true,
       "id": 98
     },
     {
-      "x": 39150,
-      "y": 138,
+      "x": 39200,
+      "y": 128,
       "active": true,
       "id": 99
     },
     {
-      "x": 39580,
-      "y": 26,
+      "x": 39640,
+      "y": 38,
       "active": true,
       "id": 100
     },
     {
-      "x": 40220,
-      "y": 68,
+      "x": 40230,
+      "y": 48,
       "active": true,
       "id": 101
     },
     {
-      "x": 40880,
-      "y": 136,
+      "x": 41040,
+      "y": 48,
       "active": true,
       "id": 102
     },
     {
-      "x": 41180,
-      "y": 60,
+      "x": 41440,
+      "y": 76,
       "active": true,
       "id": 103
+    }
+  ],
+  "icicles": [
+    {
+      "x": 3020,
+      "y": 55
+    },
+    {
+      "x": 3100,
+      "y": 55
+    },
+    {
+      "x": 3180,
+      "y": 55
+    },
+    {
+      "x": 4340,
+      "y": 35
+    },
+    {
+      "x": 4610,
+      "y": 30
+    },
+    {
+      "x": 4890,
+      "y": 25
+    },
+    {
+      "x": 5095,
+      "y": 35
+    },
+    {
+      "x": 5630,
+      "y": 25
+    },
+    {
+      "x": 5880,
+      "y": 35
+    },
+    {
+      "x": 6050,
+      "y": 40
+    },
+    {
+      "x": 6290,
+      "y": 30
+    },
+    {
+      "x": 6380,
+      "y": 30
+    },
+    {
+      "x": 6960,
+      "y": 25
+    },
+    {
+      "x": 7130,
+      "y": 20
+    },
+    {
+      "x": 7340,
+      "y": 40
+    },
+    {
+      "x": 7535,
+      "y": 35
+    },
+    {
+      "x": 7705,
+      "y": 35
     }
   ]
 };

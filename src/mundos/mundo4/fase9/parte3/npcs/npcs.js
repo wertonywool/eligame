@@ -3,25 +3,25 @@
 // ============================================================================
 
 module.exports = [
-  // 1. Patriarca Celestial Rigden de la Boveda Estelar
+  // 1. Patriarca Celestial Rigden de la Bóveda Estelar
   {
-    x: 40590,
+    x: 40560,
     y: 110,
-    name: 'Patriarca Celestial Rigden de la Boveda Estelar',
+    name: 'Patriarca Celestial Rigden de la Bóveda Estelar',
     role: 'Gran Sabio del Firmamento y Custodio de la Estrella Polar',
     color: '#ffffff',
     hatColor: '#ffd166',
     lines: [
-      'Bendito sea este momento cosmico, Mama Eli! Has alcanzado el umbral supremo de la Boveda Estelar.',
-      'Pero el acceso al Altar de la Estrella Polar esta protegido por el Dragon Astral de Polaris, custodio del firmamento.',
-      'Esquiva su lluvia de cometas y estrellas teledirigidas usando la baja gravedad cosmica!',
-      'Cuando descienda en picada, golpea su nucleo supernova: solo liberando la constelacion podras reunirte con tu pequeno!'
+      '¡Bendito sea este momento cósmico, Mamá Eli! Has alcanzado el umbral supremo de la Bóveda Estelar.',
+      'Más allá de este pórtico se extiende la Arena Celestial de Polaris, resguardada por el mítico Dragón Astral.',
+      'La arena cuenta con un firme suelo sagrado y plataformas elevadas de arcoíris y cristal de diamante.',
+      'Esquiva su lluvia de cometas usando la baja gravedad cósmica y salta desde las plataformas altas para golpear su núcleo supernova. ¡Tu pequeño te aguarda en el Trono!'
     ],
     dialogue: [
-      'Bendito sea este momento cosmico, Mama Eli! Has alcanzado el umbral supremo de la Boveda Estelar.',
-      'Pero el acceso al Altar de la Estrella Polar esta protegido por el Dragon Astral de Polaris, custodio del firmamento.',
-      'Esquiva su lluvia de cometas y estrellas teledirigidas usando la baja gravedad cosmica!',
-      'Cuando descienda en picada, golpea su nucleo supernova: solo liberando la constelacion podras reunirte con tu pequeno!'
+      '¡Bendito sea este momento cósmico, Mamá Eli! Has alcanzado el umbral supremo de la Bóveda Estelar.',
+      'Más allá de este pórtico se extiende la Arena Celestial de Polaris, resguardada por el mítico Dragón Astral.',
+      'La arena cuenta con un firme suelo sagrado y plataformas elevadas de arcoíris y cristal de diamante.',
+      'Esquiva su lluvia de cometas usando la baja gravedad cósmica y salta desde las plataformas altas para golpear su núcleo supernova. ¡Tu pequeño te aguarda en el Trono!'
     ]
   }
 ];

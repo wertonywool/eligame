@@ -46,6 +46,23 @@ module.exports = [
       'Ese Pico de Hielo te permitirá abrirte paso entre los enormes témpanos del Lago Congelado.',
       '¡Por el poder que me confiere el Pueblo Nevado, declaro abierto el Gran Arco Glacial!',
       '¡Avanza con cautela a través del portal hacia la Fase 4: El Lago Congelado de la Gran Cumbre!'
-    ]
+    ],
+    onDialogueEnd: function() {
+      if (typeof player !== 'undefined' && player) {
+        if (!this.decreeGranted) {
+          this.decreeGranted = true;
+          saveState.dexterLilies = (saveState.dexterLilies || 0) + 20;
+          if (window.sfx && window.sfx.playPowerup) window.sfx.playPowerup();
+          if (typeof spawnStarSparkles === 'function') {
+            spawnStarSparkles(player.x + 11, player.y + 12, 28, '#ffd166');
+            spawnStarSparkles(player.x + 11, player.y + 12, 20, '#38bdf8');
+          }
+          if (typeof triggerShake === 'function') triggerShake(0.16, 2.2);
+          if (typeof spawnFloatingText === 'function') {
+            spawnFloatingText(player.x - 30, player.y - 20, '¡SELLO OFICIAL DEL PUEBLO! +20 LIRIOS', '#ffd166');
+          }
+        }
+      }
+    }
   }
 ];

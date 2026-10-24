@@ -3,42 +3,37 @@
 // ============================================================================
 
 module.exports = [
-  // 1. Mirador del Viento Polar y borde del abismo
-  { x: 25270, y: 124, type: 'snow_decoration', subType: 'lantern' },
+  // 1. Mirador del Viento Polar y entrada a las Torres
+  { x: 25270, y: 124, type: 'snow_decoration', subType: 'snow_lantern' },
   { x: 25310, y: 124, type: 'snow_decoration', subType: 'yeti_tracks' },
-  { x: 25350, y: 124, type: 'snow_decoration', subType: 'yeti_warning_totem' },
+  { x: 25360, y: 124, type: 'snow_decoration', subType: 'yeti_warning_totem' },
 
-  // 2. Abismo occidental y Torre Celestial Alpha
-  { x: 25440, y: 180, type: 'snow_decoration', subType: 'polar_vortex' },
-  { x: 25500, y: 96, type: 'snow_decoration', subType: 'runic_crystal_spire' },
-  { x: 25540, y: 96, type: 'snow_decoration', subType: 'crevasse_marker' },
+  // 2. Torre Celestial Alpha y Puente Colgante Occidental
+  { x: 25440, y: 130, type: 'snow_decoration', subType: 'runic_crystal_spire' },
+  { x: 25500, y: 88, type: 'snow_decoration', subType: 'crevasse_marker' },
+  { x: 25570, y: 112, type: 'snow_decoration', subType: 'frost_bridge', w: 160 },
+  { x: 25620, y: 180, type: 'snow_decoration', subType: 'polar_vortex' }, // Updraft 1 visual
 
-  // 3. Puente de Escarcha Colgante Occidental
-  { x: 25580, y: 114, type: 'snow_decoration', subType: 'frost_bridge', w: 120 },
-
-  // 4. Torre Celestial Beta y cornisa intermedia
-  { x: 25730, y: 128, type: 'snow_decoration', subType: 'ice_spire' },
-  { x: 25780, y: 104, type: 'snow_decoration', subType: 'runic_crystal_spire' },
-
-  // 5. Campamento Kangshung 2 (Refugio del Cazador de Tormentas Mingma)
-  { x: 25855, y: 126, type: 'snow_decoration', subType: 'lantern' },
-  { x: 25885, y: 126, type: 'snow_decoration', subType: 'assault_tent' },
-  { x: 25950, y: 126, type: 'snow_decoration', subType: 'expedition_stove' },
+  // 3. Campamento Kangshung 2 (El Cazador de Tormentas Mingma)
+  { x: 25790, y: 126, type: 'snow_decoration', subType: 'snow_lantern' },
+  { x: 25830, y: 126, type: 'snow_decoration', subType: 'assault_tent' },
+  { x: 25890, y: 126, type: 'snow_decoration', subType: 'expedition_stove' },
+  { x: 25950, y: 126, type: 'snow_decoration', subType: 'blue_fire_brazier' },
   { x: 26010, y: 126, type: 'snow_decoration', subType: 'prayer_flags' },
-  { x: 26030, y: 126, type: 'snow_decoration', subType: 'yeti_tracks' },
 
-  // 6. Banco inferior de permafrost profundo
-  { x: 26080, y: 156, type: 'snow_decoration', subType: 'yeti_tracks' },
-  { x: 26170, y: 156, type: 'snow_decoration', subType: 'runic_crystal_spire' },
+  // 4. Fisura de Permafrost y contrafuerte Gamma
+  { x: 26070, y: 154, type: 'snow_decoration', subType: 'runic_crystal_spire' },
+  { x: 26140, y: 154, type: 'snow_decoration', subType: 'yeti_tracks' },
+  { x: 26230, y: 118, type: 'snow_decoration', subType: 'yeti_warning_totem' },
 
-  // 7. Abismo oriental, Torre Gamma y Gran Puente Colgante
-  { x: 26250, y: 120, type: 'snow_decoration', subType: 'yeti_warning_totem' },
-  { x: 26315, y: 104, type: 'snow_decoration', subType: 'frost_bridge', w: 140 },
-  { x: 26385, y: 180, type: 'snow_decoration', subType: 'polar_vortex' },
+  // 5. Gran Puente Colgante Oriental y Vórtice Polar 2
+  { x: 26280, y: 102, type: 'snow_decoration', subType: 'frost_bridge', w: 160 },
+  { x: 26340, y: 180, type: 'snow_decoration', subType: 'polar_vortex' }, // Updraft 2 visual
+  { x: 26420, y: 102, type: 'snow_decoration', subType: 'blue_fire_brazier' },
 
-  // 8. Contrafuerte de salida y rampa hacia el Umbral del Santuario
-  { x: 26545, y: 110, type: 'snow_decoration', subType: 'lantern' },
-  { x: 26600, y: 110, type: 'snow_decoration', subType: 'yeti_warning_totem' },
-  { x: 26635, y: 110, type: 'snow_decoration', subType: 'yeti_tracks' },
-  { x: 26670, y: 110, type: 'snow_decoration', subType: 'prayer_flags' }
+  // 6. Terraza de Entrada al Umbral Sagrado
+  { x: 26530, y: 114, type: 'snow_decoration', subType: 'snow_lantern' },
+  { x: 26580, y: 114, type: 'snow_decoration', subType: 'yeti_warning_totem' },
+  { x: 26640, y: 114, type: 'snow_decoration', subType: 'yeti_tracks' },
+  { x: 26680, y: 114, type: 'snow_decoration', subType: 'prayer_flags' }
 ];

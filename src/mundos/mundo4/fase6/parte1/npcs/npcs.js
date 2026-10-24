@@ -12,16 +12,16 @@ module.exports = [
     color: '#fed7aa',
     hatColor: '#059669',
     lines: [
-      'Detente, Elizabeth! Mas alla de la cumbre oficial no hay mapas. Estas en la Vertiente Prohibida del Kangshung.',
-      'Mira estas pisadas descomunales en la nieve! El Gran Yeti de Cristal custodia el santuario hacia Shambhala.',
-      'Sus rugidos resuenan por todo el abismo oriental, sacudiendo los glaciares y las cornisas de hielo.',
-      'Usa tu Pico de Hielo para abrirte paso a traves de los muros de hielo azul de las cavernas. Avanza con cautela!'
+      '¡Detente, Elizabeth! Más allá de la cumbre oficial no hay mapas. Estás en la Vertiente Prohibida del Kangshung.',
+      '¿Sientes cómo tiembla el hielo bajo tus patitas? Son los rugidos lejanos del Gran Yeti de Cristal.',
+      '¡Usa tu Pico de Hielo con el botón DASH! Con él puedes romper las gruesas columnas de hielo milenario y defenderte de las orugas heladas.',
+      'Dentro de la Caverna de Hielo Azul hay una gruta sellada con un pilar de cristal... ¡Ábrelo a picasos y encontrarás un gran tesoro!'
     ],
     dialogue: [
-      'Detente, Elizabeth! Mas alla de la cumbre oficial no hay mapas. Estas en la Vertiente Prohibida del Kangshung.',
-      'Mira estas pisadas descomunales en la nieve! El Gran Yeti de Cristal custodia el santuario hacia Shambhala.',
-      'Sus rugidos resuenan por todo el abismo oriental, sacudiendo los glaciares y las cornisas de hielo.',
-      'Usa tu Pico de Hielo para abrirte paso a traves de los muros de hielo azul de las cavernas. Avanza con cautela!'
+      '¡Detente, Elizabeth! Más allá de la cumbre oficial no hay mapas. Estás en la Vertiente Prohibida del Kangshung.',
+      '¿Sientes cómo tiembla el hielo bajo tus patitas? Son los rugidos lejanos del Gran Yeti de Cristal.',
+      '¡Usa tu Pico de Hielo con el botón DASH! Con él puedes romper las gruesas columnas de hielo milenario y defenderte de las orugas heladas.',
+      'Dentro de la Caverna de Hielo Azul hay una gruta sellada con un pilar de cristal... ¡Ábrelo a picasos y encontrarás un gran tesoro!'
     ]
   }
 ];

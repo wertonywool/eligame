@@ -26,6 +26,12 @@ function damagePlayer(respawnAtCheckpoint) {
       player.inWater = true;
       player.onGround = true;
     }
+    if (level && level.id === 4 && player.x >= 11000) {
+      player.ability = 'ice_pick';
+    }
+    if (level && level.id === 4 && window.yetiBossState && window.yetiBossState.active) {
+      if (typeof initYetiBoss === 'function') initYetiBoss();
+    }
     if (level.bossCastleGate && player.x >= level.bossCastleGate.x) {
       bossFightActive = false;
       magmaRocks = [];

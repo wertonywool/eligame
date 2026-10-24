@@ -3,5 +3,5 @@
 // ============================================================================
 
 module.exports = [
-  { id: 18, x: 2640, y: 196, name: 'Cascada de Hielo Khumbu - Campamento 2', active: false }
+  { id: 18, x: 2680, y: 196, name: 'Cascada de Hielo Khumbu - Campamento 2', active: false }
 ];

@@ -1,38 +1,33 @@
 // ============================================================================
 // MUNDO 4 - FASE 1 - PARTE 2: PLATAFORMAS DEL GLACIAR KHUMBU (X: 1490 -> 2720)
 // ============================================================================
-// Gran grieta helada, seracs y bancos de nieve para tuneles y parkour vertical.
+// Gran grieta glacial, laberinto de seracs, tempanos moviles y Campamento 2.
 
 module.exports = [
-  // 1. Terraza de morrena rocosa al inicio del glaciar (X: 1490 -> 1660)
-  { x: 1490, y: 196, w: 170, h: 28, subType: 'snow_ground' },
-  { x: 1560, y: 156, w: 75, h: 14, subType: 'ice_rock' },
-  { x: 1630, y: 124, w: 60, h: 12, subType: 'slippery_ice' },
+  // 1. Terraza de morrena rocosa y puesto del Sherpa Pemba (X: 1490 -> 1720)
+  { x: 1490, y: 196, w: 230, h: 28, subType: 'snow_ground' },
 
-  // 2. Gran Banco de Nieve Glacial: Cruce subterraneo bajo la ventisca (X: 1690 -> 1930)
-  { x: 1690, y: 196, w: 240, h: 34, subType: 'snow_bank' },
-  { x: 1740, y: 152, w: 70, h: 14, subType: 'ice_rock' },
+  // 2. Banco de Nieve Glacial y pilar de hielo quebrable con bolas de nieve (X: 1720 -> 1940)
+  { x: 1720, y: 196, w: 220, h: 32, subType: 'snow_bank' },
+  { x: 1940, y: 170, w: 24, h: 54, subType: 'ice_pillar', breakable: true, hp: 2 },
 
-  // 3. Cornisas de pizarra helada con estalagmitas y carambanos
-  { x: 1800, y: 144, w: 110, h: 12, oneWay: true, subType: 'ice_rock' },
-  { x: 1870, y: 120, w: 65, h: 12, subType: 'slippery_ice' },
-  { x: 1930, y: 110, w: 120, h: 12, oneWay: true, subType: 'ice_rock' },
-  { x: 2000, y: 80, w: 60, h: 12, subType: 'slippery_ice' },
+  // 3. Cornisas de ascenso por los seracs y hielo quebradizo (cracking_ice)
+  { x: 1840, y: 150, w: 80, h: 14, oneWay: true, subType: 'ice_rock' },
+  { x: 1940, y: 116, w: 70, h: 12, subType: 'cracking_ice' },
+  { x: 2030, y: 84, w: 75, h: 14, oneWay: true, subType: 'ice_rock' },
 
-  // 4. Repisa rocosa intermedia entre grietas
-  { x: 2060, y: 164, w: 120, h: 24, subType: 'snow_ground' },
-  { x: 2110, y: 124, w: 65, h: 14, subType: 'ice_rock' },
+  // 4. Saliente rocoso antes de la Gran Grieta
+  { x: 2070, y: 196, w: 70, h: 28, subType: 'snow_ground' },
 
-  // 5. Puente colgante alpino sobre el abismo de la grieta helada (X: 2170 -> 2300)
-  { x: 2170, y: 144, w: 130, h: 14, subType: 'alpine_bridge' },
-  { x: 2240, y: 108, w: 65, h: 12, subType: 'slippery_ice' },
+  // 5. La Gran Grieta: Tempano movil a la deriva y puente suspendido
+  { x: 2150, y: 196, w: 75, h: 14, moving: true, minX: 2150, maxX: 2310, speed: 50, subType: 'slippery_ice' },
+  { x: 2190, y: 140, w: 110, h: 14, subType: 'alpine_bridge' },
 
-  // 6. Banco de nieve elevado y terraplen de seracs (X: 2300 -> 2530)
-  { x: 2300, y: 186, w: 230, h: 34, subType: 'snow_bank' },
-  { x: 2380, y: 146, w: 75, h: 14, subType: 'ice_rock' },
-  { x: 2470, y: 114, w: 65, h: 12, subType: 'slippery_ice' },
+  // 6. Saliente rocoso de aterrizaje y Segundo Banco de Nieve Profunda (X: 2390 -> 2650)
+  { x: 2390, y: 196, w: 60, h: 28, subType: 'snow_ground' },
+  { x: 2450, y: 196, w: 200, h: 32, subType: 'snow_bank' },
+  { x: 2540, y: 128, w: 80, h: 14, oneWay: true, subType: 'ice_rock' },
 
-  // 7. Saliente rocoso de aproximacion al Campamento 2 con Checkpoint #18 (X: 2540 -> 2720)
-  { x: 2540, y: 196, w: 180, h: 28, subType: 'snow_ground' },
-  { x: 2620, y: 154, w: 70, h: 14, subType: 'ice_rock' }
+  // 7. Terraza del Campamento 2 con Checkpoint #18 (X: 2640 -> 2730)
+  { x: 2640, y: 196, w: 100, h: 28, subType: 'snow_ground' }
 ];

@@ -3,42 +3,45 @@
 // ============================================================================
 
 module.exports = [
-  // 1. Rampa de Entrada y Primera Terraza de Cristal
-  { x: 34740, y: 118, type: 'snow_decoration', subType: 'shambhala_prayer_bell' },
-  { x: 34760, y: 118, type: 'snow_decoration', subType: 'kailash_chorten' },
-  { x: 34780, y: 118, type: 'snow_decoration', subType: 'crystal_lotus' },
-  { x: 34820, y: 118, type: 'snow_decoration', subType: 'astral_star_crystal' },
-  { x: 34880, y: 118, type: 'snow_decoration', subType: 'prayer_flags' },
-  { x: 34990, y: 96, type: 'snow_decoration', subType: 'blue_fire_brazier' },
-  { x: 35000, y: 96, type: 'snow_decoration', subType: 'crystal_lotus' },
-  { x: 35040, y: 96, type: 'snow_decoration', subType: 'agartha_crystal_palace' },
-  { x: 35080, y: 96, type: 'snow_decoration', subType: 'astral_star_crystal' },
+  // 1. Gran Puerta de Cristal y Columnata de Agartha
+  { x: 34720, y: 126, type: 'snow_decoration', subType: 'prayer_flags' },
+  { x: 34750, y: 126, type: 'snow_decoration', subType: 'shambhala_prayer_bell' },
+  { x: 34780, y: 126, type: 'snow_decoration', subType: 'agartha_crystal_palace' },
+  { x: 34880, y: 126, type: 'snow_decoration', subType: 'crystal_lotus' },
+  { x: 34940, y: 126, type: 'snow_decoration', subType: 'blue_fire_brazier' },
 
-  // 2. Gran Patio del Palacio de Cristal y Checkpoint #45
-  { x: 35280, y: 126, type: 'snow_decoration', subType: 'prayer_flags' },
-  { x: 35320, y: 126, type: 'snow_decoration', subType: 'shambhala_prayer_bell' },
-  { x: 35340, y: 126, type: 'snow_decoration', subType: 'kailash_chorten' },
-  { x: 35360, y: 126, type: 'snow_decoration', subType: 'hot_spring' },
-  { x: 35430, y: 126, type: 'snow_decoration', subType: 'astral_star_crystal' },
-  { x: 35500, y: 126, type: 'snow_decoration', subType: 'crystal_lotus' },
-  { x: 35540, y: 126, type: 'snow_decoration', subType: 'shambhala_prayer_bell' },
-  { x: 35580, y: 126, type: 'snow_decoration', subType: 'agartha_crystal_palace' },
+  // 2. Salón de los Pilares de Luz y los Jardines de Cuarzo
+  { x: 35000, y: 126, type: 'snow_decoration', subType: 'astral_star_crystal' },
+  { x: 35080, y: 126, type: 'snow_decoration', subType: 'kailash_chorten' },
+  { x: 35150, y: 130, type: 'snow_decoration', subType: 'crystal_lotus' },
+  { x: 35220, y: 130, type: 'snow_decoration', subType: 'astral_star_crystal' },
+  { x: 35280, y: 126, type: 'snow_decoration', subType: 'blue_fire_brazier' },
 
-  // 3. Fosa de Diamante Astral y Terraza de la Vía Láctea
-  { x: 35670, y: 156, type: 'snow_decoration', subType: 'astral_star_crystal' },
-  { x: 35740, y: 156, type: 'snow_decoration', subType: 'crystal_lotus' },
-  { x: 35890, y: 180, type: 'snow_decoration', subType: 'polar_vortex' },
-  { x: 35930, y: 88, type: 'snow_decoration', subType: 'blue_fire_brazier' },
-  { x: 35990, y: 88, type: 'snow_decoration', subType: 'astral_star_crystal' },
+  // 3. Gran Patio Celestial del Palacio y Trono de Soberana Arya
+  { x: 35390, y: 126, type: 'snow_decoration', subType: 'prayer_flags' },
+  { x: 35420, y: 126, type: 'snow_decoration', subType: 'shambhala_prayer_bell' },
+  { x: 35450, y: 126, type: 'snow_decoration', subType: 'hot_spring' },
+  { x: 35500, y: 126, type: 'snow_decoration', subType: 'celestial_star_throne' },
+  { x: 35550, y: 126, type: 'snow_decoration', subType: 'crystal_lotus' },
+  { x: 35600, y: 126, type: 'snow_decoration', subType: 'agartha_crystal_palace' },
+  { x: 35680, y: 126, type: 'snow_decoration', subType: 'blue_fire_brazier' },
+  { x: 35730, y: 126, type: 'snow_decoration', subType: 'astral_star_crystal' },
 
-  // 4. Puente Supremo y Gran Altar de Agartha (Trono Celestial y Portal a la Madriguera)
-  { x: 36140, y: 104, type: 'snow_decoration', subType: 'prayer_flags' },
+  // 4. Salón de Transición y Fosa de Nieve
+  { x: 35810, y: 126, type: 'snow_decoration', subType: 'shambhala_prayer_bell' },
+  { x: 35880, y: 140, type: 'snow_decoration', subType: 'crystal_lotus' },
+
+  // 5. El Sanctum de la Vía Láctea y Abismo de Diamante
+  { x: 35930, y: 180, type: 'snow_decoration', subType: 'polar_vortex' },
+  { x: 35980, y: 64, type: 'snow_decoration', subType: 'astral_star_crystal' },
+  { x: 36050, y: 76, type: 'snow_decoration', subType: 'crystal_lotus' },
+
+  // 6. Gran Altar Supremo y Portal Cósmico al Firmamento (Fase 9)
+  { x: 36160, y: 126, type: 'snow_decoration', subType: 'prayer_flags' },
   { x: 36190, y: 126, type: 'snow_decoration', subType: 'shambhala_prayer_bell' },
-  { x: 36200, y: 126, type: 'snow_decoration', subType: 'kailash_chorten' },
-  { x: 36220, y: 126, type: 'snow_decoration', subType: 'crystal_lotus' },
-  { x: 36240, y: 126, type: 'snow_decoration', subType: 'celestial_star_throne' },
-  { x: 36280, y: 126, type: 'snow_decoration', subType: 'astral_star_crystal' },
-  { x: 36320, y: 126, type: 'snow_decoration', subType: 'cosmic_burrow_portal' },
-  { x: 36360, y: 126, type: 'snow_decoration', subType: 'crystal_lotus' },
+  { x: 36220, y: 126, type: 'snow_decoration', subType: 'kailash_chorten' },
+  { x: 36260, y: 126, type: 'snow_decoration', subType: 'crystal_lotus' },
+  { x: 36290, y: 126, type: 'snow_decoration', subType: 'cosmic_burrow_portal' },
+  { x: 36340, y: 126, type: 'snow_decoration', subType: 'astral_star_crystal' },
   { x: 36370, y: 126, type: 'snow_decoration', subType: 'blue_fire_brazier' }
 ];

@@ -96,7 +96,7 @@ async function run() {
     `--user-data-dir=${USER_DATA_DIR}`,
     '--disable-gpu',
     '--window-size=1280,720',
-    'http://localhost:3000/?v=79'
+    'http://localhost:3000/?v=80'
   ]);
 
   let client = null;
@@ -136,8 +136,21 @@ async function run() {
     `);
     console.log('[GAME LOAD STATE]:', JSON.stringify(loadState));
 
+    // 0. Inicio en Campamento Base (Don Mateo, cabaña, inicio del Everest)
+    console.log('[4/6] Testing Campamento Base (X=80, Don Mateo, cabana)...');
+    await client.eval(`
+      if (typeof jumpToLevelPhase === 'function') {
+        jumpToLevelPhase(3, 17);
+        player.x = 80;
+        player.y = 174;
+        cameraX = 0;
+      }
+    `);
+    await sleep(1500);
+    await client.screenshot('shot_m4_fase1_camp0_clean.png');
+
     // 1. Fase 1 Parte 1 (Paso del Glaciar CP 17)
-    console.log('[4/5] Testing Fase 1 P1 (Paso del Glaciar CP 17)...');
+    console.log('[5/6] Testing Fase 1 P1 (Paso del Glaciar CP 17)...');
     await client.eval(`jumpToLevelPhase(3, 17);`);
     await sleep(1500);
     await client.screenshot('shot_m4_fase1_base_enhanced.png');
@@ -149,10 +162,31 @@ async function run() {
     await client.screenshot('shot_m4_fase1_khumbu_enhanced.png');
 
     // 3. Fase 1 Parte 3 (Puerta de la Cascada CP 19)
-    console.log('[5/5] Testing Fase 1 P3 (Puerta de la Cascada CP 19)...');
+    console.log('[6/6] Testing Fase 1 P3 (Puerta de la Cascada CP 19)...');
     await client.eval(`jumpToLevelPhase(3, 19);`);
     await sleep(1500);
     await client.screenshot('shot_m4_fase1_gate_enhanced.png');
+
+    // 4. Test mecánico: Recoger y lanzar bola de nieve
+    console.log('Testing Shovel Mechanics (Scoop & Throw)...');
+    const mechTest = await client.eval(`
+      (function() {
+        player.x = 200;
+        player.y = 174;
+        player.onGround = true;
+        player.ability = 'shovel';
+        if (typeof initShovelAbility === 'function') initShovelAbility();
+        keys.dashJustPressed = true;
+        updateShovelAbility(0.016);
+        const snowAfterScoop = typeof shovelState !== 'undefined' ? shovelState.snowballs : -1;
+        keys.dashJustPressed = true;
+        updateShovelAbility(0.016);
+        const snowAfterThrow = typeof shovelState !== 'undefined' ? shovelState.snowballs : -1;
+        const projs = typeof shovelState !== 'undefined' ? shovelState.projectiles.length : 0;
+        return { snowAfterScoop, snowAfterThrow, projs };
+      })()
+    `);
+    console.log('[SHOVEL MECHANICS TEST RESULT]:', JSON.stringify(mechTest));
 
     console.log('[ALL VERIFICATIONS COMPLETED SUCCESSFULLY]');
   } finally {

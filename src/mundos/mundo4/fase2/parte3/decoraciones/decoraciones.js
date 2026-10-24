@@ -1,35 +1,31 @@
 // ============================================================================
-// MUNDO 4 - FASE 2 - PARTE 3: DECORACIONES DE LA CUMBRE Y DESCENSO (X: 6650 -> 8050)
+// MUNDO 4 - FASE 2 - PARTE 3: DECORACIONES DEL COL Y ARCO MONUMENTAL (X: 6650 -> 8050)
 // ============================================================================
-// Escaleras congeladas, cúmulos de cristal, cuerdas, faroles y el gran arco al Pueblo Nevado.
 
 module.exports = [
-  // 1. Campamento de cumbre de Apa Sherpa
-  { x: 6680, y: 196, subType: 'expedition_stove' },
-  { x: 6740, y: 196, subType: 'prayer_flags' },
+  // 1. Campamento de Cuerdas Fijas del Col
+  { x: 6680, y: 196, subType: 'prayer_flags' },
+  { x: 6730, y: 196, subType: 'hanging_rope', h: 36 },
+  { x: 6830, y: 148, subType: 'ice_crystal_cluster' },
 
-  // 2. Escalera congelada en la primera aguja de cumbre
-  { x: 6845, y: 220, subType: 'frozen_ladder', h: 64 },
+  // 2. Pináculo de hielo milenario en la cresta
+  { x: 7180, y: 196, subType: 'ice_spire' },
 
-  // 3. Cúmulo de cristales de hielo brillante bajo los bloques flotantes
-  { x: 6940, y: 196, subType: 'ice_crystal_cluster' },
+  // 3. Estante de equipo junto a la caverna de nieve
+  { x: 7450, y: 196, subType: 'climbing_gear_rack' },
 
-  // 4. Cuerda colgante fija ondeando en la cota más alta de la cordillera
-  { x: 7040, y: 44, subType: 'hanging_rope', h: 32 },
+  // 4. Farol de expedición previo al abismo terminal
+  { x: 7475, y: 196, subType: 'snow_lantern' },
 
-  // 5. Escalera congelada en la segunda aguja de cumbre
-  { x: 7355, y: 220, subType: 'frozen_ladder', h: 70 },
+  // 5. Explanada de Llegada al Pueblo Nevado (Namche Bazaar)
+  { x: 7790, y: 196, subType: 'sherpa_tent' },
+  { x: 7820, y: 196, subType: 'expedition_stove' },
+  { x: 7860, y: 196, subType: 'prayer_flags' },
+  { x: 7900, y: 196, subType: 'alpine_sign' },
 
-  // 6. Gran aguja serac en el fondo de la sima
-  { x: 7490, y: 220, subType: 'ice_spire' },
+  // 6. El Monumental Arco Glacial de Namche Bazaar
+  { x: 7940, y: 196, subType: 'ice_arch' },
 
-  // 7. Cúmulo de cristales bajo el bloque de cristal suspendido
-  { x: 7640, y: 196, subType: 'ice_crystal_cluster' },
-
-  // 8. Farol de nieve y estante de equipo en la terraza de llegada
-  { x: 7860, y: 196, subType: 'snow_lantern' },
-  { x: 7890, y: 196, subType: 'climbing_gear_rack' },
-
-  // 9. Monumental Arco Glacial que da acceso al Pueblo Nevado de la Fase 3
-  { x: 7960, y: 196, subType: 'ice_arch' }
+  // 7. Pinos alpinos custodiando la entrada al pueblo
+  { x: 8010, y: 196, subType: 'alpine_pine', scale: 1.0 }
 ];

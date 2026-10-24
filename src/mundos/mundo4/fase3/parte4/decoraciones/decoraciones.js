@@ -5,11 +5,13 @@
 
 module.exports = [
   // --- EXTERIOR: DISTRITO ARCADE Y CALLE ILUMINADA ---
-  { x: 10360, y: 196, subType: 'snow_lantern' },
+  { x: 10340, y: 196, subType: 'alpine_pine', scale: 0.8 },
+  { x: 10380, y: 165, subType: 'neon_sign_cluster' },
   { x: 10420, y: 196, subType: 'village_street_sign' },
   { x: 10640, y: 196, subType: 'arcade_facade' },
+  { x: 10740, y: 84, subType: 'prayer_flags' },
   { x: 10840, y: 196, subType: 'firewood_pile' },
-  { x: 10900, y: 196, subType: 'prayer_flags' },
+  { x: 10900, y: 196, subType: 'prayer_cairn' },
   { x: 10960, y: 196, subType: 'snow_lantern' },
 
   // --- INTERIOR: SALA ARCADE "ARCADE POLAR" (X: 51200 -> 51500) ---

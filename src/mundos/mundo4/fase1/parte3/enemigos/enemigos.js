@@ -1,29 +1,21 @@
 // ============================================================================
 // MUNDO 4 - FASE 1 - PARTE 3: ENEMIGOS DE LA CASCADA DE HIELO (X: 2720 -> 4050)
 // ============================================================================
-// Frost Crawlers y Frost Fliers custodiando las cornisas y bancos de nieve polar.
+// Frost Crawlers y Frost Fliers custodiando las cornisas y bancos polares.
 
 module.exports = {
   crawlers: [
-    // Oruga de hielo en la terraza de suministros
-    { x: 2760, y: 196, minX: 2730, maxX: 2850, speed: 45, dir: 1, variant: 'frost_crawler' },
-    // Oruga de hielo patrullando el primer banco de nieve del desfiladero
-    { x: 2980, y: 196, minX: 2920, maxX: 3150, speed: 48, dir: 1, variant: 'frost_crawler' },
-    // Oruga de hielo en la cornisa superior
-    { x: 3060, y: 150, minX: 3040, maxX: 3140, speed: 45, dir: -1, variant: 'frost_crawler' },
-    // Oruga de hielo patrullando el banco superior de nieve profunda
-    { x: 3500, y: 184, minX: 3440, maxX: 3670, speed: 52, dir: -1, variant: 'frost_crawler' },
-    // Oruga de hielo en la Gran Terraza Terminal
-    { x: 3860, y: 196, minX: 3820, maxX: 3980, speed: 48, dir: 1, variant: 'frost_crawler' }
+    // Oruga de escarcha patrullando el banco del desfiladero (se elude cavando)
+    { x: 3040, y: 196, minX: 2960, maxX: 3180, speed: 45, dir: 1, variant: 'frost_crawler' },
+    // Oruga de escarcha en el banco polar superior
+    { x: 3580, y: 196, minX: 3530, maxX: 3720, speed: 50, dir: -1, variant: 'frost_crawler' }
   ],
   fliers: [
-    // Murcielago de hielo en la terraza inicial
-    { x: 2840, y: 65, baseY: 65, minX: 2780, maxX: 2900, speed: 40, variant: 'frost_flier' },
-    // Murcielago de hielo vigilando los pinaculos del abismo intermedio
-    { x: 3120, y: 85, baseY: 85, minX: 3050, maxX: 3200, speed: 40, variant: 'frost_flier' },
-    // Murcielago de hielo sobre el puente de escalera alpino
-    { x: 3380, y: 60, baseY: 60, minX: 3320, maxX: 3440, speed: 42, variant: 'frost_flier' },
-    // Murcielago de hielo sobrevolando la antesala del portal glacial
-    { x: 3620, y: 70, baseY: 70, minX: 3550, maxX: 3700, speed: 42, variant: 'frost_flier' }
+    // Murcielago glacial sobrevolando los seracs del desfiladero
+    { x: 3120, y: 65, baseY: 65, minX: 3060, maxX: 3180, speed: 40, variant: 'frost_flier' },
+    // Murcielago glacial vigilando el paso sobre el puente de escalera alpina
+    { x: 3420, y: 65, baseY: 65, minX: 3360, maxX: 3480, speed: 40, variant: 'frost_flier' },
+    // Murcielago glacial en la antesala del Gran Arco Glacial
+    { x: 3660, y: 65, baseY: 65, minX: 3600, maxX: 3720, speed: 40, variant: 'frost_flier' }
   ]
 };

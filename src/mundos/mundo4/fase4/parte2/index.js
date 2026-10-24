@@ -7,11 +7,13 @@ const enemies = require('./enemigos/enemigos');
 const checkpoints = require('./mecanicas/checkpoint');
 const npcs = require('./npcs/npcs');
 const cheeses = require('./coleccionables/quesos');
+const spikes = require('./mecanicas/spikes');
 
 module.exports = {
   platforms,
   decorations,
   checkpoints,
+  spikes,
   npcs,
   magmaCrawlers: enemies.crawlers,
   fireBats: enemies.fliers,

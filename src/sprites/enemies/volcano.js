@@ -26,6 +26,14 @@ SpriteManager.prototype.drawMagmaCrawler = function(ctx, x, y, facingRight, fram
       this.drawFrostCrawler(ctx, x, y, facingRight, frame);
       return;
     }
+    if (variant === 'kailash_scarab' && this.drawKailashScarab) {
+      this.drawKailashScarab(ctx, x, y, facingRight, frame);
+      return;
+    }
+    if (variant === 'agartha_sentinel' && this.drawAgarthaSentinel) {
+      this.drawAgarthaSentinel(ctx, x, y, facingRight, frame);
+      return;
+    }
 
     if (variant === 'ladybug') {
       // FASE 1 MUNDO 1: Mariquita / Catarina del Jardin Silvestre
@@ -120,6 +128,10 @@ SpriteManager.prototype.drawFireBat = function(ctx, x, y, frame, variant = 'fire
     }
     if (variant === 'frost_flier' && this.drawFrostFlier) {
       this.drawFrostFlier(ctx, x, y, frame);
+      return;
+    }
+    if (variant === 'astral_flier' && this.drawAstralFlier) {
+      this.drawAstralFlier(ctx, x, y, frame);
       return;
     }
 

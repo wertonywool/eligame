@@ -1,26 +1,25 @@
 // ============================================================================
 // MUNDO 4 - FASE 1 - PARTE 1: DECORACIONES DE LAS FALDAS DEL MONTE EVEREST
 // ============================================================================
-// Cabaña del guardabosques, abetos alpinos nevados, señales y faroles de montaña.
+// Cabana del guardabosques, abetos alpinos nevados, senal y faroles de montana.
 
 module.exports = [
-  // 1. Cabaña alpina de madera y piedra en el Campamento Base
-  { x: 110, y: 196, subType: 'alpine_cabin' },
+  // 1. Cabana alpina de madera y piedra en el Campamento Base
+  { x: 100, y: 196, subType: 'alpine_cabin' },
 
-  // 2. Abetos y coníferas alpinas cargadas de nieve fresca
-  { x: 40, y: 196, subType: 'alpine_pine', scale: 1.0 },
-  { x: 290, y: 196, subType: 'alpine_pine', scale: 0.9 },
-  { x: 690, y: 196, subType: 'alpine_pine', scale: 1.15 },
-  { x: 1010, y: 162, subType: 'alpine_pine', scale: 0.85 },
+  // 2. Abetos y coniferas alpinas cargadas de nieve fresca
+  { x: 30, y: 196, subType: 'alpine_pine', scale: 1.0 },
+  { x: 310, y: 196, subType: 'alpine_pine', scale: 0.9 },
+  { x: 730, y: 196, subType: 'alpine_pine', scale: 1.1 },
 
-  // 3. Señalética de madera del sendero del Everest
-  { x: 260, y: 196, subType: 'alpine_sign' },
+  // 3. Pila de lena cortada para la chimenea del refugio
+  { x: 190, y: 196, subType: 'firewood_pile' },
 
-  // 4. Pila de leña cortada para la chimenea del refugio
-  { x: 200, y: 196, subType: 'firewood_pile' },
+  // 4. Senal de madera del sendero hacia la cumbre
+  { x: 270, y: 196, subType: 'alpine_sign' },
 
-  // 5. Faroles de hierro forjado con luz cálida de montaña
-  { x: 370, y: 196, subType: 'snow_lantern' },
-  { x: 830, y: 196, subType: 'snow_lantern' },
-  { x: 1330, y: 196, subType: 'snow_lantern' }
+  // 5. Faroles de hierro forjado con luz calida de montana
+  { x: 380, y: 196, subType: 'snow_lantern' },
+  { x: 1100, y: 196, subType: 'snow_lantern' },
+  { x: 1475, y: 196, subType: 'snow_lantern' }
 ];

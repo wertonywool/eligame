@@ -1082,6 +1082,12 @@ if (typeof module !== 'undefined') {
 // 4. Copos de nieve flotando suavemente en la atmósfera
 
 function drawEverestParallax(ctx, camX, frame) {
+  // 0. Si la cámara está en el Valle Oculto de Shambhala (Mundo 4 - Fase 7: X 29400 -> 33100)
+  if (camX >= 29300 && camX <= 33150) {
+    drawShambhalaParallax(ctx, camX, frame);
+    return;
+  }
+
   // 1. Degradado del cielo ártico alpino
   const grad = ctx.createLinearGradient(0, 0, 0, H);
   grad.addColorStop(0, '#0b132b');      // Azul medianoche polar
@@ -1180,8 +1186,145 @@ function drawEverestParallax(ctx, camX, frame) {
   }
 }
 
+// ============================================================================
+// PARALLAX MUNDO 4 - FASE 7: EL REINO OCULTO DE SHAMBHALA (VALLE CELESTIAL)
+// ============================================================================
+function drawShambhalaParallax(ctx, camX, frame) {
+  // 1. Degradado del amanecer sagrado de Shambhala (Amatista, Carmesí, Ámbar y Oro)
+  const grad = ctx.createLinearGradient(0, 0, 0, H);
+  grad.addColorStop(0, '#150d2a');      // Púrpura cósmico superior
+  grad.addColorStop(0.32, '#351848');   // Amatista de las altas cumbres
+  grad.addColorStop(0.58, '#782655');   // Rosa magenta cálido
+  grad.addColorStop(0.78, '#c75643');   // Ámbar dorado místico
+  grad.addColorStop(0.92, '#f59e0b');   // Resplandor de oro puro
+  grad.addColorStop(1, '#fef08a');      // Bruma dorada termal del valle
+  ctx.fillStyle = grad;
+  ctx.fillRect(0, 0, W, H);
+
+  // 2. Sol Sagrado del Loto / Corona Solar Radiante
+  const sunX = Math.round(W * 0.74);
+  const sunY = 52;
+  const haloGlow = Math.sin(frame * 0.05) * 5 + 34;
+
+  const sunGrad = ctx.createRadialGradient(sunX, sunY, 3, sunX, sunY, haloGlow);
+  sunGrad.addColorStop(0, 'rgba(254, 240, 138, 0.95)');
+  sunGrad.addColorStop(0.35, 'rgba(245, 158, 11, 0.55)');
+  sunGrad.addColorStop(0.75, 'rgba(217, 70, 239, 0.22)');
+  sunGrad.addColorStop(1, 'rgba(255, 255, 255, 0)');
+  ctx.fillStyle = sunGrad;
+  ctx.beginPath();
+  ctx.arc(sunX, sunY, haloGlow, 0, Math.PI * 2);
+  ctx.fill();
+
+  ctx.fillStyle = '#ffffff';
+  ctx.beginPath();
+  ctx.arc(sunX, sunY, 13, 0, Math.PI * 2);
+  ctx.fill();
+
+  // Rayos solares sutiles
+  ctx.strokeStyle = 'rgba(254, 240, 138, 0.18)';
+  ctx.lineWidth = 1.5;
+  for (let r = 0; r < 8; r++) {
+    const ang = r * Math.PI / 4 + frame * 0.005;
+    ctx.beginPath();
+    ctx.moveTo(sunX + Math.cos(ang) * 16, sunY + Math.sin(ang) * 16);
+    ctx.lineTo(sunX + Math.cos(ang) * (haloGlow + 12), sunY + Math.sin(ang) * (haloGlow + 12));
+    ctx.stroke();
+  }
+
+  // 3. Picos Celestiales Lejanos de Shambhala (Parallax 0.04)
+  const farOffset = Math.round(camX * 0.04);
+  const peaks = [
+    { x: 20, h: 145, w: 130 },
+    { x: 135, h: 180, w: 160 }, // Pico Supremo de Shambhala
+    { x: 275, h: 135, w: 120 },
+    { x: 380, h: 160, w: 140 }
+  ];
+
+  for (let p of peaks) {
+    const px = ((p.x - farOffset) % (W + 160) + (W + 160)) % (W + 160) - 80;
+    const py = H - p.h;
+
+    // Silueta púrpura de montaña sagrada
+    ctx.fillStyle = '#2c1236';
+    ctx.beginPath();
+    ctx.moveTo(px, H);
+    ctx.lineTo(px + Math.floor(p.w / 2), py);
+    ctx.lineTo(px + p.w, H);
+    ctx.closePath();
+    ctx.fill();
+
+    // Cumbre de nieve dorada iluminada por el sol
+    ctx.fillStyle = '#fef08a';
+    ctx.beginPath();
+    ctx.moveTo(px + Math.floor(p.w * 0.35), py + Math.floor(p.h * 0.35));
+    ctx.lineTo(px + Math.floor(p.w / 2), py);
+    ctx.lineTo(px + Math.floor(p.w * 0.65), py + Math.floor(p.h * 0.35));
+    ctx.lineTo(px + Math.floor(p.w * 0.52), py + Math.floor(p.h * 0.28));
+    ctx.closePath();
+    ctx.fill();
+
+    // Arista iluminada de cuarzo
+    ctx.fillStyle = '#ffffff';
+    ctx.fillRect(px + Math.floor(p.w / 2) - 1, py, 2, Math.floor(p.h * 0.28));
+  }
+
+  // 4. Cordillera Intermedia: Pagodas Doradas y Chortens Tibetanos en la niebla (Parallax 0.10)
+  const midOffset = Math.round(camX * 0.10);
+  for (let mi = 0; mi < 8; mi++) {
+    const mx = ((mi * 85 - midOffset) % (W + 120) + (W + 120)) % (W + 120) - 60;
+    const mh = 55 + (mi % 3) * 18;
+    const my = H - mh;
+
+    // Colina rocosa redondeada de jade y basalto
+    ctx.fillStyle = '#45163e';
+    ctx.beginPath();
+    ctx.arc(mx + 30, H + 10, 48, Math.PI, Math.PI * 2);
+    ctx.fill();
+
+    // Silueta de Pagoda Dorada lejana
+    if (mi % 2 === 0) {
+      const pagX = mx + 24;
+      const pagY = my + 8;
+      ctx.fillStyle = '#661b47';
+      ctx.fillRect(pagX - 6, pagY, 12, 16);
+      // Tejadillo alado dorado
+      ctx.fillStyle = '#d97706';
+      ctx.fillRect(pagX - 10, pagY - 2, 20, 3);
+      ctx.fillRect(pagX - 7, pagY - 8, 14, 6);
+      ctx.fillRect(pagX - 11, pagY - 10, 22, 2);
+      // Pináculo
+      ctx.fillStyle = '#fde047';
+      ctx.fillRect(pagX - 1, pagY - 16, 2, 6);
+      // Ventana iluminada
+      ctx.fillStyle = '#fef08a';
+      ctx.fillRect(pagX - 2, pagY + 4, 4, 5);
+    }
+  }
+
+  // 5. Esporas de Loto y Partículas Doradas que ascienden en la atmósfera sagrada
+  for (let s = 0; s < 36; s++) {
+    const sx = ((s * 41 + frame * 0.4 + Math.sin(frame * 0.03 + s) * 14 - camX * 0.14) % W + W) % W;
+    const sy = ((s * 23 - frame * 0.35) % H + H) % H;
+    const glow = Math.sin(frame * 0.12 + s) * 0.3 + 0.7;
+    ctx.fillStyle = (s % 3 === 0)
+      ? 'rgba(56, 189, 248, ' + glow.toFixed(2) + ')'
+      : 'rgba(254, 240, 138, ' + glow.toFixed(2) + ')';
+    const sz = (s % 5 === 0) ? 2 : 1;
+    ctx.fillRect(sx, sy, sz, sz);
+  }
+
+  // 6. Bruma termal cálida del fondo
+  const mistGrad = ctx.createLinearGradient(0, H - 34, 0, H);
+  mistGrad.addColorStop(0, 'rgba(254, 240, 138, 0)');
+  mistGrad.addColorStop(0.5, 'rgba(103, 232, 249, 0.12)');
+  mistGrad.addColorStop(1, 'rgba(254, 240, 138, 0.28)');
+  ctx.fillStyle = mistGrad;
+  ctx.fillRect(0, H - 34, W, 34);
+}
+
 if (typeof module !== 'undefined') {
-  module.exports = { drawEverestParallax };
+  module.exports = { drawEverestParallax, drawShambhalaParallax };
 }
 
 
@@ -2923,7 +3066,7 @@ if (typeof module !== 'undefined') {
 // 4. alpine_bridge: Puente rústico de troncos alpinos y cuerdas cubierto de escarcha
 
 function drawSnowPlatform(ctx, p, frame) {
-  if (!p || !p.subType) return false;
+  if (!p || !p.subType || p.broken) return false;
 
   const px = Math.round(p.x);
   const py = Math.round(p.y);
@@ -2956,6 +3099,30 @@ function drawSnowPlatform(ctx, p, frame) {
   }
   if (p.subType === 'slippery_ice' || p.subType === 'frozen_lake_ice') {
     drawFrozenLakeIce(ctx, px, py, pw, ph, p, frame);
+    return true;
+  }
+  if (p.subType === 'cracking_ice') {
+    drawCrackingIce(ctx, px, py, pw, ph, p, frame);
+    return true;
+  }
+  if (p.subType === 'bounce_crystal' || p.subType === 'ice_crystal_spring') {
+    drawBounceCrystal(ctx, px, py, pw, ph, p, frame);
+    return true;
+  }
+  if (p.subType === 'crystal_lotus_pad' || p.subType === 'lotus_pad_shambhala') {
+    drawCrystalLotusPad(ctx, px, py, pw, ph, p, frame);
+    return true;
+  }
+  if (p.subType === 'shambhala_pagoda_roof' || p.subType === 'pagoda_roof') {
+    drawShambhalaPagodaRoof(ctx, px, py, pw, ph, p, frame);
+    return true;
+  }
+  if (p.subType === 'shambhala_marble_terrace' || p.subType === 'shambhala_marble') {
+    drawShambhalaMarbleTerrace(ctx, px, py, pw, ph, p, frame);
+    return true;
+  }
+  if (p.subType === 'shambhala_bridge') {
+    drawShambhalaBridge(ctx, px, py, pw, ph, p, frame);
     return true;
   }
   if (p.subType === 'rainbow_ice' || p.subType === 'rainbow_bridge') {
@@ -3094,10 +3261,86 @@ function drawAlpineBridge(ctx, px, py, pw, ph, p, frame) {
   // Cuerdas de amarre laterales
   ctx.fillStyle = '#8d6e63';
   ctx.fillRect(px, py + ph - 2, pw, 2);
-  ctx.fillStyle = '#ffffff';
-  for (let kx = px + 6; kx < px + pw; kx += 14) {
-    ctx.fillRect(kx, py - 4, 2, 4); // Candelero
+  for (let kx = px + 6; kx < px + pw; kx += 16) {
+    // Poste / candelero de madera conectado al puente
+    ctx.fillStyle = '#4e342e';
+    ctx.fillRect(kx, py - 4, 2, 6);
+    // Capucha de nieve sobre el poste
+    ctx.fillStyle = '#ffffff';
+    ctx.fillRect(kx - 1, py - 5, 4, 2);
   }
+}
+
+// 4b. PUENTE DE ESCALERA DE ALUMINIO DE KHUMBU (LADDER BRIDGE SOBRE GRIETAS)
+function drawAluminumLadderBridge(ctx, px, py, pw, frame) {
+  // Niebla fría / vapor gélido que asciende de la grieta profunda bajo la escalera
+  const mistAlpha = 0.22 + Math.sin(frame * 0.08 + px * 0.02) * 0.1;
+  ctx.fillStyle = `rgba(186, 230, 253, ${mistAlpha.toFixed(2)})`;
+  ctx.fillRect(px + 4, py + 8, pw - 8, 14);
+
+  // Estacas de anclaje de acero y picos en los dos extremos
+  ctx.fillStyle = '#0369a1';
+  ctx.fillRect(px - 4, py - 3, 6, 10);
+  ctx.fillRect(px + pw - 2, py - 3, 6, 10);
+  ctx.fillStyle = '#38bdf8';
+  ctx.fillRect(px - 3, py - 3, 4, 2);
+  ctx.fillRect(px + pw - 1, py - 3, 4, 2);
+
+  // Cuerdas de seguridad tensoras naranjas de escalada de alta montaña (Kernmantle rope)
+  ctx.strokeStyle = '#f97316';
+  ctx.lineWidth = 1.5;
+  ctx.beginPath();
+  ctx.moveTo(px - 4, py - 2);
+  ctx.lineTo(px + pw + 2, py - 2);
+  ctx.stroke();
+
+  // Nudos de amarre en los extremos
+  ctx.fillStyle = '#ea580c';
+  ctx.fillRect(px - 2, py - 4, 3, 4);
+  ctx.fillRect(px + pw - 1, py - 4, 3, 4);
+
+  // Rieles de aluminio dobles (superior e inferior)
+  // Sombra del riel inferior
+  ctx.fillStyle = '#334155';
+  ctx.fillRect(px, py + 5, pw, 2);
+  // Riel inferior metálico
+  ctx.fillStyle = '#64748b';
+  ctx.fillRect(px, py + 4, pw, 2);
+  ctx.fillStyle = '#94a3b8';
+  ctx.fillRect(px, py + 4, pw, 1);
+
+  // Sombra del riel superior
+  ctx.fillStyle = '#475569';
+  ctx.fillRect(px, py + 1, pw, 2);
+  // Riel superior brillante de aleación de aluminio aeroespacial
+  ctx.fillStyle = '#cbd5e1';
+  ctx.fillRect(px, py, pw, 2);
+  ctx.fillStyle = '#ffffff';
+  ctx.fillRect(px, py, pw, 1);
+
+  // Peldaños / travesaños de aluminio perpendiculares (rungs) cada 8 píxeles
+  for (let rx = px + 4; rx <= px + pw - 4; rx += 8) {
+    // Sombra del peldaño
+    ctx.fillStyle = '#1e293b';
+    ctx.fillRect(rx, py + 1, 2, 5);
+    // Cuerpo del peldaño de aluminio
+    ctx.fillStyle = '#e2e8f0';
+    ctx.fillRect(rx, py, 2, 5);
+    // Destello de escarcha sobre el peldaño
+    ctx.fillStyle = '#ffffff';
+    ctx.fillRect(rx, py, 1, 2);
+
+    // Pequeño remache de fijación
+    ctx.fillStyle = '#475569';
+    ctx.fillRect(rx, py, 1, 1);
+    ctx.fillRect(rx, py + 4, 1, 1);
+  }
+
+  // Chispas de escarcha / hielo adherido en el aluminio
+  const glintPos = (Math.floor(frame * 0.4) * 16) % Math.max(16, pw - 12);
+  ctx.fillStyle = '#ffffff';
+  ctx.fillRect(px + glintPos, py, 3, 1);
+  ctx.fillRect(px + glintPos + 1, py - 1, 1, 3);
 }
 
 // 5. PILAR / MONOLITO DE HIELO CRISTALINO VERTICAL (ESTILO CELESTE)
@@ -3124,6 +3367,27 @@ function drawIcePillar(ctx, px, py, pw, ph, p, frame) {
   for (let fy = py + 12; fy < py + ph - 8; fy += 22) {
     ctx.fillRect(px + 3, fy, pw - 6, 1);
     ctx.fillRect(px + Math.floor(pw * 0.4), fy - 3, 2, 6);
+  }
+
+  // Si el pilar es quebrable, dibujar vetas luminosas de fractura y runa de impacto
+  if (p.breakable) {
+    const pulse = Math.sin(frame * 0.12 + px * 0.05) * 0.3 + 0.7;
+    ctx.strokeStyle = p.crystalType === 'amethyst'
+      ? `rgba(192, 132, 252, ${pulse.toFixed(2)})`
+      : (p.crystalType === 'jade' ? `rgba(52, 211, 153, ${pulse.toFixed(2)})` : `rgba(56, 189, 248, ${pulse.toFixed(2)})`);
+    ctx.lineWidth = 1.5;
+    ctx.beginPath();
+    ctx.moveTo(px + Math.floor(pw * 0.3), py + 6);
+    ctx.lineTo(px + Math.floor(pw * 0.6), py + Math.floor(ph * 0.45));
+    ctx.lineTo(px + Math.floor(pw * 0.25), py + Math.floor(ph * 0.75));
+    ctx.lineTo(px + Math.floor(pw * 0.5), py + ph - 6);
+    ctx.stroke();
+
+    // Runa central de cristal pulsante
+    ctx.fillStyle = p.crystalType === 'amethyst' ? '#c084fc' : (p.crystalType === 'jade' ? '#34d399' : '#38bdf8');
+    ctx.fillRect(px + Math.floor(pw / 2) - 3, py + Math.floor(ph / 2) - 3, 6, 6);
+    ctx.fillStyle = '#ffffff';
+    ctx.fillRect(px + Math.floor(pw / 2) - 1, py + Math.floor(ph / 2) - 1, 2, 2);
   }
 
   // Tapa superior de nieve compacta
@@ -3276,6 +3540,314 @@ function drawRainbowIcePlatform(ctx, px, py, pw, ph, p, frame) {
   }
 }
 
+// 9. HIELO QUEBRADIZO / CAPA FRÁGIL DE LAGO (CRACKING ICE)
+function drawCrackingIce(ctx, px, py, pw, ph, p, frame) {
+  if (p.broken) {
+    // Si está rota, dibujamos trozos hundiéndose y burbujas de agua
+    const fade = Math.max(0, p.respawnTimer / 2.8);
+    ctx.fillStyle = `rgba(186, 230, 253, ${fade * 0.4})`;
+    for (let c = 0; c < 3; c++) {
+      const cx = px + (pw * 0.25) * (c + 1) - 6;
+      const cy = py + 4 + (1 - fade) * 8;
+      ctx.fillRect(cx, cy, 10, 4);
+    }
+    return;
+  }
+
+  const shakeX = p.shakeOffset || 0;
+  const shakeY = (p.shakeOffset ? Math.cos(frame * 2.0) * 1.2 : 0);
+  const curX = px + Math.round(shakeX);
+  const curY = py + Math.round(shakeY);
+
+  // Base de hielo congelado translúcido
+  drawFrozenLakeIce(ctx, curX, curY, pw, ph, p, frame);
+
+  // Grietas activas según el temporizador de pisada
+  const crack = p.crackTimer || 0;
+  if (crack > 0.05) {
+    const crackAlpha = Math.min(1, crack / 0.7);
+    ctx.strokeStyle = `rgba(255, 255, 255, ${crackAlpha})`;
+    ctx.lineWidth = 1.5;
+
+    // Red de fracturas en zigzag
+    ctx.beginPath();
+    ctx.moveTo(curX + pw * 0.15, curY + 2);
+    ctx.lineTo(curX + pw * 0.35, curY + ph * 0.45);
+    ctx.lineTo(curX + pw * 0.5, curY + 2);
+    ctx.lineTo(curX + pw * 0.7, curY + ph * 0.6);
+    ctx.lineTo(curX + pw * 0.88, curY + 2);
+    ctx.stroke();
+
+    if (crack > 0.4) {
+      // Grietas transversales profundas
+      ctx.strokeStyle = `rgba(224, 242, 254, ${crackAlpha})`;
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.moveTo(curX + pw * 0.35, curY + ph * 0.45);
+      ctx.lineTo(curX + pw * 0.3, curY + ph - 2);
+      ctx.moveTo(curX + pw * 0.7, curY + ph * 0.6);
+      ctx.lineTo(curX + pw * 0.75, curY + ph - 2);
+      ctx.stroke();
+
+      // Destellos de peligro de quiebre inminente
+      if (Math.sin(frame * 0.6) > 0) {
+        ctx.fillStyle = '#ffffff';
+        ctx.fillRect(curX + pw * 0.5 - 2, curY, 4, 3);
+      }
+    }
+  }
+}
+
+// 10. CRISTAL CELESTIAL DE IMPULSO / RESORTE GLACIAL (BOUNCE CRYSTAL)
+function drawBounceCrystal(ctx, px, py, pw, ph, p, frame) {
+  const cx = px + pw / 2;
+  const cy = py + ph / 2;
+  const pulse = Math.sin(frame * 0.12) * 2;
+  const rad = Math.min(pw, ph) / 2 + pulse;
+
+  // Halo de energía celestial circundante
+  const halo = ctx.createRadialGradient(cx, cy, 2, cx, cy, rad + 14);
+  halo.addColorStop(0, 'rgba(0, 245, 212, 0.6)');
+  halo.addColorStop(0.5, 'rgba(56, 189, 248, 0.25)');
+  halo.addColorStop(1, 'rgba(2, 132, 199, 0)');
+  ctx.fillStyle = halo;
+  ctx.beginPath();
+  ctx.arc(cx, cy, rad + 14, 0, Math.PI * 2);
+  ctx.fill();
+
+  // Rombo / Diamante de Cristal Glacial
+  ctx.fillStyle = '#0f172a';
+  ctx.beginPath();
+  ctx.moveTo(cx, cy - rad - 2);
+  ctx.lineTo(cx + rad + 2, cy);
+  ctx.lineTo(cx, cy + rad + 2);
+  ctx.lineTo(cx - rad - 2, cy);
+  ctx.closePath();
+  ctx.fill();
+
+  ctx.fillStyle = '#00f5d4';
+  ctx.beginPath();
+  ctx.moveTo(cx, cy - rad);
+  ctx.lineTo(cx + rad, cy);
+  ctx.lineTo(cx, cy + rad);
+  ctx.lineTo(cx - rad, cy);
+  ctx.closePath();
+  ctx.fill();
+
+  // Núcleo brillante blanco
+  ctx.fillStyle = '#ffffff';
+  ctx.beginPath();
+  ctx.moveTo(cx, cy - rad * 0.5);
+  ctx.lineTo(cx + rad * 0.5, cy);
+  ctx.lineTo(cx, cy + rad * 0.5);
+  ctx.lineTo(cx - rad * 0.5, cy);
+  ctx.closePath();
+  ctx.fill();
+
+  // Chispas estelares orbitando
+  for (let s = 0; s < 3; s++) {
+    const sAngle = frame * 0.08 + s * (Math.PI * 2 / 3);
+    const sx = cx + Math.cos(sAngle) * (rad + 6);
+    const sy = cy + Math.sin(sAngle) * (rad + 6);
+    ctx.fillStyle = '#ffffff';
+    ctx.fillRect(Math.round(sx) - 1, Math.round(sy) - 1, 2, 2);
+  }
+}
+
+// 11. PLATAFORMA DE LOTO DE CRISTAL FLOTANTE (SHAMBHALA BOUNCE PAD)
+function drawCrystalLotusPad(ctx, px, py, pw, ph, p, frame) {
+  const bob = Math.sin(frame * 0.08 + px * 0.04) * 2;
+  const cy = py + bob;
+  const cx = px + pw / 2;
+
+  // Halo luminoso radial místico
+  const glow = Math.sin(frame * 0.12 + px * 0.02) * 0.2 + 0.8;
+  const grad = ctx.createRadialGradient(cx, cy + ph / 2, 4, cx, cy + ph / 2, pw / 2 + 10);
+  grad.addColorStop(0, 'rgba(56, 189, 248, ' + (glow * 0.45).toFixed(2) + ')');
+  grad.addColorStop(0.6, 'rgba(254, 240, 138, ' + (glow * 0.25).toFixed(2) + ')');
+  grad.addColorStop(1, 'rgba(255, 255, 255, 0)');
+  ctx.fillStyle = grad;
+  ctx.beginPath();
+  ctx.arc(cx, cy + ph / 2, pw / 2 + 10, 0, Math.PI * 2);
+  ctx.fill();
+
+  // Hoja basal de jade esmeralda
+  ctx.fillStyle = '#065f46';
+  ctx.beginPath();
+  ctx.ellipse(cx, cy + ph / 2 + 2, pw / 2, ph / 2, 0, 0, Math.PI * 2);
+  ctx.fill();
+
+  ctx.fillStyle = '#10b981';
+  ctx.beginPath();
+  ctx.ellipse(cx, cy + ph / 2, pw / 2 - 2, ph / 2 - 2, 0, 0, Math.PI * 2);
+  ctx.fill();
+
+  // Pétalos cristalinos celestes en abanico
+  const numPetals = 7;
+  for (let i = 0; i < numPetals; i++) {
+    const ang = (i * Math.PI) / (numPetals - 1) - Math.PI;
+    const petX = cx + Math.cos(ang) * (pw / 2 - 4);
+    const petY = cy + ph / 2 + Math.sin(ang) * 4;
+    ctx.fillStyle = (i % 2 === 0) ? '#0284c7' : '#38bdf8';
+    ctx.beginPath();
+    ctx.ellipse(petX, petY, 5, 8, ang * 0.4, 0, Math.PI * 2);
+    ctx.fill();
+  }
+
+  // Capa superior de pétalos blancos de cuarzo
+  ctx.fillStyle = '#f0f9ff';
+  ctx.beginPath();
+  ctx.ellipse(cx - 8, cy + 2, 6, 4, -0.2, 0, Math.PI * 2);
+  ctx.ellipse(cx + 8, cy + 2, 6, 4, 0.2, 0, Math.PI * 2);
+  ctx.ellipse(cx, cy, 8, 4, 0, 0, Math.PI * 2);
+  ctx.fill();
+
+  // Corola dorada elástica de rebote
+  ctx.fillStyle = '#fef08a';
+  ctx.beginPath();
+  ctx.ellipse(cx, cy + 1, pw / 3, 3, 0, 0, Math.PI * 2);
+  ctx.fill();
+
+  ctx.fillStyle = '#eab308';
+  ctx.fillRect(cx - 3, cy, 6, 2);
+
+  // Destellos estelares
+  const spark = (frame * 0.08) % 1;
+  ctx.fillStyle = '#ffffff';
+  ctx.fillRect(cx - 4 + Math.sin(frame * 0.15) * 8, cy - 6 - spark * 8, 2, 2);
+}
+
+// 12. TECHO DE PAGODA ASIÁTICA DE SHAMBHALA (ALEROS CURVOS DE ORO)
+function drawShambhalaPagodaRoof(ctx, px, py, pw, ph, p, frame) {
+  // 1. Viga inferior de madera lacada rojo carmesí tibetano
+  ctx.fillStyle = '#7f1d1d';
+  ctx.fillRect(px + 4, py + ph - 5, pw - 8, 5);
+  ctx.fillStyle = '#991b1b';
+  ctx.fillRect(px + 6, py + ph - 4, pw - 12, 3);
+
+  // Ménsulas de madera dorada tallada
+  for (let bx = px + 10; bx < px + pw - 10; bx += 18) {
+    ctx.fillStyle = '#b45309';
+    ctx.fillRect(bx, py + ph - 3, 4, 3);
+  }
+
+  // 2. Faldón principal de tejas doradas
+  ctx.fillStyle = '#b45309';
+  ctx.fillRect(px + 2, py + 4, pw - 4, ph - 8);
+
+  ctx.fillStyle = '#d97706';
+  ctx.fillRect(px + 1, py + 2, pw - 2, 5);
+
+  ctx.fillStyle = '#f59e0b';
+  ctx.fillRect(px, py + 1, pw, 3);
+
+  ctx.fillStyle = '#fde047';
+  ctx.fillRect(px + 4, py, pw - 8, 2);
+
+  // Relieve de canales de tejas doradas
+  for (let tx = px + 6; tx < px + pw - 6; tx += 8) {
+    ctx.fillStyle = '#78350f';
+    ctx.fillRect(tx, py + 3, 1, ph - 6);
+    ctx.fillStyle = '#fef08a';
+    ctx.fillRect(tx + 1, py + 1, 1, 3);
+  }
+
+  // 3. Aleros curvos hacia arriba en los extremos (estilo asiático oriental)
+  ctx.fillStyle = '#f59e0b';
+  // Extremo izquierdo hacia arriba
+  ctx.beginPath();
+  ctx.moveTo(px - 4, py - 4);
+  ctx.lineTo(px + 4, py + 2);
+  ctx.lineTo(px, py + 5);
+  ctx.closePath();
+  ctx.fill();
+
+  // Extremo derecho hacia arriba
+  ctx.beginPath();
+  ctx.moveTo(px + pw + 4, py - 4);
+  ctx.lineTo(px + pw - 4, py + 2);
+  ctx.lineTo(px + pw, py + 5);
+  ctx.closePath();
+  ctx.fill();
+
+  // Campanas de viento oscilantes en las puntas de los aleros
+  const sway = Math.sin(frame * 0.08) * 1.5;
+  ctx.fillStyle = '#fde047';
+  ctx.fillRect(px - 4 + sway, py + 2, 2, 4);
+  ctx.fillRect(px + pw + 2 + sway, py + 2, 2, 4);
+
+  // Manto sutil de nieve fresca en la cumbrera
+  ctx.fillStyle = '#ffffff';
+  ctx.fillRect(px + 8, py - 1, pw - 16, 2);
+}
+
+// 13. TERRAZA DE MÁRMOL BLANCO Y ORO DE SHAMBHALA
+function drawShambhalaMarbleTerrace(ctx, px, py, pw, ph, p, frame) {
+  // Base de roca basalto y mármol
+  ctx.fillStyle = '#1e293b';
+  ctx.fillRect(px, py + 8, pw, ph - 8);
+
+  // Bloque de mármol blanco puro de Shambhala
+  ctx.fillStyle = '#cbd5e1';
+  ctx.fillRect(px, py + 3, pw, ph - 3);
+
+  ctx.fillStyle = '#f8fafc';
+  ctx.fillRect(px, py, pw, 7);
+
+  // Cenefa ornamental de oro y lapislázuli
+  ctx.fillStyle = '#f59e0b';
+  ctx.fillRect(px, py + 6, pw, 2);
+  for (let gx = px + 12; gx < px + pw - 8; gx += 20) {
+    ctx.fillStyle = '#0284c7';
+    ctx.fillRect(gx, py + 6, 3, 2);
+    ctx.fillStyle = '#fde047';
+    ctx.fillRect(gx + 4, py + 6, 2, 2);
+  }
+
+  // Reflejo pulido en la superficie
+  ctx.fillStyle = '#ffffff';
+  ctx.fillRect(px, py, pw, 2);
+  for (let sx = px + 10; sx < px + pw - 10; sx += 32) {
+    if ((sx + frame) % 50 < 15) {
+      ctx.fillStyle = '#fef08a';
+      ctx.fillRect(sx, py + 1, 4, 1);
+      ctx.fillStyle = '#ffffff';
+    }
+  }
+}
+
+// 14. PUENTE CEREMONIAL DE SHAMBHALA (MADERA ROJA, ORO Y BARANDILLAS)
+function drawShambhalaBridge(ctx, px, py, pw, ph, p, frame) {
+  // Viga maestra de madera lacada rojo carmesí
+  ctx.fillStyle = '#7f1d1d';
+  ctx.fillRect(px, py + 6, pw, ph - 6);
+
+  ctx.fillStyle = '#991b1b';
+  ctx.fillRect(px, py + 3, pw, 5);
+
+  // Tablones de paso
+  ctx.fillStyle = '#b45309';
+  ctx.fillRect(px, py + 1, pw, 3);
+  for (let bx = px + 6; bx < px + pw; bx += 10) {
+    ctx.fillStyle = '#78350f';
+    ctx.fillRect(bx, py + 1, 1, 4);
+  }
+
+  // Barandillas de madera roja y adornos de oro
+  ctx.fillStyle = '#991b1b';
+  ctx.fillRect(px, py - 6, pw, 2);
+  ctx.fillStyle = '#f59e0b';
+  ctx.fillRect(px, py - 7, pw, 1);
+
+  // Postes con remates dorados
+  for (let px_post = px + 6; px_post < px + pw; px_post += 18) {
+    ctx.fillStyle = '#7f1d1d';
+    ctx.fillRect(px_post, py - 6, 2, 7);
+    ctx.fillStyle = '#fde047';
+    ctx.fillRect(px_post - 1, py - 9, 4, 3);
+  }
+}
+
 if (typeof module !== 'undefined') {
   module.exports = {
     drawSnowPlatform,
@@ -3286,7 +3858,14 @@ if (typeof module !== 'undefined') {
     drawIcePillar,
     drawIceCrystal,
     drawFrozenLakeIce,
-    drawRainbowIcePlatform
+    drawRainbowIcePlatform,
+    drawCrackingIce,
+    drawBounceCrystal,
+    drawAluminumLadderBridge,
+    drawCrystalLotusPad,
+    drawShambhalaPagodaRoof,
+    drawShambhalaMarbleTerrace,
+    drawShambhalaBridge
   };
 }
 
@@ -4214,11 +4793,54 @@ function drawLavaWall(lw) {
 function drawSpikes(s) {
   if (s.x + s.w < cameraX - 40 || s.x > cameraX + W + 40) return;
 
-  // 1. Mar / Foso de lava volcánica hirviente
+  const isSnow = (level && level.theme === 'snow') || s.theme === 'snow' || s.subType === 'ice_spikes';
+
+  // 1. Mar / Foso extenso (Agua gélida del lago o Magma volcánico)
   if (s.w > 200) {
     const waveT = globalFrame * 0.12;
 
-    // Fondo del abismo de magma
+    if (isSnow) {
+      // ❄️ Abismo de Aguas Gélidas del Lago Glacial
+      ctx.fillStyle = '#051923';
+      ctx.fillRect(s.x, s.y, s.w, 40);
+      ctx.fillStyle = '#003554';
+      ctx.fillRect(s.x, s.y + 3, s.w, 35);
+      ctx.fillStyle = '#006494';
+      ctx.fillRect(s.x, s.y + 6, s.w, 30);
+
+      // Oleaje de aguas bajo cero con trozos de hielo
+      const step = 8;
+      for (let x = s.x; x < s.x + s.w; x += step) {
+        const h1 = Math.sin((x * 0.04) + waveT) * 2.5;
+        const h2 = Math.cos((x * 0.08) - waveT * 0.7) * 1.8;
+        const waveY = s.y + h1 + h2;
+
+        ctx.fillStyle = '#0284c7';
+        ctx.fillRect(x, Math.round(waveY), step, 6);
+        ctx.fillStyle = '#38bdf8';
+        ctx.fillRect(x, Math.round(waveY - 1), step, 3);
+        ctx.fillStyle = '#bae6fd';
+        ctx.fillRect(x + 1, Math.round(waveY - 2), step - 2, 2);
+
+        // Bloques de hielo flotante en las crestas
+        if (h1 + h2 > 2.2) {
+          ctx.fillStyle = '#ffffff';
+          ctx.fillRect(x + 1, Math.round(waveY - 3), 5, 2);
+        }
+      }
+
+      // Vapores de frío ártico condensado ascendente
+      const mistSeed = Math.floor(globalFrame * 0.12);
+      for (let i = 0; i < 6; i++) {
+        const mx = s.x + ((mistSeed * 43 + i * 79) % (s.w - 20));
+        const my = s.y - 3 - ((globalFrame * 0.5 + i * 6) % 10);
+        ctx.fillStyle = 'rgba(202, 240, 248, 0.45)';
+        ctx.fillRect(Math.round(mx), Math.round(my), 4, 2);
+      }
+      return;
+    }
+
+    // Fondo del abismo de magma (Volcán)
     ctx.fillStyle = '#0c020e';
     ctx.fillRect(s.x, s.y, s.w, 35);
     ctx.fillStyle = '#2c041c';
@@ -4264,7 +4886,6 @@ function drawSpikes(s) {
   }
 
   const isVolcano = level && level.theme === 'volcano';
-  const isSnow = (level && level.theme === 'snow') || s.theme === 'snow' || s.subType === 'ice_spikes';
 
   if (isSnow) {
     // ❄️ Estalagmitas y Púas Afiladas de Hielo Glacial Cristalino (Estilo Celeste)
@@ -4750,6 +5371,13 @@ function updateBlizzardSystem(dt) {
     return;
   }
 
+  // En la Fase 6 (Santuario del Yeti), Fase 7 (Valle Sagrado de Shambhala) y Fase 8/9 (Cosmos),
+  // el clima está protegido o fuera de la atmósfera montañosa.
+  if (player.x >= 23700) {
+    blizzardState.active = false;
+    return;
+  }
+
   blizzardState.cycleTimer -= dt;
   if (blizzardState.cycleTimer <= 0) {
     if (!blizzardState.active) {
@@ -4757,17 +5385,56 @@ function updateBlizzardSystem(dt) {
       blizzardState.timer = blizzardState.duration;
       triggerShake(0.15, 2.0);
       if (window.sfx && window.sfx.playWaterSplash) window.sfx.playWaterSplash();
-      spawnFloatingText(player.x - 28, player.y - 18, '¡VENTISCA HELADA! ¡CÁVATE BAJO LA NIEVE!', '#caf0f8');
+      const warnMsg = (player && player.ability === 'ice_pick')
+        ? '¡VENTISCA HELADA! ¡CLAVA EL PICO CON [ABAJO] O REFÚGIATE!'
+        : '¡VENTISCA HELADA! ¡CAVA BAJO LA NIEVE O REFÚGIATE!';
+      spawnFloatingText(player.x - 45, player.y - 18, warnMsg, '#caf0f8');
     }
   }
 
   if (blizzardState.active) {
     blizzardState.timer -= dt;
 
-    // Resistencia del viento helado sobre la superficie
-    const isSheltered = (player.isDigging) || (player.x < 360); // Cabaña resguarda al inicio
-    if (!isSheltered) {
-      player.vx -= 150 * dt;
+    // Resistencia del viento helado: Cabañas, templos, tiendas, anclaje de pico y túneles subterráneos resguardan
+    let isSheltered = (player.isDigging) || (player.x < 420);
+
+    // Mecánica única de Alta Montaña: Clavar el Pico de Hielo en el permafrost con [ABAJO]
+    const isIceAnchored = (player.ability === 'ice_pick' && player.onGround && (keys.down || keys.downJustPressed));
+    if (isIceAnchored) {
+      isSheltered = true;
+      player.vx = 0;
+      if (globalFrame % 8 === 0) {
+        if (typeof spawnStarSparkles === 'function') {
+          spawnStarSparkles(player.x + (player.facingRight ? 18 : 2), player.y + 22, 2, '#38bdf8');
+          spawnStarSparkles(player.x + (player.facingRight ? 18 : 2), player.y + 22, 1, '#ffffff');
+        }
+      }
+      if (globalFrame % 45 === 0) {
+        spawnFloatingText(player.x - 16, player.y - 12, 'PICO ANCLADO!', '#38bdf8');
+      }
+    }
+
+    if (!isSheltered && level && level.decorations) {
+      for (let i = 0; i < level.decorations.length; i++) {
+        const d = level.decorations[i];
+        if (d.subType === 'alpine_cabin' || d.subType === 'ice_fishing_hut' || d.subType === 'sherpa_tent' ||
+            d.subType === 'assault_tent' || d.subType === 'glacial_altar' || d.subType === 'prayer_cairn' ||
+            d.subType === 'summit_monument' || d.subType === 'summit_nest' || d.subType === 'climbing_gear_rack' ||
+            d.subType === 'expedition_stove') {
+          if (Math.abs(player.x - d.x) < 55 && Math.abs(player.y - d.y) < 50) {
+            isSheltered = true;
+            break;
+          }
+        }
+      }
+    }
+
+    if (isSheltered) {
+      if (globalFrame % 50 === 0) {
+        spawnFloatingText(player.x - 14, player.y - 10, 'REFUGIADO!', '#00f5d4');
+      }
+    } else {
+      player.vx -= 160 * dt;
       if (globalFrame % 14 === 0) {
         spawnParticles(player.x + 11, player.y + 12, 1, '#caf0f8', 40, -10);
       }
@@ -4778,10 +5445,172 @@ function updateBlizzardSystem(dt) {
       blizzardState.cycleTimer = 7.5;
     }
   }
+
+  // 2. SISTEMA DE CARÁMBANOS INESTABLES DE KHUMBU (FALLING ICICLES)
+  if (level && level.icicles && Array.isArray(level.icicles)) {
+    updateKhumbuIcicles(dt);
+  }
+}
+
+function updateKhumbuIcicles(dt) {
+  if (!level || !level.icicles || !player) return;
+
+  for (let i = 0; i < level.icicles.length; i++) {
+    const ic = level.icicles[i];
+    if (!ic.state) {
+      ic.state = 'hanging';
+      ic.baseY = ic.y;
+      ic.vy = 0;
+      ic.shakeX = 0;
+      ic.timer = 0;
+      ic.respawnTimer = 0;
+    }
+
+    if (ic.state === 'hanging') {
+      // Detección: si Elizabeth se acerca a menos de 55px horizontalmente y está debajo
+      const dx = Math.abs((player.x + 11) - ic.x);
+      if (dx < 55 && player.y > ic.y - 15) {
+        ic.state = 'wobbling';
+        ic.timer = 0.42; // Tiembla 0.42s con polvo de escarcha antes de soltarse
+      }
+    } else if (ic.state === 'wobbling') {
+      ic.timer -= dt;
+      ic.shakeX = Math.sin(globalFrame * 1.8) * 2;
+      if (globalFrame % 4 === 0) {
+        spawnParticles(ic.x, ic.y + 16, 1, '#caf0f8', 15, 20);
+      }
+      if (ic.timer <= 0) {
+        ic.state = 'falling';
+        ic.vy = 75;
+        ic.shakeX = 0;
+      }
+    } else if (ic.state === 'falling') {
+      ic.vy += 460 * dt;
+      ic.y += ic.vy * dt;
+      if (globalFrame % 3 === 0) {
+        spawnParticles(ic.x, ic.y, 1, '#ffffff', 18, -10);
+      }
+
+      // Colisión con Elizabeth
+      const pLeft = player.x + 2;
+      const pRight = player.x + player.w - 2;
+      const pTop = player.y;
+      const pBottom = player.y + player.h;
+
+      if (ic.x >= pLeft && ic.x <= pRight && (ic.y + 18) >= pTop && ic.y <= pBottom) {
+        if (player.isDigging) {
+          // Si Elizabeth está cavando bajo la nieve, el carámbano se rompe en el manto superior
+          spawnParticles(ic.x, ic.y, 12, '#ffffff', 60, -25);
+          spawnParticles(ic.x, ic.y, 8, '#caf0f8', 45, -15);
+          ic.state = 'broken';
+          ic.respawnTimer = 4.0;
+        } else {
+          // Daño al jugador
+          damagePlayer(false);
+          triggerShake(0.12, 1.8);
+          spawnParticles(ic.x, ic.y, 14, '#caf0f8', 80, -30);
+          spawnParticles(ic.x, ic.y, 8, '#00b4d8', 60, -20);
+          ic.state = 'broken';
+          ic.respawnTimer = 4.5;
+        }
+      }
+
+      // Colisión con proyectil de bola de nieve de Elizabeth
+      if (ic.state === 'falling' && typeof shovelState !== 'undefined' && shovelState.projectiles) {
+        for (let b of shovelState.projectiles) {
+          if (Math.hypot(b.x - ic.x, b.y - (ic.y + 10)) < 16) {
+            b.life = 0;
+            ic.state = 'broken';
+            ic.respawnTimer = 5.0;
+            triggerShake(0.08, 1.2);
+            spawnParticles(ic.x, ic.y, 14, '#00f5d4', 70, -30);
+            spawnFloatingText(ic.x - 14, ic.y - 8, '¡DESTRUIDO!', '#caf0f8');
+            if (window.sfx && window.sfx.playHit) window.sfx.playHit();
+            break;
+          }
+        }
+      }
+
+      // Colisión con terreno sólido
+      if (ic.state === 'falling' && level && level.platforms) {
+        for (let p of level.platforms) {
+          if (!p.oneWay && ic.x >= p.x && ic.x <= p.x + p.w && (ic.y + 18) >= p.y && ic.y <= p.y + p.h) {
+            spawnParticles(ic.x, p.y, 10, '#caf0f8', 55, -25);
+            spawnParticles(ic.x, p.y, 6, '#ffffff', 40, -15);
+            ic.state = 'broken';
+            ic.respawnTimer = 4.5;
+            break;
+          }
+        }
+      }
+
+      if (ic.y > 300) {
+        ic.state = 'broken';
+        ic.respawnTimer = 4.0;
+      }
+    } else if (ic.state === 'broken') {
+      ic.respawnTimer -= dt;
+      if (ic.respawnTimer <= 0) {
+        ic.state = 'hanging';
+        ic.y = ic.baseY || 40;
+        ic.vy = 0;
+        ic.shakeX = 0;
+      }
+    }
+  }
 }
 
 function drawBlizzardSystem(ctx, camX, frame) {
-  if (!level || level.theme !== 'snow') return;
+  if (!level || level.theme !== 'snow' || (player && player.x >= 23700 && player.x <= 29650)) return;
+
+  // 1. Dibujar carámbanos inestables de Khumbu en el mundo
+  if (level.icicles && Array.isArray(level.icicles)) {
+    for (let ic of level.icicles) {
+      if (ic.state === 'broken') continue;
+      const ix = Math.round(ic.x + (ic.shakeX || 0));
+      const iy = Math.round(ic.y);
+      if (ix < camX - 30 || ix > camX + W + 30) continue;
+
+      // Base ancha fijada al techo de roca/hielo
+      ctx.fillStyle = '#0f172a';
+      ctx.fillRect(ix - 5, iy - 2, 11, 3);
+      ctx.fillStyle = '#0284c7';
+      ctx.fillRect(ix - 4, iy - 1, 9, 2);
+
+      // Cono afilado de carámbano de hielo translúcido
+      ctx.fillStyle = '#0284c7';
+      ctx.beginPath();
+      ctx.moveTo(ix - 4, iy + 1);
+      ctx.lineTo(ix, iy + 22);
+      ctx.lineTo(ix + 4, iy + 1);
+      ctx.closePath();
+      ctx.fill();
+
+      // Capa de hielo cian brillante
+      ctx.fillStyle = '#38bdf8';
+      ctx.beginPath();
+      ctx.moveTo(ix - 3, iy + 1);
+      ctx.lineTo(ix, iy + 20);
+      ctx.lineTo(ix + 2, iy + 1);
+      ctx.closePath();
+      ctx.fill();
+
+      // Reflejo blanco cristalino en el borde
+      ctx.fillStyle = '#ffffff';
+      ctx.beginPath();
+      ctx.moveTo(ix - 2, iy + 1);
+      ctx.lineTo(ix, iy + 18);
+      ctx.lineTo(ix - 1, iy + 1);
+      ctx.closePath();
+      ctx.fill();
+
+      // Destello intermitente en la punta
+      if ((frame + ix) % 30 < 6) {
+        ctx.fillStyle = '#ffffff';
+        ctx.fillRect(ix - 1, iy + 20, 2, 2);
+      }
+    }
+  }
 
   // Generar ráfagas de nieve continua en el viento
   const isBlizzard = blizzardState.active;
@@ -4809,6 +5638,229 @@ if (typeof module !== 'undefined') {
     getBlizzardState,
     updateBlizzardSystem,
     drawBlizzardSystem
+  };
+}
+
+
+// --- MODULO: src/render/hazards/kangshung_mechanics.js ---
+// ============================================================================
+// MECÁNICAS ÚNICAS DE KANGSHUNG: VÓRTICES POLARES, SERACS Y PRESENCIA DEL YETI
+// (MUNDO 4 • FASE 6: "LA VERTIENTE PROHIBIDA DEL KANGSHUNG Y EL SANTUARIO DEL YETI")
+// ============================================================================
+
+let kangshungState = {
+  updrafts: [
+    { x: 25620, w: 75, minY: 40, maxY: 230, name: 'Vórtice Abismo Occidental' },
+    { x: 26340, w: 75, minY: 40, maxY: 230, name: 'Vórtice Gran Puente Oriental' },
+    { x: 27170, w: 70, minY: 45, maxY: 230, name: 'Vórtice del Cañón Sagrado' }
+  ],
+  seracs: [],
+  roarTimer: 18.0,
+  activeWindSoundCooldown: 0
+};
+
+function initKangshungMechanics() {
+  kangshungState.seracs = [
+    { id: 1, x: 24650, y: 44, startY: 44, triggerX: 24650, state: 'idle', shakeTimer: 0.32, vy: 0, groundY: 140 },
+    { id: 2, x: 24780, y: 42, startY: 42, triggerX: 24780, state: 'idle', shakeTimer: 0.32, vy: 0, groundY: 114 },
+    { id: 3, x: 24890, y: 46, startY: 46, triggerX: 24890, state: 'idle', shakeTimer: 0.32, vy: 0, groundY: 96 },
+    { id: 4, x: 27040, y: 40, startY: 40, triggerX: 27040, state: 'idle', shakeTimer: 0.32, vy: 0, groundY: 116 },
+    { id: 5, x: 27790, y: 42, startY: 42, triggerX: 27790, state: 'idle', shakeTimer: 0.32, vy: 0, groundY: 148 }
+  ];
+  kangshungState.roarTimer = 16.0;
+  kangshungState.activeWindSoundCooldown = 0;
+  window.kangshungState = kangshungState;
+}
+
+function updateKangshungMechanics(dt) {
+  if (gameState !== 'PLAYING' || !level || level.id !== 4) return;
+  if (player.x < 23700 || player.x > 29650) return;
+
+  const s = kangshungState;
+  if (!s.seracs || s.seracs.length === 0) {
+    initKangshungMechanics();
+  }
+
+  // 1. VÓRTICES POLARES ASCENDENTES DE KANGSHUNG (KANGSHUNG UPDRAFTS)
+  for (const ud of s.updrafts) {
+    const pCenterX = player.x + player.w / 2;
+    const inColX = pCenterX >= ud.x - ud.w / 2 && pCenterX <= ud.x + ud.w / 2;
+    const inColY = player.y >= ud.minY && (player.y + player.h) <= ud.maxY + 15;
+
+    if (inColX && inColY) {
+      // Fuerza ascensional suave y controlada
+      if (player.vy > -175) {
+        player.vy = Math.max(player.vy - 480 * dt, -175);
+      }
+      player.jumpsLeft = 2; // Permite saltos aéreos dentro de la corriente
+
+      // Partículas y destellos de viento ártico
+      if (globalFrame % 2 === 0 && typeof spawnParticles === 'function') {
+        spawnParticles(pCenterX + (Math.random() * 24 - 12), player.y + player.h, 2, '#38bdf8', 45, -90);
+        spawnParticles(pCenterX + (Math.random() * 20 - 10), player.y + player.h, 1, '#ffffff', 30, -80);
+      }
+      if (globalFrame % 8 === 0 && typeof spawnStarSparkles === 'function') {
+        spawnStarSparkles(pCenterX, player.y + 12, 1, '#e0f2fe');
+      }
+
+      if (s.activeWindSoundCooldown <= 0) {
+        s.activeWindSoundCooldown = 0.55;
+        if (window.sfx && window.sfx.playWaterSplash) window.sfx.playWaterSplash();
+      }
+    }
+  }
+
+  if (s.activeWindSoundCooldown > 0) s.activeWindSoundCooldown -= dt;
+
+  // 2. SERACS REACTIVOS CAÍDOS (ESTALACTITAS GLACIALES)
+  for (let i = s.seracs.length - 1; i >= 0; i--) {
+    const sc = s.seracs[i];
+
+    if (sc.state === 'idle') {
+      // Detectar aproximación horizontal de Elizabeth
+      const pCenterX = player.x + player.w / 2;
+      if (Math.abs(pCenterX - sc.triggerX) < 42 && player.y > sc.y) {
+        sc.state = 'shaking';
+        sc.shakeTimer = 0.32;
+      }
+    } else if (sc.state === 'shaking') {
+      sc.shakeTimer -= dt;
+      if (sc.shakeTimer <= 0) {
+        sc.state = 'falling';
+        sc.vy = 50;
+        if (typeof spawnParticles === 'function') {
+          spawnParticles(sc.x, sc.y, 4, '#e0f2fe', 40, -20);
+        }
+      }
+    } else if (sc.state === 'falling') {
+      sc.vy += 430 * dt;
+      sc.y += sc.vy * dt;
+
+      // Colisión con Elizabeth
+      if (rectOverlap(player.x + 2, player.y + 2, player.w - 4, player.h - 4, sc.x - 4, sc.y, 8, 18)) {
+        damagePlayer(false);
+        if (typeof spawnParticles === 'function') {
+          spawnParticles(sc.x, sc.y + 10, 10, '#38bdf8', 70, -20);
+        }
+        s.seracs.splice(i, 1);
+        continue;
+      }
+
+      // Colisión con el suelo rocoso/helado
+      if (sc.y >= sc.groundY) {
+        if (typeof spawnParticles === 'function') {
+          spawnParticles(sc.x, sc.groundY, 12, '#38bdf8', 80, -30);
+          spawnParticles(sc.x, sc.groundY, 8, '#ffffff', 60, -20);
+        }
+        if (window.sfx && window.sfx.playEnemyHit) window.sfx.playEnemyHit();
+        s.seracs.splice(i, 1);
+        continue;
+      }
+    }
+  }
+
+  // 3. RUGIDOS DISTANTES DEL GRAN YETI Y TEMBLOR SÍSMICO (X: 23800 -> 28600)
+  if (player.x < 28600) {
+    s.roarTimer -= dt;
+    if (s.roarTimer <= 0) {
+      s.roarTimer = 22.0 + Math.random() * 8.0;
+      if (typeof triggerShake === 'function') triggerShake(0.18, 1.8);
+      if (window.sfx && window.sfx.playHit) window.sfx.playHit();
+      if (typeof spawnFloatingText === 'function') {
+        spawnFloatingText(player.x - 28, player.y - 20, '¡UN RUGIDO SACUDE EL KANGSHUNG!', '#38bdf8');
+      }
+      if (typeof spawnParticles === 'function') {
+        for (let k = 0; k < 12; k++) {
+          spawnParticles(player.x - 80 + Math.random() * 160, player.y - 50 + Math.random() * 40, 1, '#ffffff', 40, 30);
+        }
+      }
+    }
+  }
+}
+
+function drawKangshungMechanics(ctx) {
+  if (!level || level.id !== 4) return;
+  const s = kangshungState;
+  if (!s) return;
+  const frame = globalFrame;
+
+  // 1. DIBUJAR VÓRTICES POLARES ASCENDENTES
+  for (const ud of s.updrafts) {
+    const vx = Math.round(ud.x);
+    if (vx < cameraX - 100 || vx > cameraX + W + 100) continue;
+
+    ctx.save();
+    // Columna de resplandor etéreo
+    const grad = ctx.createLinearGradient(vx, ud.minY, vx, ud.maxY);
+    grad.addColorStop(0, 'rgba(56, 189, 248, 0.02)');
+    grad.addColorStop(0.5, 'rgba(56, 189, 248, 0.14)');
+    grad.addColorStop(1, 'rgba(186, 230, 253, 0.28)');
+    ctx.fillStyle = grad;
+    ctx.fillRect(vx - ud.w / 2, ud.minY, ud.w, ud.maxY - ud.minY);
+
+    // Cintas espirales de viento ascendente
+    for (let b = 0; b < 3; b++) {
+      const phase = (frame * 0.06 + (b * Math.PI * 2 / 3)) % (Math.PI * 2);
+      ctx.strokeStyle = b % 2 === 0 ? 'rgba(224, 242, 254, 0.65)' : 'rgba(56, 189, 248, 0.6)';
+      ctx.lineWidth = 1.5;
+      ctx.beginPath();
+      for (let y = ud.maxY; y >= ud.minY; y -= 8) {
+        const prog = (ud.maxY - y) / (ud.maxY - ud.minY);
+        const wave = Math.sin(phase + prog * 6) * (ud.w * 0.35);
+        if (y === ud.maxY) ctx.moveTo(vx + wave, y);
+        else ctx.lineTo(vx + wave, y);
+      }
+      ctx.stroke();
+    }
+
+    // Cristales de hielo ascendentes
+    ctx.fillStyle = '#ffffff';
+    for (let c = 0; c < 5; c++) {
+      const cy = ((ud.maxY - (frame * 1.8 + c * 38)) % (ud.maxY - ud.minY) + (ud.maxY - ud.minY)) % (ud.maxY - ud.minY) + ud.minY;
+      const cx = vx + Math.sin(cy * 0.08 + c) * (ud.w * 0.28);
+      ctx.fillRect(Math.round(cx) - 1, Math.round(cy) - 1, 2, 2);
+    }
+    ctx.restore();
+  }
+
+  // 2. DIBUJAR SERACS REACTIVOS (ESTALACTITAS)
+  for (const sc of s.seracs) {
+    const sx = Math.round(sc.x + (sc.state === 'shaking' ? (Math.random() * 3 - 1.5) : 0));
+    const sy = Math.round(sc.y);
+    if (sx < cameraX - 40 || sx > cameraX + W + 40) continue;
+
+    ctx.save();
+    // Cuerpo del carámbano de hielo
+    ctx.fillStyle = sc.state === 'shaking' ? '#00f5d4' : '#0284c7';
+    ctx.beginPath();
+    ctx.moveTo(sx - 4, sy);
+    ctx.lineTo(sx + 4, sy);
+    ctx.lineTo(sx + 1, sy + 18);
+    ctx.lineTo(sx - 1, sy + 18);
+    ctx.closePath();
+    ctx.fill();
+
+    // Brillo interior diamantino
+    ctx.fillStyle = sc.state === 'shaking' ? '#ffffff' : '#7dd3fc';
+    ctx.beginPath();
+    ctx.moveTo(sx - 2, sy + 2);
+    ctx.lineTo(sx + 2, sy + 2);
+    ctx.lineTo(sx, sy + 15);
+    ctx.closePath();
+    ctx.fill();
+
+    // Punta afilada blanca
+    ctx.fillStyle = '#ffffff';
+    ctx.fillRect(sx - 1, sy + 15, 2, 3);
+    ctx.restore();
+  }
+}
+
+if (typeof module !== 'undefined') {
+  module.exports = {
+    initKangshungMechanics,
+    updateKangshungMechanics,
+    drawKangshungMechanics
   };
 }
 
@@ -5507,9 +6559,18 @@ function updateDroppedLilies(dt) {
 function updateCrawlers(dt, isLavaDashing) {
   for (let i = magmaCrawlers.length - 1; i >= 0; i--) {
     const mc = magmaCrawlers[i];
+    if (mc.dead) {
+      magmaCrawlers.splice(i, 1);
+      continue;
+    }
     mc.x += mc.dir * mc.speed * dt;
     if (mc.x >= mc.maxX) { mc.x = mc.maxX; mc.dir = -1; }
     if (mc.x <= mc.minX) { mc.x = mc.minX; mc.dir = 1; }
+
+    // Si Elizabeth esta excavando bajo la nieve con la pala, es inmune a los enemigos de superficie
+    if (player && player.isDigging) {
+      continue;
+    }
 
     if (rectOverlap(player.x + 2, player.y + 2, player.w - 4, player.h - 2, mc.x, mc.y, 18, 15)) {
       const isStomping = player.vy > 0 && (player.y + player.h - player.vy * dt) <= mc.y + 9;
@@ -5533,15 +6594,24 @@ function updateCrawlers(dt, isLavaDashing) {
 
 // --- MODULO: src/entities/enemies/fliers.js ---
 // ============================================================================
-// IA DE ENEMIGOS VOLADORES (ABEJAS, MARIPOSAS NOCTURNAS Y MURCIÉLAGOS)
+// IA DE ENEMIGOS VOLADORES (ABEJAS, MARIPOSAS NOCTURNAS Y MURCIELAGOS)
 // ============================================================================
 function updateFliers(dt, isLavaDashing) {
   for (let i = fireBats.length - 1; i >= 0; i--) {
     const fb = fireBats[i];
+    if (fb.dead) {
+      fireBats.splice(i, 1);
+      continue;
+    }
     fb.x += fb.dir * fb.speed * dt;
     if (fb.x >= fb.maxX) { fb.x = fb.maxX; fb.dir = -1; }
     if (fb.x <= fb.minX) { fb.x = fb.minX; fb.dir = 1; }
     fb.y = fb.baseY + Math.sin(globalFrame * 0.08 + fb.phase) * 16;
+
+    // Si Elizabeth esta excavando bajo la nieve con la pala, es inmune a los murcielagos aereos
+    if (player && player.isDigging) {
+      continue;
+    }
 
     if (rectOverlap(player.x + 2, player.y + 2, player.w - 4, player.h - 4, fb.x, fb.y, 12, 10)) {
       const isStomping = player.vy > 0 && (player.y + player.h - player.vy * dt) <= fb.y + 8;
@@ -6605,8 +7675,8 @@ function updateYetiBoss(dt) {
 
     // Elizabeth golpea al Yeti mientras esta mareado
     const canHitWithPick = player.isSwingingPick || (keys.dashJustPressed && player.ability === 'ice_pick');
-    const isStomping = player.vy > 0 && player.y + player.h <= s.y + 18;
-    const isNear = Math.abs((player.x + 11) - (s.x + s.w / 2)) < 36;
+    const isStomping = player.vy > 0 && player.y + player.h <= s.y + 26;
+    const isNear = Math.abs((player.x + 11) - (s.x + s.w / 2)) < 44;
 
     if (s.hitCooldown <= 0 && isNear && (canHitWithPick || isStomping)) {
       s.hitCooldown = 1.0;
@@ -8347,6 +9417,17 @@ function getNpcDynamicLines(npc) {
     ];
   }
 
+  // Gaston el Melancólico (Casa 3)
+  if (npc.name && npc.name.includes('Gaston')) {
+    if (typeof player !== 'undefined' && player && player.hasIcePick) {
+      return [
+        '¡Gracias infinitas por la pala, Elizabeth! Ahora puedo laburar feliz en el jardín de nieve.',
+        'Usa el Pico de Hielo con el botón de Acción / Dash para destrozar los muros de hielo del lago en la Fase 4.',
+        '¡Sube a la cima del Everest y rescata a tu hijo!'
+      ];
+    }
+  }
+
   return null;
 }
 
@@ -8373,6 +9454,111 @@ function handleNpcQuestDialogueEnd(npc) {
   } else if (npc.name === 'Hijo Ratoncito' && npc.x >= 18000) {
     if (typeof startKrakenIntroAnimation === 'function') {
       startKrakenIntroAnimation();
+    }
+  } else if (npc.name && npc.name.includes('Tashi')) {
+    // Tabernero Tashi: Sopa del Himalaya (Restaura corazones)
+    if (typeof player !== 'undefined' && player) {
+      player.lives = player.maxLives;
+      if (window.sfx && window.sfx.playPowerup) window.sfx.playPowerup();
+      if (typeof spawnStarSparkles === 'function') {
+        spawnStarSparkles(player.x + 11, player.y + 12, 18, '#ff75a0');
+        spawnStarSparkles(player.x + 11, player.y + 12, 12, '#ffd166');
+      }
+      if (typeof triggerShake === 'function') triggerShake(0.08, 1.2);
+      if (typeof spawnFloatingText === 'function') {
+        spawnFloatingText(player.x, player.y - 20, '¡CORAZONES RESTAURADOS!', '#ff75a0');
+      }
+    }
+  } else if (npc.name && npc.name.includes('Lobsang')) {
+    // Lobsang el Jugador: Dados de la suerte (+10 lirios)
+    if (!npc.rewardGiven) {
+      npc.rewardGiven = true;
+      saveState.dexterLilies = (saveState.dexterLilies || 0) + 10;
+      if (window.sfx && window.sfx.playCheese) window.sfx.playCheese();
+      if (typeof spawnStarSparkles === 'function') {
+        spawnStarSparkles(player.x + 11, player.y + 12, 14, '#fde047');
+      }
+      if (typeof spawnFloatingText === 'function') {
+        spawnFloatingText(player.x, player.y - 20, '¡+10 LIRIOS DE LA SUERTE!', '#fde047');
+      }
+    }
+  } else if (npc.name && npc.name.includes('Dolma')) {
+    // Madame Dolma: Bendición de lana alpina (Botas y bufanda calientita, velocidad 168)
+    if (typeof player !== 'undefined' && player) {
+      player.speed = 168;
+      if (window.sfx && window.sfx.playPowerup) window.sfx.playPowerup();
+      if (typeof spawnStarSparkles === 'function') {
+        spawnStarSparkles(player.x + 11, player.y + 12, 20, '#ec4899');
+        spawnStarSparkles(player.x + 11, player.y + 12, 16, '#f472b6');
+      }
+      if (typeof triggerShake === 'function') triggerShake(0.08, 1.2);
+      if (typeof spawnFloatingText === 'function') {
+        spawnFloatingText(player.x, player.y - 20, '¡BUFANDA Y BOTAS DE LANA EQUIPADAS!', '#f472b6');
+      }
+    }
+  } else if (npc.name && npc.name.includes('Gaston')) {
+    // Gaston el Melancólico: Intercambio de Pala por Pico de Hielo Profesional
+    if (typeof player !== 'undefined' && player && !player.hasIcePick) {
+      player.hasIcePick = true;
+      player.ability = 'ice_pick';
+      const dashBtn = document.getElementById('btn-dash');
+      if (dashBtn) {
+        dashBtn.classList.add('visible');
+        const tag = dashBtn.querySelector('.btn-tag');
+        if (tag) tag.textContent = 'PICO';
+      }
+      if (window.sfx && window.sfx.playPowerup) window.sfx.playPowerup();
+      if (typeof spawnStarSparkles === 'function') {
+        spawnStarSparkles(player.x + 11, player.y + 12, 24, '#38bdf8');
+      }
+      if (typeof triggerShake === 'function') triggerShake(0.12, 1.8);
+      if (typeof spawnFloatingText === 'function') {
+        spawnFloatingText(player.x - 20, player.y - 20, '¡PICO DE HIELO OBTENIDO!', '#38bdf8');
+      }
+    }
+  } else if (npc.name && npc.name.includes('Mimi')) {
+    // Mimi la Repostera: Bollo de Canela del Horno (Restaura corazones + velocidad 175)
+    if (typeof player !== 'undefined' && player) {
+      player.lives = player.maxLives;
+      player.speed = 175;
+      if (window.sfx && window.sfx.playPowerup) window.sfx.playPowerup();
+      if (typeof spawnStarSparkles === 'function') {
+        spawnStarSparkles(player.x + 11, player.y + 12, 22, '#f59e0b');
+        spawnStarSparkles(player.x + 11, player.y + 12, 16, '#ffd166');
+      }
+      if (typeof triggerShake === 'function') triggerShake(0.08, 1.2);
+      if (typeof spawnFloatingText === 'function') {
+        spawnFloatingText(player.x, player.y - 20, '¡BOLLO DE CANELA! ¡CORAZONES Y VELOCIDAD AL MÁXIMO!', '#f59e0b');
+      }
+    }
+  } else if (npc.name && npc.name.includes('Kazi')) {
+    // Maestro Kazi el Herrero: Templado de Pico en Acero Glacial
+    if (typeof player !== 'undefined' && player) {
+      player.hasForgedPick = true;
+      if (window.sfx && window.sfx.playHit) window.sfx.playHit();
+      if (typeof spawnStarSparkles === 'function') {
+        spawnStarSparkles(player.x + 11, player.y + 12, 24, '#facc15');
+        spawnStarSparkles(player.x + 11, player.y + 12, 18, '#38bdf8');
+      }
+      if (typeof triggerShake === 'function') triggerShake(0.14, 2.0);
+      if (typeof spawnFloatingText === 'function') {
+        spawnFloatingText(player.x - 20, player.y - 20, '¡PICO FORJADO MEJORADO!', '#facc15');
+      }
+    }
+  } else if (npc.name && npc.name.includes('Dorje')) {
+    // Alcalde Dorje: Sello Oficial del Pueblo (+20 lirios)
+    if (!npc.decreeGranted) {
+      npc.decreeGranted = true;
+      saveState.dexterLilies = (saveState.dexterLilies || 0) + 20;
+      if (window.sfx && window.sfx.playPowerup) window.sfx.playPowerup();
+      if (typeof spawnStarSparkles === 'function') {
+        spawnStarSparkles(player.x + 11, player.y + 12, 28, '#ffd166');
+        spawnStarSparkles(player.x + 11, player.y + 12, 20, '#38bdf8');
+      }
+      if (typeof triggerShake === 'function') triggerShake(0.16, 2.2);
+      if (typeof spawnFloatingText === 'function') {
+        spawnFloatingText(player.x - 30, player.y - 20, '¡SELLO OFICIAL DEL PUEBLO! +20 LIRIOS', '#ffd166');
+      }
     }
   }
 }
@@ -8769,23 +9955,34 @@ function updateShovelAbility(dt) {
       spawnParticles(player.x + 11, player.y + 18, 1, '#90e0ef', 30, -15);
     }
 
-    // Salto impulsado para salir del banco de nieve
+    // Salto impulsado para salir del banco de nieve con impacto ofensivo
     if (keys.jumpJustPressed) {
       shovelState.isDigging = false;
       player.isDigging = false;
-      player.vy = -295;
-      triggerShake(0.08, 1.4);
-      spawnParticles(player.x + 11, player.y + 10, 16, '#ffffff', 90, -60);
-      spawnParticles(player.x + 11, player.y + 10, 10, '#caf0f8', 80, -45);
+      player.vy = -305;
+      triggerShake(0.1, 1.8);
+      spawnParticles(player.x + 11, player.y + 10, 20, '#ffffff', 100, -65);
+      spawnParticles(player.x + 11, player.y + 10, 14, '#caf0f8', 85, -50);
       if (window.sfx && window.sfx.playJump) window.sfx.playJump(true);
-      spawnFloatingText(player.x - 10, player.y - 12, '¡SALTO DE NIEVE!', '#ffffff');
+      spawnFloatingText(player.x - 10, player.y - 14, 'SALTO DE NIEVE!', '#ffffff');
+
+      // Destruir enemigos terrestres que esten justo encima del banco
+      const nearbyEnemies = (level && level.magmaCrawlers ? level.magmaCrawlers : []).concat(level && level.fireBats ? level.fireBats : []);
+      for (let e of nearbyEnemies) {
+        if (!e.dead && Math.hypot((player.x + 11) - (e.x + 10), (player.y + 10) - (e.y + 9)) < 38) {
+          e.dead = true;
+          score += 150;
+          spawnParticles(e.x + 10, e.y + 10, 14, '#38bdf8', 80, -30);
+          spawnFloatingText(e.x - 10, e.y - 12, 'IMPACTO DE NIEVE! +150', '#38bdf8');
+        }
+      }
     }
   } else if (!inSnowBank) {
     shovelState.isDigging = false;
     player.isDigging = false;
   }
 
-  // 2. DETECCIÓN DE NIEVE EN EL SUELO (SNOW_GROUND O SNOW_BANK)
+  // 2. DETECCION DE NIEVE EN EL SUELO (SNOW_GROUND O SNOW_BANK)
   let onSnowGround = false;
   if (level && level.platforms && player.onGround) {
     const feetX = player.x + player.w / 2;
@@ -8800,11 +9997,11 @@ function updateShovelAbility(dt) {
     }
   }
 
-  // 3. RECOGER BOLAS DE NIEVE CON LA PALA (MÁXIMO 5)
-  // Se recoge al pulsar Dash estando sobre nieve si no tenemos el máximo y (agachados o sin bolas)
+  // 3. RECOGER BOLAS DE NIEVE CON LA PALA (MAXIMO 5)
+  // Se recoge si se pulsa Dash estando agachado con Down, o si no tenemos ninguna bola
   const wantsScoop = keys.dashJustPressed && onSnowGround &&
     shovelState.snowballs < shovelState.maxSnowballs &&
-    (keys.down || shovelState.snowballs === 0 || !keys.left && !keys.right);
+    (keys.down || shovelState.snowballs === 0);
 
   if (wantsScoop && shovelState.scoopCooldown <= 0) {
     keys.dashJustPressed = false;
@@ -8820,13 +10017,13 @@ function updateShovelAbility(dt) {
     spawnFloatingText(
       player.x - 14,
       player.y - 12,
-      `¡BOLA DE NIEVE! (${shovelState.snowballs}/${shovelState.maxSnowballs})`,
+      `BOLA DE NIEVE! (${shovelState.snowballs}/${shovelState.maxSnowballs})`,
       '#caf0f8'
     );
   }
 
   // 4. LANZAR BOLA DE NIEVE A LOS ENEMIGOS
-  // Si se pulsa Dash y tenemos bolas de nieve acumuladas
+  // Si se pulsa Dash y tenemos bolas de nieve acumuladas (sin estar agachados recogiendo)
   const wantsThrow = keys.dashJustPressed && shovelState.snowballs > 0 && !wantsScoop;
 
   if (wantsThrow && shovelState.throwCooldown <= 0) {
@@ -8837,13 +10034,13 @@ function updateShovelAbility(dt) {
 
     const dir = player.facingRight ? 1 : -1;
     const startX = player.x + (player.facingRight ? 18 : -2);
-    const startY = player.y + 8;
+    const startY = player.y + 12;
 
     shovelState.projectiles.push({
       x: startX,
       y: startY,
-      vx: dir * 350,
-      vy: -80,
+      vx: dir * 360,
+      vy: -35,
       radius: 4.5,
       life: 1.8
     });
@@ -8852,7 +10049,7 @@ function updateShovelAbility(dt) {
     spawnParticles(startX, startY, 5, '#ffffff', 50, -10);
   }
 
-  // 5. FÍSICA Y COLISIONES DE LAS BOLAS DE NIEVE
+  // 5. FISICA Y COLISIONES DE LAS BOLAS DE NIEVE
   for (let i = shovelState.projectiles.length - 1; i >= 0; i--) {
     const b = shovelState.projectiles[i];
     b.x += b.vx * dt;
@@ -8867,29 +10064,57 @@ function updateShovelAbility(dt) {
 
     let hit = false;
 
-    // Colisión con enemigos (magmaCrawlers, fireBats u orugas heladas)
+    // Colision con enemigos (magmaCrawlers, fireBats u orugas heladas)
     const enemies = (level && level.magmaCrawlers ? level.magmaCrawlers : []).concat(level && level.fireBats ? level.fireBats : []);
     for (let e of enemies) {
-      if (!e.dead && Math.hypot(b.x - (e.x + (e.w || 20) / 2), b.y - (e.y + (e.h || 18) / 2)) < 18) {
-        hit = true;
-        e.dead = true;
-        triggerShake(0.12, 1.8);
-        spawnParticles(e.x + 10, e.y + 10, 18, '#ffffff', 90, 40);
-        spawnParticles(e.x + 10, e.y + 10, 12, '#caf0f8', 80, 30);
-        spawnParticles(e.x + 10, e.y + 10, 8, '#00b4d8', 70, 20);
-        if (window.sfx && window.sfx.playHit) window.sfx.playHit();
-        spawnFloatingText(e.x - 10, e.y - 14, '¡CONGELADO!', '#caf0f8');
-        break;
+      if (!e.dead) {
+        const eCenterX = e.x + (e.w || 20) / 2;
+        const eCenterY = e.y + (e.h || 18) / 2;
+        const dx = Math.abs(b.x - eCenterX);
+        const dy = Math.abs(b.y - eCenterY);
+        const isNear = (dx < 18 && dy < 20) || (b.x >= e.x - 4 && b.x <= e.x + (e.w || 20) + 4 && b.y >= e.y - 12 && b.y <= e.y + (e.h || 18) + 8);
+        if (isNear) {
+          hit = true;
+          e.dead = true;
+          score += 150;
+          triggerShake(0.12, 1.8);
+          spawnParticles(e.x + 10, e.y + 10, 18, '#ffffff', 90, 40);
+          spawnParticles(e.x + 10, e.y + 10, 12, '#caf0f8', 80, 30);
+          spawnParticles(e.x + 10, e.y + 10, 8, '#00b4d8', 70, 20);
+          if (window.sfx && window.sfx.playHit) window.sfx.playHit();
+          spawnFloatingText(e.x - 10, e.y - 14, 'CONGELADO! +150', '#caf0f8');
+          break;
+        }
       }
     }
 
-    // Colisión con terreno sólido
+    // Colisión con terreno sólido o pilares quebrables
     if (!hit && level && level.platforms) {
-      for (let p of level.platforms) {
-        if (!p.oneWay && b.x >= p.x && b.x <= p.x + p.w && b.y >= p.y && b.y <= p.y + p.h) {
+      for (let pIdx = level.platforms.length - 1; pIdx >= 0; pIdx--) {
+        const p = level.platforms[pIdx];
+        if (b.x >= p.x && b.x <= p.x + p.w && b.y >= p.y && b.y <= p.y + p.h) {
           hit = true;
-          spawnParticles(b.x, b.y, 8, '#ffffff', 60, -20);
-          spawnParticles(b.x, b.y, 5, '#caf0f8', 45, -15);
+          if (p.breakable) {
+            p.hp = (p.hp || 1) - 1;
+            if (p.hp <= 0) {
+              level.platforms.splice(pIdx, 1);
+              score += 200;
+              triggerShake(0.18, 2.5);
+              if (window.sfx && window.sfx.playHit) window.sfx.playHit();
+              spawnParticles(p.x + p.w / 2, p.y + p.h / 2, 22, '#38bdf8', 110, -45);
+              spawnParticles(p.x + p.w / 2, p.y + p.h / 2, 16, '#c084fc', 90, -35);
+              spawnParticles(p.x + p.w / 2, p.y + p.h / 2, 12, '#ffffff', 80, -25);
+              spawnStarSparkles(p.x + p.w / 2, p.y + p.h / 2, 10, '#fef08a');
+              spawnFloatingText(p.x + p.w / 2 - 20, p.y - 12, '¡PILAR QUEBRADO! +200', '#38bdf8');
+              spawnDroppedLilies(p.x + p.w / 2, p.y + p.h / 2, 3);
+            } else {
+              triggerShake(0.08, 1.2);
+              spawnParticles(b.x, b.y, 10, '#38bdf8', 60, -20);
+            }
+          } else {
+            spawnParticles(b.x, b.y, 8, '#ffffff', 60, -20);
+            spawnParticles(b.x, b.y, 5, '#caf0f8', 45, -15);
+          }
           break;
         }
       }
@@ -9045,22 +10270,137 @@ function updateIcePickAbility(dt) {
     if (window.sfx && window.sfx.playHit) window.sfx.playHit();
     triggerShake(0.06, 1.2);
 
-    const hitX = player.x + (player.facingRight ? 24 : -6);
+    const hitX = player.x + (player.facingRight ? (player.hasForgedPick ? 30 : 24) : (player.hasForgedPick ? -12 : -6));
     const hitY = player.y + 12;
+    const reach = player.hasForgedPick ? 48 : 34;
 
-    spawnParticles(hitX, hitY, 10, '#38bdf8', 80, -20);
+    spawnParticles(hitX, hitY, 10, player.hasForgedPick ? '#facc15' : '#38bdf8', 80, -20);
     spawnParticles(hitX, hitY, 6, '#e0f2fe', 60, -10);
-    spawnStarSparkles(hitX, hitY, 6, '#ffffff');
+    spawnStarSparkles(hitX, hitY, 6, player.hasForgedPick ? '#fde047' : '#ffffff');
 
-    // Comprobar colisión con enemigos cercanos
-    if (typeof enemies !== 'undefined' && enemies) {
-      for (const e of enemies) {
-        if (!e.dead && Math.abs((player.x + 11) - (e.x + (e.w || 16) / 2)) < 38 && Math.abs((player.y + 12) - (e.y + (e.h || 16) / 2)) < 24) {
-          e.dead = true;
+    // 1. Comprobar colisión con enemigos terrestres (Frost Crawlers / Magma Crawlers)
+    if (typeof magmaCrawlers !== 'undefined' && magmaCrawlers) {
+      for (let i = magmaCrawlers.length - 1; i >= 0; i--) {
+        const mc = magmaCrawlers[i];
+        const ex = mc.x + 9;
+        const ey = mc.y + 7;
+        if (Math.abs(hitX - ex) < reach && Math.abs(hitY - ey) < 28) {
           score += 150;
-          triggerShake(0.12, 1.8);
-          spawnFloatingText(e.x, e.y - 10, '¡PICADO!', '#38bdf8');
-          spawnParticles(e.x + 8, e.y + 8, 14, '#00b4d8', 100, -40);
+          if (window.sfx && window.sfx.playEnemyHit) window.sfx.playEnemyHit();
+          triggerShake(0.12, 2.0);
+          spawnFloatingText(mc.x, mc.y - 10, player.hasForgedPick ? '¡CORTE FORJADO! +150' : '¡PICADO! +150', '#38bdf8');
+          spawnParticles(mc.x + 9, mc.y + 7, 16, player.hasForgedPick ? '#fde047' : '#38bdf8', 110, -30);
+          spawnParticles(mc.x + 9, mc.y + 7, 10, '#e0f2fe', 80, -15);
+          if (typeof spawnDroppedLilies === 'function') spawnDroppedLilies(mc.x + 9, mc.y + 4, 2);
+          magmaCrawlers.splice(i, 1);
+        }
+      }
+    }
+
+    // 2. Comprobar colisión con enemigos voladores (Frost Fliers / Fire Bats)
+    if (typeof fireBats !== 'undefined' && fireBats) {
+      for (let i = fireBats.length - 1; i >= 0; i--) {
+        const fb = fireBats[i];
+        const ex = fb.x + 6;
+        const ey = fb.y + 5;
+        if (Math.abs(hitX - ex) < reach && Math.abs(hitY - ey) < 28) {
+          score += 150;
+          if (window.sfx && window.sfx.playEnemyHit) window.sfx.playEnemyHit();
+          triggerShake(0.12, 2.0);
+          spawnFloatingText(fb.x, fb.y - 10, player.hasForgedPick ? '¡CORTE FORJADO! +150' : '¡PICADO! +150', '#38bdf8');
+          spawnParticles(fb.x + 6, fb.y + 5, 16, player.hasForgedPick ? '#fde047' : '#38bdf8', 110, -30);
+          spawnParticles(fb.x + 6, fb.y + 5, 10, '#e0f2fe', 80, -15);
+          if (typeof spawnDroppedLilies === 'function') spawnDroppedLilies(fb.x + 6, fb.y + 4, 2);
+          fireBats.splice(i, 1);
+        }
+      }
+    }
+
+    // 3. Romper pilares de hielo milenario (ice_pillar o breakable)
+    if (level && level.platforms) {
+      for (const p of level.platforms) {
+        if (p.broken) continue;
+        if (p.subType === 'ice_pillar' || p.breakable) {
+          const inReachX = hitX >= p.x - 18 && hitX <= p.x + p.w + 18;
+          const inReachY = hitY >= p.y - 16 && hitY <= p.y + p.h + 16;
+          if (inReachX && inReachY) {
+            p.broken = true;
+            score += 250;
+            if (window.sfx && window.sfx.playEnemyHit) window.sfx.playEnemyHit();
+            if (window.sfx && window.sfx.playHit) window.sfx.playHit();
+            triggerShake(0.22, 3.2);
+            if (typeof rumbleGamepad === 'function') rumbleGamepad(140, 0.5, 0.3);
+            spawnFloatingText(p.x, p.y - 14, '¡HIELO QUEBRADO! +250', '#7dd3fc');
+            const pCenterX = p.x + p.w / 2;
+            const pCenterY = p.y + p.h / 2;
+            spawnParticles(pCenterX, pCenterY, 30, '#38bdf8', 130, -50);
+            spawnParticles(pCenterX, pCenterY, 20, '#e0f2fe', 100, -30);
+            spawnParticles(pCenterX, pCenterY, 15, '#ffffff', 80, -20);
+            if (typeof spawnStarSparkles === 'function') {
+              spawnStarSparkles(pCenterX, pCenterY, 12, '#38bdf8');
+            }
+          }
+        }
+      }
+    }
+
+    // 4. Desviar y destruir proyectiles del Gran Yeti (Estalactitas y Bolas de Nieve)
+    if (window.yetiBossState && window.yetiBossState.active) {
+      const s = window.yetiBossState;
+      // Estalactitas
+      for (let i = s.icicles.length - 1; i >= 0; i--) {
+        const ic = s.icicles[i];
+        if (Math.abs(hitX - ic.x) < 28 && Math.abs(hitY - ic.y) < 28) {
+          s.icicles.splice(i, 1);
+          score += 50;
+          if (window.sfx && window.sfx.playHit) window.sfx.playHit();
+          spawnParticles(ic.x, ic.y, 12, '#38bdf8', 90, -40);
+          spawnFloatingText(ic.x - 8, ic.y - 10, '¡DESVIADO!', '#7dd3fc');
+        }
+      }
+      // Bolas de nieve
+      for (let i = s.snowballs.length - 1; i >= 0; i--) {
+        const sb = s.snowballs[i];
+        if (Math.abs(hitX - sb.x) < 30 && Math.abs(hitY - sb.y) < 30) {
+          s.snowballs.splice(i, 1);
+          score += 100;
+          if (window.sfx && window.sfx.playHit) window.sfx.playHit();
+          spawnParticles(sb.x, sb.y, 16, '#ffffff', 110, -50);
+          spawnFloatingText(sb.x - 10, sb.y - 10, '¡DESTRUIDA!', '#e0f2fe');
+        }
+      }
+    }
+
+    // 5. Destruir Seracs Glaciales que caen
+    if (window.kangshungState && window.kangshungState.seracs) {
+      const s = window.kangshungState;
+      for (let i = s.seracs.length - 1; i >= 0; i--) {
+        const sc = s.seracs[i];
+        if (Math.abs(hitX - sc.x) < 30 && Math.abs(hitY - sc.y) < 30) {
+          score += 100;
+          if (window.sfx && window.sfx.playEnemyHit) window.sfx.playEnemyHit();
+          spawnFloatingText(sc.x - 10, sc.y - 10, '¡SERAC DESTRUIDO! +100', '#38bdf8');
+          spawnParticles(sc.x, sc.y, 16, '#38bdf8', 110, -40);
+          spawnParticles(sc.x, sc.y, 10, '#ffffff', 80, -20);
+          s.seracs.splice(i, 1);
+        }
+      }
+    }
+
+    // Comprobar colisión con monolitos y pilares de cristal quebrables
+    if (typeof level !== 'undefined' && level && level.platforms) {
+      for (let pIdx = level.platforms.length - 1; pIdx >= 0; pIdx--) {
+        const p = level.platforms[pIdx];
+        if (p.breakable && rectOverlap(hitX - 16, hitY - 16, 32, 32, p.x, p.y, p.w, p.h)) {
+          level.platforms.splice(pIdx, 1);
+          score += 200;
+          triggerShake(0.18, 2.5);
+          if (window.sfx && window.sfx.playHit) window.sfx.playHit();
+          spawnParticles(p.x + p.w / 2, p.y + p.h / 2, 22, '#38bdf8', 110, -45);
+          spawnParticles(p.x + p.w / 2, p.y + p.h / 2, 16, '#c084fc', 90, -35);
+          spawnStarSparkles(p.x + p.w / 2, p.y + p.h / 2, 10, '#ffffff');
+          spawnFloatingText(p.x + p.w / 2 - 20, p.y - 12, '¡PILAR QUEBRADO! +200', '#38bdf8');
+          spawnDroppedLilies(p.x + p.w / 2, p.y + p.h / 2, 3);
         }
       }
     }
@@ -9113,15 +10453,16 @@ function drawIcePickWorld(ctx) {
 function drawIcePickHUD(ctx, x, y) {
   if (!player || player.ability !== 'ice_pick') return;
 
+  const isForged = player.hasForgedPick;
   // Icono del Pico de Hielo en el HUD
   ctx.fillStyle = 'rgba(15, 23, 42, 0.85)';
-  ctx.fillRect(x - 3, y, 54, 16);
-  ctx.strokeStyle = '#38bdf8';
+  ctx.fillRect(x - 3, y, isForged ? 64 : 54, 16);
+  ctx.strokeStyle = isForged ? '#facc15' : '#38bdf8';
   ctx.lineWidth = 1;
-  ctx.strokeRect(x - 3, y, 54, 16);
+  ctx.strokeRect(x - 3, y, isForged ? 64 : 54, 16);
 
   // Mini pico
-  ctx.fillStyle = '#38bdf8';
+  ctx.fillStyle = isForged ? '#facc15' : '#38bdf8';
   ctx.fillRect(x + 2, y + 2, 7, 3);
   ctx.fillStyle = '#ffffff';
   ctx.fillRect(x + 7, y + 2, 2, 2);
@@ -9129,9 +10470,9 @@ function drawIcePickHUD(ctx, x, y) {
   ctx.fillRect(x + 4, y + 4, 2, 8);
 
   // Etiqueta
-  ctx.fillStyle = '#e0f2fe';
-  ctx.font = 'bold 6px sans-serif';
-  ctx.fillText('PICO DE HIELO', x + 13, y + 10);
+  ctx.fillStyle = isForged ? '#fef08a' : '#e0f2fe';
+  ctx.font = 'bold 5.5px sans-serif';
+  ctx.fillText(isForged ? 'PICO FORJADO' : 'PICO DE HIELO', x + 12, y + 10);
 }
 
 if (typeof module !== 'undefined') {
@@ -9213,10 +10554,10 @@ function updateArcadeCabinetInteraction() {
     return;
   }
 
-  // Zona de interacción frente al gabinete maestro en el interior del arcade (X: 16360 -> 16400)
+  // Zona de interacción frente al gabinete maestro en el interior del arcade (X: 51350 -> 51420)
   const px = player.x + player.w / 2;
   const py = player.y + player.h;
-  if (px >= 16360 && px <= 16400 && py >= 180 && py <= 204) {
+  if (px >= 51330 && px <= 51430 && py >= 160 && py <= 230) {
     activeArcadePrompt = true;
     if (keys.upJustPressed || keys.jumpJustPressed || keyboardState.ArrowUp || keyboardState.KeyW) {
       keys.upJustPressed = false;
@@ -9320,6 +10661,15 @@ function updateArcadeMinigame(dt) {
   if (remaining === 0 && !arcadeMinigame.won) {
     arcadeMinigame.won = true;
     score += 500;
+    saveState.dexterLilies = (saveState.dexterLilies || 0) + 25;
+    if (typeof spawnStarSparkles === 'function') {
+      spawnStarSparkles(W / 2, H / 2, 28, '#ec4899');
+      spawnStarSparkles(W / 2, H / 2, 28, '#06b6d4');
+      spawnStarSparkles(W / 2, H / 2, 28, '#ffd166');
+    }
+    if (typeof spawnFloatingText === 'function') {
+      spawnFloatingText(player.x, player.y - 24, '¡CAMPEÓN DE YETI-99! +25 LIRIOS', '#ffd166');
+    }
     if (window.sfx && window.sfx.playPowerup) window.sfx.playPowerup();
   }
 }
@@ -9874,25 +11224,61 @@ function getDashBtn() {
       }
     }
   } else {
-    // Movimiento horizontal normal con transición suave
+    // Movimiento horizontal con física de hielo resbaladizo o suelo normal
     const targetDir = (keys.right ? 1 : 0) - (keys.left ? 1 : 0);
-    if (targetDir !== 0) {
-      if (Math.abs(player.vx) < 25 || (targetDir > 0 !== player.facingRight)) {
-        player.transitionTimer = 0.085;
+    const onIce = player.onGround && player.currentPlatform && (
+      player.currentPlatform.subType === 'slippery_ice' ||
+      player.currentPlatform.subType === 'frozen_lake_ice' ||
+      player.currentPlatform.subType === 'cracking_ice' ||
+      player.currentPlatform.isIce
+    );
+
+    if (onIce) {
+      if (targetDir !== 0) {
+        player.facingRight = targetDir > 0;
+        // Mayor velocidad punta en patinaje sobre hielo (1.15x), aceleración más fluida
+        const maxIceSpeed = player.speed * 1.15;
+        const accelRate = (player.vx * targetDir < 0) ? 6.5 : 4.8;
+        player.vx += (targetDir * maxIceSpeed - player.vx) * Math.min(1, dt * accelRate);
+
+        // Derrape con escarcha al cambiar de dirección bruscamente sobre hielo
+        if (player.vx * targetDir < -25 && globalFrame % 4 === 0) {
+          spawnParticles(player.x + 11, player.y + 22, 2, '#bae6fd', 45, -15);
+          spawnParticles(player.x + 11, player.y + 22, 1, '#ffffff', 30, -10);
+        }
+        player.animFrame += dt * 12;
+      } else {
+        // Deslizamiento con baja fricción (inercia real en hielo congelado)
+        player.vx *= Math.pow(0.55, dt);
+        if (Math.abs(player.vx) < 4) player.vx = 0;
+        player.animFrame += dt * (Math.abs(player.vx) > 20 ? 8 : 2);
       }
-      player.facingRight = targetDir > 0;
-      player.vx += (targetDir * player.speed - player.vx) * Math.min(1, dt * 13);
-      if (Math.abs(player.vx - targetDir * player.speed) < 6) {
-        player.vx = targetDir * player.speed;
+
+      // Estela brillante de patinaje ártico
+      if (Math.abs(player.vx) > 40 && globalFrame % 3 === 0) {
+        const skateX = player.facingRight ? player.x + 2 : player.x + player.w - 2;
+        spawnParticles(skateX, player.y + 23, 1, '#e0f2fe', 25, -8);
       }
-      player.animFrame += dt * 11;
     } else {
-      if (Math.abs(player.vx) > 65) {
-        player.transitionTimer = 0.075;
+      // Movimiento estándar sobre tierra o nieve
+      if (targetDir !== 0) {
+        if (Math.abs(player.vx) < 25 || (targetDir > 0 !== player.facingRight)) {
+          player.transitionTimer = 0.085;
+        }
+        player.facingRight = targetDir > 0;
+        player.vx += (targetDir * player.speed - player.vx) * Math.min(1, dt * 13);
+        if (Math.abs(player.vx - targetDir * player.speed) < 6) {
+          player.vx = targetDir * player.speed;
+        }
+        player.animFrame += dt * 11;
+      } else {
+        if (Math.abs(player.vx) > 65) {
+          player.transitionTimer = 0.075;
+        }
+        player.vx *= Math.pow(0.0005, dt);
+        if (Math.abs(player.vx) < 5) player.vx = 0;
+        player.animFrame += dt * 4;
       }
-      player.vx *= Math.pow(0.0005, dt);
-      if (Math.abs(player.vx) < 5) player.vx = 0;
-      player.animFrame += dt * 4;
     }
 
     if (player.transitionTimer > 0) player.transitionTimer -= dt;
@@ -10045,7 +11431,8 @@ function updatePlayerCollisions(dt) {
   if (player.x + player.w > level.worldWidth) player.x = level.worldWidth - player.w;
 
   for (const p of level.platforms) {
-    if (p.oneWay || p.isWater || p.subType === 'water_puddle' || p.subType === 'ocean_water' || p.subType === 'snow_bank') continue;
+    if (p.broken) continue;
+    if (p.oneWay || p.isWater || p.subType === 'water_puddle' || p.subType === 'ocean_water' || p.subType === 'snow_bank' || p.subType === 'bounce_crystal' || p.subType === 'ice_crystal_spring' || p.subType === 'crystal_lotus_pad' || p.subType === 'lotus_pad_shambhala') continue;
     if (rectOverlap(player.x, player.y, player.w, player.h, p.x, p.y, p.w, p.h)) {
       if (player.vx > 0) player.x = p.x - player.w;
       else if (player.vx < 0) player.x = p.x + p.w;
@@ -10073,6 +11460,53 @@ function updatePlayerCollisions(dt) {
   player.onGround = false;
 
   for (const p of level.platforms) {
+    if (p.broken) continue;
+
+    // Cristal celestial de salto de gran impulso
+    if ((p.subType === 'bounce_crystal' || p.subType === 'ice_crystal_spring') &&
+        rectOverlap(player.x, player.y, player.w, player.h, p.x - 4, p.y - 8, p.w + 8, p.h + 12)) {
+      if (player.vy > -50 && prevBottom <= p.y + 16) {
+        player.y = p.y - player.h;
+        player.vy = -345;
+        player.jumpsLeft = 2;
+        player.onGround = false;
+        player.squashX = 0.65;
+        player.squashY = 1.45;
+        if (window.sfx && window.sfx.playGeyser) window.sfx.playGeyser();
+        if (typeof spawnStarSparkles === 'function') {
+          spawnStarSparkles(p.x + p.w / 2, p.y + p.h / 2, 12, '#00f5d4');
+          spawnStarSparkles(p.x + p.w / 2, p.y + p.h / 2, 8, '#ffffff');
+        }
+        if (typeof spawnFloatingText === 'function') {
+          spawnFloatingText(p.x - 10, p.y - 20, '¡IMPULSO CELESTIAL!', '#00f5d4');
+        }
+      }
+      continue;
+    }
+
+    // Loto de Cristal de Shambhala (Gran Salto Elástico y Bendición del Loto)
+    if ((p.subType === 'crystal_lotus_pad' || p.subType === 'lotus_pad_shambhala') &&
+        rectOverlap(player.x, player.y, player.w, player.h, p.x - 4, p.y - 8, p.w + 8, p.h + 12)) {
+      if (player.vy > -50 && prevBottom <= p.y + 16) {
+        player.y = p.y - player.h;
+        player.vy = -355;
+        player.jumpsLeft = 2;
+        player.onGround = false;
+        player.squashX = 0.60;
+        player.squashY = 1.48;
+        if (window.sfx && window.sfx.playLotusBounce) window.sfx.playLotusBounce();
+        else if (window.sfx && window.sfx.playGeyser) window.sfx.playGeyser();
+        if (typeof spawnStarSparkles === 'function') {
+          spawnStarSparkles(p.x + p.w / 2, p.y + p.h / 2, 14, '#38bdf8');
+          spawnStarSparkles(p.x + p.w / 2, p.y + p.h / 2, 10, '#fef08a');
+        }
+        if (typeof spawnFloatingText === 'function') {
+          spawnFloatingText(p.x - 8, p.y - 20, '¡SALTO DE LOTO!', '#38bdf8');
+        }
+      }
+      continue;
+    }
+
     // Si Elizabeth está excavando túneles bajo el banco de nieve
     if (p.subType === 'snow_bank' && player.isDigging) {
       if (rectOverlap(player.x, player.y, player.w, player.h, p.x, p.y - 12, p.w, p.h + 24)) {
@@ -10100,6 +11534,24 @@ function updatePlayerCollisions(dt) {
         }
       } else {
         if (player.vy > 0) {
+          // Si cae con impulso sobre un monolito o pilar quebrable
+          if (p.breakable && player.vy > 130 && prevBottom <= p.y + 14) {
+            const pIdx = level.platforms.indexOf(p);
+            if (pIdx !== -1) {
+              level.platforms.splice(pIdx, 1);
+              player.vy = -230; // Rebote elástico estelar
+              player.jumpsLeft = 2;
+              score += 200;
+              triggerShake(0.18, 2.5);
+              if (window.sfx && window.sfx.playHit) window.sfx.playHit();
+              spawnParticles(p.x + p.w / 2, p.y + p.h / 2, 22, '#38bdf8', 110, -45);
+              spawnParticles(p.x + p.w / 2, p.y + p.h / 2, 16, '#c084fc', 90, -35);
+              spawnStarSparkles(p.x + p.w / 2, p.y + p.h / 2, 10, '#ffffff');
+              spawnFloatingText(p.x + p.w / 2 - 20, p.y - 12, '¡PILAR DESTRUIDO! +200', '#38bdf8');
+              spawnDroppedLilies(p.x + p.w / 2, p.y + p.h / 2, 3);
+              continue;
+            }
+          }
           player.y = p.y - player.h;
           if (!wasOnGround && player.vy > 60) {
             player.squashX = 1.24;
@@ -10128,8 +11580,23 @@ function updatePlayerCollisions(dt) {
         player.dashCooldown = 0;
         player.squashX = 0.75;
         player.squashY = 1.3;
-        window.sfx.playGeyser();
-        spawnParticles(player.x + 11, player.y + 22, 8, '#ffd166', 65, -40);
+        if (g.isCosmic || g.isAstral || (level && level.id === 4 && player.x >= 33000)) {
+          if (window.sfx && window.sfx.playPortalWoosh) window.sfx.playPortalWoosh();
+          else window.sfx.playGeyser();
+          spawnParticles(player.x + 11, player.y + 22, 14, '#00f5d4', 95, -50);
+          spawnParticles(player.x + 11, player.y + 22, 10, '#ffd166', 80, -40);
+          spawnStarSparkles(player.x + 11, player.y + 22, 10, '#ffffff');
+          spawnFloatingText(g.x - 12, g.y - g.boostHeight - 12, '¡IMPULSO CÓSMICO!', '#00f5d4');
+        } else if (g.isAstral || (level && level.theme === 'snow')) {
+          window.sfx.playGeyser();
+          spawnParticles(player.x + 11, player.y + 22, 12, '#38bdf8', 85, -50);
+          spawnParticles(player.x + 11, player.y + 22, 8, '#c084fc', 70, -40);
+          spawnStarSparkles(player.x + 11, player.y + 22, 8, '#ffffff');
+          spawnFloatingText(g.x - 10, g.y - g.boostHeight - 12, '¡IMPULSO ASTRAL!', '#38bdf8');
+        } else {
+          window.sfx.playGeyser();
+          spawnParticles(player.x + 11, player.y + 22, 8, '#ffd166', 65, -40);
+        }
       }
     }
   }
@@ -10213,6 +11680,95 @@ function updatePlayerCollisions(dt) {
   // Actualizar y recolectar Lirios de Dexter físicos
   updateDroppedLilies(dt);
 
+  // ============================================================================
+  // MECÁNICAS ÚNICAS DECORATIVAS DE SHAMBHALA (AGUAS TERMALES, CAMPANAS, PORTAL)
+  // ============================================================================
+  if (level && level.decorations) {
+    for (const d of level.decorations) {
+      // 1. Aguas Termales de Shambhala (Curación y Purificación)
+      if (d.subType === 'hot_spring' && rectOverlap(player.x, player.y, player.w, player.h, d.x, d.y - 12, 68, 20)) {
+        if (globalFrame % 5 === 0) {
+          spawnParticles(player.x + 11, player.y + 20, 1, '#cffafe', 40, -25);
+        }
+        d.healTimer = (d.healTimer || 0) + dt;
+        if (d.healTimer >= 1.0) {
+          d.healTimer = 0;
+          if (player.lives < player.maxLives) {
+            player.lives++;
+            if (window.sfx && window.sfx.playCheese) window.sfx.playCheese();
+            spawnParticles(player.x + 11, player.y + 12, 14, '#67e8f9', 75, -35);
+            spawnStarSparkles(player.x + 11, player.y + 10, 8, '#ffffff');
+            spawnFloatingText(player.x - 14, player.y - 18, '¡AGUAS TERMALES! +1 CORAZÓN', '#38bdf8');
+          } else if (!d.blessedNotice) {
+            d.blessedNotice = true;
+            spawnFloatingText(player.x - 18, player.y - 18, '¡PURIFICACIÓN DE SHAMBHALA!', '#67e8f9');
+            spawnStarSparkles(player.x + 11, player.y + 10, 6, '#fef08a');
+          }
+        }
+      }
+
+      // 2. Campanas Sagradas de Oración (Vibración mística, aturdimiento de bestias y puntos)
+      if (d.subType === 'shambhala_prayer_bell') {
+        const bellHit = rectOverlap(player.x, player.y, player.w, player.h, d.x - 12, d.y - 48, 24, 48);
+        const isTriggering = bellHit && (player.isSwingingPick || player.dashTimer > 0 || Math.abs(player.vx) > 30 || player.vy > 40);
+        if (isTriggering && (!d.lastRing || Date.now() - d.lastRing > 1200)) {
+          d.lastRing = Date.now();
+          d.ringing = 1.0;
+          if (window.sfx && window.sfx.playShambhalaBell) window.sfx.playShambhalaBell();
+          else if (window.sfx && window.sfx.playShieldBreak) window.sfx.playShieldBreak();
+          triggerShake(0.12, 2.0);
+          spawnStarSparkles(d.x, d.y - 30, 14, '#fde047');
+          spawnParticles(d.x, d.y - 30, 16, '#f59e0b', 85, -30);
+          spawnFloatingText(d.x - 24, d.y - 54, '¡CAMPANA SAGRADA! +150', '#fde047');
+          score += 150;
+
+          // Aturdir / alejar enemigos cercanos
+          if (magmaCrawlers) {
+            magmaCrawlers.forEach(mc => {
+              if (Math.hypot(mc.x - d.x, mc.y - d.y) < 180) {
+                mc.dir *= -1;
+                spawnStarSparkles(mc.x + 9, mc.y + 6, 6, '#fde047');
+              }
+            });
+          }
+          if (fireBats) {
+            fireBats.forEach(fb => {
+              if (Math.hypot(fb.x - d.x, fb.y - d.y) < 180) {
+                fb.dir *= -1;
+                spawnStarSparkles(fb.x + 6, fb.y + 4, 6, '#fde047');
+              }
+            });
+          }
+        }
+      }
+
+      // 3. Portales Dimensionales del Santuario (Hacia Shambhala y hacia el Monte Kailash)
+      if (d.subType === 'sanctuary_portal_gate' && rectOverlap(player.x, player.y, player.w, player.h, d.x - 20, d.y - 58, 40, 58)) {
+        if (!d.warped) {
+          d.warped = true;
+          if (window.sfx && window.sfx.playPortal) window.sfx.playPortal();
+          triggerShake(0.22, 3.2);
+          spawnStarSparkles(player.x + 11, player.y + 12, 22, '#00f5d4');
+          spawnParticles(player.x + 11, player.y + 12, 26, '#fde047', 130, -55);
+          if (d.x < 30000) {
+            spawnFloatingText(player.x - 18, player.y - 28, '¡ENTRANDO A SHAMBHALA!', '#fde047');
+            player.x = 29640;
+            player.y = 100;
+            player.vx = 220;
+            player.vy = -120;
+          } else {
+            spawnFloatingText(player.x - 24, player.y - 28, '¡ASCENSO ASTRAL AL MONTE KAILASH!', '#00f5d4');
+            player.x = 33040;
+            player.y = 90;
+            player.vx = 250;
+            player.vy = -190;
+          }
+          player.jumpsLeft = 2;
+        }
+      }
+    }
+  }
+
   // Colisión con Pinchos / Pozos de Lava
   for (const s of (level.spikes || [])) {
     if (rectOverlap(player.x + 4, player.y + 6, player.w - 8, player.h - 6, s.x, s.y, s.w, 12)) {
@@ -10272,6 +11828,84 @@ function updatePlayerCollisions(dt) {
   }
 }
 
+// ============================================================================
+// ACTUALIZACIÓN DE PLATAFORMAS DINÁMICAS (TÉMPANOS MÓVILES Y HIELO QUEBRADIZO)
+// ============================================================================
+function updatePlatforms(dt) {
+  if (!level || !level.platforms) return;
+
+  for (let i = 0; i < level.platforms.length; i++) {
+    const p = level.platforms[i];
+
+    // 1. Témpanos y Plataformas Móviles a la Deriva
+    if (p.moving) {
+      if (p.dir === undefined) p.dir = 1;
+      const speed = p.speed || 45;
+      const prevX = p.x;
+      p.x += p.dir * speed * dt;
+
+      if (p.dir > 0 && p.x >= p.maxX) {
+        p.x = p.maxX;
+        p.dir = -1;
+      } else if (p.dir < 0 && p.x <= p.minX) {
+        p.x = p.minX;
+        p.dir = 1;
+      }
+
+      const dx = p.x - prevX;
+      // Arrastrar a Elizabeth si está parada sobre el témpano
+      if (player && player.onGround && player.currentPlatform === p) {
+        player.x += dx;
+        if (player.x < 0) player.x = 0;
+        if (player.x + player.w > level.worldWidth) player.x = level.worldWidth - player.w;
+      }
+    }
+
+    // 2. Hielo Quebradizo (Cracking Ice)
+    if (p.subType === 'cracking_ice') {
+      if (p.broken) {
+        p.respawnTimer -= dt;
+        if (p.respawnTimer <= 0) {
+          p.broken = false;
+          p.crackTimer = 0;
+          p.shakeOffset = 0;
+          if (typeof spawnStarSparkles === 'function') {
+            spawnStarSparkles(p.x + p.w / 2, p.y + p.h / 2, 8, '#caf0f8');
+          }
+        }
+      } else {
+        const isStandingOn = (player && player.onGround && player.currentPlatform === p);
+        if (isStandingOn) {
+          p.crackTimer = (p.crackTimer || 0) + dt;
+          if (p.crackTimer > 0.32) {
+            p.shakeOffset = Math.sin(globalFrame * 1.8) * 1.8;
+          }
+          if (p.crackTimer >= 0.85) {
+            p.broken = true;
+            p.respawnTimer = 2.8;
+            p.shakeOffset = 0;
+            if (window.sfx && window.sfx.playEnemyHit) window.sfx.playEnemyHit();
+            if (typeof spawnParticles === 'function') {
+              spawnParticles(p.x + p.w / 2, p.y + p.h / 2, 14, '#90e0ef', 80, -30);
+              spawnParticles(p.x + p.w / 2, p.y + p.h / 2, 8, '#ffffff', 60, -20);
+            }
+            if (typeof triggerShake === 'function') triggerShake(0.12, 1.8);
+            if (player.currentPlatform === p) {
+              player.onGround = false;
+              player.currentPlatform = null;
+            }
+          }
+        } else {
+          if (p.crackTimer > 0) {
+            p.crackTimer = Math.max(0, p.crackTimer - dt * 1.5);
+            p.shakeOffset = 0;
+          }
+        }
+      }
+    }
+  }
+}
+
 
 // --- MODULO: src/entities/player/camera.js ---
 // --- Seguimiento suave de Cámara 2D a 144 Hz (CERO temblores, tirones ni judder) ---
@@ -10324,6 +11958,12 @@ function damagePlayer(respawnAtCheckpoint) {
       player.isSurfing = true;
       player.inWater = true;
       player.onGround = true;
+    }
+    if (level && level.id === 4 && player.x >= 11000) {
+      player.ability = 'ice_pick';
+    }
+    if (level && level.id === 4 && window.yetiBossState && window.yetiBossState.active) {
+      if (typeof initYetiBoss === 'function') initYetiBoss();
     }
     if (level.bossCastleGate && player.x >= level.bossCastleGate.x) {
       bossFightActive = false;
@@ -10899,6 +12539,9 @@ function drawPortalTeleportWorld(ctx, viewL, viewR) {
 // --- MODULO: src/entities/player/index.js ---
 // --- Orquestador Principal del Jugador ---
 function updatePlayer(dt) {
+  if (typeof updatePlatforms === 'function') {
+    updatePlatforms(dt);
+  }
   updatePlayerMovement(dt);
   updatePlayerCollisions(dt);
   updatePlayerCamera(dt);
@@ -10950,10 +12593,12 @@ function loadLevel(idx) {
     invulnTimer: 0,
     trailTimer: 0,
     transitionTimer: 0,
-    ability: level.ability || null,
+    ability: (level.id === 4 && (initialX >= 11000 || (savedCp && savedCp.id >= 22))) ? 'ice_pick' : (level.ability || null),
     dashTimer: 0,
     dashCooldown: 0
   };
+  window.level = level;
+  window.player = player;
 
   const dashBtn = document.getElementById('btn-dash');
   if (dashBtn) {
@@ -11104,6 +12749,9 @@ function loadLevel(idx) {
   }
   if (typeof initIcePickAbility === 'function') {
     initIcePickAbility();
+  }
+  if (typeof initKangshungMechanics === 'function') {
+    initKangshungMechanics();
   }
 
   cameraX = Math.max(0, Math.min(level.worldWidth - W, player.x - W * 0.35));
@@ -11412,9 +13060,9 @@ function drawHUDBosses() {
 
   // 5. Barra de Jefe del Dragón Astral de Polaris (Mundo 4 • Fase 9)
   if (typeof astralBossState !== 'undefined' && astralBossState && astralBossState.active && !astralBossState.isDefeated) {
-    const bw = 170;
+    const bw = 154;
     const bx = Math.round(W / 2 - bw / 2);
-    const by = 28;
+    const by = 34;
     const isEnraged = astralBossState.hp <= 3;
     drawRoundedPanel(bx, by, bw, 18, 6, 'rgba(8, 4, 22, 0.95)', isEnraged ? '#ff007f' : '#ffd166', 1.3);
 
@@ -11957,7 +13605,7 @@ function drawWorldMapCard(curWorld) {
       { label: 'F5: EVEREST', sub: 'La Gran Cima', cpId: 37 },
       { label: 'F6: YETI', sub: 'Santuario', cpId: 41 },
       { label: 'F7: SHAMBHALA', sub: 'Pagoda', cpId: 42 },
-      { label: 'F8: KAILASH', sub: 'Agartha', cpId: 45 },
+      { label: 'F8: KAILASH', sub: 'Agartha', cpId: 44 },
       { label: 'F9: COSMOS', sub: 'Vía Láctea', cpId: 46 },
       { label: 'F9: POLARIS', sub: 'Sanctum', cpId: 48 }
     ];
@@ -14959,6 +16607,10 @@ function update(dt) {
       updateIcePickAbility(dt);
     }
 
+    if (typeof updateKangshungMechanics === 'function') {
+      updateKangshungMechanics(dt);
+    }
+
     if (typeof updateBlizzardSystem === 'function') {
       updateBlizzardSystem(dt);
     }
@@ -15551,6 +17203,11 @@ function draw() {
   // Gran Yeti de Cristal (Combate Mundo 4 • Fase 6)
   if (typeof drawYetiBoss === 'function') {
     drawYetiBoss(ctx);
+  }
+
+  // Mecánicas de Kangshung: Vórtices y Seracs (Mundo 4 • Fase 6)
+  if (typeof drawKangshungMechanics === 'function') {
+    drawKangshungMechanics(ctx);
   }
 
   // Dragón Astral de Polaris (Jefe Final Mundo 4 • Fase 9)

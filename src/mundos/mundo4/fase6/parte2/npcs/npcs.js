@@ -8,20 +8,20 @@ module.exports = [
     x: 25920,
     y: 108,
     name: 'Mingma el Cazador de Tormentas',
-    role: 'Vigia de Vientos Polares',
+    role: 'Vigía de Vientos Polares',
     color: '#fed7aa',
     hatColor: '#0284c7',
     lines: [
-      'Cuidado con las corrientes del abismo! Los vientos aqui son tan feroces que pueden arrancarte del risco.',
-      'He oido rugidos guturales resonando desde el Santuario que hay mas adelante... El Gran Yeti protege su morada.',
-      'Asegura tus botas y cruza los puentes de escarcha. Cada paso te acerca al santuario mistico.',
-      'Ten a mano tu Pico de Hielo, Elizabeth. La entrada al templo ancestral esta sellada con columnas de hielo diamantino!'
+      '¡Bienvenida al Campamento 2 de Kangshung, Elizabeth! Las Torres Celestiales desafían toda ley de la gravedad.',
+      '¿Ves esas columnas de viento brillante en el fondo del abismo? Son los Vórtices Polares de Kangshung.',
+      'Si caes o saltas dentro de ellas, ¡el viento helado te atrapará y te impulsará hacia arriba como pluma en el aire!',
+      'Más adelante, la entrada al templo del Yeti está sellada con columnas de hielo... ¡Rómpelas con tu Pico de Hielo!'
     ],
     dialogue: [
-      'Cuidado con las corrientes del abismo! Los vientos aqui son tan feroces que pueden arrancarte del risco.',
-      'He oido rugidos guturales resonando desde el Santuario que hay mas adelante... El Gran Yeti protege su morada.',
-      'Asegura tus botas y cruza los puentes de escarcha. Cada paso te acerca al santuario mistico.',
-      'Ten a mano tu Pico de Hielo, Elizabeth. La entrada al templo ancestral esta sellada con columnas de hielo diamantino!'
+      '¡Bienvenida al Campamento 2 de Kangshung, Elizabeth! Las Torres Celestiales desafían toda ley de la gravedad.',
+      '¿Ves esas columnas de viento brillante en el fondo del abismo? Son los Vórtices Polares de Kangshung.',
+      'Si caes o saltas dentro de ellas, ¡el viento helado te atrapará y te impulsará hacia arriba como pluma en el aire!',
+      'Más adelante, la entrada al templo del Yeti está sellada con columnas de hielo... ¡Rómpelas con tu Pico de Hielo!'
     ]
   }
 ];

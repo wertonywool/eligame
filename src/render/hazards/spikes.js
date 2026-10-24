@@ -5,11 +5,54 @@
 function drawSpikes(s) {
   if (s.x + s.w < cameraX - 40 || s.x > cameraX + W + 40) return;
 
-  // 1. Mar / Foso de lava volcánica hirviente
+  const isSnow = (level && level.theme === 'snow') || s.theme === 'snow' || s.subType === 'ice_spikes';
+
+  // 1. Mar / Foso extenso (Agua gélida del lago o Magma volcánico)
   if (s.w > 200) {
     const waveT = globalFrame * 0.12;
 
-    // Fondo del abismo de magma
+    if (isSnow) {
+      // ❄️ Abismo de Aguas Gélidas del Lago Glacial
+      ctx.fillStyle = '#051923';
+      ctx.fillRect(s.x, s.y, s.w, 40);
+      ctx.fillStyle = '#003554';
+      ctx.fillRect(s.x, s.y + 3, s.w, 35);
+      ctx.fillStyle = '#006494';
+      ctx.fillRect(s.x, s.y + 6, s.w, 30);
+
+      // Oleaje de aguas bajo cero con trozos de hielo
+      const step = 8;
+      for (let x = s.x; x < s.x + s.w; x += step) {
+        const h1 = Math.sin((x * 0.04) + waveT) * 2.5;
+        const h2 = Math.cos((x * 0.08) - waveT * 0.7) * 1.8;
+        const waveY = s.y + h1 + h2;
+
+        ctx.fillStyle = '#0284c7';
+        ctx.fillRect(x, Math.round(waveY), step, 6);
+        ctx.fillStyle = '#38bdf8';
+        ctx.fillRect(x, Math.round(waveY - 1), step, 3);
+        ctx.fillStyle = '#bae6fd';
+        ctx.fillRect(x + 1, Math.round(waveY - 2), step - 2, 2);
+
+        // Bloques de hielo flotante en las crestas
+        if (h1 + h2 > 2.2) {
+          ctx.fillStyle = '#ffffff';
+          ctx.fillRect(x + 1, Math.round(waveY - 3), 5, 2);
+        }
+      }
+
+      // Vapores de frío ártico condensado ascendente
+      const mistSeed = Math.floor(globalFrame * 0.12);
+      for (let i = 0; i < 6; i++) {
+        const mx = s.x + ((mistSeed * 43 + i * 79) % (s.w - 20));
+        const my = s.y - 3 - ((globalFrame * 0.5 + i * 6) % 10);
+        ctx.fillStyle = 'rgba(202, 240, 248, 0.45)';
+        ctx.fillRect(Math.round(mx), Math.round(my), 4, 2);
+      }
+      return;
+    }
+
+    // Fondo del abismo de magma (Volcán)
     ctx.fillStyle = '#0c020e';
     ctx.fillRect(s.x, s.y, s.w, 35);
     ctx.fillStyle = '#2c041c';
@@ -55,7 +98,6 @@ function drawSpikes(s) {
   }
 
   const isVolcano = level && level.theme === 'volcano';
-  const isSnow = (level && level.theme === 'snow') || s.theme === 'snow' || s.subType === 'ice_spikes';
 
   if (isSnow) {
     // ❄️ Estalagmitas y Púas Afiladas de Hielo Glacial Cristalino (Estilo Celeste)

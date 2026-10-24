@@ -4,17 +4,31 @@
 // Cabañas de pesca, esculturas de cisne de hielo, boyas congeladas y farolas alpinas.
 
 module.exports = [
-  { x: 13380, y: 196, subType: 'snow_lantern' },
-  { x: 13460, y: 196, subType: 'sherpa_tent' },
+  // 1. Entrada a la bahía
+  { x: 13320, y: 196, subType: 'snow_lantern' },
+  { x: 13440, y: 196, subType: 'prayer_flags' },
+
+  // 2. Asentamiento del pescador Pabu (Cabaña refugio contra ventiscas)
   { x: 13580, y: 196, subType: 'ice_fishing_hut' },
-  { x: 13780, y: 196, subType: 'ice_spire' },
-  { x: 14140, y: 196, subType: 'frozen_buoy' },
-  { x: 14220, y: 196, subType: 'ice_sculpture' },
+
+  // 3. Pináculo de hielo y balizas
+  { x: 13750, y: 196, subType: 'ice_spire' },
+  { x: 13830, y: 196, subType: 'frozen_buoy' },
+
+  // 4. Campamento 7 (Tienda refugio, cisne de hielo y farol)
+  { x: 14140, y: 196, subType: 'sherpa_tent' },
+  { x: 14240, y: 196, subType: 'ice_sculpture' },
   { x: 14350, y: 196, subType: 'snow_lantern' },
-  { x: 14480, y: 196, subType: 'prayer_flags' },
+
+  // 5. Estrecho de témpanos móviles
+  { x: 14430, y: 196, subType: 'frozen_buoy' },
+
+  // 6. La Gran Pista de Patinaje Veloz
   { x: 14740, y: 196, subType: 'village_street_sign' },
-  { x: 14900, y: 196, subType: 'frozen_buoy' },
-  { x: 15280, y: 196, subType: 'ice_spire' },
-  { x: 15420, y: 196, subType: 'ice_sculpture' },
-  { x: 15560, y: 196, subType: 'snow_lantern' }
+  { x: 14920, y: 196, subType: 'frozen_buoy' },
+  { x: 15060, y: 196, subType: 'prayer_flags' },
+
+  // 7. Llegada al Campamento 8
+  { x: 15440, y: 196, subType: 'ice_sculpture' },
+  { x: 15580, y: 196, subType: 'snow_lantern' }
 ];

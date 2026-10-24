@@ -1,14 +1,14 @@
 // ============================================================================
-// MUNDO 4 - FASE 6 - PARTE 3: QUESOS COLECCIONABLES (X: 26700 -> 28150)
+// MUNDO 4 - FASE 6 - PARTE 3: QUESOS COLECCIONABLES (#77, #78, #79)
 // ============================================================================
 
 module.exports = [
-  // 1. Queso en la Terraza de los Guardianes de Escarcha
-  { x: 27000, y: 68, active: true, id: 77 },
+  // 1. Queso en el altar superior de la Terraza de los Guardianes de Escarcha
+  { x: 27010, y: 58, active: true, id: 77 },
 
-  // 2. Queso semienterrado en la Cripta Baja de Permafrost del Santuario
-  { x: 27670, y: 136, active: true, id: 78 },
+  // 2. Queso en la Bóveda Cripta de Jade (Tras quebrar el pilar de cristal con el Pico de Hielo)
+  { x: 27760, y: 126, active: true, id: 78 },
 
-  // 3. Queso suspendido sobre el Puente de Hielo Puro de la Antesala
-  { x: 27830, y: 76, active: true, id: 79 }
+  // 3. Queso en la cornisa ceremonial elevada de la Antesala de la Batalla
+  { x: 27970, y: 50, active: true, id: 79 }
 ];

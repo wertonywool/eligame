@@ -160,8 +160,8 @@ function updateYetiBoss(dt) {
 
     // Elizabeth golpea al Yeti mientras esta mareado
     const canHitWithPick = player.isSwingingPick || (keys.dashJustPressed && player.ability === 'ice_pick');
-    const isStomping = player.vy > 0 && player.y + player.h <= s.y + 18;
-    const isNear = Math.abs((player.x + 11) - (s.x + s.w / 2)) < 36;
+    const isStomping = player.vy > 0 && player.y + player.h <= s.y + 26;
+    const isNear = Math.abs((player.x + 11) - (s.x + s.w / 2)) < 44;
 
     if (s.hitCooldown <= 0 && isNear && (canHitWithPick || isStomping)) {
       s.hitCooldown = 1.0;

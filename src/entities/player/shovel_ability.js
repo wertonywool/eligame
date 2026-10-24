@@ -89,23 +89,34 @@ function updateShovelAbility(dt) {
       spawnParticles(player.x + 11, player.y + 18, 1, '#90e0ef', 30, -15);
     }
 
-    // Salto impulsado para salir del banco de nieve
+    // Salto impulsado para salir del banco de nieve con impacto ofensivo
     if (keys.jumpJustPressed) {
       shovelState.isDigging = false;
       player.isDigging = false;
-      player.vy = -295;
-      triggerShake(0.08, 1.4);
-      spawnParticles(player.x + 11, player.y + 10, 16, '#ffffff', 90, -60);
-      spawnParticles(player.x + 11, player.y + 10, 10, '#caf0f8', 80, -45);
+      player.vy = -305;
+      triggerShake(0.1, 1.8);
+      spawnParticles(player.x + 11, player.y + 10, 20, '#ffffff', 100, -65);
+      spawnParticles(player.x + 11, player.y + 10, 14, '#caf0f8', 85, -50);
       if (window.sfx && window.sfx.playJump) window.sfx.playJump(true);
-      spawnFloatingText(player.x - 10, player.y - 12, '¡SALTO DE NIEVE!', '#ffffff');
+      spawnFloatingText(player.x - 10, player.y - 14, 'SALTO DE NIEVE!', '#ffffff');
+
+      // Destruir enemigos terrestres que esten justo encima del banco
+      const nearbyEnemies = (level && level.magmaCrawlers ? level.magmaCrawlers : []).concat(level && level.fireBats ? level.fireBats : []);
+      for (let e of nearbyEnemies) {
+        if (!e.dead && Math.hypot((player.x + 11) - (e.x + 10), (player.y + 10) - (e.y + 9)) < 38) {
+          e.dead = true;
+          score += 150;
+          spawnParticles(e.x + 10, e.y + 10, 14, '#38bdf8', 80, -30);
+          spawnFloatingText(e.x - 10, e.y - 12, 'IMPACTO DE NIEVE! +150', '#38bdf8');
+        }
+      }
     }
   } else if (!inSnowBank) {
     shovelState.isDigging = false;
     player.isDigging = false;
   }
 
-  // 2. DETECCIÓN DE NIEVE EN EL SUELO (SNOW_GROUND O SNOW_BANK)
+  // 2. DETECCION DE NIEVE EN EL SUELO (SNOW_GROUND O SNOW_BANK)
   let onSnowGround = false;
   if (level && level.platforms && player.onGround) {
     const feetX = player.x + player.w / 2;
@@ -120,11 +131,11 @@ function updateShovelAbility(dt) {
     }
   }
 
-  // 3. RECOGER BOLAS DE NIEVE CON LA PALA (MÁXIMO 5)
-  // Se recoge al pulsar Dash estando sobre nieve si no tenemos el máximo y (agachados o sin bolas)
+  // 3. RECOGER BOLAS DE NIEVE CON LA PALA (MAXIMO 5)
+  // Se recoge si se pulsa Dash estando agachado con Down, o si no tenemos ninguna bola
   const wantsScoop = keys.dashJustPressed && onSnowGround &&
     shovelState.snowballs < shovelState.maxSnowballs &&
-    (keys.down || shovelState.snowballs === 0 || !keys.left && !keys.right);
+    (keys.down || shovelState.snowballs === 0);
 
   if (wantsScoop && shovelState.scoopCooldown <= 0) {
     keys.dashJustPressed = false;
@@ -140,13 +151,13 @@ function updateShovelAbility(dt) {
     spawnFloatingText(
       player.x - 14,
       player.y - 12,
-      `¡BOLA DE NIEVE! (${shovelState.snowballs}/${shovelState.maxSnowballs})`,
+      `BOLA DE NIEVE! (${shovelState.snowballs}/${shovelState.maxSnowballs})`,
       '#caf0f8'
     );
   }
 
   // 4. LANZAR BOLA DE NIEVE A LOS ENEMIGOS
-  // Si se pulsa Dash y tenemos bolas de nieve acumuladas
+  // Si se pulsa Dash y tenemos bolas de nieve acumuladas (sin estar agachados recogiendo)
   const wantsThrow = keys.dashJustPressed && shovelState.snowballs > 0 && !wantsScoop;
 
   if (wantsThrow && shovelState.throwCooldown <= 0) {
@@ -157,13 +168,13 @@ function updateShovelAbility(dt) {
 
     const dir = player.facingRight ? 1 : -1;
     const startX = player.x + (player.facingRight ? 18 : -2);
-    const startY = player.y + 8;
+    const startY = player.y + 12;
 
     shovelState.projectiles.push({
       x: startX,
       y: startY,
-      vx: dir * 350,
-      vy: -80,
+      vx: dir * 360,
+      vy: -35,
       radius: 4.5,
       life: 1.8
     });
@@ -172,7 +183,7 @@ function updateShovelAbility(dt) {
     spawnParticles(startX, startY, 5, '#ffffff', 50, -10);
   }
 
-  // 5. FÍSICA Y COLISIONES DE LAS BOLAS DE NIEVE
+  // 5. FISICA Y COLISIONES DE LAS BOLAS DE NIEVE
   for (let i = shovelState.projectiles.length - 1; i >= 0; i--) {
     const b = shovelState.projectiles[i];
     b.x += b.vx * dt;
@@ -187,29 +198,57 @@ function updateShovelAbility(dt) {
 
     let hit = false;
 
-    // Colisión con enemigos (magmaCrawlers, fireBats u orugas heladas)
+    // Colision con enemigos (magmaCrawlers, fireBats u orugas heladas)
     const enemies = (level && level.magmaCrawlers ? level.magmaCrawlers : []).concat(level && level.fireBats ? level.fireBats : []);
     for (let e of enemies) {
-      if (!e.dead && Math.hypot(b.x - (e.x + (e.w || 20) / 2), b.y - (e.y + (e.h || 18) / 2)) < 18) {
-        hit = true;
-        e.dead = true;
-        triggerShake(0.12, 1.8);
-        spawnParticles(e.x + 10, e.y + 10, 18, '#ffffff', 90, 40);
-        spawnParticles(e.x + 10, e.y + 10, 12, '#caf0f8', 80, 30);
-        spawnParticles(e.x + 10, e.y + 10, 8, '#00b4d8', 70, 20);
-        if (window.sfx && window.sfx.playHit) window.sfx.playHit();
-        spawnFloatingText(e.x - 10, e.y - 14, '¡CONGELADO!', '#caf0f8');
-        break;
+      if (!e.dead) {
+        const eCenterX = e.x + (e.w || 20) / 2;
+        const eCenterY = e.y + (e.h || 18) / 2;
+        const dx = Math.abs(b.x - eCenterX);
+        const dy = Math.abs(b.y - eCenterY);
+        const isNear = (dx < 18 && dy < 20) || (b.x >= e.x - 4 && b.x <= e.x + (e.w || 20) + 4 && b.y >= e.y - 12 && b.y <= e.y + (e.h || 18) + 8);
+        if (isNear) {
+          hit = true;
+          e.dead = true;
+          score += 150;
+          triggerShake(0.12, 1.8);
+          spawnParticles(e.x + 10, e.y + 10, 18, '#ffffff', 90, 40);
+          spawnParticles(e.x + 10, e.y + 10, 12, '#caf0f8', 80, 30);
+          spawnParticles(e.x + 10, e.y + 10, 8, '#00b4d8', 70, 20);
+          if (window.sfx && window.sfx.playHit) window.sfx.playHit();
+          spawnFloatingText(e.x - 10, e.y - 14, 'CONGELADO! +150', '#caf0f8');
+          break;
+        }
       }
     }
 
-    // Colisión con terreno sólido
+    // Colisión con terreno sólido o pilares quebrables
     if (!hit && level && level.platforms) {
-      for (let p of level.platforms) {
-        if (!p.oneWay && b.x >= p.x && b.x <= p.x + p.w && b.y >= p.y && b.y <= p.y + p.h) {
+      for (let pIdx = level.platforms.length - 1; pIdx >= 0; pIdx--) {
+        const p = level.platforms[pIdx];
+        if (b.x >= p.x && b.x <= p.x + p.w && b.y >= p.y && b.y <= p.y + p.h) {
           hit = true;
-          spawnParticles(b.x, b.y, 8, '#ffffff', 60, -20);
-          spawnParticles(b.x, b.y, 5, '#caf0f8', 45, -15);
+          if (p.breakable) {
+            p.hp = (p.hp || 1) - 1;
+            if (p.hp <= 0) {
+              level.platforms.splice(pIdx, 1);
+              score += 200;
+              triggerShake(0.18, 2.5);
+              if (window.sfx && window.sfx.playHit) window.sfx.playHit();
+              spawnParticles(p.x + p.w / 2, p.y + p.h / 2, 22, '#38bdf8', 110, -45);
+              spawnParticles(p.x + p.w / 2, p.y + p.h / 2, 16, '#c084fc', 90, -35);
+              spawnParticles(p.x + p.w / 2, p.y + p.h / 2, 12, '#ffffff', 80, -25);
+              spawnStarSparkles(p.x + p.w / 2, p.y + p.h / 2, 10, '#fef08a');
+              spawnFloatingText(p.x + p.w / 2 - 20, p.y - 12, '¡PILAR QUEBRADO! +200', '#38bdf8');
+              spawnDroppedLilies(p.x + p.w / 2, p.y + p.h / 2, 3);
+            } else {
+              triggerShake(0.08, 1.2);
+              spawnParticles(b.x, b.y, 10, '#38bdf8', 60, -20);
+            }
+          } else {
+            spawnParticles(b.x, b.y, 8, '#ffffff', 60, -20);
+            spawnParticles(b.x, b.y, 5, '#caf0f8', 45, -15);
+          }
           break;
         }
       }

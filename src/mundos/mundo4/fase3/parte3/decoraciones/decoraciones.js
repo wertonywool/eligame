@@ -5,11 +5,13 @@
 
 module.exports = [
   // --- EXTERIOR: PASEO MELANCÓLICO Y CABAÑA ---
-  { x: 9610, y: 196, subType: 'snow_lantern' },
+  { x: 9590, y: 196, subType: 'alpine_pine', scale: 0.85 },
+  { x: 9650, y: 166, subType: 'prayer_flags' },
   { x: 9670, y: 196, subType: 'village_street_sign' },
   { x: 9870, y: 196, subType: 'depressed_cabin_facade' },
+  { x: 9980, y: 84, subType: 'prayer_flags' },
   { x: 10090, y: 196, subType: 'firewood_pile' },
-  { x: 10150, y: 196, subType: 'prayer_flags' },
+  { x: 10150, y: 196, subType: 'prayer_cairn' },
   { x: 10210, y: 196, subType: 'snow_lantern' },
 
   // --- INTERIOR: CABAÑA DE GASTON (X: 50800 -> 51100) ---

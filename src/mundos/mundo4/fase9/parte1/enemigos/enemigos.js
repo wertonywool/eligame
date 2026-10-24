@@ -4,31 +4,25 @@
 
 module.exports = {
   crawlers: [
-    // Guardia astral en el meteorito flotante inicial
-    { x: 36480, y: 80, minX: 36472, maxX: 36525, speed: 50, dir: 1, variant: 'frost_crawler' },
+    // Guardia astral en la entrada del Firmamento
+    { x: 36500, y: 126, minX: 36440, maxX: 36560, speed: 45, dir: 1, variant: 'frost_crawler' },
     // Guardia de hielo en la Terraza de Meteorito Astral
-    { x: 36790, y: 92, minX: 36750, maxX: 36850, speed: 45, dir: 1, variant: 'frost_crawler' },
-    // Guardia astral en el puente de nebulosa
-    { x: 36850, y: 64, minX: 36842, maxX: 36905, speed: 52, dir: -1, variant: 'frost_crawler' },
-    // Guardia astral en el balcon alto del observatorio
-    { x: 37050, y: 80, minX: 37042, maxX: 37105, speed: 54, dir: 1, variant: 'frost_crawler' },
-    // Guardia astral en la terraza alta de la Via Lactea
-    { x: 37250, y: 84, minX: 37242, maxX: 37310, speed: 50, dir: -1, variant: 'frost_crawler' },
-    // Guardia de hielo en la Fosa de Polvo Estelar
-    { x: 37470, y: 154, minX: 37420, maxX: 37550, speed: 50, dir: 1, variant: 'frost_crawler' },
-    // Guardia astral en el pinaculo boreal
-    { x: 37750, y: 62, minX: 37742, maxX: 37800, speed: 52, dir: 1, variant: 'frost_crawler' }
+    { x: 36780, y: 72, minX: 36745, maxX: 36835, speed: 40, dir: 1, variant: 'frost_crawler' },
+    // Guardia astral patrullando el Mirador de la Vía Láctea (lejos del NPC Kelsang)
+    { x: 37300, y: 126, minX: 37240, maxX: 37370, speed: 48, dir: -1, variant: 'frost_crawler' },
+    // Guardia de hielo en el risco inferior del abismo
+    { x: 37450, y: 118, minX: 37425, maxX: 37515, speed: 42, dir: 1, variant: 'frost_crawler' },
+    // Guardia astral en la aguja de las Pléyades
+    { x: 37850, y: 74, minX: 37825, maxX: 37915, speed: 46, dir: 1, variant: 'frost_crawler' }
   ],
   fliers: [
-    // Murcielago astral en el Primer Puente de Aurora Boreal
-    { x: 36650, y: 40, baseY: 40, minX: 36600, maxX: 36700, speed: 48, variant: 'frost_flier' },
-    // Murcielago astral sobrevolando el observatorio cosmico
-    { x: 37130, y: 24, baseY: 24, minX: 37070, maxX: 37190, speed: 56, variant: 'frost_flier' },
-    // Murcielago astral sobre la Via Lactea
-    { x: 37340, y: 22, baseY: 22, minX: 37280, maxX: 37400, speed: 52, variant: 'frost_flier' },
-    // Murcielago astral en el Segundo Puente de Aurora Boreal
-    { x: 37730, y: 25, baseY: 25, minX: 37690, maxX: 37790, speed: 50, variant: 'frost_flier' },
-    // Murcielago astral custodiando las Pleyades
-    { x: 37880, y: 28, baseY: 28, minX: 37820, maxX: 37940, speed: 58, variant: 'frost_flier' }
+    // Murciélago astral sobre el Primer Puente de Aurora Boreal
+    { x: 36660, y: 65, baseY: 65, minX: 36620, maxX: 36710, speed: 42, variant: 'frost_flier' },
+    // Murciélago astral en la zona alta del telescopio celeste
+    { x: 37060, y: 60, baseY: 60, minX: 37010, maxX: 37110, speed: 46, variant: 'frost_flier' },
+    // Murciélago astral sobrevolando el abismo de polvo estelar
+    { x: 37600, y: 35, baseY: 35, minX: 37530, maxX: 37660, speed: 50, variant: 'frost_flier' },
+    // Murciélago astral custodiando el ascenso a las Pléyades
+    { x: 37740, y: 55, baseY: 55, minX: 37680, maxX: 37790, speed: 48, variant: 'frost_flier' }
   ]
 };

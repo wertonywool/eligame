@@ -11,6 +11,7 @@ function assembleFase8() {
     'platforms',
     'decorations',
     'checkpoints',
+    'geysers',
     'spikes',
     'npcs',
     'magmaCrawlers',

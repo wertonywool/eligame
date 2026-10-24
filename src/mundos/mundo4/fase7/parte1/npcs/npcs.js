@@ -12,16 +12,16 @@ module.exports = [
     color: '#fed7aa',
     hatColor: '#f59e0b',
     lines: [
-      'Tashi Delek, valerosa Elizabeth! Has cruzado las puertas invisibles hacia el mitico Valle Oculto de Shambhala.',
-      'Aqui, entre las aguas termales sagradas y la nieve eterna, florece el Loto de Cristal que purifica las montanas.',
-      'El Gran Yeti abrio este paso sagrado para ti, reconociendo que el amor de madre es la mayor fuerza del universo.',
-      'Sigue el aroma del loto hacia la Gran Pagoda Dorada mas adelante. Tu pequeno ratoncito te espera en el altar supremo!'
+      '¡Tashi Delek, valerosa Elizabeth! Has cruzado las puertas invisibles hacia el místico Valle Oculto de Shambhala.',
+      'Descansa en nuestras Pozas Termales para sanar tus heridas y que tu corazón recupere fuerzas.',
+      'Usa los Lotos de Cristal para impulsarte hacia las alturas y haz sonar las Campanas Sagradas para alejar a los monstruos.',
+      'La Gran Pagoda Dorada te espera más adelante. ¡Que la bendición del Loto guíe tus patitas hacia tu pequeño!'
     ],
     dialogue: [
-      'Tashi Delek, valerosa Elizabeth! Has cruzado las puertas invisibles hacia el mitico Valle Oculto de Shambhala.',
-      'Aqui, entre las aguas termales sagradas y la nieve eterna, florece el Loto de Cristal que purifica las montanas.',
-      'El Gran Yeti abrio este paso sagrado para ti, reconociendo que el amor de madre es la mayor fuerza del universo.',
-      'Sigue el aroma del loto hacia la Gran Pagoda Dorada mas adelante. Tu pequeno ratoncito te espera en el altar supremo!'
+      '¡Tashi Delek, valerosa Elizabeth! Has cruzado las puertas invisibles hacia el místico Valle Oculto de Shambhala.',
+      'Descansa en nuestras Pozas Termales para sanar tus heridas y que tu corazón recupere fuerzas.',
+      'Usa los Lotos de Cristal para impulsarte hacia las alturas y haz sonar las Campanas Sagradas para alejar a los monstruos.',
+      'La Gran Pagoda Dorada te espera más adelante. ¡Que la bendición del Loto guíe tus patitas hacia tu pequeño!'
     ]
   }
 ];

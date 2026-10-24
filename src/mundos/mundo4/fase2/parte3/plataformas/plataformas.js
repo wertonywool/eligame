@@ -1,35 +1,42 @@
 // ============================================================================
-// MUNDO 4 - FASE 2 - PARTE 3: PLATAFORMAS DE LA CUMBRE Y DESCENSO (X: 6650 -> 8050)
+// MUNDO 4 - FASE 2 - PARTE 3: PLATAFORMAS DEL COL Y UMBRAL AL PUEBLO (X: 6650 -> 8050)
 // ============================================================================
-// Grandes agujas de cumbre, bloques de diamante glacial y umbral al Pueblo Nevado.
+// La gran cresta del Col, caverna subterránea de nieve, escaleras de aluminio
+// escalonadas sobre el gran abismo y la llegada triunfal al Arco de Namche Bazaar.
 
 module.exports = [
-  // 1. Terraza de cumbre del Campamento 5.5 de Apa Sherpa (X: 6650 -> 6800)
-  { x: 6650, y: 196, w: 150, h: 28, subType: 'snow_ground' },
+  // 1. Terraza de cumbre del Col de Khumbu (X: 6650 -> 6870)
+  { x: 6650, y: 196, w: 220, h: 28, subType: 'snow_ground' },
+  { x: 6770, y: 148, w: 85, h: 14, oneWay: true, subType: 'ice_rock' },
 
-  // 2. Primera Gran Aguja de Cumbre (X: 6830 -> 6880)
-  { x: 6830, y: 150, w: 50, h: 74, subType: 'ice_pillar' },
+  // 2. Escalada de Alta Montaña: Doble Resorte Celestial y Diamante de Cumbre (X: 6890 -> 7190)
+  { x: 6890, y: 140, w: 45, h: 84, subType: 'ice_pillar' },
+  // Primer resorte celestial
+  { x: 6960, y: 180, w: 26, h: 26, subType: 'bounce_crystal' },
+  // Escalón de hielo resbaladizo para deslizarse
+  { x: 6940, y: 85, w: 65, h: 12, subType: 'slippery_ice' },
+  // Segundo resorte celestial hacia el cielo
+  { x: 7040, y: 110, w: 26, h: 26, subType: 'bounce_crystal' },
+  // Plataforma de diamante glacial en el punto más alto de Khumbu
+  { x: 7110, y: 55, w: 75, h: 12, oneWay: true, subType: 'ice_crystal' },
 
-  // 3. Bloques Flotantes de Diamante Glacial para parkour vertical de cumbre
-  { x: 6910, y: 112, w: 70, h: 14, oneWay: true, subType: 'ice_crystal' },
-  { x: 7010, y: 78, w: 70, h: 14, oneWay: true, subType: 'ice_crystal' },
+  // 3. La Gran Caverna Glacial Subterránea (Ruta Secreta de Cavado con la Pala) (X: 7210 -> 7480)
+  // Enorme masa de nieve profunda con quesos ocultos en el interior
+  { x: 7210, y: 196, w: 270, h: 36, subType: 'snow_bank' },
+  // Ruta aérea sobre la caverna con hielo quebradizo
+  { x: 7250, y: 135, w: 55, h: 12, oneWay: true, subType: 'cracking_ice' },
+  { x: 7340, y: 115, w: 60, h: 12, oneWay: true, subType: 'ice_crystal' },
+  { x: 7420, y: 135, w: 55, h: 12, oneWay: true, subType: 'cracking_ice' },
 
-  // 4. Repisa Aérea de Nieve Profunda en la Cresta Superior (X: 7110 -> 7300)
-  // Permite cavar con la pala para eludir el viento polar y abastecerse de bolas de nieve
-  { x: 7110, y: 118, w: 190, h: 32, subType: 'snow_bank' },
+  // 4. El Gran Abismo Terminal de Khumbu (Escaleras de Aluminio Escalonadas) (X: 7490 -> 7750)
+  // Primer tramo de escalera
+  { x: 7490, y: 175, w: 90, h: 14, subType: 'aluminum_bridge' },
+  // Escalón intermedio de hielo quebradizo en el abismo
+  { x: 7595, y: 155, w: 55, h: 12, oneWay: true, subType: 'cracking_ice' },
+  // Segundo tramo de escalera en ascenso hacia el umbral
+  { x: 7660, y: 140, w: 95, h: 14, subType: 'aluminum_bridge' },
 
-  // 5. Segunda Aguja de Hielo con descenso técnico hacia la sima terminal (X: 7330 -> 7390)
-  { x: 7330, y: 144, w: 60, h: 80, subType: 'ice_pillar' },
-
-  // 6. Gran Puente Alpino de Escalera sobre el abismo final (X: 7420 -> 7580)
-  { x: 7420, y: 136, w: 160, h: 14, subType: 'alpine_bridge' },
-
-  // 7. Bloque de Cristal Glacial de Enlace (X: 7610 -> 7680)
-  { x: 7610, y: 104, w: 70, h: 14, oneWay: true, subType: 'ice_crystal' },
-
-  // 8. Banco de Nieve del Desfiladero con queso enterrado (X: 7710 -> 7880)
-  { x: 7710, y: 184, w: 170, h: 36, subType: 'snow_bank' },
-
-  // 9. Terraza de Llegada y Umbral al Pueblo Nevado de la Fase 3 (X: 7900 -> 8050)
-  { x: 7900, y: 196, w: 150, h: 28, subType: 'snow_ground' }
+  // 5. La Gran Explanada del Umbral al Pueblo Nevado y Checkpoint 22 (X: 7765 -> 8050)
+  // Terreno plano y majestuoso donde se alza el Monumental Arco Glacial
+  { x: 7765, y: 196, w: 290, h: 28, subType: 'snow_ground' }
 ];

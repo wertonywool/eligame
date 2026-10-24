@@ -5,9 +5,9 @@
 module.exports = [
   {
     id: 48,
-    x: 40650,
+    x: 40600,
     y: 126,
-    name: 'Sanctum Sanctorum de la Estrella Polar - Boveda del Firmamento',
+    name: 'Sanctum Sanctorum de la Estrella Polar - Atrio de los Sabios',
     active: false
   }
 ];

@@ -1,14 +1,14 @@
 // ============================================================================
-// MUNDO 4 - FASE 6 - PARTE 4: QUESOS COLECCIONABLES (X: 28150 -> 29600)
+// MUNDO 4 - FASE 6 - PARTE 4: QUESOS COLECCIONABLES (#80, #81, #82)
 // ============================================================================
 
 module.exports = [
-  // 1. Queso en la Cornisa de los Monolitos Sagrados
-  { x: 28445, y: 72, active: true, id: 80 },
+  // 1. Queso en el Balcón de Ofrendas (Tras romper el pilar con el Pico de Hielo)
+  { x: 28445, y: 70, active: true, id: 80 },
 
-  // 2. Queso semienterrado en la Fosa de Permafrost Sagrado
-  { x: 28930, y: 136, active: true, id: 81 },
+  // 2. Queso en el Estrado del Trono Sagrado del Yeti (Recompensa de Victoria)
+  { x: 29440, y: 86, active: true, id: 81 },
 
-  // 3. Queso suspendido sobre el Gran Puente Colgante Ceremonial del Santuario
-  { x: 29190, y: 72, active: true, id: 82 }
+  // 3. Queso en el Relicario Celestial suspendido sobre el trono hacia Shambhala
+  { x: 29490, y: 44, active: true, id: 82 }
 ];

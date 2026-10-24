@@ -30,7 +30,8 @@ const arrayKeys = [
   'obsidianBrutes',
   'flameWisps',
   'omniMen',
-  'cheeses'
+  'cheeses',
+  'icicles'
 ];
 
 const mergedData = {};

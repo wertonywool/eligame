@@ -1,28 +1,28 @@
 // ============================================================================
-// MUNDO 4 - FASE 2 - PARTE 3: NPC APA SHERPA EL VETERANO (X: 6720)
+// MUNDO 4 - FASE 2 - PARTE 3: NPC APA SHERPA EL SUPER SHERPA (X: 7840)
 // ============================================================================
 
 module.exports = [
   {
-    x: 6720,
+    x: 7840,
     y: 178,
-    name: 'Apa Sherpa el Veterano',
-    role: 'Veterano del Everest',
-    color: '#fed7aa',
-    hatColor: '#c2410c',
+    name: 'Apa Sherpa',
+    role: 'El Super Sherpa de Cumbre (21 Cumbres del Everest)',
+    color: '#e0f2fe',
+    hatColor: '#0369a1',
     lines: [
-      '¡Qué proeza, Elizabeth! Has alcanzado la cumbre de las agujas de hielo más peligrosas del mundo.',
-      'Solo un último tramo de pilares cristalinos te separa del descenso hacia el valle.',
-      'Más adelante, tras ese gran arco congelado, descansan los tejados y chimeneas del Pueblo Nevado.',
-      'En el pueblo podrás entrar a tiendas, descansar y conversar con sus singulares habitantes...',
-      '¡Sigue adelante con tu pala y coraje, mamá ratona! ¡Tu hijo te espera más arriba!'
+      '¡Increíble, Elizabeth! ¡Has conquistado la temible Cascada de Hielo de Khumbu! Muy pocos escaladores logran cruzarla.',
+      'Cruzaste las escaleras de aluminio sobre el abismo, esquivaste los carámbanos y surfeaste el hielo con auténtica maestría.',
+      'Justo detrás de mí se alza el Monumental Arco Glacial que da la bienvenida a Namche Bazaar, el Pueblo Nevado.',
+      'Allí podrás descansar en la Taberna Alpina junto al fuego, visitar la tienda de gorros de lana y hablar con los aldeanos.',
+      '¡Tu pequeño hijo dejó un mensaje de amor en la taberna! ¡Cruza el arco hacia la Fase 3!'
     ],
     dialogue: [
-      '¡Qué proeza, Elizabeth! Has alcanzado la cumbre de las agujas de hielo más peligrosas del mundo.',
-      'Solo un último tramo de pilares cristalinos te separa del descenso hacia el valle.',
-      'Más adelante, tras ese gran arco congelado, descansan los tejados y chimeneas del Pueblo Nevado.',
-      'En el pueblo podrás entrar a tiendas, descansar y conversar con sus singulares habitantes...',
-      '¡Sigue adelante con tu pala y coraje, mamá ratona! ¡Tu hijo te espera más arriba!'
+      '¡Increíble, Elizabeth! ¡Has conquistado la temible Cascada de Hielo de Khumbu! Muy pocos escaladores logran cruzarla.',
+      'Cruzaste las escaleras de aluminio sobre el abismo, esquivaste los carámbanos y surfeaste el hielo con auténtica maestría.',
+      'Justo detrás de mí se alza el Monumental Arco Glacial que da la bienvenida a Namche Bazaar, el Pueblo Nevado.',
+      'Allí podrás descansar en la Taberna Alpina junto al fuego, visitar la tienda de gorros de lana y hablar con los aldeanos.',
+      '¡Tu pequeño hijo dejó un mensaje de amor en la taberna! ¡Cruza el arco hacia la Fase 3!'
     ]
   }
 ];

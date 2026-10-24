@@ -3,5 +3,5 @@
 // ============================================================================
 
 module.exports = [
-  { id: 45, x: 35460, y: 126, name: 'Palacio de Cristal de Agartha - Patio de los Maestros', active: false }
+  { id: 45, x: 34760, y: 126, name: 'Palacio de Cristal de Agartha - Puerta de los Maestros', active: false }
 ];

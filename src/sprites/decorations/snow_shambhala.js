@@ -65,10 +65,30 @@ function drawCrystalLotusFlower(ctx, x, y, frame = 0) {
   ctx.fillRect(px - 3 + Math.sin(frame * 0.15) * 6, py - 16 - sparkle * 12, 2, 2);
 }
 
-function drawShambhalaPrayerBell(ctx, x, y, frame = 0) {
+function drawShambhalaPrayerBell(ctx, x, y, frame = 0, d = null) {
   const px = Math.round(x);
   const py = Math.round(y);
   const h = 48;
+
+  // Ondas de choque sónicas doradas si la campana está sonando
+  if (d && d.ringing > 0) {
+    d.ringing = Math.max(0, d.ringing - 0.02);
+    const waveProgress = 1 - d.ringing;
+    const waveRadius = 12 + waveProgress * 38;
+    ctx.save();
+    ctx.strokeStyle = 'rgba(253, 224, 71, ' + (d.ringing * 0.9).toFixed(2) + ')';
+    ctx.lineWidth = 2.5;
+    ctx.beginPath();
+    ctx.arc(px, py - 24, waveRadius, 0, Math.PI * 2);
+    ctx.stroke();
+
+    ctx.strokeStyle = 'rgba(245, 158, 11, ' + (d.ringing * 0.6).toFixed(2) + ')';
+    ctx.lineWidth = 1.5;
+    ctx.beginPath();
+    ctx.arc(px, py - 24, Math.max(4, waveRadius - 12), 0, Math.PI * 2);
+    ctx.stroke();
+    ctx.restore();
+  }
 
   // 1. Armazón de madera lacada roja tibetana
   ctx.fillStyle = '#0f172a';

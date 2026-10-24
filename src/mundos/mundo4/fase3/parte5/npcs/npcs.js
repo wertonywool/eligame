@@ -46,6 +46,21 @@ module.exports = [
       'Toma un bollo caliente... ¡Mmm, todos tus corazones restaurados al máximo!',
       'Más adelante en el pueblo está el Taller de Forja y la gran Alcaldía que da paso al Lago de Hielo de la Fase 4.',
       '¡Ese Pico de Hielo que llevas te será imprescindible para abrirte camino entre los témpanos!'
-    ]
+    ],
+    onDialogueEnd: function() {
+      if (typeof player !== 'undefined' && player) {
+        player.lives = player.maxLives;
+        player.speed = 175;
+        if (window.sfx && window.sfx.playPowerup) window.sfx.playPowerup();
+        if (typeof spawnStarSparkles === 'function') {
+          spawnStarSparkles(player.x + 11, player.y + 12, 22, '#f59e0b');
+          spawnStarSparkles(player.x + 11, player.y + 12, 16, '#ffd166');
+        }
+        if (typeof triggerShake === 'function') triggerShake(0.08, 1.2);
+        if (typeof spawnFloatingText === 'function') {
+          spawnFloatingText(player.x, player.y - 20, '¡BOLLO DE CANELA! ¡CORAZONES Y VELOCIDAD AL MÁXIMO!', '#f59e0b');
+        }
+      }
+    }
   }
 ];

@@ -142,9 +142,9 @@ function drawHUDBosses() {
 
   // 5. Barra de Jefe del Dragón Astral de Polaris (Mundo 4 • Fase 9)
   if (typeof astralBossState !== 'undefined' && astralBossState && astralBossState.active && !astralBossState.isDefeated) {
-    const bw = 170;
+    const bw = 154;
     const bx = Math.round(W / 2 - bw / 2);
-    const by = 28;
+    const by = 34;
     const isEnraged = astralBossState.hp <= 3;
     drawRoundedPanel(bx, by, bw, 18, 6, 'rgba(8, 4, 22, 0.95)', isEnraged ? '#ff007f' : '#ffd166', 1.3);
 

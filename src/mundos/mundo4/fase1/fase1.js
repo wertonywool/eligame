@@ -15,7 +15,8 @@ function assembleFase1() {
     'npcs',
     'magmaCrawlers',
     'fireBats',
-    'cheeses'
+    'cheeses',
+    'icicles'
   ];
 
   const result = {};

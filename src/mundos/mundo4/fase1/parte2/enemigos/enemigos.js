@@ -5,23 +5,17 @@
 
 module.exports = {
   crawlers: [
-    // Oruga de escarcha en la morrena inicial
-    { x: 1530, y: 196, minX: 1490, maxX: 1620, speed: 45, dir: 1, variant: 'frost_crawler' },
-    // Oruga de escarcha en el primer banco de nieve profunda
-    { x: 1740, y: 196, minX: 1700, maxX: 1900, speed: 48, dir: -1, variant: 'frost_crawler' },
-    // Oruga de escarcha en la repisa intermedia
-    { x: 2080, y: 164, minX: 2060, maxX: 2160, speed: 45, dir: 1, variant: 'frost_crawler' },
-    // Oruga de escarcha en el terraplen de seracs
-    { x: 2360, y: 186, minX: 2310, maxX: 2480, speed: 50, dir: 1, variant: 'frost_crawler' },
-    // Oruga de escarcha en el saliente del Campamento 2
-    { x: 2590, y: 196, minX: 2550, maxX: 2680, speed: 45, dir: -1, variant: 'frost_crawler' }
+    // Oruga de escarcha en el primer banco de nieve glacial
+    { x: 1790, y: 196, minX: 1730, maxX: 1920, speed: 45, dir: 1, variant: 'frost_crawler' },
+    // Oruga de escarcha en el segundo banco de nieve profunda
+    { x: 2510, y: 196, minX: 2460, maxX: 2630, speed: 46, dir: -1, variant: 'frost_crawler' }
   ],
   fliers: [
     // Murcielago glacial sobrevolando el primer banco de nieve
-    { x: 1780, y: 70, baseY: 70, minX: 1720, maxX: 1850, speed: 40, variant: 'frost_flier' },
-    // Murcielago glacial sobrevolando el abismo de la grieta helada
-    { x: 2220, y: 85, baseY: 85, minX: 2160, maxX: 2280, speed: 38, variant: 'frost_flier' },
-    // Murcielago glacial sobre el terraplen de seracs
-    { x: 2440, y: 65, baseY: 65, minX: 2380, maxX: 2500, speed: 42, variant: 'frost_flier' }
+    { x: 1820, y: 65, baseY: 65, minX: 1760, maxX: 1890, speed: 38, variant: 'frost_flier' },
+    // Murcielago glacial sobrevolando el abismo de la gran grieta
+    { x: 2240, y: 80, baseY: 80, minX: 2180, maxX: 2300, speed: 40, variant: 'frost_flier' },
+    // Murcielago glacial sobrevolando la aproximacion al Campamento 2
+    { x: 2580, y: 65, baseY: 65, minX: 2520, maxX: 2640, speed: 38, variant: 'frost_flier' }
   ]
 };

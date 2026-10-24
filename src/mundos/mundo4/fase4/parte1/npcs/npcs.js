@@ -5,23 +5,25 @@
 module.exports = [
   // 1. Pabu el Pescador de Hielo en la orilla del lago
   {
-    x: 13580,
+    x: 13620,
     y: 178,
     name: 'Pabu el Pescador de Hielo',
-    role: 'Pescador del Lago Glacial',
+    role: 'Veterano de la Bahía Glacial',
     color: '#bae6fd',
     hatColor: '#0369a1',
     lines: [
-      'Brrr! El viento artico que sopla sobre este lago congelado corta como un cuchillo.',
-      'Bajo esta capa de hielo azul habitan truchas de nieve y criaturas ancestrales.',
-      'Ten mucho cuidado con los tempanos flotantes... El agua esta a varios grados bajo cero!',
-      'Si necesitas impulso sobre el hielo resbaladizo, aprovecha la inercia de tus carreras.'
+      '¡Brrr! ¡Bienvenida a la inmensidad del Gran Lago Congelado, pequeña Elizabeth!',
+      'Bajo nuestros pies hay siglos de hielo puro... pero más adelante la capa es traicionera.',
+      'Aprovecha la inercia de tus carreras: sobre el hielo liso puedes derrapar y patinar a gran velocidad.',
+      '¡Atenta a los témpanos móviles y al hielo quebradizo! Si te quedas quieta sobre hielo delgado, se romperá bajo tu peso.',
+      'Y cuando la ventisca polar azote con furia, ¡entra a mi cabaña para protegerte del vendaval!'
     ],
     dialogue: [
-      'Brrr! El viento artico que sopla sobre este lago congelado corta como un cuchillo.',
-      'Bajo esta capa de hielo azul habitan truchas de nieve y criaturas ancestrales.',
-      'Ten mucho cuidado con los tempanos flotantes... El agua esta a varios grados bajo cero!',
-      'Si necesitas impulso sobre el hielo resbaladizo, aprovecha la inercia de tus carreras.'
+      '¡Brrr! ¡Bienvenida a la inmensidad del Gran Lago Congelado, pequeña Elizabeth!',
+      'Bajo nuestros pies hay siglos de hielo puro... pero más adelante la capa es traicionera.',
+      'Aprovecha la inercia de tus carreras: sobre el hielo liso puedes derrapar y patinar a gran velocidad.',
+      '¡Atenta a los témpanos móviles y al hielo quebradizo! Si te quedas quieta sobre hielo delgado, se romperá bajo tu peso.',
+      'Y cuando la ventisca polar azote con furia, ¡entra a mi cabaña para protegerte del vendaval!'
     ]
   }
 ];

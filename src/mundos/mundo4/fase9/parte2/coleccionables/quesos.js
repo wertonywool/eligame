@@ -3,12 +3,12 @@
 // ============================================================================
 
 module.exports = [
-  // Queso #98: Flotando sobre la Terraza de Polvo de Nebulosa
-  { x: 38480, y: 40, active: true, id: 98 },
+  // Queso #98: En la ruta superior de diamante de los Jardines de Nebulosa
+  { x: 38500, y: 40, active: true, id: 98 },
 
-  // Queso #99: En la Fosa Profunda de Meteoritos y Aurora
-  { x: 39150, y: 138, active: true, id: 99 },
+  // Queso #99: Oculto en la Fosa Profunda de Meteoritos (requiere excavar túneles con la pala)
+  { x: 39200, y: 128, active: true, id: 99 },
 
-  // Queso #100: En la cuspide de la Aguja Solar del Cometa Dorado (Gran Hito Queso #100)
-  { x: 39580, y: 26, active: true, id: 100 }
+  // Queso #100: ¡GRAN HITO HISTÓRICO! En la cúspide de la Aguja Solar del Cometa Dorado
+  { x: 39640, y: 38, active: true, id: 100 }
 ];

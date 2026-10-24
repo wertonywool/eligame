@@ -1,10 +1,10 @@
 // ============================================================================
-// MUNDO 4 - FASE 1 - PARTE 2: NPC GUIA SHERPA PEMBA (X: 1565)
+// MUNDO 4 - FASE 1 - PARTE 2: NPC GUIA SHERPA PEMBA (X: 1530)
 // ============================================================================
 
 module.exports = [
   {
-    x: 1565,
+    x: 1530,
     y: 178,
     name: 'Sherpa Pemba',
     role: 'Guia de Alta Montana',

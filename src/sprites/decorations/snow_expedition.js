@@ -295,7 +295,7 @@ function drawSnowDecoration(ctx, d, frame) {
   else if (d.subType === 'great_snow_yeti' && typeof drawGreatSnowYeti === 'function') drawGreatSnowYeti(ctx, px, py, frame);
   else if (d.subType === 'yeti_crystal_throne' && typeof drawYetiCrystalThrone === 'function') drawYetiCrystalThrone(ctx, px, py, frame);
   else if (d.subType === 'crystal_lotus' && typeof drawCrystalLotusFlower === 'function') drawCrystalLotusFlower(ctx, px, py, frame);
-  else if (d.subType === 'shambhala_prayer_bell' && typeof drawShambhalaPrayerBell === 'function') drawShambhalaPrayerBell(ctx, px, py, frame);
+  else if (d.subType === 'shambhala_prayer_bell' && typeof drawShambhalaPrayerBell === 'function') drawShambhalaPrayerBell(ctx, px, py, frame, d);
   else if (d.subType === 'hot_spring' && typeof drawHotSpringPool === 'function') drawHotSpringPool(ctx, px, py, frame);
   else if (d.subType === 'golden_pagoda_tower' && typeof drawGoldenPagodaTower === 'function') drawGoldenPagodaTower(ctx, px, py, frame);
   else if (d.subType === 'nirvana_lotus_altar' && typeof drawNirvanaLotusAltar === 'function') drawNirvanaLotusAltar(ctx, px, py, frame);

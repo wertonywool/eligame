@@ -58,7 +58,11 @@ module.exports = [
         player.hasIcePick = true;
         player.ability = 'ice_pick';
         const dashBtn = document.getElementById('btn-dash');
-        if (dashBtn) dashBtn.classList.add('visible');
+        if (dashBtn) {
+          dashBtn.classList.add('visible');
+          const tag = dashBtn.querySelector('.btn-tag');
+          if (tag) tag.textContent = 'PICO';
+        }
 
         if (window.sfx && window.sfx.playPowerup) window.sfx.playPowerup();
         else if (window.sfx && window.sfx.playCheese) window.sfx.playCheese();

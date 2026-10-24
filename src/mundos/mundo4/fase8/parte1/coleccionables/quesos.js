@@ -3,12 +3,12 @@
 // ============================================================================
 
 module.exports = [
-  // 1. Queso en la Terraza Aerea de las Estrellas de Kailash (salto flotante)
-  { x: 33350, y: 40, active: true, id: 89 },
+  // 1. Queso #89 en el túnel subterráneo del banco de nieve (se obtiene excavando con la pala)
+  { x: 33310, y: 136, active: true, id: 89 },
 
-  // 2. Queso en la Fosa Astral de Escarcha y Polvo Estelar
-  { x: 34060, y: 136, active: true, id: 90 },
+  // 2. Queso #90 suspendido en el cenit del Gran Abismo (se alcanza con el Géiser de Luz Astral)
+  { x: 33850, y: 22, active: true, id: 90 },
 
-  // 3. Queso flotando en lo alto del Gran Puente del Arcoiris de Kailash
-  { x: 34350, y: 38, active: true, id: 91 }
+  // 3. Queso #91 sobre la aguja de cristal cumbrera del Gran Puente del Arcoíris Supremo
+  { x: 34500, y: 32, active: true, id: 91 }
 ];

@@ -196,6 +196,17 @@ function getNpcDynamicLines(npc) {
     ];
   }
 
+  // Gaston el Melancólico (Casa 3)
+  if (npc.name && npc.name.includes('Gaston')) {
+    if (typeof player !== 'undefined' && player && player.hasIcePick) {
+      return [
+        '¡Gracias infinitas por la pala, Elizabeth! Ahora puedo laburar feliz en el jardín de nieve.',
+        'Usa el Pico de Hielo con el botón de Acción / Dash para destrozar los muros de hielo del lago en la Fase 4.',
+        '¡Sube a la cima del Everest y rescata a tu hijo!'
+      ];
+    }
+  }
+
   return null;
 }
 
@@ -222,6 +233,111 @@ function handleNpcQuestDialogueEnd(npc) {
   } else if (npc.name === 'Hijo Ratoncito' && npc.x >= 18000) {
     if (typeof startKrakenIntroAnimation === 'function') {
       startKrakenIntroAnimation();
+    }
+  } else if (npc.name && npc.name.includes('Tashi')) {
+    // Tabernero Tashi: Sopa del Himalaya (Restaura corazones)
+    if (typeof player !== 'undefined' && player) {
+      player.lives = player.maxLives;
+      if (window.sfx && window.sfx.playPowerup) window.sfx.playPowerup();
+      if (typeof spawnStarSparkles === 'function') {
+        spawnStarSparkles(player.x + 11, player.y + 12, 18, '#ff75a0');
+        spawnStarSparkles(player.x + 11, player.y + 12, 12, '#ffd166');
+      }
+      if (typeof triggerShake === 'function') triggerShake(0.08, 1.2);
+      if (typeof spawnFloatingText === 'function') {
+        spawnFloatingText(player.x, player.y - 20, '¡CORAZONES RESTAURADOS!', '#ff75a0');
+      }
+    }
+  } else if (npc.name && npc.name.includes('Lobsang')) {
+    // Lobsang el Jugador: Dados de la suerte (+10 lirios)
+    if (!npc.rewardGiven) {
+      npc.rewardGiven = true;
+      saveState.dexterLilies = (saveState.dexterLilies || 0) + 10;
+      if (window.sfx && window.sfx.playCheese) window.sfx.playCheese();
+      if (typeof spawnStarSparkles === 'function') {
+        spawnStarSparkles(player.x + 11, player.y + 12, 14, '#fde047');
+      }
+      if (typeof spawnFloatingText === 'function') {
+        spawnFloatingText(player.x, player.y - 20, '¡+10 LIRIOS DE LA SUERTE!', '#fde047');
+      }
+    }
+  } else if (npc.name && npc.name.includes('Dolma')) {
+    // Madame Dolma: Bendición de lana alpina (Botas y bufanda calientita, velocidad 168)
+    if (typeof player !== 'undefined' && player) {
+      player.speed = 168;
+      if (window.sfx && window.sfx.playPowerup) window.sfx.playPowerup();
+      if (typeof spawnStarSparkles === 'function') {
+        spawnStarSparkles(player.x + 11, player.y + 12, 20, '#ec4899');
+        spawnStarSparkles(player.x + 11, player.y + 12, 16, '#f472b6');
+      }
+      if (typeof triggerShake === 'function') triggerShake(0.08, 1.2);
+      if (typeof spawnFloatingText === 'function') {
+        spawnFloatingText(player.x, player.y - 20, '¡BUFANDA Y BOTAS DE LANA EQUIPADAS!', '#f472b6');
+      }
+    }
+  } else if (npc.name && npc.name.includes('Gaston')) {
+    // Gaston el Melancólico: Intercambio de Pala por Pico de Hielo Profesional
+    if (typeof player !== 'undefined' && player && !player.hasIcePick) {
+      player.hasIcePick = true;
+      player.ability = 'ice_pick';
+      const dashBtn = document.getElementById('btn-dash');
+      if (dashBtn) {
+        dashBtn.classList.add('visible');
+        const tag = dashBtn.querySelector('.btn-tag');
+        if (tag) tag.textContent = 'PICO';
+      }
+      if (window.sfx && window.sfx.playPowerup) window.sfx.playPowerup();
+      if (typeof spawnStarSparkles === 'function') {
+        spawnStarSparkles(player.x + 11, player.y + 12, 24, '#38bdf8');
+      }
+      if (typeof triggerShake === 'function') triggerShake(0.12, 1.8);
+      if (typeof spawnFloatingText === 'function') {
+        spawnFloatingText(player.x - 20, player.y - 20, '¡PICO DE HIELO OBTENIDO!', '#38bdf8');
+      }
+    }
+  } else if (npc.name && npc.name.includes('Mimi')) {
+    // Mimi la Repostera: Bollo de Canela del Horno (Restaura corazones + velocidad 175)
+    if (typeof player !== 'undefined' && player) {
+      player.lives = player.maxLives;
+      player.speed = 175;
+      if (window.sfx && window.sfx.playPowerup) window.sfx.playPowerup();
+      if (typeof spawnStarSparkles === 'function') {
+        spawnStarSparkles(player.x + 11, player.y + 12, 22, '#f59e0b');
+        spawnStarSparkles(player.x + 11, player.y + 12, 16, '#ffd166');
+      }
+      if (typeof triggerShake === 'function') triggerShake(0.08, 1.2);
+      if (typeof spawnFloatingText === 'function') {
+        spawnFloatingText(player.x, player.y - 20, '¡BOLLO DE CANELA! ¡CORAZONES Y VELOCIDAD AL MÁXIMO!', '#f59e0b');
+      }
+    }
+  } else if (npc.name && npc.name.includes('Kazi')) {
+    // Maestro Kazi el Herrero: Templado de Pico en Acero Glacial
+    if (typeof player !== 'undefined' && player) {
+      player.hasForgedPick = true;
+      if (window.sfx && window.sfx.playHit) window.sfx.playHit();
+      if (typeof spawnStarSparkles === 'function') {
+        spawnStarSparkles(player.x + 11, player.y + 12, 24, '#facc15');
+        spawnStarSparkles(player.x + 11, player.y + 12, 18, '#38bdf8');
+      }
+      if (typeof triggerShake === 'function') triggerShake(0.14, 2.0);
+      if (typeof spawnFloatingText === 'function') {
+        spawnFloatingText(player.x - 20, player.y - 20, '¡PICO FORJADO MEJORADO!', '#facc15');
+      }
+    }
+  } else if (npc.name && npc.name.includes('Dorje')) {
+    // Alcalde Dorje: Sello Oficial del Pueblo (+20 lirios)
+    if (!npc.decreeGranted) {
+      npc.decreeGranted = true;
+      saveState.dexterLilies = (saveState.dexterLilies || 0) + 20;
+      if (window.sfx && window.sfx.playPowerup) window.sfx.playPowerup();
+      if (typeof spawnStarSparkles === 'function') {
+        spawnStarSparkles(player.x + 11, player.y + 12, 28, '#ffd166');
+        spawnStarSparkles(player.x + 11, player.y + 12, 20, '#38bdf8');
+      }
+      if (typeof triggerShake === 'function') triggerShake(0.16, 2.2);
+      if (typeof spawnFloatingText === 'function') {
+        spawnFloatingText(player.x - 30, player.y - 20, '¡SELLO OFICIAL DEL PUEBLO! +20 LIRIOS', '#ffd166');
+      }
     }
   }
 }

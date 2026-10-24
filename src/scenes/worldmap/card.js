@@ -57,7 +57,7 @@ function drawWorldMapCard(curWorld) {
       { label: 'F5: EVEREST', sub: 'La Gran Cima', cpId: 37 },
       { label: 'F6: YETI', sub: 'Santuario', cpId: 41 },
       { label: 'F7: SHAMBHALA', sub: 'Pagoda', cpId: 42 },
-      { label: 'F8: KAILASH', sub: 'Agartha', cpId: 45 },
+      { label: 'F8: KAILASH', sub: 'Agartha', cpId: 44 },
       { label: 'F9: COSMOS', sub: 'Vía Láctea', cpId: 46 },
       { label: 'F9: POLARIS', sub: 'Sanctum', cpId: 48 }
     ];

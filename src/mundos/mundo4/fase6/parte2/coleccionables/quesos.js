@@ -1,14 +1,14 @@
 // ============================================================================
-// MUNDO 4 - FASE 6 - PARTE 2: QUESOS COLECCIONABLES (X: 25250 -> 26700)
+// MUNDO 4 - FASE 6 - PARTE 2: QUESOS COLECCIONABLES (#74, #75, #76)
 // ============================================================================
 
 module.exports = [
   // 1. Queso en el pináculo de la Torre Celestial Alpha
-  { x: 25515, y: 68, active: true, id: 74 },
+  { x: 25530, y: 42, active: true, id: 74 },
 
-  // 2. Queso semienterrado en el banco de permafrost profundo del Campamento Kangshung 2
-  { x: 26120, y: 136, active: true, id: 75 },
+  // 2. Queso en la fisura secreta del Campamento Kangshung 2 (Rompiendo el pilar de hielo)
+  { x: 26110, y: 132, active: true, id: 75 },
 
-  // 3. Queso suspendido en el abismo sobre el Gran Puente de Escarcha Colgante
-  { x: 26385, y: 72, active: true, id: 76 }
+  // 3. Queso flotando en las alturas del Gran Puente Oriental (Impulsado por el Vórtice Polar)
+  { x: 26350, y: 52, active: true, id: 76 }
 ];

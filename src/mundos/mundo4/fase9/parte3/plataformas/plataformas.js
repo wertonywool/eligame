@@ -1,38 +1,37 @@
 // ============================================================================
 // MUNDO 4 - FASE 9 - PARTE 3: PLATAFORMAS DEL SANCTUM SANCTORUM (X: 39800 -> 41600)
 // ============================================================================
+// En X >= 33000 la gravedad cósmica es reducida; saltos largos, flotantes y ágiles.
 
 module.exports = [
-  // 1. Rampa de Ascenso a la Bóveda del Firmamento
-  { x: 39800, y: 118, w: 160, h: 28, type: 'snow_ground' },
+  // 1. Terraza de Ascenso y Acceso al Sanctum Sanctorum
+  { x: 39840, y: 120, w: 160, h: 28, subType: 'snow_ground' },
 
-  // 2. Primer Puente Prismático del Sanctum
-  { x: 39990, y: 104, w: 130, h: 16, type: 'snow_platform', subType: 'rainbow_ice' },
+  // 2. Calzada Prismática de la Estrella Solitaria
+  { x: 40040, y: 102, w: 120, h: 16, subType: 'rainbow_ice' },
 
-  // 3. Terraza Flotante de la Estrella Solitaria (Queso #101 en x: 40220, y: 68)
-  { x: 40150, y: 92, w: 140, h: 18, type: 'ice_rock' },
+  // 3. Terraza Flotante de Diamante Glacial de la Estrella Solitaria (Queso #101)
+  { x: 40190, y: 72, w: 100, h: 16, subType: 'ice_crystal', launchRamp: true },
 
-  // 4. Pilar Quebrable de Diamante Polar #1
-  { x: 40320, y: 116, w: 46, h: 64, type: 'ice_pillar' },
+  // 4. Balcón de Acceso al Atrio de los Sabios
+  { x: 40340, y: 108, w: 120, h: 16, subType: 'rainbow_ice' },
 
-  // 5. Terraza del Patio de los Sabios Celestiales
-  { x: 40390, y: 126, w: 130, h: 20, type: 'ice_rock' },
+  // 5. Gran Atrio de los Sabios Celestiales (Patriarca Rigden y Checkpoint #48)
+  { x: 40500, y: 126, w: 230, h: 30, subType: 'snow_ground' },
 
-  // 6. Gran Atrio del Sanctum Sanctorum (Patriarca Rigden y Checkpoint #48)
-  { x: 40540, y: 126, w: 250, h: 30, type: 'snow_ground' },
+  // 6. GRAN ARENA CELESTIAL DE COMBATE DE POLARIS (X: 40730 -> 41380)
+  // Suelo sagrado continuo: Elizabeth nunca caerá al vacío durante la batalla contra el Dragón Astral
+  { x: 40730, y: 126, w: 650, h: 32, subType: 'snow_ground' },
 
-  // 7. Fosa Profunda de la Estrella Polar (Queso #102 en x: 40880, y: 136)
-  { x: 40820, y: 156, w: 160, h: 26, type: 'snow_bank' },
+  // Almenara Izquierda de Combate
+  { x: 40800, y: 92, w: 90, h: 14, subType: 'rainbow_ice' },
 
-  // 8. Pilar Quebrable de Diamante Polar #2
-  { x: 41010, y: 114, w: 46, h: 62, type: 'ice_pillar' },
+  // Gran Cristal Cenital de Combate (Queso #102 y plataforma para saltar a golpear al Dragón)
+  { x: 40990, y: 72, w: 100, h: 14, subType: 'ice_crystal', launchRamp: true },
 
-  // 9. Segundo Puente Prismático del Sanctum
-  { x: 41080, y: 98, w: 130, h: 16, type: 'snow_platform', subType: 'rainbow_ice' },
+  // Almenara Derecha de Combate
+  { x: 41180, y: 92, w: 90, h: 14, subType: 'rainbow_ice' },
 
-  // 10. Aguja Cenital de las Estrellas Eternas (Queso #103 en x: 41180, y: 60)
-  { x: 41240, y: 82, w: 110, h: 18, type: 'ice_rock' },
-
-  // 11. Gran Altar Supremo de Polaris (Trono de Polaris, Baby Mouse #4 y Portal a la Madriguera)
-  { x: 41380, y: 126, w: 220, h: 32, type: 'snow_ground' }
+  // 7. Gran Altar Supremo de Polaris (Trono de Polaris, 4to Hijo Ratón, Queso #103 y Portal)
+  { x: 41380, y: 126, w: 220, h: 32, subType: 'snow_ground' }
 ];

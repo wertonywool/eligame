@@ -4,11 +4,11 @@
 
 module.exports = [
   // Queso #101: Sobre la Terraza Flotante de la Estrella Solitaria
-  { x: 40220, y: 68, active: true, id: 101 },
+  { x: 40230, y: 48, active: true, id: 101 },
 
-  // Queso #102: En la Fosa Profunda de la Estrella Polar
-  { x: 40880, y: 136, active: true, id: 102 },
+  // Queso #102: En el Cristal Cenital de la Arena de Combate contra el Dragón Astral
+  { x: 41040, y: 48, active: true, id: 102 },
 
-  // Queso #103: En la Aguja Cenital de las Estrellas Eternas
-  { x: 41180, y: 60, active: true, id: 103 }
+  // Queso #103: ¡GRAN RECOMPENSA FINAL! Flotando sobre el Trono Supremo de Polaris
+  { x: 41440, y: 76, active: true, id: 103 }
 ];

@@ -378,6 +378,10 @@ function update(dt) {
       updateIcePickAbility(dt);
     }
 
+    if (typeof updateKangshungMechanics === 'function') {
+      updateKangshungMechanics(dt);
+    }
+
     if (typeof updateBlizzardSystem === 'function') {
       updateBlizzardSystem(dt);
     }

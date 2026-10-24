@@ -42,10 +42,12 @@ function loadLevel(idx) {
     invulnTimer: 0,
     trailTimer: 0,
     transitionTimer: 0,
-    ability: level.ability || null,
+    ability: (level.id === 4 && (initialX >= 11000 || (savedCp && savedCp.id >= 22))) ? 'ice_pick' : (level.ability || null),
     dashTimer: 0,
     dashCooldown: 0
   };
+  window.level = level;
+  window.player = player;
 
   const dashBtn = document.getElementById('btn-dash');
   if (dashBtn) {
@@ -196,6 +198,9 @@ function loadLevel(idx) {
   }
   if (typeof initIcePickAbility === 'function') {
     initIcePickAbility();
+  }
+  if (typeof initKangshungMechanics === 'function') {
+    initKangshungMechanics();
   }
 
   cameraX = Math.max(0, Math.min(level.worldWidth - W, player.x - W * 0.35));

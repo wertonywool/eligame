@@ -12,6 +12,7 @@ function assembleFase7() {
     'decorations',
     'checkpoints',
     'spikes',
+    'geysers',
     'npcs',
     'magmaCrawlers',
     'fireBats',

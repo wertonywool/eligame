@@ -3,5 +3,5 @@
 // ============================================================================
 
 module.exports = [
-  { id: 23, x: 8750, y: 196, name: 'Plaza de la Taberna • Pueblo Nevado', active: false }
+  { id: 23, x: 8120, y: 196, name: 'Plaza de la Taberna • Pueblo Nevado', active: false }
 ];

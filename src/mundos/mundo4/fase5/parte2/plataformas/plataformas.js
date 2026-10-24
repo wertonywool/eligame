@@ -6,43 +6,50 @@
 module.exports = [
   // 1. Plataforma del Campamento 13 (Collado Sur - 8000 m) con Ang Dorje y Checkpoint #36
   { x: 20750, y: 136, w: 420, h: 28, subType: 'snow_ground' },
-  { x: 20880, y: 98, w: 75, h: 14, subType: 'ice_rock' },
-  { x: 21010, y: 72, w: 65, h: 12, subType: 'slippery_ice' },
 
-  // 2. Fosa de nieve helada y vientos huracanados de la Cresta Sureste
-  { x: 21200, y: 168, w: 200, h: 32, subType: 'snow_bank' },
-  { x: 21280, y: 126, w: 70, h: 14, subType: 'ice_rock' },
+  // 2. La Afilada Cresta Sureste y la Balconada (X: 21180 -> 21700)
+  { x: 21200, y: 140, w: 75, h: 16, subType: 'ice_rock' },
+  // Peldaño de hielo quebradizo sobre el abismo de la Zona de la Muerte
+  { x: 21285, y: 122, w: 65, h: 14, subType: 'cracking_ice' },
+  { x: 21360, y: 106, w: 85, h: 16, subType: 'ice_rock' },
 
-  // 3. Cornisas Afiladas de Hielo Azul de la Cresta Sureste con Queso #68
-  { x: 21420, y: 126, w: 90, h: 18, subType: 'ice_rock' },
-  { x: 21540, y: 104, w: 90, h: 18, subType: 'ice_rock' },
-  { x: 21620, y: 76, w: 60, h: 12, subType: 'slippery_ice' },
+  // Cámara secreta en la cornisa inferior con Queso #68 y pilar de hielo quebrable
+  { x: 21460, y: 156, w: 90, h: 16, subType: 'ice_rock' },
+  { x: 21480, y: 124, w: 30, h: 32, subType: 'ice_pillar', breakable: true },
+  // Cristal de rebote para salir catapultado de la cornisa inferior
+  { x: 21565, y: 148, w: 24, h: 20, subType: 'bounce_crystal' },
 
-  // 4. Tramo de Hielo Resbaladizo hacia la Balconada (The Balcony)
-  { x: 21680, y: 116, w: 180, h: 20, subType: 'slippery_ice' },
-  { x: 21880, y: 136, w: 140, h: 22, subType: 'snow_ground' },
-  { x: 21960, y: 100, w: 65, h: 14, subType: 'ice_rock' },
-  { x: 22040, y: 118, w: 80, h: 18, subType: 'ice_rock' },
+  // Cornisa superior de la Balconada
+  { x: 21460, y: 88, w: 80, h: 16, subType: 'slippery_ice' },
+  { x: 21550, y: 76, w: 85, h: 16, subType: 'ice_rock' },
+  { x: 21645, y: 92, w: 75, h: 16, subType: 'cracking_ice' },
 
-  // 5. El mitico Paso de Hillary (Hillary Step) - Escalada tecnica vertical
-  { x: 22130, y: 126, w: 80, h: 18, subType: 'ice_rock' },
-  { x: 22200, y: 118, w: 60, h: 14, subType: 'ice_rock' },
-  { x: 22260, y: 112, w: 80, h: 18, subType: 'ice_rock' },
-  { x: 22330, y: 104, w: 60, h: 14, subType: 'slippery_ice' },
-  { x: 22400, y: 96, w: 90, h: 16, subType: 'ice_rock' },
-  { x: 22470, y: 80, w: 60, h: 12, subType: 'slippery_ice' },
+  // 3. Cumbre Sur y aproximación al Paso de Hillary
+  { x: 21730, y: 110, w: 120, h: 20, subType: 'snow_ground' },
+  { x: 21860, y: 130, w: 75, h: 16, subType: 'slippery_ice' },
+  { x: 21945, y: 116, w: 70, h: 14, subType: 'cracking_ice' },
+  { x: 22025, y: 104, w: 80, h: 18, subType: 'ice_rock' },
 
-  // 6. Cornisa de aproximacion final a la cuspide
-  { x: 22530, y: 96, w: 120, h: 22, subType: 'snow_ground' },
-  { x: 22610, y: 74, w: 65, h: 12, subType: 'ice_rock' },
+  // 4. El Mítico Paso de Hillary (Hillary Step - 8790m) - Escalada técnica vertical
+  { x: 22110, y: 134, w: 75, h: 20, subType: 'ice_rock' },
+  { x: 22190, y: 112, w: 60, h: 14, subType: 'ice_rock' },
+  // Cristal de impulso celestial del Paso de Hillary (¡impulso épico hacia la cima del resalte!)
+  { x: 22255, y: 120, w: 26, h: 22, subType: 'bounce_crystal' },
+  { x: 22285, y: 78, w: 75, h: 16, subType: 'ice_rock' },
+  { x: 22370, y: 64, w: 65, h: 14, subType: 'cracking_ice' },
 
-  // 7. Gran Meseta de la Cima del Monte Everest (8848 m) con Monumento, Queso #70
-  { x: 22680, y: 98, w: 820, h: 32, subType: 'snow_ground' },
-  { x: 22800, y: 64, w: 75, h: 14, subType: 'ice_rock' },
-  { x: 22920, y: 44, w: 65, h: 12, subType: 'slippery_ice' },
-  { x: 23140, y: 62, w: 70, h: 14, subType: 'ice_rock' },
-  { x: 23320, y: 50, w: 65, h: 12, subType: 'slippery_ice' },
+  // Cúspide del Paso de Hillary con Queso #69 y pilar quebrable
+  { x: 22445, y: 52, w: 85, h: 16, subType: 'ice_rock' },
+  { x: 22475, y: 22, w: 28, h: 30, subType: 'ice_pillar', breakable: true },
+  { x: 22540, y: 80, w: 85, h: 18, subType: 'slippery_ice' },
 
-  // 8. Saliente de la Cuspide y mirador del Himalaya
-  { x: 23500, y: 98, w: 300, h: 32, subType: 'snow_ground' }
+  // 5. Cornisa de aproximación a la Cúspide
+  { x: 22650, y: 92, w: 100, h: 22, subType: 'snow_ground' },
+
+  // 6. La Gran Cima del Monte Everest (8848 m) con Monumento de la Victoria y Queso #70
+  { x: 22760, y: 98, w: 680, h: 32, subType: 'snow_ground' },
+
+  // 7. Saliente Este del Everest y descenso al Kangshung (Fase 6)
+  { x: 23440, y: 104, w: 180, h: 26, subType: 'snow_ground' },
+  { x: 23620, y: 108, w: 180, h: 28, subType: 'snow_ground' }
 ];

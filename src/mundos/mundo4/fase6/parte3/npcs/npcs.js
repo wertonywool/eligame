@@ -8,20 +8,20 @@ module.exports = [
     x: 27380,
     y: 108,
     name: 'Lama Kalsang del Templo de Cristal',
-    role: 'Guardian del Santuario Ancestral',
+    role: 'Guardián del Santuario Ancestral',
     color: '#fed7aa',
     hatColor: '#b91c1c',
     lines: [
-      'La paz de las nieves eternas este contigo, noble Elizabeth. Has llegado al Umbral del Santuario Ancestral.',
-      'Durante siglos, el Gran Yeti protegio este templo sagrado en perfecta armonia con los vientos del Himalaya.',
-      'Justo en la camara contigua aguarda el Trono de Cristal y la arena de combate.',
-      'Cruza la antesala con tu Pico de Hielo y preparate: solo venciendo su furia se abrira el paso hacia Shambhala!'
+      '¡Om Mani Padme Hum! La paz de las nieves eternas esté contigo, valerosa Elizabeth.',
+      'Has alcanzado el Atrio del Santuario Ancestral. Tras la antesala aguarda la Gran Arena del Yeti.',
+      'El Yeti es una fuerza de la naturaleza pura: pisa el suelo con fuerza sísmica y lanza témpanos desde el techo.',
+      'Aprovecha los balcones elevados de la arena para saltar sobre sus ondas de choque, y cuando choque contra los pilares... ¡golpéalo con tu pico!'
     ],
     dialogue: [
-      'La paz de las nieves eternas este contigo, noble Elizabeth. Has llegado al Umbral del Santuario Ancestral.',
-      'Durante siglos, el Gran Yeti protegio este templo sagrado en perfecta armonia con los vientos del Himalaya.',
-      'Justo en la camara contigua aguarda el Trono de Cristal y la arena de combate.',
-      'Cruza la antesala con tu Pico de Hielo y preparate: solo venciendo su furia se abrira el paso hacia Shambhala!'
+      '¡Om Mani Padme Hum! La paz de las nieves eternas esté contigo, valerosa Elizabeth.',
+      'Has alcanzado el Atrio del Santuario Ancestral. Tras la antesala aguarda la Gran Arena del Yeti.',
+      'El Yeti es una fuerza de la naturaleza pura: pisa el suelo con fuerza sísmica y lanza témpanos desde el techo.',
+      'Aprovecha los balcones elevados de la arena para saltar sobre sus ondas de choque, y cuando choque contra los pilares... ¡golpéalo con tu pico!'
     ]
   }
 ];

@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "build": "node tools/build_levels.js && node tools/build_game.js"
+    "build": "node tools/build_levels.js && node tools/build_sprites.js && node tools/build_game.js"
   },
   "keywords": [
     "game",

@@ -29,6 +29,7 @@ const MODULE_FILES = [
   'render/hazards/skyscraper_lobby.js',
   'render/hazards/atmosphere.js',
   'render/hazards/blizzard_system.js',
+  'render/hazards/kangshung_mechanics.js',
   'render/hazards/snow_village_interiors.js',
   'render/hazards/snow_village_interiors_pt2.js',
   'entities/collectibles.js',

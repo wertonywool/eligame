@@ -1,10 +1,10 @@
 // ============================================================================
-// MUNDO 4 - FASE 1 - PARTE 3: NPC PASANG EL EXPLORADOR (X: 2790)
+// MUNDO 4 - FASE 1 - PARTE 3: NPC PASANG EL EXPLORADOR (X: 2760)
 // ============================================================================
 
 module.exports = [
   {
-    x: 2790,
+    x: 2760,
     y: 178,
     name: 'Pasang el Explorador',
     role: 'Explorador de Cumbres',

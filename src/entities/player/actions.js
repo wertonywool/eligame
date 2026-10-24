@@ -154,25 +154,61 @@ function getDashBtn() {
       }
     }
   } else {
-    // Movimiento horizontal normal con transición suave
+    // Movimiento horizontal con física de hielo resbaladizo o suelo normal
     const targetDir = (keys.right ? 1 : 0) - (keys.left ? 1 : 0);
-    if (targetDir !== 0) {
-      if (Math.abs(player.vx) < 25 || (targetDir > 0 !== player.facingRight)) {
-        player.transitionTimer = 0.085;
+    const onIce = player.onGround && player.currentPlatform && (
+      player.currentPlatform.subType === 'slippery_ice' ||
+      player.currentPlatform.subType === 'frozen_lake_ice' ||
+      player.currentPlatform.subType === 'cracking_ice' ||
+      player.currentPlatform.isIce
+    );
+
+    if (onIce) {
+      if (targetDir !== 0) {
+        player.facingRight = targetDir > 0;
+        // Mayor velocidad punta en patinaje sobre hielo (1.15x), aceleración más fluida
+        const maxIceSpeed = player.speed * 1.15;
+        const accelRate = (player.vx * targetDir < 0) ? 6.5 : 4.8;
+        player.vx += (targetDir * maxIceSpeed - player.vx) * Math.min(1, dt * accelRate);
+
+        // Derrape con escarcha al cambiar de dirección bruscamente sobre hielo
+        if (player.vx * targetDir < -25 && globalFrame % 4 === 0) {
+          spawnParticles(player.x + 11, player.y + 22, 2, '#bae6fd', 45, -15);
+          spawnParticles(player.x + 11, player.y + 22, 1, '#ffffff', 30, -10);
+        }
+        player.animFrame += dt * 12;
+      } else {
+        // Deslizamiento con baja fricción (inercia real en hielo congelado)
+        player.vx *= Math.pow(0.55, dt);
+        if (Math.abs(player.vx) < 4) player.vx = 0;
+        player.animFrame += dt * (Math.abs(player.vx) > 20 ? 8 : 2);
       }
-      player.facingRight = targetDir > 0;
-      player.vx += (targetDir * player.speed - player.vx) * Math.min(1, dt * 13);
-      if (Math.abs(player.vx - targetDir * player.speed) < 6) {
-        player.vx = targetDir * player.speed;
+
+      // Estela brillante de patinaje ártico
+      if (Math.abs(player.vx) > 40 && globalFrame % 3 === 0) {
+        const skateX = player.facingRight ? player.x + 2 : player.x + player.w - 2;
+        spawnParticles(skateX, player.y + 23, 1, '#e0f2fe', 25, -8);
       }
-      player.animFrame += dt * 11;
     } else {
-      if (Math.abs(player.vx) > 65) {
-        player.transitionTimer = 0.075;
+      // Movimiento estándar sobre tierra o nieve
+      if (targetDir !== 0) {
+        if (Math.abs(player.vx) < 25 || (targetDir > 0 !== player.facingRight)) {
+          player.transitionTimer = 0.085;
+        }
+        player.facingRight = targetDir > 0;
+        player.vx += (targetDir * player.speed - player.vx) * Math.min(1, dt * 13);
+        if (Math.abs(player.vx - targetDir * player.speed) < 6) {
+          player.vx = targetDir * player.speed;
+        }
+        player.animFrame += dt * 11;
+      } else {
+        if (Math.abs(player.vx) > 65) {
+          player.transitionTimer = 0.075;
+        }
+        player.vx *= Math.pow(0.0005, dt);
+        if (Math.abs(player.vx) < 5) player.vx = 0;
+        player.animFrame += dt * 4;
       }
-      player.vx *= Math.pow(0.0005, dt);
-      if (Math.abs(player.vx) < 5) player.vx = 0;
-      player.animFrame += dt * 4;
     }
 
     if (player.transitionTimer > 0) player.transitionTimer -= dt;

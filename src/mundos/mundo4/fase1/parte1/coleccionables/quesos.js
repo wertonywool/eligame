@@ -1,14 +1,14 @@
 // ============================================================================
-// MUNDO 4 - FASE 1 - PARTE 1: QUESOS COLECCIONABLES DE ALTA MONTAÑA
+// MUNDO 4 - FASE 1 - PARTE 1: QUESOS COLECCIONABLES DE ALTA MONTANA
 // ============================================================================
 
 module.exports = [
-  // 1. Queso enterrado en el banco de nieve (Recompensa por cavar con la pala)
-  { x: 550, y: 182, active: true, id: 20 },
+  // 1. Queso enterrado en el banco de nieve (recompensa por cavar con la pala)
+  { x: 560, y: 184, active: true, id: 20 },
 
-  // 2. Queso en la cornisa superior de pizarra helada
-  { x: 910, y: 92, active: true, id: 21 },
+  // 2. Queso en el mirador superior de pizarra tras la escalada
+  { x: 1020, y: 68, active: true, id: 21 },
 
-  // 3. Queso flotante sobre el puente rústico alpino
-  { x: 1390, y: 140, active: true, id: 22 }
+  // 3. Queso flotante sobre el puente rustico alpino
+  { x: 1420, y: 160, active: true, id: 22 }
 ];

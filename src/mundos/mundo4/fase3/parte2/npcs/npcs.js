@@ -38,14 +38,28 @@ module.exports = [
       'Mirate, esa pala que llevas es muy util para excavar en los bancos de nieve fresca y encontrar tesoros enterrados.',
       'Pero cuidado mas adelante... en la Casa 3 vive un escalador que cayo en una profunda depresion. Se la pasa mirando la pared y suspirando por una pala como la tuya.',
       'Dicen que tiene un pico de hielo profesional que no quiere usar... ¡tal vez si hablas con el puedas hacer un buen intercambio!',
-      '¡Toma esta bendicion de lana calientita para protegerte del frio glacial!'
+      '¡Toma esta bendicion de lana calientita para protegerte del frio glacial y moverte con agilidad!'
     ],
     dialogue: [
       '¡Oh, que encanto de ratoncita! ¡Bienvenida a El Gorro Nevado, tesoro!',
       'Mirate, esa pala que llevas es muy util para excavar en los bancos de nieve fresca y encontrar tesoros enterrados.',
       'Pero cuidado mas adelante... en la Casa 3 vive un escalador que cayo en una profunda depresion. Se la pasa mirando la pared y suspirando por una pala como la tuya.',
       'Dicen que tiene un pico de hielo profesional que no quiere usar... ¡tal vez si hablas con el puedas hacer un buen intercambio!',
-      '¡Toma esta bendicion de lana calientita para protegerte del frio glacial!'
-    ]
+      '¡Toma esta bendicion de lana calientita para protegerte del frio glacial y moverte con agilidad!'
+    ],
+    onDialogueEnd: function() {
+      if (typeof player !== 'undefined' && player) {
+        player.speed = 168;
+        if (window.sfx && window.sfx.playPowerup) window.sfx.playPowerup();
+        if (typeof spawnStarSparkles === 'function') {
+          spawnStarSparkles(player.x + 11, player.y + 12, 20, '#ec4899');
+          spawnStarSparkles(player.x + 11, player.y + 12, 16, '#f472b6');
+        }
+        if (typeof triggerShake === 'function') triggerShake(0.08, 1.2);
+        if (typeof spawnFloatingText === 'function') {
+          spawnFloatingText(player.x, player.y - 20, '¡BUFANDA Y BOTAS DE LANA EQUIPADAS!', '#f472b6');
+        }
+      }
+    }
   }
 ];

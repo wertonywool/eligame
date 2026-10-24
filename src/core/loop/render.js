@@ -422,6 +422,11 @@ function draw() {
     drawYetiBoss(ctx);
   }
 
+  // Mecánicas de Kangshung: Vórtices y Seracs (Mundo 4 • Fase 6)
+  if (typeof drawKangshungMechanics === 'function') {
+    drawKangshungMechanics(ctx);
+  }
+
   // Dragón Astral de Polaris (Jefe Final Mundo 4 • Fase 9)
   if (typeof drawAstralBoss === 'function') {
     drawAstralBoss(ctx);

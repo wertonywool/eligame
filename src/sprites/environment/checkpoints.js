@@ -148,6 +148,53 @@ SpriteManager.prototype.drawGeyser = function(ctx, g, frame, isGarden = false) {
     const px = Math.round(g.x);
     const py = Math.round(g.y);
 
+    if (g.isCosmic || (typeof level !== 'undefined' && level && level.id === 4 && g.x >= 33000)) {
+      // ✨ Vórtice de Polvo Estelar / Fuente Cósmica del Firmamento (Mundo 4 Fase 9)
+      // 1. Pedestal astral de obsidiana y oro celestial
+      ctx.fillStyle = '#0f172a';
+      ctx.fillRect(px - 3, py - 4, g.w + 6, 5);
+      ctx.fillStyle = '#1e293b';
+      ctx.fillRect(px - 1, py - 6, g.w + 2, 3);
+      ctx.fillStyle = '#ffd166';
+      ctx.fillRect(px - 3, py - 7, g.w + 6, 2);
+      ctx.fillStyle = '#00f5d4';
+      ctx.fillRect(px + 4, py - 8, g.w - 8, 2);
+
+      // 2. Columna de energía luminosa translúcida
+      const grad = ctx.createLinearGradient(0, py - g.boostHeight, 0, py);
+      grad.addColorStop(0, 'rgba(0, 245, 212, 0.05)');
+      grad.addColorStop(0.5, 'rgba(114, 9, 183, 0.22)');
+      grad.addColorStop(1, 'rgba(0, 245, 212, 0.45)');
+      ctx.fillStyle = grad;
+      ctx.fillRect(px, py - g.boostHeight, g.w, g.boostHeight);
+
+      // 3. Estrellas y polvo cósmico ascendiendo en espiral
+      for (let i = 0; i < 7; i++) {
+        const offset = ((frame * 2.4 + i * 20) % g.boostHeight);
+        const wy = py - 8 - offset;
+        const sway = Math.round(Math.sin(frame * 0.12 + i * 1.2) * 5);
+        const alpha = Math.max(0.2, 1 - offset / g.boostHeight);
+
+        // Estrellas titilantes
+        ctx.fillStyle = (i % 2 === 0) ? `rgba(255, 209, 102, ${alpha.toFixed(2)})` : `rgba(255, 255, 255, ${alpha.toFixed(2)})`;
+        ctx.fillRect(px + 4 + ((i * 6) % (g.w - 8)) + sway, Math.round(wy), 3, 3);
+
+        // Chispas turquesas cruzadas
+        if (i % 3 === 0) {
+          ctx.fillStyle = `rgba(0, 245, 212, ${(alpha * 0.9).toFixed(2)})`;
+          ctx.fillRect(px + 5 + ((i * 4) % (g.w - 10)) - sway, Math.round(wy) - 2, 2, 5);
+          ctx.fillRect(px + 3 + ((i * 4) % (g.w - 10)) - sway, Math.round(wy), 5, 2);
+        }
+      }
+
+      // 4. Anillo de energía boreal en la base
+      const pulse = Math.sin(frame * 0.2) * 2;
+      ctx.strokeStyle = '#00f5d4';
+      ctx.lineWidth = 1;
+      ctx.strokeRect(px + 2 - pulse, py - 9, g.w - 4 + pulse * 2, 3);
+      return;
+    }
+
     if (isGarden || g.isGarden) {
       // 🌸 Flor de Brisa Mágica del Jardín (Hojas esmeralda, corola rosada y pétalos flotando hacia arriba)
       ctx.fillStyle = '#1b4332';

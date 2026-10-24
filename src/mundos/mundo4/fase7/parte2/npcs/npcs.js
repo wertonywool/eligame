@@ -12,16 +12,16 @@ module.exports = [
     color: '#ffffff',
     hatColor: '#f59e0b',
     lines: [
-      'Om Mani Padme Hum, Elizabeth! La luz dorada de la Gran Pagoda resplandece ante tu llegada.',
-      'Durante siglos, la profecia anuncio que una madre con amor infinito superaria el Abismo Polar y las bestias glaciares.',
-      'Mas alla de este portal se alza el Monte Sagrado Kailash y el Palacio Astral de Agartha, donde la gravedad terrenal desaparece.',
-      'Tus patitas flotaran como plumas en el vacio cosmico. Preparate para volar hacia las estrellas y rescatar a tu pequeno!'
+      '¡Om Mani Padme Hum, Elizabeth! La luz dorada de la Gran Pagoda resplandece ante tu llegada.',
+      'Has cruzado los valles y bendecido tu espíritu en nuestras aguas sagradas.',
+      'En el Altar Supremo te espera el Gran Portal hacia el Monte Kailash y el Palacio Astral de Agartha.',
+      '¡Cruza el portal estelar con fe! Más allá de estas puertas la gravedad terrenal desaparece y tus patitas volarán entre las estrellas.'
     ],
     dialogue: [
-      'Om Mani Padme Hum, Elizabeth! La luz dorada de la Gran Pagoda resplandece ante tu llegada.',
-      'Durante siglos, la profecia anuncio que una madre con amor infinito superaria el Abismo Polar y las bestias glaciares.',
-      'Mas alla de este portal se alza el Monte Sagrado Kailash y el Palacio Astral de Agartha, donde la gravedad terrenal desaparece.',
-      'Tus patitas flotaran como plumas en el vacio cosmico. Preparate para volar hacia las estrellas y rescatar a tu pequeno!'
+      '¡Om Mani Padme Hum, Elizabeth! La luz dorada de la Gran Pagoda resplandece ante tu llegada.',
+      'Has cruzado los valles y bendecido tu espíritu en nuestras aguas sagradas.',
+      'En el Altar Supremo te espera el Gran Portal hacia el Monte Kailash y el Palacio Astral de Agartha.',
+      '¡Cruza el portal estelar con fe! Más allá de estas puertas la gravedad terrenal desaparece y tus patitas volarán entre las estrellas.'
     ]
   }
 ];

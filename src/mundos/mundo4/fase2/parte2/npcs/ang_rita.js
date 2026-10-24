@@ -1,28 +1,28 @@
 // ============================================================================
-// MUNDO 4 - FASE 2 - PARTE 2: NPC ANG RITA EL ESCALADOR (X: 5420)
+// MUNDO 4 - FASE 2 - PARTE 2: NPC ANG RITA SHERPA "EL LEOPARDO" (X: 5410)
 // ============================================================================
 
 module.exports = [
   {
-    x: 5420,
+    x: 5410,
     y: 178,
-    name: 'Ang Rita el Escalador',
-    role: 'Leopardo de las Nieves',
-    color: '#bbf7d0',
-    hatColor: '#15803d',
+    name: 'Ang Rita Sherpa',
+    role: 'El Leopardo de las Nieves (10 Cumbres sin Oxígeno)',
+    color: '#caf0f8',
+    hatColor: '#0077b6',
     lines: [
-      '¡Impresionante verte aquí arriba, Elizabeth! Has alcanzado la Gran Cascada Vertical.',
-      'A partir de aquí, las agujas de hielo son más delgadas y el viento sopla en ráfagas traicioneras.',
-      'Sincroniza tus saltos entre los bloques flotantes de diamante glacial: si caes en las simas, las púas de hielo te dañarán.',
-      'Si ves que una ventisca o una oruga de hielo te corta el paso, sumérgete en las repisas de nieve profunda con tu pala.',
-      '¡Tu hijo ratoncito escaló con una destreza asombrosa hacia las terrazas superiores! ¡No te rindas!'
+      '¡Saludos, Elizabeth! Me llaman el Leopardo de las Nieves porque ascendí la cumbre del Everest 10 veces sin oxígeno.',
+      'El hielo aquí es vertical y despiadado. Usa los cristales celestiales turquesas: ¡te lanzarán como una flecha hacia las cornisas altas!',
+      '¡Cuidado con el hielo quebradizo! Cruje al pisarlo y se desmorona en un suspiro. No te quedes quieta sobre él.',
+      'En el gran puente de escalera sobre el abismo, dos carámbanos inestables cuelgan del techo. ¡Corre o rómpelos con tus bolas de nieve!',
+      '¡Tu pequeño hijo cruzó este mismo abismo como un campeón! ¡El campamento de cumbre está cada vez más cerca!'
     ],
     dialogue: [
-      '¡Impresionante verte aquí arriba, Elizabeth! Has alcanzado la Gran Cascada Vertical.',
-      'A partir de aquí, las agujas de hielo son más delgadas y el viento sopla en ráfagas traicioneras.',
-      'Sincroniza tus saltos entre los bloques flotantes de diamante glacial: si caes en las simas, las púas de hielo te dañarán.',
-      'Si ves que una ventisca o una oruga de hielo te corta el paso, sumérgete en las repisas de nieve profunda con tu pala.',
-      '¡Tu hijo ratoncito escaló con una destreza asombrosa hacia las terrazas superiores! ¡No te rindas!'
+      '¡Saludos, Elizabeth! Me llaman el Leopardo de las Nieves porque ascendí la cumbre del Everest 10 veces sin oxígeno.',
+      'El hielo aquí es vertical y despiadado. Usa los cristales celestiales turquesas: ¡te lanzarán como una flecha hacia las cornisas altas!',
+      '¡Cuidado con el hielo quebradizo! Cruje al pisarlo y se desmorona en un suspiro. No te quedes quieta sobre él.',
+      'En el gran puente de escalera sobre el abismo, dos carámbanos inestables cuelgan del techo. ¡Corre o rómpelos con tus bolas de nieve!',
+      '¡Tu pequeño hijo cruzó este mismo abismo como un campeón! ¡El campamento de cumbre está cada vez más cerca!'
     ]
   }
 ];

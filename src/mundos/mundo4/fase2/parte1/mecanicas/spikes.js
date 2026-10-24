@@ -1,12 +1,12 @@
 // ============================================================================
 // MUNDO 4 - FASE 2 - PARTE 1: SIMAS Y ESTALAGMITAS DE HIELO (SPIKES)
 // ============================================================================
-// Fosos con afiladas púas de hielo cristalino en las simas entre pilares.
+// Sólidamente ubicadas en el fondo de las grietas bajo las escaleras de aluminio.
 
 module.exports = [
-  // 1. Sima de hielo bajo el primer pilar de hielo (X: 4200 -> 4280)
-  { x: 4200, y: 220, w: 80, theme: 'snow', subType: 'ice_spikes' },
+  // 1. Fondo de la Primera Gran Grieta de Khumbu (bajo la escalera X: 4260 -> 4420)
+  { x: 4270, y: 248, w: 140, theme: 'snow', subType: 'ice_spikes' },
 
-  // 2. Sima glacial bajo el segundo pilar y antes del puente (X: 4680 -> 4790)
-  { x: 4680, y: 220, w: 110, theme: 'snow', subType: 'ice_spikes' }
+  // 2. Fondo de la Segunda Grieta de Seracs (bajo la doble escalera X: 5020 -> 5180)
+  { x: 5030, y: 248, w: 150, theme: 'snow', subType: 'ice_spikes' }
 ];

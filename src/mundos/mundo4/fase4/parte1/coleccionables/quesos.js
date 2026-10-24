@@ -3,12 +3,12 @@
 // ============================================================================
 
 module.exports = [
-  // 1. Queso en la cúspide del pináculo de hielo en la orilla del lago
-  { x: 13820, y: 104, active: true, id: 59 },
+  // 1. Queso en la cúspide del pináculo de hielo sobre la bahía de pesca
+  { x: 13840, y: 64, active: true, id: 59 },
 
-  // 2. Queso en el témpano móvil flotando sobre el centro del lago
-  { x: 14600, y: 124, active: true, id: 60 },
+  // 2. Queso en el aire sobre el estrecho de témpanos (Alcanzable con el Cristal Celestial de Impulso)
+  { x: 14620, y: 80, active: true, id: 60 },
 
-  // 3. Queso enterrado en el banco de permafrost en la pista de patinaje (Requiere Pico de Hielo)
-  { x: 15200, y: 170, active: true, id: 61 }
+  // 3. Queso enterrado en el banco de permafrost de la pista (Requiere cavar con la pala)
+  { x: 15220, y: 172, active: true, id: 61 }
 ];

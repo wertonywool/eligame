@@ -1,14 +1,17 @@
 // ============================================================================
-// MUNDO 4 - FASE 2 - PARTE 3: QUESOS COLECCIONABLES DE LA CUMBRE Y DESCENSO
+// MUNDO 4 - FASE 2 - PARTE 3: QUESOS DEL COL Y EL UMBRAL (X: 6650 -> 8050)
 // ============================================================================
 
 module.exports = [
-  // 1. Queso en el bloque de cristal flotante más alto de toda la Fase 2
-  { x: 7040, y: 56, active: true, id: 35 },
+  // Queso 33: En la cúspide de la plataforma de diamante de cumbre
+  { x: 7145, y: 25, active: true, id: 33 },
 
-  // 2. Queso suspendido en el aire sobre el gran puente alpino terminal
-  { x: 7500, y: 104, active: true, id: 36 },
+  // Queso 34: Enterrado en el sector izquierdo de la gran caverna de nieve profunda
+  { x: 7280, y: 212, active: true, id: 34 },
 
-  // 3. Queso enterrado en el banco de nieve previo al arco hacia el Pueblo Nevado
-  { x: 7780, y: 170, active: true, id: 37 }
+  // Queso 35: Enterrado en el sector derecho de la gran caverna de nieve profunda
+  { x: 7410, y: 212, active: true, id: 35 },
+
+  // Queso 36: Flotando sobre el escalón intermedio del Gran Abismo Terminal
+  { x: 7620, y: 125, active: true, id: 36 }
 ];

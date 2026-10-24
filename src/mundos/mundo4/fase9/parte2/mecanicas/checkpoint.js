@@ -5,7 +5,7 @@
 module.exports = [
   {
     id: 47,
-    x: 38950,
+    x: 38920,
     y: 126,
     name: 'El Laberinto de Nebulosas - Oasis de la Aurora Boreal',
     active: false

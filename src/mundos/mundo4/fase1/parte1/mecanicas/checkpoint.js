@@ -3,5 +3,5 @@
 // ============================================================================
 
 module.exports = [
-  { id: 17, x: 1370, y: 196, name: 'Paso del Glaciar - Campamento 1', active: false }
+  { id: 17, x: 1460, y: 196, name: 'Paso del Glaciar - Campamento 1', active: false }
 ];

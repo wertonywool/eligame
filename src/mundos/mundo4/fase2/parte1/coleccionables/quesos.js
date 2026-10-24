@@ -1,14 +1,11 @@
 // ============================================================================
-// MUNDO 4 - FASE 2 - PARTE 1: QUESOS COLECCIONABLES DE LOS PILARES CELESTE
+// MUNDO 4 - FASE 2 - PARTE 1: QUESOS DE KHUMBU (X: 4050 -> 5350)
 // ============================================================================
 
 module.exports = [
-  // 1. Queso en el bloque flotante de cristal más alto (Recompensa de parkour vertical)
-  { x: 4440, y: 62, active: true, id: 29 },
+  // Queso 29: Flotando sobre el paso de hielo resbaladizo (recompensa por deslizarse con precisión)
+  { x: 4690, y: 105, active: true, id: 29 },
 
-  // 2. Queso en el bloque de cristal suspendido sobre la sima
-  { x: 4970, y: 84, active: true, id: 30 },
-
-  // 3. Queso enterrado en el banco de nieve del desfiladero (Requiere cavar con la pala)
-  { x: 5120, y: 170, active: true, id: 31 }
+  // Queso 30: Enterrado dentro del gran banco de nieve (solo accesible cavando con la pala)
+  { x: 4870, y: 212, active: true, id: 30 }
 ];

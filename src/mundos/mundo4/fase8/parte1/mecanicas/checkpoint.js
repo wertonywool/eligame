@@ -3,5 +3,5 @@
 // ============================================================================
 
 module.exports = [
-  { id: 44, x: 33850, y: 126, name: 'Monte Sagrado Kailash - Terraza del Lapislazuli', active: false }
+  { id: 44, x: 33080, y: 126, name: 'Monte Sagrado Kailash - Entrada de los Peregrinos', active: false }
 ];
