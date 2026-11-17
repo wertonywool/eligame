@@ -12,6 +12,9 @@ Juego de plataformas retro 2D desarrollado en HTML5 Canvas y Web Audio API.
 - Mecanicas especiales: Baja gravedad cosmica, cavado en nieve, pico de hielo y pistola de portales dimensional.
 - Selector de fases dinamico en el mapa de mundos.
 
+- Actualmente esta en desarollo se espera desarrollar 8 mundos en total y esta muy verde todavia
+
+
 ## Como jugar localmente
 1. Clona el repositorio:
    ```bash
